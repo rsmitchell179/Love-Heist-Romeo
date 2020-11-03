@@ -21,8 +21,8 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
         // Get input
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.x = Input.GetAxis("Horizontal");
+        movement.y = Input.GetAxis("Vertical");
 
         // Set animation vars
         // make sure we don't set them if the player is standing still, to prevent weird flipping
@@ -41,6 +41,7 @@ public class playerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+
         body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
     }
 
