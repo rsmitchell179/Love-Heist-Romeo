@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class mainMenuScript : MonoBehaviour {
-	public string newGameScene;
+	
+    public string newGameScene;
+
     // Start is called before the first frame update
     void Start() {
         
@@ -16,6 +18,6 @@ public class mainMenuScript : MonoBehaviour {
     }
 
     public void StartGame() {
-    	SceneManager.LoadScene(newGameScene);
+        SceneManager.LoadScene(newGameScene);
     }
 }
