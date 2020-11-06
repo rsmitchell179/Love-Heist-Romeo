@@ -176,7 +176,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.81
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -239,9 +239,46 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextRoom: MainHub
   frame:
-  - {fileID: 21300000, guid: 72344ee69db0fa246b1ba24c3b340714, type: 3}
-  - {fileID: 21300000, guid: 2d131d8c0f37a0e4c945b3287b196117, type: 3}
-  - {fileID: 21300000, guid: f7e70ed409dab8d49b439aeff56f39a3, type: 3}
+  - {fileID: 21300000, guid: b9c734d38bdff2d4eaf95c042fa48e51, type: 3}
+  - {fileID: 21300000, guid: 24412f24d373b5246abb4d82962ef8ac, type: 3}
+  - {fileID: 21300000, guid: e6028a92b4e91f346a408f2431f327f4, type: 3}
+  - {fileID: 21300000, guid: 5a349303565cd1246ba18a03355d3656, type: 3}
+  - {fileID: 21300000, guid: 9d04cf3483356e74db07c64876c81e3d, type: 3}
+  - {fileID: 21300000, guid: 04813dceaf1775d499db5fe5b9b6a26d, type: 3}
+  - {fileID: 21300000, guid: fe911483726e1924382edbc27774a04f, type: 3}
+  - {fileID: 21300000, guid: 7a2a96131fbbd5d4e90765d52ac89ee0, type: 3}
+  - {fileID: 21300000, guid: 5c2ba5f9b2c59eb40ba7d174215c6ea8, type: 3}
+  - {fileID: 21300000, guid: aa49ea8911fd5834b8d25c4c2a31b1d1, type: 3}
+  - {fileID: 21300000, guid: 30831973941c10e4899422242d3e7a44, type: 3}
+  - {fileID: 21300000, guid: a98f51fce88ec364599636b278c9b622, type: 3}
+  - {fileID: 21300000, guid: 5b09dc3ef7c5e254a921f847747946fd, type: 3}
+  - {fileID: 21300000, guid: 8be7cfe6158f15a4699dcb72ce946a52, type: 3}
+  - {fileID: 21300000, guid: 34f13affb2ad6664bb69b809568f2081, type: 3}
+  - {fileID: 21300000, guid: f6d591eacd3f43b4dbe1f4ae768ba8f4, type: 3}
+  - {fileID: 21300000, guid: 86ccaf57525193d44b9840cdefdff9d7, type: 3}
+  - {fileID: 21300000, guid: e9e1aa4dd602f1b48b0291e973a34fae, type: 3}
+  - {fileID: 21300000, guid: 073d7d41e12868942ad2587ed5deb8b0, type: 3}
+  - {fileID: 21300000, guid: c9f53570ade2a3c4a9eb9b3560d1d07a, type: 3}
+  - {fileID: 21300000, guid: fad8bafe7d7c74c4b8fa66206e36a8e2, type: 3}
+  - {fileID: 21300000, guid: db2b341f1abca334399fd24fd0841a92, type: 3}
+  - {fileID: 21300000, guid: 230e24a1b5b25cd4eb00f658e83e6208, type: 3}
+  - {fileID: 21300000, guid: b0889b6a8f448b249b2a4b67be4878e8, type: 3}
+  - {fileID: 21300000, guid: 18ddeb65244777443964b5c94fc003e6, type: 3}
+  - {fileID: 21300000, guid: 48ce53289edbbe740b602d1f2f3cf766, type: 3}
+  - {fileID: 21300000, guid: 14c79d270b972604dae18f11a3e7f0c5, type: 3}
+  - {fileID: 21300000, guid: 1bc84f7eba62030439e19a348b0af292, type: 3}
+  - {fileID: 21300000, guid: b05b2cba471da9643ac50bb4aee40473, type: 3}
+  - {fileID: 21300000, guid: 593906507769bcf499f4117db3675881, type: 3}
+  - {fileID: 21300000, guid: 854a5c3cb9b0eae4a8503b9cf7eab73b, type: 3}
+  - {fileID: 21300000, guid: 42bf6021010bc6342a231513dc2fe9f3, type: 3}
+  - {fileID: 21300000, guid: 5801c35d6bb08fc46aae05ce9e287c1f, type: 3}
+  - {fileID: 21300000, guid: a55b4f878ff3a414cb566afbcbbedfb7, type: 3}
+  - {fileID: 21300000, guid: 773589fbef55160428169a01ccc992a6, type: 3}
+  - {fileID: 21300000, guid: f121b831e7c8fd74f8738e8e013b0071, type: 3}
+  - {fileID: 21300000, guid: 65dea5195e154fe43a3f82953552a3c2, type: 3}
+  - {fileID: 21300000, guid: 7211720d4b872214b910eb3e639b7ead, type: 3}
+  - {fileID: 21300000, guid: 5e230adf7894e424e80bd7825209e0c5, type: 3}
+  - {fileID: 21300000, guid: f70025ca2fcccb54a83a524ed19d68e9, type: 3}
 --- !u!212 &1247740461
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -282,7 +319,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 72344ee69db0fa246b1ba24c3b340714, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9c734d38bdff2d4eaf95c042fa48e51, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

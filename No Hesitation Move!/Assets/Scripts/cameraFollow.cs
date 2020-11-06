@@ -17,7 +17,7 @@ public class cameraFollow : MonoBehaviour
 
     private float xMin, xMax, yMin, yMax;
     private float camX, camY;
-    private float camOrthSize, camRatio;
+    private float camHeight, camWidth;
     private Camera cam; //hey thats me!
 
     // Start is called before the first frame update
@@ -32,18 +32,18 @@ public class cameraFollow : MonoBehaviour
         // get our camera so we can fiddle with it
         cam = GetComponent<Camera>();
 
-        // vertical size of camera
-        camOrthSize = cam.orthographicSize;
-        
-        // horizontal size (determined by ratio)
-        camRatio = (xMax + camOrthSize) / 2.0f;
+        // half of vertical size of camera
+        camHeight = cam.orthographicSize;
+
+        // half of horizontal size (determined by ratio)
+        camWidth = cam.aspect*camHeight;
     }
 
     void FixedUpdate()
     {
         // offset camera by half, to keep followed object in center
-        camY = Mathf.Clamp(cameraFollows.position.y, yMin + camOrthSize, yMax - camOrthSize);
-        camX = Mathf.Clamp(cameraFollows.position.x, xMin + camRatio, xMax - camRatio);
+        camY = Mathf.Clamp(cameraFollows.position.y, yMin + camHeight, yMax - camHeight);
+        camX = Mathf.Clamp(cameraFollows.position.x, xMin + camWidth, xMax - camWidth);
 
         // move camera into place
         this.transform.position = new Vector3(camX, camY, this.transform.position.z);
