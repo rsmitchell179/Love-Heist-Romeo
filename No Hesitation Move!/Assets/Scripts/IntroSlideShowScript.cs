@@ -39,4 +39,12 @@ public class IntroSlideShowScript : MonoBehaviour
             SceneManager.LoadScene(nextRoom);
         }
     }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            SceneManager.LoadScene(nextRoom);
+        }
+    }
 }
