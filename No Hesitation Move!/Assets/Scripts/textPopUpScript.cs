@@ -9,7 +9,7 @@ public class textPopUpScript : MonoBehaviour
 	public GameObject guy1;
 	public GameObject text;
 
-	public 
+	public float delaytime = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -37,9 +37,16 @@ public class textPopUpScript : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other){
     	if(other.tag == "Player"){
-    		text.SetActive(false);
-        	Debug.Log("false");
+            StartCoroutine(delay_setactive());
+    		// text.SetActive(false);
+      //   	Debug.Log("false");
     	}
+    }
+
+    IEnumerator delay_setactive(){
+        yield return new WaitForSeconds (delaytime);
+        text.SetActive(false);
+        Debug.Log("false");
     }
 
     // void FadeTextIn(){
