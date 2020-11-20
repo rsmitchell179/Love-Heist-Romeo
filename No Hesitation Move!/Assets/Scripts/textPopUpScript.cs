@@ -6,10 +6,9 @@ public class textPopUpScript : MonoBehaviour
 {
 
 	public GameObject player;
-	public GameObject guy1;
 	public GameObject text;
 
-	public float delaytime = 2f;
+	public float delaytime = 1.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +47,10 @@ public class textPopUpScript : MonoBehaviour
         text.SetActive(false);
         Debug.Log("false");
     }
+
+    // IEnumerator slow_fade(){
+
+    // }
 
     // void FadeTextIn(){
     // 	Color color = text.color;

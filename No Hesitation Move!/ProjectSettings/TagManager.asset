@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - Player
-  - 
-  - 
-  - 
+  - Text
+  - NPC
+  - Background
   - 
   - 
   - 
@@ -44,9 +44,18 @@ TagManager:
   - name: Tilemap Background
     uniqueID: 450138895
     locked: 0
+  - name: Background
+    uniqueID: 2243385691
+    locked: 0
   - name: Ground
     uniqueID: 704497355
     locked: 0
+  - name: NPC
+    uniqueID: 2749578377
+    locked: 0
   - name: 'Player '
     uniqueID: 1025404899
+    locked: 0
+  - name: Text
+    uniqueID: 2394934009
     locked: 0
