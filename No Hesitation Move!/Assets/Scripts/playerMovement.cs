@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Yarn.Unity;
 
 public class playerMovement : MonoBehaviour
 {
@@ -16,10 +17,35 @@ public class playerMovement : MonoBehaviour
 
     // for linking player motion to animations in animation editor
     public Animator anim;
+    public float interactionRadius = 2.0f;
+
+    private DialogueRunner diaRun = null;
+
+    void OnDrawGizmosSelected() {
+            Gizmos.color = Color.blue;
+
+            // Flatten the sphere into a disk, which looks nicer in 2D games
+            Gizmos.matrix = Matrix4x4.TRS(transform.position, Quaternion.identity, new Vector3(1,1,0));
+
+            // Need to draw at position zero because we set position in the line above
+            Gizmos.DrawWireSphere(Vector3.zero, interactionRadius);
+    }
+
+    void Start(){
+        diaRun = FindObjectOfType<DialogueRunner>();
+    }
 
     // Update is called once per frame
     void Update()
     {
+
+        if(diaRun.IsDialogueRunning == true)
+        {
+            movement.x = 0;
+            movement.y = 0;
+            return;
+        }
+
         // Get input
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
@@ -37,12 +63,30 @@ public class playerMovement : MonoBehaviour
         }
 
         anim.SetFloat("Speed", movement.sqrMagnitude); //some sort of wild magic variable that pulls the squared length of the vector
+
+        if (Input.GetKeyDown(KeyCode.Space)) {
+                CheckForNearbyNPC ();
+        }
     }
 
     void FixedUpdate()
     {
 
         body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
+    }
+
+    public void CheckForNearbyNPC ()
+    {
+        var allParticipants = new List<NPC> (FindObjectsOfType<NPC> ());
+        var target = allParticipants.Find (delegate (NPC p) {
+            return string.IsNullOrEmpty (p.talkToNode) == false && // has a conversation node?
+            (p.transform.position - this.transform.position)// is in range?
+            .magnitude <= interactionRadius;
+        });
+        if (target != null) {
+            // Kick off the dialogue at this node.
+            FindObjectOfType<DialogueRunner> ().StartDialogue (target.talkToNode);
+        }
     }
 
 }

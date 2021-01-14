@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Hierarchy
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -118,10 +118,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1317
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
-  controlID: 114
+  controlID: 17
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,10 +143,10 @@ MonoBehaviour:
     y: 0
     width: 2560
     height: 1317
-  m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
-  controlID: 115
+  controlID: 18
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -168,10 +168,10 @@ MonoBehaviour:
     y: 0
     width: 2008
     height: 1317
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 10001, y: 14042}
+  m_MinSize: {x: 403, y: 342}
+  m_MaxSize: {x: 8003, y: 8042}
   vertical: 1
-  controlID: 116
+  controlID: 19
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 117
+  controlID: 20
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,7 +261,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -270,15 +270,15 @@ MonoBehaviour:
     y: 862
     width: 2008
     height: 455
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
   - {fileID: 19}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -426,7 +426,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 64d1ffff1cdbffffd2dbffff22e2ffff7ee2ffff5ee4ffff26e5fffffcf6ffff14f7ffffa6f7ffffd0f7fffffef8ffff5afbffffd43c00000a3d0000
+      m_ExpandedIDs: 5afbffffe83c0000ec3c00000a3d00002a3d00004c3d0000503d00009c3d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -487,9 +487,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 589.4813, y: 343.30988, z: -78.02374}
+    m_Target: {x: -0.45083332, y: 1.7514932, z: -0.5707347}
     speed: 2
-    m_Value: {x: 589.4813, y: 343.30988, z: -78.02374}
+    m_Value: {x: -0.45083332, y: 1.7514932, z: -0.5707347}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -540,9 +540,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 326.69122
+    m_Target: 4.346403
     speed: 2
-    m_Value: 326.69122
+    m_Value: 4.346403
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -755,12 +755,12 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Dialogue
+    - Assets/Scripts
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Dialogue
+  - Assets/Scripts
   m_LastFoldersGridSize: 74
   m_LastProjectPath: C:\Users\theal\Documents\GitHub\No-Hesitation-Move-\No Hesitation
     Move!
@@ -768,9 +768,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2e3f0000
-    m_LastClickedID: 16174
-    m_ExpandedIDs: 00000000aa3d0000c23e0000c63e0000c83e0000ca3e0000ce3e0000d03e0000104300001c43000000ca9a3b
+    m_SelectedIDs: d83e0000
+    m_LastClickedID: 16088
+    m_ExpandedIDs: 00000000083e0000b83e0000ba3e0000bc3e0000be3e0000c03e0000c23e0000c43e0000c63e0000d83e00004e4b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -798,7 +798,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 228}
     m_SelectedIDs: 0c4c0000
     m_LastClickedID: 19468
-    m_ExpandedIDs: 00000000aa3d0000c23e0000c43e0000c63e0000c83e0000ca3e0000cc3e0000ce3e0000d03e0000
+    m_ExpandedIDs: 00000000083e0000b83e0000ba3e0000bc3e0000be3e0000c03e0000c23e0000c43e0000c63e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -823,8 +823,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 5c360000
+    m_LastClickedInstanceID: 13916
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003039000070390000ba380000f83800000c390000484e000000000000603f0000583f0000
     m_RenameOverlay:

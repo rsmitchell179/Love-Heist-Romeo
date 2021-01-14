@@ -241,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 275}
+  m_AnchoredPosition: {x: 150, y: 235}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &22175954
@@ -262,7 +262,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!102 &22175955
 TextMesh:
   serializedVersion: 3
@@ -391,7 +391,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 275}
+  m_AnchoredPosition: {x: 0, y: 75}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129046986
@@ -658,7 +658,19 @@ MonoBehaviour:
   - {fileID: 18511042}
   onDialogueStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialogueEnd:
     m_PersistentCalls:
       m_Calls: []
@@ -684,6 +696,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -781,13 +805,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yarnScripts:
-  - {fileID: 2480198943629176163, guid: a989721526a685b42938a84124e99042, type: 3}
+  yarnScripts: []
   textLanguage: 
   variableStorage: {fileID: 300335799}
   dialogueUI: {fileID: 300335798}
-  startNode: Start
-  startAutomatically: 1
+  startNode: 
+  startAutomatically: 0
   onNodeStart:
     m_PersistentCalls:
       m_Calls: []
@@ -1229,8 +1252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 300, y: -100}
-  m_SizeDelta: {x: 181.37, y: 33.52}
+  m_AnchoredPosition: {x: 300, y: -85}
+  m_SizeDelta: {x: 550, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384561150
 MonoBehaviour:
@@ -1279,15 +1302,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1841,6 +1864,7 @@ GameObject:
   - component: {fileID: 956607759}
   - component: {fileID: 956607762}
   - component: {fileID: 956607761}
+  - component: {fileID: 956607760}
   m_Layer: 0
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -1869,6 +1893,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -225}
   m_SizeDelta: {x: 600, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &956607760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956607758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bef40f1993e7c4fbf7305d0d57d854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!222 &956607761
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2156,10 +2192,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1235922004}
   - component: {fileID: 1235922003}
-  - component: {fileID: 1235922002}
   - component: {fileID: 1235922001}
   - component: {fileID: 1235922000}
   - component: {fileID: 1235921999}
+  - component: {fileID: 1235922005}
   m_Layer: 0
   m_Name: pupp3
   m_TagString: Untagged
@@ -2223,21 +2259,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &1235922002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235921998}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddeb102a55a930b4798e5a67786ac77b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 2008615734}
-  text: {fileID: 362745713}
-  delaytime: 2
 --- !u!212 &1235922003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2305,6 +2326,22 @@ Transform:
   m_Father: {fileID: 217110578}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235922005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235921998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterName: pupp3
+  talkToNode: pupp3
+  scriptToLoad: {fileID: 2480198943629176163, guid: a989721526a685b42938a84124e99042,
+    type: 3}
 --- !u!1 &1405088749
 GameObject:
   m_ObjectHideFlags: 0
@@ -2723,7 +2760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 275}
+  m_AnchoredPosition: {x: -150, y: 235}
   m_SizeDelta: {x: 250, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1582149912
@@ -2736,17 +2773,17 @@ GameObject:
   m_Component:
   - component: {fileID: 1582149914}
   - component: {fileID: 1582149913}
-  - component: {fileID: 1582149916}
   - component: {fileID: 1582149915}
   - component: {fileID: 1582149917}
   - component: {fileID: 1582149918}
+  - component: {fileID: 1582149916}
   m_Layer: 0
   m_Name: pupp1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1582149913
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2839,12 +2876,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1582149912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddeb102a55a930b4798e5a67786ac77b, type: 3}
+  m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2008615734}
-  text: {fileID: 22175954}
-  delaytime: 2
+  characterName: pupp1
+  talkToNode: pupp1
+  scriptToLoad: {fileID: 2480198943629176163, guid: 746f14c8d8b9d984290a9589e0c743e1,
+    type: 3}
 --- !u!50 &1582149917
 Rigidbody2D:
   serializedVersion: 4
@@ -3302,6 +3340,7 @@ MonoBehaviour:
   moveSpeed: 2
   body: {fileID: 2008615738}
   anim: {fileID: 2008615736}
+  interactionRadius: 2
 --- !u!95 &2008615736
 Animator:
   serializedVersion: 3
