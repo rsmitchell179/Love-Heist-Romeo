@@ -954,7 +954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717771931}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.2292705, y: -1.7899995, z: 0.47771192}
+  m_LocalPosition: {x: 3, y: -0.23, z: 0.47771192}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1426767464}
@@ -1613,7 +1613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482181010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.43, y: 2.16, z: 0}
+  m_LocalPosition: {x: 1.6, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1632,7 +1632,7 @@ GameObject:
   - component: {fileID: 1570989714}
   - component: {fileID: 1570989713}
   m_Layer: 8
-  m_Name: Exit
+  m_Name: door_to_Main_Hub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1651,7 +1651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationScene: MainHub
-  destinationCoords: {x: -0.9, y: 2.9}
+  destinationCoords: {x: 0.04, y: 2.45}
 --- !u!61 &1570989714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1665,7 +1665,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.18123707, y: -0.07249445}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1676,7 +1676,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.86, y: 0.82}
+  m_Size: {x: 0.49752587, y: 0.67501104}
   m_EdgeRadius: 0
 --- !u!212 &1570989715
 SpriteRenderer:
@@ -1986,7 +1986,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934603660}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1792704, y: 2.6000004, z: 0.47771192}
+  m_LocalPosition: {x: -0.28, y: 2.21, z: 0.47771192}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1125255524}

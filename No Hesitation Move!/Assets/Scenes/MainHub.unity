@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 373894227}
   - component: {fileID: 373894226}
   m_Layer: 0
-  m_Name: Door 2
+  m_Name: door_to_Fancy_Town
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationScene: Fancy Town
-  destinationCoords: {x: -0.5, y: -0.5}
+  destinationCoords: {x: 2, y: 4}
 --- !u!61 &373894227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -609,7 +609,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 373894225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.4, y: -0.19, z: -1.2953488}
+  m_LocalPosition: {x: 3.69, y: -0.05, z: -1.2953488}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 454016074}
   - component: {fileID: 454016073}
   m_Layer: 0
-  m_Name: Door 4
+  m_Name: door_Outro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -731,7 +731,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454016072}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.87, y: 0.15, z: -1.2953488}
+  m_LocalPosition: {x: -3.36, y: -0.01, z: -1.2953488}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -750,7 +750,7 @@ GameObject:
   - component: {fileID: 474272877}
   - component: {fileID: 474272876}
   m_Layer: 0
-  m_Name: Door 1
+  m_Name: door_to_Jealous_Sea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -855,7 +855,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474272875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 3.15, z: -1.2953488}
+  m_LocalPosition: {x: -0.03, y: -3.46, z: -1.2953488}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1107,7 +1107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235921998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.075036, y: 2.7550917, z: 0.8287352}
+  m_LocalPosition: {x: 0.41, y: -0.77, z: 0.8287352}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 362745716}
@@ -1254,7 +1254,7 @@ GameObject:
   - component: {fileID: 1532013695}
   - component: {fileID: 1532013694}
   m_Layer: 0
-  m_Name: Door 3
+  m_Name: door_to_Reject_City
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1273,7 +1273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationScene: Reject City
-  destinationCoords: {x: -0.5, y: -0.5}
+  destinationCoords: {x: 1.6, y: 2.4}
 --- !u!61 &1532013695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1359,7 +1359,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532013693}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.61, y: -2.9, z: -1.2953488}
+  m_LocalPosition: {x: -0.01, y: 3.49, z: -1.2953488}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1446,7 +1446,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582149912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2149644, y: 2.9250917, z: 0.8287352}
+  m_LocalPosition: {x: 1.37, y: 2.44, z: 0.8287352}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 22175957}
@@ -2130,12 +2130,12 @@ PrefabInstance:
     - target: {fileID: 5868824327443656573, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 5868824327443656573, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.54
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5868824327443656573, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
