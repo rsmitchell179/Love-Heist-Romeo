@@ -46,5 +46,19 @@ public class OutroSlideShowScript : MonoBehaviour
         {
             SceneManager.LoadScene(nextRoom);
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (spriteOn < frame.Length-1)
+            {
+                spriteOn++;
+                spr.sprite = frame[spriteOn];
+            // otherwise, go to next room
+            } 
+            else
+            {
+                SceneManager.LoadScene(nextRoom);
+            }
+        }
     }
 }
