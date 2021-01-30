@@ -183,7 +183,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188944745
 GameObject:
@@ -592,7 +592,7 @@ Transform:
   m_Children:
   - {fileID: 923678216}
   m_Father: {fileID: 1409823756}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &468320377
 Rigidbody2D:
@@ -745,7 +745,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &923678215
 GameObject:
@@ -1097,7 +1097,7 @@ Transform:
   m_Children:
   - {fileID: 1230402577}
   m_Father: {fileID: 1409823756}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1249388370
 Rigidbody2D:
@@ -1197,12 +1197,11 @@ Transform:
   m_LocalPosition: {x: 1.3991513, y: -0.2767032, z: -1.1817858}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2085565154}
   - {fileID: 1249388369}
   - {fileID: 1747542291}
   - {fileID: 468320376}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511493741
 GameObject:
@@ -1424,7 +1423,7 @@ Transform:
   m_LocalScale: {x: 0.061594993, y: 0.045451995, z: 0.0600933}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1674893661
 GameObject:
@@ -1661,7 +1660,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1747542289
 GameObject:
@@ -1749,7 +1748,7 @@ Transform:
   m_Children:
   - {fileID: 334365264}
   m_Father: {fileID: 1409823756}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1747542292
 Rigidbody2D:
@@ -2145,7 +2144,7 @@ PrefabInstance:
     - target: {fileID: 2238729598728178173, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2238729598728178173, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -2179,7 +2178,7 @@ GameObject:
   - component: {fileID: 2085565158}
   - component: {fileID: 2085565159}
   m_Layer: 0
-  m_Name: frog1
+  m_Name: budalia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2225,8 +2224,7 @@ SpriteRenderer:
   m_SortingLayerID: -1545388919
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -988459141874504972, guid: d820135ef8e43ab4e86e3f5bd060d2ab,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1bf3326a80958240bd9238d9de73f46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2245,12 +2243,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085565152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.71, y: 6.05, z: 0}
+  m_LocalPosition: {x: -2.3108487, y: 5.773297, z: -1.1817858}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1674893662}
-  m_Father: {fileID: 1409823756}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &2085565155
 Rigidbody2D:
@@ -2280,7 +2278,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085565152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -2297,7 +2295,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2085565152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 892fa794a754dd0428c8995d7a6c6740, type: 2}
   m_CullingMode: 0
@@ -2320,7 +2318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: frog1
-  talkToNode: frog1_start
-  scriptToLoad: {fileID: 2480198943629176163, guid: 50ceb9f07a75e054190443bf3e54c286,
+  characterName: budalia
+  talkToNode: budelia_start
+  scriptToLoad: {fileID: 2480198943629176163, guid: fdf3f498cc9e0644a8b71689e4c33c8f,
     type: 3}
