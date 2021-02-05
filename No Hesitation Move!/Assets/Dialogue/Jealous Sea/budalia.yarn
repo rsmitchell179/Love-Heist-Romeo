@@ -1,10 +1,56 @@
-title: budelia_start
+title: budalia_start
 tags: 
 colorID: 0
-position: 1222,-164
+position: 1222,-166
 ---
+<<set_speaker budalia>> 
 Hello there.
 You must be the one they call Romeo.
+<<set_speaker romeo>>
+Yep.
+I'm the one they call Romeo.
+I don’t think I know you, though. 
+Have we met before?
+<<set_speaker budalia>> 
 My name is Budalia.
+I work under the orders of her majesty the Wizard.
+She sent me here to act as a go-between for your communication.
+<<set_speaker romeo>>
+Well, nice to meet you, Budalia.
+<<set_speaker budalia>> 
+Fancy meeting you here as well.
+On this boat.
+<<set_speaker romeo>>
+I still can’t believe it!
+I’m finally on a boat!
+This is so cool!
+<<set_speaker budalia>> 
+Well, this is the Jealous Sea after all.
+You can't quite be on the water without a boat.
+<<set_speaker romeo>>
+It's been a lifelong dream of mine to step foot on a boat.
+I'm always jealous of my friend who gets to go on one constantly.
+It's like his job.
+<<set_speaker budalia>> 
+Now, try not to exert too much of your energy on this boat.
+By all means, have fun and look around, but remember, you still have your mission to accomplish.
+<<set_speaker romeo>>
+The orbs are the only thing on my mind.
+Ok, one of two things. Orbs and boats!
+Speaking of orbs, do you have one?
+<<set_speaker budalia>> 
+No, no, Romeo. It doesn’t work like that. 
+I do have something for you, though.
+This is a letter direct from the Wizard herself.
+It discloses the location of the orb.
+<<set_speaker romeo>> 
+Wow!
+She must really want to help me find my True Love after all.
+How nice of her!
+<<set_speaker budalia>> 
+Yeah, you could say that...
+Helping others sounds totally just like her. 
+Alright, I don't mean to keep you any longer.
+I'll let you be off now.
 <<img_showup img_letter>>
 ===

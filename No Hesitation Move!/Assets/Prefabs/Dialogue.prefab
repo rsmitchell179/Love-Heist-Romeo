@@ -379,7 +379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.69411767}
+  m_Color: {r: 0.6415094, g: 0.6415094, b: 0.6415094, a: 0.69411767}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1440,6 +1440,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24bef40f1993e7c4fbf7305d0d57d854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueRunner: {fileID: 0}
+  romeo: {fileID: 0}
+  other_person: {fileID: 0}
+  npc_name: 
 --- !u!1 &2238729598728178162
 GameObject:
   m_ObjectHideFlags: 0
