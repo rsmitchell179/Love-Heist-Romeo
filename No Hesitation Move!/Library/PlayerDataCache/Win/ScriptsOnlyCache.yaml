@@ -22,6 +22,8 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
@@ -129,13 +131,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15144}
+      Script: {instanceID: 15140}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -180,7 +182,7 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 15190}
+      Script: {instanceID: 15186}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -210,9 +212,9 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 74
+    - Class: 68
       Script: {instanceID: 0}
-    - Class: 81
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
@@ -224,6 +226,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 656}
     - Class: 114
       Script: {instanceID: 11846}
     - Class: 114
@@ -255,11 +259,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -279,6 +283,14 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 252
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/JS Town.unity:
     - Class: 1
@@ -293,13 +305,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
-    - Class: 74
+    - Class: 68
       Script: {instanceID: 0}
-    - Class: 81
+    - Class: 74
       Script: {instanceID: 0}
     - Class: 82
       Script: {instanceID: 0}
@@ -311,6 +325,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 656}
     - Class: 114
       Script: {instanceID: 11846}
     - Class: 114
@@ -328,6 +344,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13436}
     - Class: 114
+      Script: {instanceID: 13670}
+    - Class: 114
       Script: {instanceID: 13694}
     - Class: 114
       Script: {instanceID: 13920}
@@ -336,17 +354,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14150}
     - Class: 114
+      Script: {instanceID: 14358}
+    - Class: 114
       Script: {instanceID: 14496}
     - Class: 114
       Script: {instanceID: 14602}
     - Class: 114
       Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,6 +386,14 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 252
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/JS-UnderBoat.unity:
     - Class: 1
@@ -384,6 +412,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 68
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -398,6 +428,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 656}
     - Class: 114
       Script: {instanceID: 11846}
     - Class: 114
@@ -427,11 +459,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -451,6 +483,14 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 252
+      Script: {instanceID: 0}
+    - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/Jealous Sea.unity:
     - Class: 1
@@ -475,6 +515,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 68
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -491,6 +533,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 656}
     - Class: 114
       Script: {instanceID: 11846}
     - Class: 114
@@ -530,13 +574,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15144}
+      Script: {instanceID: 15140}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -555,7 +599,13 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 224
       Script: {instanceID: 0}
+    - Class: 252
+      Script: {instanceID: 0}
     - Class: 156049354
+      Script: {instanceID: 0}
+    - Class: 483693784
+      Script: {instanceID: 0}
+    - Class: 1839735485
       Script: {instanceID: 0}
     Assets/Scenes/MainHub.unity:
     - Class: 1
@@ -633,15 +683,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 14992}
+      Script: {instanceID: 14988}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15144}
+      Script: {instanceID: 15140}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -767,13 +817,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 15142}
+      Script: {instanceID: 15138}
     - Class: 114
-      Script: {instanceID: 15144}
+      Script: {instanceID: 15140}
     - Class: 114
-      Script: {instanceID: 15204}
+      Script: {instanceID: 15200}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -844,9 +894,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14602}
     - Class: 114
-      Script: {instanceID: 14904}
+      Script: {instanceID: 14900}
     - Class: 114
-      Script: {instanceID: 15264}
+      Script: {instanceID: 15260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1366,18 +1416,6 @@ ScriptsOnlyBuild:
     className: cameraFollow
   - hash:
       serializedVersion: 2
-      Hash: ca80e144027163a79688f7433f0dfc45
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: NodeVisitedTracker
-  - hash:
-      serializedVersion: 2
-      Hash: 3d0c6715bc6696a95915a7a6ee830a4c
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DialogueControls
-  - hash:
-      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1468,7 +1506,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 1658e3a4a126c5b9f116924d44946195
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DialogueSpeaker
@@ -1538,5 +1576,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/JS-UnderBoat.unity
   - Assets/Scenes/JS Path.unity
   - Assets/Scenes/JS Town.unity
-  playerPath: C:/Users/theal/Documents/Unity/BUILDS/Love Heist Romeo/1_30_2021/LHR_1_30_2021_Build/Windows/No
+  playerPath: C:/Users/theal/Documents/Unity/BUILDS/Love Heist Romeo/2_6_2021/LHR_2_6_2021_Build/WIndows/No
     Hesitation Move!.exe
