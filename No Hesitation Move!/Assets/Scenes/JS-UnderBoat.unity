@@ -686,7 +686,7 @@ GameObject:
   - component: {fileID: 368713457}
   - component: {fileID: 368713456}
   m_Layer: 0
-  m_Name: RoomSizeCollider
+  m_Name: UnderBoatBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -705,7 +705,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015501261, y: -0.0021920204}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -716,7 +716,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.208998, y: 7.6756153}
+  m_Size: {x: 10.24, y: 7.68}
   m_EdgeRadius: 0
 --- !u!212 &368713457
 SpriteRenderer:
@@ -1129,8 +1129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1358863747}
   - component: {fileID: 1358863746}
-  - component: {fileID: 1358863748}
-  - component: {fileID: 1358863749}
   m_Layer: 0
   m_Name: underBoat
   m_TagString: Untagged
@@ -1203,53 +1201,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!252 &1358863748
-SurfaceEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358863745}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Speed: 1
-  m_SpeedVariation: 0
-  m_ForceScale: 0.1
-  m_UseContactForce: 0
-  m_UseFriction: 1
-  m_UseBounce: 1
---- !u!68 &1358863749
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358863745}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 1
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 4.4227524, y: 5.014806}
-  - {x: -4.688994, y: 5.0263968}
-  - {x: -4.6874743, y: -3.9539294}
-  - {x: -1.9996977, y: -3.928351}
-  - {x: -1.999701, y: -4.9918156}
-  - {x: 1.5705316, y: -4.9574847}
-  - {x: 1.5616312, y: -4.0121155}
-  - {x: 4.3375115, y: -4.001095}
-  - {x: 4.345214, y: 5.020885}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1740422664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1469,7 +1420,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 3.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
