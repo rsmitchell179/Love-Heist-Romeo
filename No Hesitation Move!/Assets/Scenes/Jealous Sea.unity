@@ -1176,7 +1176,6 @@ GameObject:
   - component: {fileID: 151184649}
   - component: {fileID: 151184648}
   - component: {fileID: 151184647}
-  - component: {fileID: 151184650}
   m_Layer: 0
   m_Name: door_to_path
   m_TagString: Untagged
@@ -1222,12 +1221,17 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151184646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: 11.8, y: -12.67, z: -6.6947474}
+=======
+  m_LocalPosition: {x: 14.92, y: -13, z: -6.6947474}
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!212 &151184650
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1279,6 +1283,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
 --- !u!1 &188944745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2478,9 +2484,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1290740711}
   - component: {fileID: 1290740710}
+<<<<<<< HEAD
   - component: {fileID: 1290740712}
   - component: {fileID: 1290740713}
   - component: {fileID: 1290740714}
+=======
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
   m_Layer: 12
   m_Name: Boat
   m_TagString: Untagged
@@ -2553,6 +2562,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!68 &1290740712
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -2640,6 +2650,8 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+=======
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
 --- !u!1 &1409823755
 GameObject:
   m_ObjectHideFlags: 0

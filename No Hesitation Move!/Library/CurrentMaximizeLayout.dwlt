@@ -21,10 +21,17 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1317
+<<<<<<< HEAD
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
   controlID: 7967
+=======
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14002, y: 14042}
+  vertical: 0
+  controlID: 6169
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +143,17 @@ MonoBehaviour:
     y: 0
     width: 2097
     height: 1317
+<<<<<<< HEAD
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 7968
+=======
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
+  vertical: 1
+  controlID: 6170
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +178,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 7943
+=======
+  controlID: 6171
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,7 +240,11 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 8ccbffff8eccffff92ceffff56daffff6adbffff72dbffff50efffff58efffff62efffff68efffff6eefffffaef7ffff5afbffff
+=======
+      m_ExpandedIDs: d4ddffffe2ddffffe8ddffffbcf7ffffc8f7ffffcef7ffffc4f9fffffc3f0000
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -311,9 +333,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -1.8039644, y: 10.476759, z: -12.668679}
     speed: 2
     m_Value: {x: -1.8039644, y: 10.476759, z: -12.668679}
+=======
+    m_Target: {x: 1184.8727, y: 104.531624, z: -20.81289}
+    speed: 2
+    m_Value: {x: 1184.8727, y: 104.531624, z: -20.81289}
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -364,9 +392,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
+<<<<<<< HEAD
     m_Target: 9.492919
     speed: 2
     m_Value: 9.492919
+=======
+    m_Target: 636.17413
+    speed: 2
+    m_Value: 636.17413
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -472,7 +506,8 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
-    m_ClassNames: []
+    m_ClassNames:
+    - Prefab
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
@@ -482,23 +517,29 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets/Scenes
+    m_Folders: []
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Sprites/playerAnimations/whiteBunny
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\theal\Documents\GitHub\No-Hesitation-Move-\No Hesitation
     Move!
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 196}
     m_SelectedIDs: 2c3f0000
     m_LastClickedID: 16172
     m_ExpandedIDs: 00000000d43d0000243f0000263f0000283f00002a3f00002c3f00002e3f0000303f0000323f0000343f0000363f0000383f00003a3f00003c3f0000943f0000c644000000ca9a3b
+=======
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 04ca9a3b
+    m_LastClickedID: 1000000004
+    m_ExpandedIDs: 00000000ce3d0000e83e0000ea3e0000ec3e0000ee3e0000f03e0000f23e0000f43e0000f63e0000f83e0000423f0000503f0000543f00004443000000ca9a3b
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -526,7 +567,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000d43d0000243f0000263f0000283f00002a3f00002c3f00002e3f0000303f0000323f0000343f0000363f0000383f00003a3f00003c3f000000ca9a3b
+=======
+    m_ExpandedIDs: 00000000ce3d0000e83e0000ea3e0000ec3e0000ee3e0000f03e0000f23e0000f43e0000f63e0000f83e0000423f0000503f0000543f00004443000000ca9a3b
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -551,9 +596,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: de3f0000
     m_LastClickedInstanceID: 16350
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
     m_ExpandedInstanceIDs: c62300003041000028410000244100001a410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -632,7 +683,11 @@ MonoBehaviour:
   m_MinSize: {x: 276, y: 292}
   m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 7911
+=======
+  controlID: 6113
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -691,7 +746,11 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
+<<<<<<< HEAD
   m_LastInspectedObjectInstanceID: 16350
+=======
+  m_LastInspectedObjectInstanceID: -1
+>>>>>>> parent of 8f2c01c... added colliders to healous sea and underboat
   m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
