@@ -688,7 +688,7 @@ GameObject:
   - component: {fileID: 368713457}
   - component: {fileID: 368713456}
   m_Layer: 0
-  m_Name: UnderBoatBase
+  m_Name: RoomSizeCollision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1131,6 +1131,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1358863747}
   - component: {fileID: 1358863746}
+  - component: {fileID: 1358863749}
+  - component: {fileID: 1358863748}
   m_Layer: 0
   m_Name: underBoat
   m_TagString: Untagged
@@ -1203,6 +1205,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!252 &1358863748
+SurfaceEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358863745}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Speed: 1
+  m_SpeedVariation: 0
+  m_ForceScale: 0.1
+  m_UseContactForce: 0
+  m_UseFriction: 1
+  m_UseBounce: 1
+--- !u!68 &1358863749
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358863745}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 4.373647, y: -3.9614382}
+  - {x: 1.584218, y: -3.9856968}
+  - {x: 1.5873373, y: -4.704045}
+  - {x: -1.8384218, y: -4.742497}
+  - {x: -1.8536005, y: -4.0055904}
+  - {x: -4.6589494, y: -4.0332985}
+  - {x: -4.7125216, y: 4.9810705}
+  - {x: 4.3815513, y: 4.9890184}
+  - {x: 4.3382277, y: -3.9778757}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1740422664
 GameObject:
   m_ObjectHideFlags: 0
