@@ -4093,7 +4093,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 189c6a0bdeb607445aea202bb013ea92, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.9
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7466,7 +7466,7 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715456781}
   m_Enabled: 1
-  m_MinDistance: 3
+  m_MinDistance: 0.25
   m_MaxDistance: 20
   m_ReverbPreset: 24
   m_Room: -1000
@@ -7490,7 +7490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1715456781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.9433045}
+  m_LocalPosition: {x: 6.17, y: -5.87, z: -6.9433045}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
