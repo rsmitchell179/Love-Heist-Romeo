@@ -30,7 +30,7 @@ public class textPopUpScript : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
     	if(other.tag == "Player"){
     		text.SetActive(true);
-        	Debug.Log("true");
+        	// Debug.Log("true");
     	}
     }
 
@@ -45,7 +45,7 @@ public class textPopUpScript : MonoBehaviour
     IEnumerator delay_setactive(){
         yield return new WaitForSeconds (delaytime);
         text.SetActive(false);
-        Debug.Log("false");
+        // Debug.Log("false");
     }
 
     // IEnumerator slow_fade(){
