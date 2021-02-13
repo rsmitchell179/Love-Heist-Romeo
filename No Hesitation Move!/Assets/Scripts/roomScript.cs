@@ -18,4 +18,9 @@ public class roomScript : MonoBehaviour
         }   
     }
 
+    IEnumerator loadScene()
+    {
+    	yield return new WaitForSeconds(1);
+    }
+
 }
