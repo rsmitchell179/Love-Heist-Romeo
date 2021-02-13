@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5644678720241794636}
   - component: {fileID: 5644678720241794635}
   m_Layer: 0
-  m_Name: doughboy_prefab
+  m_Name: db
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -101,7 +101,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
-  m_Radius: 0.75
+  m_Radius: 1
 --- !u!50 &5644678720241794633
 Rigidbody2D:
   serializedVersion: 4
