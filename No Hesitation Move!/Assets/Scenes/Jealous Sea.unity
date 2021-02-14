@@ -1710,6 +1710,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5868824327443656567, guid: 7138a8ec6fa786f489a1a81699e92bac,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 5868824327443656573, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
       propertyPath: m_RootOrder
@@ -2841,7 +2846,7 @@ GameObject:
   - component: {fileID: 1290740712}
   - component: {fileID: 1290740713}
   - component: {fileID: 1290740714}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: Boat
   m_TagString: Untagged
   m_Icon: {fileID: 0}

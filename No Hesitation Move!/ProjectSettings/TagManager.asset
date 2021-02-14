@@ -17,12 +17,12 @@ TagManager:
   - Text
   - NPC
   - Tiles
-  - foreground
+  - Foreground
   - 
-  - 
-  - 
-  - 
-  - 
+  - Mask
+  - BehindMask
+  - Black
+  - Objects
   - 
   - 
   - 
@@ -64,4 +64,7 @@ TagManager:
     locked: 0
   - name: Text
     uniqueID: 2394934009
+    locked: 0
+  - name: Top
+    uniqueID: 1030762147
     locked: 0
