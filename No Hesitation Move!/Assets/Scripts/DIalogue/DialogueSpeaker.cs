@@ -15,7 +15,12 @@ public class DialogueSpeaker : MonoBehaviour
 	
     public void Awake()
     {
-        dialogueRunner.AddCommandHandler("set_speaker", set_speaker_in_scene);
+        try{
+            dialogueRunner.AddCommandHandler("set_speaker", set_speaker_in_scene);
+            }catch(Exception NullReferenceException){
+                Debug.Log("got nullexceptionerror in DialogueSpeaker, don't worry about it for now");
+            }
+        // dialogueRunner.AddCommandHandler("set_speaker", set_speaker_in_scene);
     }
 
     // Start is called before the first frame update
@@ -31,19 +36,6 @@ public class DialogueSpeaker : MonoBehaviour
     {
 
     }
-
-    // private void set_speaker_in_scene(string[] params)
-    // {
-    //     string speaker = params[0];
-    //     if(speaker.CompareTo(npc) == 0){
-    //         other_person.enabled = true;
-    //         romeo.enabled = false;
-    //     }else{
-    //         romeo.enabled = true;
-    //         other_person.enabled = false;
-    //     }
-    //     return;
-    // }
 
     public void set_speaker_in_scene(string[] parameters){
         string speaker = parameters[0];
