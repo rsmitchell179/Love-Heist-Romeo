@@ -20,7 +20,6 @@ public class doughboyDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-    	character = this.gameObject;
     	cam = Camera.main;
         bubble.enabled = false;
         ui_text.enabled = false;
@@ -32,16 +31,17 @@ public class doughboyDialogue : MonoBehaviour
         
     }
 
-    void OnTriggerStay2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
     	if(other.gameObject.tag == "Player")
     	{
     		// Debug.Log("collision detected");
-    		bubble.enabled = true;
-    		ui_text.text = actual_text;
-    		ui_text.enabled = true;
-    		set_pos(bubble);
-    		// StartCoroutine(start_text());
+    		// bubble.enabled = true;
+    		current_text = "";
+    		// ui_text.text = actual_text;
+    		// ui_text.enabled = true;
+    		// set_pos(bubble);
+    		StartCoroutine(start_text());
     	}
     }
 
@@ -56,10 +56,22 @@ public class doughboyDialogue : MonoBehaviour
     	}
     }
 
+    void OnTriggerStay2D(Collider2D other)
+    {
+    	if(other.tag == "Player"){
+    		bubble.enabled = true;
+    		set_pos(bubble);
+    	}
+    }
+
     void OnTriggerExit2D(Collider2D other)
     {	
-    	StartCoroutine(delay_setfalse());
+    	if(other.tag == "Player"){
+    		StopAllCoroutines();
+    		current_text = "";
+    		StartCoroutine(delay_setfalse());
     	// bubble.enabled = false;
+    	}
     }
 
     IEnumerator delay_setfalse()
