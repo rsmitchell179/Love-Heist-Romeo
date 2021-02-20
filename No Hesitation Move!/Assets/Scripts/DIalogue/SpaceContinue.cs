@@ -8,7 +8,7 @@ public class SpaceContinue : MonoBehaviour
 	// [SerializeField] private TMPro.TMP_Text dialogue = null;
 	private TMPro.TMP_Text[] options;
 	private int optionSize;
-
+    private DialogueRunner diaRun = null;
 	private DialogueUI dialogueUI = null;
 	private bool isOptionDisplayed;
 
@@ -16,12 +16,9 @@ public class SpaceContinue : MonoBehaviour
     void Start()
     {
     	isOptionDisplayed = false;
-    	// optionSize = dialogueUI.optionButtons.Count;
         dialogueUI = FindObjectOfType<DialogueUI>();
-        // for (int i = 0; i < optionSize; i++)
-        // {
-        //     options[i] = dialogueUI.optionButtons[i].GetComponentInChildren<TMPro.TMP_Text>();
-        // }
+        diaRun = FindObjectOfType<DialogueRunner>();
+
     }
 
     // Update is called once per frame
@@ -35,6 +32,14 @@ public class SpaceContinue : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             dialogueUI.MarkLineComplete();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            dialogueUI.DialogueComplete();
+            diaRun.Stop();
+
+
         }
     }
 
