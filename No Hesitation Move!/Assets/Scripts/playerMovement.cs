@@ -41,9 +41,15 @@ public class playerMovement : MonoBehaviour
 
         if(diaRun.IsDialogueRunning == true)
         {
+            anim.enabled = false;
+            // anim.PlayInFixedTime("playerWalkLeft", 1, 0.0f);
             movement.x = 0;
             movement.y = 0;
+            // anim.SetFloat("Horizontal", movement.x);
+            // anim.SetFloat("Vertical", movement.y);
             return;
+        }else{
+            anim.enabled = true;
         }
 
         // Get input
