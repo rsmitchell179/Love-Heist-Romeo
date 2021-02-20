@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
@@ -17,8 +18,11 @@ public class SpaceContinue : MonoBehaviour
     {
     	isOptionDisplayed = false;
         dialogueUI = FindObjectOfType<DialogueUI>();
-        diaRun = FindObjectOfType<DialogueRunner>();
-
+        try{
+            diaRun = FindObjectOfType<DialogueRunner>();
+            }catch(NullReferenceException){
+                Debug.Log("got nullexceptionerror in SpaceContinue, don't worry about it for now");
+            }
     }
 
     // Update is called once per frame

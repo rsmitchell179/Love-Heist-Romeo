@@ -17,7 +17,7 @@ public class DialogueSpeaker : MonoBehaviour
     {
         try{
             dialogueRunner.AddCommandHandler("set_speaker", set_speaker_in_scene);
-            }catch(Exception NullReferenceException){
+            }catch(NullReferenceException){
                 Debug.Log("got nullexceptionerror in DialogueSpeaker, don't worry about it for now");
             }
         // dialogueRunner.AddCommandHandler("set_speaker", set_speaker_in_scene);
