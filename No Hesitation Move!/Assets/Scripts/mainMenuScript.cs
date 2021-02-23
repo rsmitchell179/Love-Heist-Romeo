@@ -14,10 +14,17 @@ public class mainMenuScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        
+        if(Input.GetKey(KeyCode.RightArrow)) {
+        	gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        }
+        if(Input.GetKey(KeyCode.LeftArrow)) {
+        }
     }
 
     public void StartGame() {
         SceneManager.LoadScene(newGameScene);
+    }
+    public void QuitGame() {
+        Application.Quit();
     }
 }

@@ -4,8 +4,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
 
+
 public class playerMovement : MonoBehaviour
 {
+    public static bool hasJSorb;
+    public static bool hasFTorb;
+    public static bool hasRCorb;
 
     public float moveSpeed = 5f;
 
