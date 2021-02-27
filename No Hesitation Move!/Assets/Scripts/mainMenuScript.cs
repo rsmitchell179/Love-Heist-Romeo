@@ -2,10 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class mainMenuScript : MonoBehaviour {
 	
     public string newGameScene;
+    private GameObject last_button;
 
     // Start is called before the first frame update
     void Start() {
@@ -18,6 +20,15 @@ public class mainMenuScript : MonoBehaviour {
         	gameObject.GetComponent<SpriteRenderer>().enabled = false;
         }
         if(Input.GetKey(KeyCode.LeftArrow)) {
+        }
+
+        if(EventSystem.current.currentSelectedGameObject == null)
+        {
+        	EventSystem.current.SetSelectedGameObject(last_button);
+        }
+        else
+        {
+        	last_button = EventSystem.current.currentSelectedGameObject;
         }
     }
 
