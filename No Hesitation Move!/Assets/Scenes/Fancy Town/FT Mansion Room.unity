@@ -152,8 +152,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ec91d939fa7d5e4b921f24d3368b695, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1.5
+  m_Volume: 0.6
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -623,8 +623,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1933616091}
   - component: {fileID: 1933616090}
-  - component: {fileID: 1933616089}
   - component: {fileID: 1933616088}
+  - component: {fileID: 1933616089}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -646,14 +646,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraFollows: {fileID: 822697360}
   mapBounds: {fileID: 2128085005}
---- !u!81 &1933616089
-AudioListener:
+--- !u!114 &1933616089
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933616087}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!20 &1933616090
 Camera:
   m_ObjectHideFlags: 0
