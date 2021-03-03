@@ -77,6 +77,13 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) {
                 CheckForNearbyNPC ();
         }
+
+        // DEV RUN - GET RID OF WHEN FINAL VERSION IS REALEASED 
+        if(Input.GetKey(KeyCode.LeftShift)) {
+            moveSpeed = 6f;
+        } else {
+            moveSpeed = 2.5f;
+        }
     }
 
     void FixedUpdate()
