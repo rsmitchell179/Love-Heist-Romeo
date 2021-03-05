@@ -17,7 +17,7 @@ public class CollectOrb : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        DontDestroyOnLoad(this);
+        // DontDestroyOnLoad(this);
     }
 
     void OnTriggerEnter2D(Collider2D other) {
