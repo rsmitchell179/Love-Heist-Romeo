@@ -68,7 +68,7 @@ public class Patrol : MonoBehaviour
     }
 
     public void AttackingPlayer() {
-        Debug.Log("Hello:  I see you");
+        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
     }
 
     public Vector3 GetPosition() {
