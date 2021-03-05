@@ -15,7 +15,8 @@ public class Patrol : MonoBehaviour
     private float fov;
     private GameObject player;
     AudioSource source;
-    
+    public Animator animatior;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -78,6 +79,9 @@ public class Patrol : MonoBehaviour
     }
 
     public void AttackingPlayer() {
+        source.Play();
+        animatior.SetTrigger("FadeOut");
+        waitTime +=5;
         // player.GetComponent<playerMovement>().enabled = false;
         StartCoroutine(delay_player());
         // source.Play();
@@ -88,8 +92,8 @@ public class Patrol : MonoBehaviour
     IEnumerator delay_player(){
         Debug.Log("delay_player");
         player.GetComponent<playerMovement>().enabled = false;
-        yield return new WaitForSecondsRealtime(1.5f);
-        source.Play();
+        yield return new WaitForSecondsRealtime(1f);
+        animatior.SetTrigger("FadeIn");   
         player.transform.position =  new Vector3(-14f, 4.5f, 0f);
         player.GetComponent<playerMovement>().enabled = true;
     }
