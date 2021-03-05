@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Yarn.Unity;
 
 public class CollectOrb : MonoBehaviour {
 	public Image JSOrbImage;
@@ -10,6 +11,9 @@ public class CollectOrb : MonoBehaviour {
 	public Sprite JSOrb;
 	public Sprite FTOrb;
 	public Sprite RCOrb;
+    private string talktonode;
+    private DialogueRunner diaRun = null;
+    public YarnProgram scriptToLoad;
     // Start is called before the first frame update
     void Start() {
         

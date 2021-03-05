@@ -621,6 +621,18 @@ PolygonCollider2D:
       - {x: 1.239069, y: 1.1861501}
       - {x: 0.91026735, y: 1.1133466}
       - {x: 0.7562604, y: 1.3285875}
+--- !u!114 &340443652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2238729598093778573, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1252726617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &350495623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1985,6 +1997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owl: {fileID: 1505375004}
   romeo: {fileID: 804483296}
+  FOV: {fileID: 354089895}
   scriptToLoad: {fileID: 2480198943629176163, guid: 2a431448bbf8b584c8f27fcac49063a5,
     type: 3}
   animatior: {fileID: 800070314}
@@ -3456,7 +3469,7 @@ PrefabInstance:
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7106214381781906995, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -3466,7 +3479,7 @@ PrefabInstance:
     - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
@@ -4138,6 +4151,7 @@ GameObject:
   - component: {fileID: 1505375007}
   - component: {fileID: 1505375008}
   - component: {fileID: 1505375009}
+  - component: {fileID: 1505375010}
   m_Layer: 14
   m_Name: owl
   m_TagString: Untagged
@@ -4354,6 +4368,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1505375010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505375004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24bef40f1993e7c4fbf7305d0d57d854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueRunner: {fileID: 340443652}
+  romeo: {fileID: 1521875913}
+  other_person: {fileID: 1736842557}
+  npc_name: grifton
 --- !u!1 &1521875911
 GameObject:
   m_ObjectHideFlags: 0
