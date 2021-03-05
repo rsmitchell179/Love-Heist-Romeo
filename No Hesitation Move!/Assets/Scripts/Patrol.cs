@@ -14,11 +14,12 @@ public class Patrol : MonoBehaviour
     private float viewDistance;
     private float fov;
     private GameObject player;
-    
+    AudioSource source;
 
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>(); 
         player = GameObject.FindGameObjectWithTag("Player");
         fov = fieldOfView.fov;
         viewDistance = fieldOfView.viewDistance;
@@ -69,6 +70,7 @@ public class Patrol : MonoBehaviour
 
     public void AttackingPlayer() {
         player.transform.position =  new Vector3(-14f, 4.5f, 0f);
+        source.Play();
     }
 
     public Vector3 GetPosition() {
