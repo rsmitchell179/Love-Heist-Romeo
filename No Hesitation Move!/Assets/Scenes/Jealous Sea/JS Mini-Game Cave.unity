@@ -3581,7 +3581,7 @@ PrefabInstance:
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7106214381781906995, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -3591,7 +3591,7 @@ PrefabInstance:
     - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
@@ -3927,6 +3927,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owl: {fileID: 1505375004}
   romeo: {fileID: 804483296}
+  scriptToLoad: {fileID: 2480198943629176163, guid: 2a431448bbf8b584c8f27fcac49063a5,
+    type: 3}
 --- !u!4 &1361964720
 Transform:
   m_ObjectHideFlags: 0
@@ -5539,7 +5541,7 @@ GameObject:
   - component: {fileID: 1736842558}
   - component: {fileID: 1736842557}
   m_Layer: 0
-  m_Name: img_octo
+  m_Name: img_grifton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5561,8 +5563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 338, y: -334}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 354.1, y: -313.1}
+  m_SizeDelta: {x: 126, y: 183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736842557
 MonoBehaviour:
@@ -5584,7 +5586,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 4875567142111612187, guid: 9fb9281b663a55042b7c170a1216e5a6,
+  m_Sprite: {fileID: -6367637764002013411, guid: 0a657556050bd8e498d6cc43df443256,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
