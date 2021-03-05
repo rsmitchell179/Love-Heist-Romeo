@@ -78,8 +78,20 @@ public class Patrol : MonoBehaviour
     }
 
     public void AttackingPlayer() {
+        // player.GetComponent<playerMovement>().enabled = false;
+        StartCoroutine(delay_player());
+        // source.Play();
+        // player.transform.position =  new Vector3(-14f, 4.5f, 0f);
+        // player.GetComponent<playerMovement>().enabled = true;
+    }
+
+    IEnumerator delay_player(){
+        Debug.Log("delay_player");
+        player.GetComponent<playerMovement>().enabled = false;
+        yield return new WaitForSecondsRealtime(1.5f);
         source.Play();
-        player.transform.position =  new Vector3(-14f, 4.5f, 0f);    
+        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
+        player.GetComponent<playerMovement>().enabled = true;
     }
 
     public Vector3 GetPosition() {
