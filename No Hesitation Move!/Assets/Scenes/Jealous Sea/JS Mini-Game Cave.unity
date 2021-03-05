@@ -3698,6 +3698,7 @@ GameObject:
   - component: {fileID: 1505375005}
   - component: {fileID: 1505375006}
   - component: {fileID: 1505375007}
+  - component: {fileID: 1505375008}
   m_Layer: 14
   m_Name: owl
   m_TagString: Untagged
@@ -3714,7 +3715,7 @@ Transform:
   m_GameObject: {fileID: 1505375004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 13.51, y: 4.42, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -3759,7 +3760,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a0c63b83e172440108bb5f371c95f6e6, type: 3}
+  m_Sprite: {fileID: -6367637764002013411, guid: 0a657556050bd8e498d6cc43df443256,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3794,6 +3796,25 @@ MonoBehaviour:
   startWaitTime: 2
   waitTime: 2
   fieldOfView: {fileID: 354089897}
+--- !u!95 &1505375008
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505375004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9918e172c55739d48bcc1e6fc9de763f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1521875911
 GameObject:
   m_ObjectHideFlags: 0
