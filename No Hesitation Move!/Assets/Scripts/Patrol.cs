@@ -28,10 +28,13 @@ public class Patrol : MonoBehaviour
         lastMoveDir = new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), 0);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void FixedUpdate(){
         FindTargetPlayer();
+    }
+
+    // Update is called once per frame
+    void LateUpdate()
+    {
         fieldOfView.SetOrigin(transform.position);
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[Spot].position, speed * Time.deltaTime);
         if (Vector2.Distance(transform.position, moveSpots[Spot].position) < 0.2f){
@@ -42,7 +45,6 @@ public class Patrol : MonoBehaviour
                 } else {
                     Spot = 0;
                 }
-                
                 waitTime = startWaitTime;
                 fieldOfView.SetAimDirection(lastMoveDir);
             } else {
@@ -75,8 +77,7 @@ public class Patrol : MonoBehaviour
 
     public void AttackingPlayer() {
         source.Play();
-        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
-        
+        player.transform.position =  new Vector3(-14f, 4.5f, 0f);    
     }
 
     public Vector3 GetPosition() {
