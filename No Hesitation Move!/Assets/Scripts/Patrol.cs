@@ -6,7 +6,7 @@ public class Patrol : MonoBehaviour
 {
     public float speed;
     public Transform[] moveSpots;
-    private int randomSpot;
+    private int Spot;
     public float startWaitTime;
     public float waitTime;
     [SerializeField] private FieldOfView fieldOfView;
@@ -24,7 +24,7 @@ public class Patrol : MonoBehaviour
         fov = fieldOfView.fov;
         viewDistance = fieldOfView.viewDistance;
         waitTime = startWaitTime;
-        randomSpot = Random.Range(0,moveSpots.Length);
+        Spot = 0;
         lastMoveDir = new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), 0);
     }
 
@@ -33,11 +33,16 @@ public class Patrol : MonoBehaviour
     {
         FindTargetPlayer();
         fieldOfView.SetOrigin(transform.position);
-        transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
-        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f){
+        transform.position = Vector2.MoveTowards(transform.position, moveSpots[Spot].position, speed * Time.deltaTime);
+        if (Vector2.Distance(transform.position, moveSpots[Spot].position) < 0.2f){
             if(waitTime <= 0){
                 lastMoveDir = new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), 0);
-                randomSpot = Random.Range(0,moveSpots.Length);
+                if (Spot != moveSpots.Length -1){
+                    Spot ++;
+                } else {
+                    Spot = 0;
+                }
+                
                 waitTime = startWaitTime;
                 fieldOfView.SetAimDirection(lastMoveDir);
             } else {
