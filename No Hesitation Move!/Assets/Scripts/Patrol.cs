@@ -15,7 +15,7 @@ public class Patrol : MonoBehaviour
     private float fov;
     private GameObject player;
     AudioSource source;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -60,14 +60,16 @@ public class Patrol : MonoBehaviour
             // Player inside viewDistance
             Vector3 dirToPlayer = (player.transform.position - GetPosition()).normalized;
             if (Vector3.Angle(GetAimDir(), dirToPlayer) < fov / 2f) {
-                // Player inside Field of View
-                RaycastHit2D raycastHit2D = Physics2D.Raycast(GetPosition(), dirToPlayer, viewDistance);
+                //Debug.Log("Player inside Field of View");
+                RaycastHit2D raycastHit2D = Physics2D.Raycast(GetPosition(), dirToPlayer, viewDistance, LayerMask.GetMask("Player"));
+                Debug.DrawRay(GetPosition(), dirToPlayer, Color.white, 0.5f);
                 if (raycastHit2D.collider != null) {
                     // Hit something
                     if (raycastHit2D.collider.gameObject.GetComponent<playerMovement>() != null) {
                         // Hit Player
                         AttackingPlayer();
                     } else {
+                        Debug.Log(raycastHit2D.collider.gameObject);
                         // Hit something else
                     }
                 }
