@@ -69,8 +69,9 @@ public class Patrol : MonoBehaviour
     }
 
     public void AttackingPlayer() {
-        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
         source.Play();
+        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
+        
     }
 
     public Vector3 GetPosition() {
