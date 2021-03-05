@@ -62,7 +62,7 @@ public class Patrol : MonoBehaviour
             Vector3 dirToPlayer = (player.transform.position - GetPosition()).normalized;
             if (Vector3.Angle(GetAimDir(), dirToPlayer) < fov / 2f) {
                 //Debug.Log("Player inside Field of View");
-                RaycastHit2D raycastHit2D = Physics2D.Raycast(GetPosition(), dirToPlayer, viewDistance, LayerMask.GetMask("Player"));
+                RaycastHit2D raycastHit2D = Physics2D.Raycast(GetPosition(), dirToPlayer, viewDistance, LayerMask.GetMask("Player", "BehindMask"));
                 Debug.DrawRay(GetPosition(), dirToPlayer, Color.white, 0.5f);
                 if (raycastHit2D.collider != null) {
                     // Hit something
