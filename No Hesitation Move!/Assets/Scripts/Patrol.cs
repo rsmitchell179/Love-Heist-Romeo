@@ -81,7 +81,7 @@ public class Patrol : MonoBehaviour
     public void AttackingPlayer() {
         source.Play();
         animatior.SetTrigger("FadeOut");
-        waitTime +=5;
+        waitTime = 1;
         // player.GetComponent<playerMovement>().enabled = false;
         StartCoroutine(delay_player());
         // source.Play();
