@@ -1888,6 +1888,12 @@ PolygonCollider2D:
       - {x: 0.9631939, y: 1.1185242}
       - {x: 0.8651552, y: 0.9512911}
       - {x: 0.6346555, y: 1.145522}
+--- !u!1 &804483296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5868824327443656567, guid: 7138a8ec6fa786f489a1a81699e92bac,
+    type: 3}
+  m_PrefabInstance: {fileID: 2035753499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &857154896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3350,7 +3356,7 @@ PrefabInstance:
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7106214381781906995, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -3360,7 +3366,7 @@ PrefabInstance:
     - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
@@ -3694,6 +3700,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14dde02ad0466c4289c8e4130a799d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  owl: {fileID: 1505375004}
+  romeo: {fileID: 804483296}
 --- !u!4 &1361964720
 Transform:
   m_ObjectHideFlags: 0
