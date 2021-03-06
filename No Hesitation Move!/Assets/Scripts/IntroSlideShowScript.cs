@@ -42,7 +42,7 @@ public class IntroSlideShowScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             SceneManager.LoadScene(nextRoom);
         }
