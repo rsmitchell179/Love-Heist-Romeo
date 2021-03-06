@@ -131,6 +131,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 157642999726623921, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 157642999726623921, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_fontSizeMax
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 157642999726623921, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_fontSizeMin
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 157642999726623921, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 765752519581688695, guid: aed96efbcc937254aa45a84a6d3ab1cd,
         type: 3}
       propertyPath: m_IsActive
@@ -245,6 +265,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: secondary_canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342995712771208734, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342995712771208734, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_fontSizeMax
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342995712771208734, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_fontSizeMin
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342995712771208734, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6342995712771208735, guid: aed96efbcc937254aa45a84a6d3ab1cd,
         type: 3}
