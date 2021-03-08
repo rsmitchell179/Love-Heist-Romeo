@@ -3503,6 +3503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 877000695}
   - component: {fileID: 877000694}
+  - component: {fileID: 877000696}
   m_Layer: 0
   m_Name: RoseGarden-MansionHedge
   m_TagString: Untagged
@@ -3578,6 +3579,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &877000696
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877000693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 11.309378, y: -11.804057}
+  - {x: -10.856913, y: -11.864726}
+  - {x: -10.74057, y: 10.949905}
+  - {x: 11.292211, y: 10.938078}
+  - {x: 11.287615, y: -11.822757}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!4 &897028292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
