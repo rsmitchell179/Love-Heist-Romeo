@@ -1,18 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class StartSlotsOnTrigger : MonoBehaviour
+public class PicturePuzzlePiece : MonoBehaviour
 {
-    [SerializeField]
-    GameObject SlotsGame;
+    public bool activated;
     // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            SlotsGame.SetActive(true);
+            transform.localScale = Vector3.one * 1.2f;
+            activated = true;
         }
     }
 
@@ -20,7 +23,15 @@ public class StartSlotsOnTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            SlotsGame.SetActive(false);
+            transform.localScale = Vector3.one;
+            activated = false;
         }
+    }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
