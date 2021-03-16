@@ -192,14 +192,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
+      propertyPath: first_node
+      value: rc_budalia_first
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
       propertyPath: talkToNode
-      value: Start
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: second_node
+      value: rc_budalia_second
       objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
       propertyPath: scriptToLoad
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 115591d52df3c3d47a17570ded08c0b1,
+      objectReference: {fileID: 2480198943629176163, guid: 7a2688ca97b280e4b888af3633d95969,
         type: 3}
     - target: {fileID: 7251836596353279239, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
@@ -991,8 +1001,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: berr3
+  diaRun: {fileID: 0}
   talkToNode: berr3_start
+  first_node: 
+  second_node: 
+  has_spoken: 0
   scriptToLoad: {fileID: 2480198943629176163, guid: e7d467e7b8a444c46ab4fe525408cdbf,
     type: 3}
 --- !u!58 &717771933
@@ -2331,8 +2344,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: berr2
+  diaRun: {fileID: 0}
   talkToNode: berr2_start
+  first_node: 
+  second_node: 
+  has_spoken: 0
   scriptToLoad: {fileID: 2480198943629176163, guid: 7dcd7ebc51c557840b7d958f2b3b368d,
     type: 3}
 --- !u!58 &1934603662
