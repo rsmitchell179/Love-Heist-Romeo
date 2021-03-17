@@ -5,8 +5,14 @@ using UnityEngine;
 public class GlobalVars : MonoBehaviour
 {
 
-    // [0] rc_budalia -> 0
-    // [1] rc_vinny -> 0
+	// IMPORTANT: RECUR CHAR. LIST ORDER
+	//-----------------------------------
+    // [0] rc_budalia
+    // [1] rc_vinny
+    // [2] ft_budalia
+    // [3] ft_vinny
+    // [4] js_budalia
+    // [5] js_vinny
 
 	// bool to check once if list has been instantiated
 	public static bool has_run;
@@ -22,18 +28,23 @@ public class GlobalVars : MonoBehaviour
 			bool_array = new List<bool>();
 			bool_array.Add(false);
 			bool_array.Add(false);
+			bool_array.Add(false);
+			bool_array.Add(false);
+			bool_array.Add(false);
+			bool_array.Add(false);
 			has_run = true;
 		}
 	}
 
 	// test print, check if array stuff is being added
-
-	// public static void print_array(){
-	// 	// bool_array.Add(false);
-	// 	Debug.Log("here in print_array" + bool_array.Count);
-	// 	foreach(bool obj in bool_array)
-	// 	{
-	// 		Debug.Log(obj);
-	// 	}
-	// }
+	/*
+	public static void print_array(){
+		// bool_array.Add(false);
+		Debug.Log("here in print_array" + bool_array.Count);
+		foreach(bool obj in bool_array)
+		{
+			Debug.Log(obj);
+		}
+	}
+	*/
 }

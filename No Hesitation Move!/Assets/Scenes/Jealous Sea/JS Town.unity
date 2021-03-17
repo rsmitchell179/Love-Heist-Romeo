@@ -10723,14 +10723,29 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8684720778235822536, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
+      propertyPath: bool_index
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684720778235822536, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: first_node
+      value: js_vinny_first
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684720778235822536, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
       propertyPath: talkToNode
-      value: vinny_start
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684720778235822536, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: second_node
+      value: js_vinny_second
       objectReference: {fileID: 0}
     - target: {fileID: 8684720778235822536, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
       propertyPath: scriptToLoad
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 9f45e4e9436335945842cc70d8e70263,
+      objectReference: {fileID: 2480198943629176163, guid: 5c84f44f547ba3e458315617636d51f0,
         type: 3}
     - target: {fileID: 8684720778235822538, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}

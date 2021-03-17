@@ -1,4 +1,4 @@
-title: budalia_start
+title: js_budalia_first
 tags: 
 colorID: 0
 position: 1222,-166
@@ -52,5 +52,14 @@ Yeah, you could say that...
 Helping others sounds totally just like her. 
 Alright, I don't mean to keep you any longer.
 I'll let you be off now.
-<<img_showup img_letter>>
+<<set_has_spoken true>>
+===
+title: js_budalia_second
+tags: 
+colorID: 0
+position: 707,11
+---
+<<set_speaker budalia>> 
+Alright, I don't mean to keep you any longer.
+I'll let you be off now.
 ===
