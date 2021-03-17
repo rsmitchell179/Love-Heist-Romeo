@@ -26,9 +26,17 @@ public class DialogueSpeaker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // string npc = npc_name;
-        romeo.enabled = false;
-        other_person.enabled = false;
+        try{
+            romeo.enabled = false;
+        }catch(NullReferenceException){
+                Debug.Log("got nullexceptionerror in DialogueSpeaker romeo.enabled, don't worry about it for now");
+            }
+        
+        try{
+            other_person.enabled = false;
+        }catch(NullReferenceException){
+                Debug.Log("got nullexceptionerror in DialogueSpeaker other_person.enabled, don't worry about it for now");
+            }
     }
 
     // Update is called once per frame

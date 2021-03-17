@@ -1,4 +1,4 @@
-title: ft_vinny_start
+title: ft_vinny_first
 tags: 
 colorID: 0
 position: 1080,411
@@ -25,6 +25,17 @@ You'd have to see me a little later about that orb.
 <<set_speaker romeo>>
 No thanks Vinny, but I hope to see you later!
 I'm a little occupied with finding True Love.
+<<set_speaker vinny>>
+Love? Pfft.
+Been there done that.
+I'll see ya around, kid.
+<<set_has_spoken true>>
+===
+title: ft_vinny_second
+tags: 
+colorID: 0
+position: 785,449
+---
 <<set_speaker vinny>>
 Love? Pfft.
 Been there done that.

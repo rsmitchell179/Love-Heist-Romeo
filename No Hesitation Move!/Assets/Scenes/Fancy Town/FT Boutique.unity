@@ -4771,8 +4771,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
+      propertyPath: bool_index
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: first_node
+      value: ft_budalia_first
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
       propertyPath: talkToNode
-      value: ft_budalia_start
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: second_node
+      value: ft_budalia_second
       objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}

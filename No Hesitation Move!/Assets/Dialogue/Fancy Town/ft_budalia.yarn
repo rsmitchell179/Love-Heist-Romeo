@@ -1,9 +1,9 @@
-title: ft_budalia_start
+title: ft_budalia_first
 tags: 
 colorID: 0
-position: 1130,541
+position: 1115,-345
 ---
-<<set_speaker budalia>> 
+<<set_speaker budalia>>
 My, my, my. Such a wonderful selection of purses they have to choose from here.
 <<set_speaker romeo>>
 Yeah, they sure look cool. I don’t have the shoulder for them though.
@@ -20,10 +20,10 @@ Yep, that's me! I don't think I've seen you before though.
 Did you learn about me in purse selling school or something? 
 <<set_speaker budalia>>
 Oh no, no, no.
-My name is Budalia. I'm employed under her majesty the Wizard as a courier.
+My name is Budalia McMailman. I'm employed under her majesty the Wizard as a courier.
 I was sent here to act as her means of communication with you.
 <<set_speaker romeo>>
-Well, Budalia, it's nice to meet you here.
+Well, Budalia, it's nice to meet you here...
 Where are we again?
 <<set_speaker budalia>>
 We are in a fanciful boutique located near the heart of a dashing place called Fancy Town.
@@ -45,7 +45,7 @@ That may be so. However, I do have something for you that can help.
 It's a personal letter from the Wizard. And it also discloses the precise location of the orb.
 <<set_speaker romeo>>
 How cool!
-That is super nice of her!
+That is super awesome of her!
 I wish I could tell her thank you.
 <<set_speaker budalia>>
 I could pass that along to her.
@@ -53,6 +53,16 @@ Though, I wouldn't thank her quite yet.
 She's typically not the type to be this nice.
 <<set_speaker romeo>>
 She seems nice enough to me.
+<<set_speaker budalia>>
+Right...
+Well, I'd best be off now and leave you to it.
+<<set_has_spoken true>>
+===
+title: ft_budalia_second
+tags: 
+colorID: 0
+position: 787,-355
+---
 <<set_speaker budalia>>
 Right...
 Well, I'd best be off now and leave you to it.
