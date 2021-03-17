@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 7251836596353279232, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279232, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
@@ -192,6 +192,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
+      propertyPath: bool_index
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279237, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
       propertyPath: first_node
       value: rc_budalia_first
       objectReference: {fileID: 0}
@@ -209,7 +214,7 @@ PrefabInstance:
         type: 3}
       propertyPath: scriptToLoad
       value: 
-      objectReference: {fileID: 2480198943629176163, guid: 7a2688ca97b280e4b888af3633d95969,
+      objectReference: {fileID: 2480198943629176163, guid: 1b06b74adfe7e1945ac3b14bbb3bd27c,
         type: 3}
     - target: {fileID: 7251836596353279239, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
@@ -966,7 +971,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &717771931
 GameObject:
@@ -981,7 +986,6 @@ GameObject:
   - component: {fileID: 717771934}
   - component: {fileID: 717771933}
   - component: {fileID: 717771937}
-  - component: {fileID: 717771932}
   m_Layer: 0
   m_Name: berr3
   m_TagString: Untagged
@@ -989,25 +993,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &717771932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 717771931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaRun: {fileID: 0}
-  talkToNode: berr3_start
-  first_node: 
-  second_node: 
-  has_spoken: 0
-  scriptToLoad: {fileID: 2480198943629176163, guid: e7d467e7b8a444c46ab4fe525408cdbf,
-    type: 3}
 --- !u!58 &717771933
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1819,7 +1804,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1291001959
 GameObject:
@@ -1943,7 +1928,7 @@ Transform:
   m_LocalScale: {x: 0.10237407, y: 0.02576625, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -29.042}
 --- !u!1 &1426767463
 GameObject:
@@ -2324,7 +2309,6 @@ GameObject:
   - component: {fileID: 1934603663}
   - component: {fileID: 1934603662}
   - component: {fileID: 1934603666}
-  - component: {fileID: 1934603661}
   m_Layer: 0
   m_Name: berr2
   m_TagString: Untagged
@@ -2332,25 +2316,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1934603661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1934603660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diaRun: {fileID: 0}
-  talkToNode: berr2_start
-  first_node: 
-  second_node: 
-  has_spoken: 0
-  scriptToLoad: {fileID: 2480198943629176163, guid: 7dcd7ebc51c557840b7d958f2b3b368d,
-    type: 3}
 --- !u!58 &1934603662
 CircleCollider2D:
   m_ObjectHideFlags: 0

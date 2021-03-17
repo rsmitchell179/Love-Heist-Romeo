@@ -1,9 +1,9 @@
-title: Start
+title: rc_budalia_first
 tags: 
 colorID: 0
-position: 1021,-526
+position: 972,-658
 ---
-<<set_speaker budalia>>
+<<set_speaker budalia>> 
 Greetings, fellow Reject Citizen!
 Can I interest you in a spray can for some colorful graffitiing?
 <<set_speaker romeo>>
@@ -46,7 +46,7 @@ It's actually become quite universal!
 <<set_speaker romeo>>
 I'm not sure about universal. Skateboarding in outer space doesn't sound safe.
 I don't have to do that for the orb, do I? I have no helmet, I could scrape my knees, and the gravity-
-<<set_speaker budalia>> 
+<<set_speaker budalia>>
 Oh, certainly not. In fact, I have something here for you that can point you in the right direction. It's a personal letter from her majesty, the Wizard. It reveals the location of the orb.
 <<set_speaker romeo>>
 Now that's cooler than graffitiing and skateboarding combined!
@@ -55,6 +55,18 @@ She really is one kind Wizard for wanting to help me find my True Love!
 Yes, kindness is truly where her heart is at...
 <<set_speaker romeo>>
 It sure seems that way to me!
+<<set_speaker budalia>>
+Well, alright. I'll let you be off now, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit!
+<<set_speaker romeo>>
+I will!
+<<set_has_spoken true>> 
+<<set_has_spoken true>>
+===
+title: rc_budalia_second
+tags: 
+colorID: 0
+position: 614,-760
+---
 <<set_speaker budalia>>
 Well, alright. I'll let you be off now, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit!
 <<set_speaker romeo>>

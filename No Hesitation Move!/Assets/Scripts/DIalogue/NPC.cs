@@ -8,9 +8,6 @@ using Yarn.Unity;
 /// node that should be run when you talk to them.
 public class NPC : MonoBehaviour
 {
-
-    // public string characterName = "";
-
     public DialogueRunner diaRun;
 
     public string talkToNode;
@@ -18,7 +15,7 @@ public class NPC : MonoBehaviour
     public string first_node;
     public string second_node;
 
-    public static bool has_spoken;
+    public int bool_index;
 
     [Header("Optional")]
     public YarnProgram scriptToLoad;
@@ -36,6 +33,9 @@ public class NPC : MonoBehaviour
             }catch(NullReferenceException){
                 Debug.Log("got nullexceptionerror in DialogueSpeaker, don't worry about it for now");
             }
+
+        // starting the globalvars
+		GlobalVars.bool_array_start(); 
     }
 
     void Start()
@@ -51,18 +51,16 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-    	if(has_spoken != true){
-    		Debug.Log("talkToNode = first_node");
+    	if(GlobalVars.bool_array[bool_index] != true){
+    		// Debug.Log("talkToNode = first_node");
     		talkToNode = first_node;
     	}else{
-    		Debug.Log("talkToNode = second_node");
+    		// Debug.Log("talkToNode = second_node");
     		talkToNode = second_node;
     	}
     }
 
-    // [YarnCommand("set_has_spoken")]
     public void set_has_spoken(string[] parameters){
-    	Debug.Log("set_has_spoken");
-        has_spoken = bool.Parse(parameters[0]);
+        GlobalVars.bool_array[bool_index] = bool.Parse(parameters[0]);
     }
 }
