@@ -60,7 +60,7 @@ Well, alright. I'll let you be off now, Romeo. Go and claim the orb that only co
 <<set_speaker romeo>>
 I will!
 <<set_has_spoken true>> 
-<<set_has_spoken true>>
+<<image_pop_up true>>
 ===
 title: rc_budalia_second
 tags: 
