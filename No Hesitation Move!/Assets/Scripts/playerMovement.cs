@@ -17,13 +17,17 @@ public class playerMovement : MonoBehaviour
     public Rigidbody2D body;
 
     // vector of current movement direction + speed
-    Vector2 movement;
+    public Vector2 movement;
 
     // for linking player motion to animations in animation editor
     public Animator anim;
     public float interactionRadius = 2.0f;
 
     private DialogueRunner diaRun = null;
+
+    // public bool letter_open = false;
+
+    // public LetterPopUp letterpp;
 
     void OnDrawGizmosSelected() {
             Gizmos.color = Color.blue;
@@ -37,6 +41,7 @@ public class playerMovement : MonoBehaviour
 
     void Start(){
         diaRun = FindObjectOfType<DialogueRunner>();
+
     }
 
     // Update is called once per frame
@@ -46,9 +51,9 @@ public class playerMovement : MonoBehaviour
         if(diaRun.IsDialogueRunning == true)
         {
             anim.enabled = false;
-            // anim.PlayInFixedTime("playerWalkLeft", 1, 0.0f);
             movement.x = 0;
             movement.y = 0;
+            // anim.PlayInFixedTime("playerWalkLeft", 1, 0.0f);
             // anim.SetFloat("Horizontal", movement.x);
             // anim.SetFloat("Vertical", movement.y);
             return;
@@ -84,6 +89,17 @@ public class playerMovement : MonoBehaviour
         } else {
             moveSpeed = 2.5f;
         }
+
+        // charles bless up
+        // if(letter_open == true){
+        //     anim.enabled = false;
+        //     movement.x = 0;
+        //     movement.y = 0;
+        //     if(Input.GetKeyDown(KeyCode.Space)){
+        //         letterpp.letter.enabled = false;
+        //         letter_open = false;
+        //     }
+        // }
     }
 
     void FixedUpdate()

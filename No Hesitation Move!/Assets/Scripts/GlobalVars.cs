@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GlobalVars : MonoBehaviour
 {
+	// kameron bless up
 
 	// IMPORTANT: RECUR CHAR. LIST ORDER
 	//-----------------------------------
