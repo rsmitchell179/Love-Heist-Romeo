@@ -59,9 +59,24 @@ public class LetterPopUp : MonoBehaviour
     public void image_pop_up(string[] parameters){
     	Debug.Log("image_pop_up");
     	letter.enabled = bool.Parse(parameters[0]);
+    	StartCoroutine(letter_wait());
     	Debug.Log(bool.Parse(parameters[0]));
+    	// letter_open = true;
+    	// StartCoroutine(letter_wait());
+    	
+    }
+
+    public IEnumerator letter_wait(){
+    	Debug.Log("in coroutine");
+    	p_move.enabled = false;
+    	yield return new WaitForSecondsRealtime(3);
+    	p_move.enabled = true;
+    	set_letter_true();
+    	Debug.Log("after coroutine");
+    }
+
+    public void set_letter_true(){
     	letter_open = true;
-    	// letter_close();
     }
 
     // public void letter_close(){
