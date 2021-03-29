@@ -34,8 +34,7 @@ public class NPC : MonoBehaviour
                 Debug.Log("got nullexceptionerror in DialogueSpeaker, don't worry about it for now");
             }
 
-        // starting the globalvars
-		GlobalVars.bool_array_start(); 
+        
     }
 
     void Start()
