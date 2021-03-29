@@ -39,6 +39,11 @@ public class playerMovement : MonoBehaviour
             Gizmos.DrawWireSphere(Vector3.zero, interactionRadius);
     }
 
+    void Awake(){
+        // starting the globalvars
+        GlobalVars.bool_array_start(); 
+    }
+
     void Start(){
         diaRun = FindObjectOfType<DialogueRunner>();
 
@@ -100,6 +105,16 @@ public class playerMovement : MonoBehaviour
         //         letter_open = false;
         //     }
         // }
+
+        if(Input.GetKeyDown(KeyCode.P)){
+
+            Save_Data();
+            
+        }
+
+        if(Input.GetKeyDown(KeyCode.O)){
+            Load_Data();
+        }
     }
 
     void FixedUpdate()
@@ -121,6 +136,35 @@ public class playerMovement : MonoBehaviour
             // Kick off the dialogue at this node.
             FindObjectOfType<DialogueRunner>().StartDialogue (target.talkToNode);
         }
+    }
+
+    public void Save_Data()
+    {
+        Debug.Log("SAVING DATA...");
+        SaveSys.save_data();
+        // GlobalVars.print_array();
+    }
+
+    public void Load_Data()
+    {
+
+        Debug.Log("LOADING DATA...");
+        SaveData new_data = SaveSys.load_data();
+        // GlobalVars.print_array();
+
+        GlobalVars.bool_array[0] = new_data.bool_array[0];
+        GlobalVars.bool_array[1] = new_data.bool_array[1];
+        GlobalVars.bool_array[2] = new_data.bool_array[2];
+        GlobalVars.bool_array[3] = new_data.bool_array[3];
+        GlobalVars.bool_array[4] = new_data.bool_array[4];
+        GlobalVars.bool_array[5] = new_data.bool_array[5];
+
+        // GlobalVars.bool_array.Add(new_data.bool_array[0]);
+        // GlobalVars.bool_array.Add(new_data.bool_array[1]);
+        // GlobalVars.bool_array.Add(new_data.bool_array[2]);
+        // GlobalVars.bool_array.Add(new_data.bool_array[3]);
+        // GlobalVars.bool_array.Add(new_data.bool_array[4]);
+        // GlobalVars.bool_array.Add(new_data.bool_array[5]);
     }
 
 }

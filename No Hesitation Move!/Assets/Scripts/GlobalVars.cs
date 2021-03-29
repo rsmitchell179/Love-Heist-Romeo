@@ -19,33 +19,40 @@ public class GlobalVars : MonoBehaviour
 	public static bool has_run;
 
 	// list for keeping bools
-	public static List<bool> bool_array;
+	// public static List<bool> bool_array;
 
 	// function to add indices into list, once
 	// aka the start, but not actually, but also is
 	public static void bool_array_start()
 	{
 		if(has_run != true){
-			bool_array = new List<bool>();
-			bool_array.Add(false);
-			bool_array.Add(false);
-			bool_array.Add(false);
-			bool_array.Add(false);
-			bool_array.Add(false);
-			bool_array.Add(false);
+			// bool_array = new List<bool>();
+			// bool_array.Add(false);
+			// bool_array.Add(false);
+			// bool_array.Add(false);
+			// bool_array.Add(false);
+			// bool_array.Add(false);
+			// bool_array.Add(false);
+			for(int i = 0; i < 6; i++)
+			{
+				bool_array[i] = false;
+			}
 			has_run = true;
 		}
 	}
 
+	public static bool[] bool_array = new bool[6];
+
+
+
 	// test print, check if array stuff is being added
-	/*
+	
 	public static void print_array(){
 		// bool_array.Add(false);
-		Debug.Log("here in print_array" + bool_array.Count);
-		foreach(bool obj in bool_array)
+		// Debug.Log("here in print_array" + bool_array.Count);
+		for(int i = 0; i < 6; i++)
 		{
-			Debug.Log(obj);
+			Debug.Log("array index " + i + " is " + bool_array[i]);
 		}
 	}
-	*/
 }

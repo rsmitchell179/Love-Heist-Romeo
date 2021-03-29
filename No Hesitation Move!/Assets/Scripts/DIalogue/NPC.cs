@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -62,5 +62,6 @@ public class NPC : MonoBehaviour
 
     public void set_has_spoken(string[] parameters){
         GlobalVars.bool_array[bool_index] = bool.Parse(parameters[0]);
+        // GlobalVars.print_array();
     }
 }
