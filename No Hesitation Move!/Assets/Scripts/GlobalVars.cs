@@ -33,6 +33,7 @@ public class GlobalVars : MonoBehaviour
 			// bool_array.Add(false);
 			// bool_array.Add(false);
 			// bool_array.Add(false);
+
 			for(int i = 0; i < 6; i++)
 			{
 				bool_array[i] = false;
@@ -41,7 +42,9 @@ public class GlobalVars : MonoBehaviour
 		}
 	}
 
+	public static string curr_scene;
 	public static bool[] bool_array = new bool[6];
+	public static float[] position = new float[3];
 
 
 
