@@ -44,7 +44,6 @@ public class playerMovement : MonoBehaviour
 
     void Awake(){
         // starting the globalvars
-        GlobalVars.bool_array_start(); 
         GlobalVars.curr_scene = SceneManager.GetActiveScene().name;
 
         file_path = Application.persistentDataPath + "/player.lhr";

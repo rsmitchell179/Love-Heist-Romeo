@@ -23,24 +23,24 @@ public class GlobalVars : MonoBehaviour
 
 	// function to add indices into list, once
 	// aka the start, but not actually, but also is
-	public static void bool_array_start()
-	{
-		if(has_run != true){
-			// bool_array = new List<bool>();
-			// bool_array.Add(false);
-			// bool_array.Add(false);
-			// bool_array.Add(false);
-			// bool_array.Add(false);
-			// bool_array.Add(false);
-			// bool_array.Add(false);
+	// public static void bool_array_start()
+	// {
+	// 	if(has_run != true){
+	// 		// bool_array = new List<bool>();
+	// 		// bool_array.Add(false);
+	// 		// bool_array.Add(false);
+	// 		// bool_array.Add(false);
+	// 		// bool_array.Add(false);
+	// 		// bool_array.Add(false);
+	// 		// bool_array.Add(false);
 
-			for(int i = 0; i < 6; i++)
-			{
-				bool_array[i] = false;
-			}
-			has_run = true;
-		}
-	}
+	// 		for(int i = 0; i < 6; i++)
+	// 		{
+	// 			bool_array[i] = false;
+	// 		}
+	// 		has_run = true;
+	// 	}
+	// }
 
 	public static string curr_scene;
 	public static bool[] bool_array = new bool[6];
