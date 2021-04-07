@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -9,6 +10,12 @@ public class PauseMenu : MonoBehaviour
     public GameObject pause_menu;
     public playerMovement p_move;
     public GameObject resume_button;
+    public string main_menu_scene;
+
+    void Awake()
+    {
+        main_menu_scene = "TitleScreen";
+    }
 
     // Update is called once per frame
     void Update()
@@ -62,5 +69,14 @@ public class PauseMenu : MonoBehaviour
     {
     	Debug.Log("quitter");
     	Application.Quit();
+    }
+
+    public void main_menu()
+    {
+        is_paused = false;
+        pause_menu.SetActive(false);
+        p_move.enabled = true;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("TitleScreen");
     }
 }

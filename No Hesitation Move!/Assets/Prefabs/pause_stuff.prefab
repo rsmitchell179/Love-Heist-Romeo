@@ -289,7 +289,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quit Game
+  m_Text: Main Menu
 --- !u!1 &2342667099933696741
 GameObject:
   m_ObjectHideFlags: 0
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 2342667100039946558}
   - component: {fileID: 2342667100039946557}
   m_Layer: 5
-  m_Name: quit_button
+  m_Name: main_menu_button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,7 +490,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2342667100794626275}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: quit_game
+        m_MethodName: main_menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -694,6 +694,7 @@ MonoBehaviour:
   pause_menu: {fileID: 2342667099933696741}
   p_move: {fileID: 0}
   resume_button: {fileID: 2342667099232623991}
+  main_menu_scene: 
 --- !u!1 &2342667100835843122
 GameObject:
   m_ObjectHideFlags: 0
