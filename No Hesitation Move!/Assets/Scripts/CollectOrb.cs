@@ -24,23 +24,23 @@ public class CollectOrb : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
     	if(other.gameObject.CompareTag("JSOrb")) {
     		Destroy(other.gameObject);
-    		playerMovement.hasJSorb = true;
+    		GlobalVars.hasJSorb = true;
     	}
     	if(other.gameObject.CompareTag("FTOrb")) {
     		Destroy(other.gameObject);
-    		playerMovement.hasFTorb = true;
+    		GlobalVars.hasFTorb = true;
     	}
     	if(other.gameObject.CompareTag("RCOrb")) {
     		Destroy(other.gameObject);
-    		playerMovement.hasRCorb = true;
+    		GlobalVars.hasRCorb = true;
     	}
-    	if(playerMovement.hasJSorb) {
+    	if(GlobalVars.hasJSorb) {
     		SetImage1();
     	}
-    	if(playerMovement.hasFTorb) {
+    	if(GlobalVars.hasFTorb) {
     		SetImage2();
     	}
-    	if(playerMovement.hasRCorb) {
+    	if(GlobalVars.hasRCorb) {
     		SetImage3();
     	}
     }

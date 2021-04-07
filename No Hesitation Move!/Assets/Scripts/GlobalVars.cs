@@ -45,8 +45,9 @@ public class GlobalVars : MonoBehaviour
 	public static string curr_scene;
 	public static bool[] bool_array = new bool[6];
 	public static float[] position = new float[3];
-
-
+	public static bool hasJSorb;
+    public static bool hasFTorb;
+    public static bool hasRCorb;
 
 	// test print, check if array stuff is being added
 	

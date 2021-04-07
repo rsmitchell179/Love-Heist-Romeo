@@ -411,6 +411,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &304643371 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7835999688584816141, guid: 79f662bfd16925c439168db951dde744,
+    type: 3}
+  m_PrefabInstance: {fileID: 767478255}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &464535911
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +584,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 468094125}
   m_CullTransparentMesh: 0
+--- !u!114 &503737493 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7835999689699025338, guid: 79f662bfd16925c439168db951dde744,
+    type: 3}
+  m_PrefabInstance: {fileID: 767478255}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &592761269
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +719,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &666785347 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7835999689271201922, guid: 79f662bfd16925c439168db951dde744,
+    type: 3}
+  m_PrefabInstance: {fileID: 767478255}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &690858571
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,6 +984,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2008615735, guid: 7138a8ec6fa786f489a1a81699e92bac, type: 3}
+      propertyPath: FTOrbImage
+      value: 
+      objectReference: {fileID: 503737493}
+    - target: {fileID: 2008615735, guid: 7138a8ec6fa786f489a1a81699e92bac, type: 3}
+      propertyPath: JSOrbImage
+      value: 
+      objectReference: {fileID: 666785347}
+    - target: {fileID: 2008615735, guid: 7138a8ec6fa786f489a1a81699e92bac, type: 3}
+      propertyPath: RCOrbImage
+      value: 
+      objectReference: {fileID: 304643371}
     - target: {fileID: 5868824327443656567, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
       propertyPath: m_Name
