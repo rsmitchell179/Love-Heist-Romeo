@@ -1038,7 +1038,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1922999800}
   - component: {fileID: 1922999799}
-  - component: {fileID: 1922999798}
   - component: {fileID: 1922999797}
   - component: {fileID: 1922999796}
   m_Layer: 0
@@ -1093,14 +1092,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraFollows: {fileID: 557599126}
   mapBounds: {fileID: 383675132}
---- !u!81 &1922999798
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1922999795}
-  m_Enabled: 1
 --- !u!20 &1922999799
 Camera:
   m_ObjectHideFlags: 0
