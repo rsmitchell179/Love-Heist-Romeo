@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Yarn.Unity;
-
+using UnityEngine.SceneManagement;
+using System.IO;
 
 public class playerMovement : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class playerMovement : MonoBehaviour
 
     private DialogueRunner diaRun = null;
 
+    public string file_path;
+
     // public bool letter_open = false;
 
     // public LetterPopUp letterpp;
@@ -41,7 +44,14 @@ public class playerMovement : MonoBehaviour
 
     void Awake(){
         // starting the globalvars
-        GlobalVars.bool_array_start(); 
+        GlobalVars.curr_scene = SceneManager.GetActiveScene().name;
+
+        file_path = Application.persistentDataPath + "/player.lhr";
+        if(File.Exists(file_path)){
+        	SaveData load_pos_data = SaveSys.load_data();
+        	Vector3 load_position = new Vector3(load_pos_data.position[0], load_pos_data.position[1], load_pos_data.position[2]);
+        	transform.position = load_position;
+        }
     }
 
     void Start(){
@@ -138,9 +148,17 @@ public class playerMovement : MonoBehaviour
         }
     }
 
+    public void save_position()
+    {
+    	GlobalVars.position[0] = transform.position.x;
+        GlobalVars.position[1] = transform.position.y;
+        GlobalVars.position[2] = transform.position.z;
+    }
+
     public void Save_Data()
     {
         Debug.Log("SAVING DATA...");
+        save_position();
         SaveSys.save_data();
         // GlobalVars.print_array();
     }
@@ -158,6 +176,11 @@ public class playerMovement : MonoBehaviour
         GlobalVars.bool_array[3] = new_data.bool_array[3];
         GlobalVars.bool_array[4] = new_data.bool_array[4];
         GlobalVars.bool_array[5] = new_data.bool_array[5];
+
+        SceneManager.LoadScene(new_data.scene);
+
+        // Vector3 load_position = new Vector3(new_data.position[0], new_data.position[1], new_data.position[2]);
+        // transform.position = load_position;
 
         // GlobalVars.bool_array.Add(new_data.bool_array[0]);
         // GlobalVars.bool_array.Add(new_data.bool_array[1]);

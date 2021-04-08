@@ -6,6 +6,8 @@ using UnityEngine;
 public class SaveData
 {
     public bool[] bool_array; 
+    public string scene;
+    public float[] position;
 
     public SaveData()
     {
@@ -17,6 +19,13 @@ public class SaveData
     	bool_array[3] = GlobalVars.bool_array[3];
     	bool_array[4] = GlobalVars.bool_array[4];
     	bool_array[5] = GlobalVars.bool_array[5];
+
+        scene = GlobalVars.curr_scene;
+
+        position = new float[3];
+        position[0] = GlobalVars.position[0];
+        position[1] = GlobalVars.position[1];
+        position[2] = GlobalVars.position[2];
 
   //   	for(int i = 0; i < 6; i++)
 		// {
