@@ -7,20 +7,20 @@ position: 920,-785
 What's going on, bub?
 Name's Vinny. Vinny Sellyastuff.
 If it ain't clear to you already by the name, I'm here to sell you stuff.
-Is this place getting to you, yet? Because it can sure get intense as hell here. 
+Is this place getting to you, yet? Because it can sure turn somebody into a nervous Nirva. 
 You look like you could use some relief items. Your stress meter must be through the roof!
-What can I do you for to quell it?
+What can I get for ya?
 I got a panic relief potion, anti-stress drinks like Braino Bliss, and a mindfulness manual.
 And I'm not taking no for an answer, bunny.
 <<set_speaker romeo>>
 I think I'll be ok, Vinny.
 I'm not sure what you mean by a stress meter, but my orb meter definitely needs to be filled!
 <<set_speaker vinny>>
-Orb? What in the fox are you talking about, orb? There ain't no orb here. This is a black market. The best kind of market there is!
+Orb? What the fox are you talking about, orb? There ain't no orb here. This is a black market. The best kind of market there is!
 <<set_speaker romeo>>
 I've never heard of a black market. Is everything just sold in the dark?  
 <<set_speaker vinny>>
-It's more like a regular market but you can buy things you won't see in a normal market. The more dangerous the product, the more exciting the transaction, is my philosophy!
+It's more like a regular market but you can buy things you won't see in a normal market.
 <<set_speaker romeo>>
 Will this market sell me the orb that I need?
 <<set_speaker vinny>>
@@ -28,8 +28,8 @@ Again with the orb! What's so special about this orb, bun?
 <<set_speaker romeo>>
 A Wizard told me the orb would reveal my True Love!
 <<set_speaker vinny>>
-Love? Gross, bunny.
-There ain't nothing special or fantastic about love. It's all fiction, a dreamer's fantasy, and I want nothing to do with it!
+Wizard? Love? Gross, bunny.
+Love is twisted. There ain't nothing special or fantastic about love. It's all fiction, a dreamer's fantasy. And I want nothing to do with it!
 Get lost, pal.
 <<set_speaker romeo>>
 Alright, Vinny. I hope I can prove you wrong!
@@ -38,11 +38,34 @@ Alright, Vinny. I hope I can prove you wrong!
 title: rc_vinny_second
 tags: 
 colorID: 0
-position: 440,-1027
+position: 440,-1023
 ---
 <<set_speaker vinny>>
-Love? Gross, bunny.
-There ain't nothing special or fantastic about love. It's all fiction, a dreamer's fantasy, and I want nothing to do with it!
+It’s the same old, same old, bub!
+Vinny’s the name. Sellyastuff is the money-making game!
+Is this place getting to you, yet? Because it can sure turn somebody into a nervous Nirva. 
+You look like you could use some relief items. Your stress meter’s probably off the charts, bunny!
+What can I do you for to quell it?
+I got a panic relief potion, anti-stress drinks like Braino Bliss, and a mindfulness manual.
+And I'm not taking no for an answer this time, bunny!
+<<set_speaker romeo>>
+No thanks! I think I'll be ok, Vinny.
+I'm not sure what you mean by a stress meter, but my orb meter definitely needs to be filled!
+<<set_speaker vinny>>
+Orb? What the fox are you talking about, orb? There ain't no orb here. This is a black market. The best kind of market there is!
+<<set_speaker romeo>>
+I've never heard of a black market. Is everything just sold in the dark?  
+<<set_speaker vinny>>
+It's more like a regular market but you can buy things you won't see in a normal market. 
+<<set_speaker romeo>>
+Will this market sell me the orb that I need?
+<<set_speaker vinny>>
+Again with the orb! What's so special about this orb, bun?
+<<set_speaker romeo>>
+A Wizard told me the orb would reveal my True Love!
+<<set_speaker vinny>>
+Wizard? Love? Gross, bunny.
+Love is twisted. There ain't nothing special or fantastic about love. It's all fiction, a dreamer's fantasy. And I want nothing to do with it!
 Get lost, pal.
 <<set_speaker romeo>>
 Alright, Vinny. I hope I can prove you wrong!
