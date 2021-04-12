@@ -1,66 +1,76 @@
 title: js_budalia_first
 tags: 
 colorID: 0
-position: 1222,-166
+position: 1221,-165
 ---
-<<set_speaker budalia>> 
-Hello there.
-You must be the one they call Romeo.
+<<set_speaker budalia>>
+Ahoy there, you must be the one they call Romeo.
 <<set_speaker romeo>>
-Yep.
-I'm the one they call Romeo.
-I don’t think I know you, though. 
+I'm the one they call Romeo. I don’t think I know you, though. 
 Have we met before?
-<<set_speaker budalia>> 
-My name is Budalia.
-I work under the orders of her majesty the Wizard.
+<<set_speaker budalia>>
+My name is Budalia McMailman. I’m a courier working under the orders of her majesty the Wizard.
 She sent me here to act as a go-between for your communication.
 <<set_speaker romeo>>
 Well, nice to meet you, Budalia.
-<<set_speaker budalia>> 
+<<set_speaker budalia>>
 Fancy meeting you here as well.
-On this boat.
 <<set_speaker romeo>>
-I still can’t believe it!
-I’m finally on a boat!
+Yay! I’m finally on a boat!
 This is so cool!
-<<set_speaker budalia>> 
-Well, this is the Jealous Sea after all.
-You can't quite be on the water without a boat.
+<<set_speaker budalia>>
+Well, you can't quite be on the Jealous Sea without a boat.
 <<set_speaker romeo>>
-It's been a lifelong dream of mine to step foot on a boat.
-I'm always jealous of my friend who gets to go on one constantly.
-It's like his job.
-<<set_speaker budalia>> 
-Now, try not to exert too much of your energy on this boat.
-By all means, have fun and look around, but remember, you still have your mission to accomplish.
+I wish my friend could see me now! I was always jealous of his boat privileges. 
+<<set_speaker budalia>>
+Now, try not to exert too much of your energy here. The boat isn’t your top priority, is it? 
 <<set_speaker romeo>>
-The orbs are the only thing on my mind.
-Ok, one of two things. Orbs and boats!
-Speaking of orbs, do you have one?
-<<set_speaker budalia>> 
-No, no, Romeo. It doesn’t work like that. 
-I do have something for you, though.
-This is a letter direct from the Wizard herself.
-It discloses the location of the orb.
-<<set_speaker romeo>> 
-Wow!
+No, I should stay focused on the orbs, Orbs 
+<<set_speaker budalia>>
+On that note, I have something for you here, Romeo.
+This is a letter direct from the Wizard herself. It discloses the location of the orb.
+<<set_speaker romeo>>
+Wow! How nice of her!
 She must really want to help me find my True Love after all.
-How nice of her!
-<<set_speaker budalia>> 
-Yeah, you could say that...
-Helping others sounds totally just like her. 
-Alright, I don't mean to keep you any longer.
-I'll let you be off now.
+<<set_speaker budalia>>
+Oh, yeah...
+Being nice and helpful to others.
+That’s truly her star quality.
+Alright, I’ll be off now. Shouldn’t keep you any longer.
 <<set_has_spoken true>>
 <<image_pop_up true>>
 ===
 title: js_budalia_second
 tags: 
 colorID: 0
-position: 707,11
+position: 707,7
 ---
-<<set_speaker budalia>> 
-Alright, I don't mean to keep you any longer.
-I'll let you be off now.
+<<set_speaker budalia>>
+Welcome aboard, Romeo!
+<<set_speaker romeo>>
+Welcome aboard to you too, Budalia!
+<<set_speaker budalia>>
+I hear much more excitement in your voice since when we last met.
+<<set_speaker romeo>>
+I’m finally on a boat!
+This is so cool!
+<<set_speaker budalia>>
+Well, you can't quite be on the Jealous Sea without a boat.
+<<set_speaker romeo>>
+It's been a lifelong dream of mine to step foot on a boat. I'm always jealous of my friend’s boating privileges. It's like his job.
+<<set_speaker budalia>>
+Now, try not to exert too much of your energy on this boat. There’s still an orb to be gathered.  
+<<set_speaker romeo>>
+Orbs are the only things on my mind.
+Ok, fine, one of two things. Orbs and boats!
+<<set_speaker budalia>>
+I have here for you another letter direct from the Wizard herself, revealing the location of the orb for this area, as per usual.
+<<set_speaker romeo>>
+Another letter? The Wizard is soooo helpful!
+Just totally nice of her!
+<<set_speaker budalia>>
+Oh, yeah...
+Being nice and helpful to others.
+That’s truly her star quality.
+Alright, I’ll be off now. Shouldn’t keep you any longer.
 ===

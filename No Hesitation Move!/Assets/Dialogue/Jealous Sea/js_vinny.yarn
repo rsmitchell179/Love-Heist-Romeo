@@ -15,7 +15,7 @@ C’mon. Whaddaya say?
 <<set_speaker romeo>>
 I'm just trying to find an orb.
 <<set_speaker vinny>>
-Can't help you there, buddy.
+Can't help you there, bunny.
 The sea can be a dangerous place, though.
 Are you sure you don't need any health items?
 <<set_speaker romeo>>
@@ -23,8 +23,8 @@ No thanks, Vinny.
 I'm only in need of True Love.
 <<set_speaker vinny>>
 Love? Been down that road before.
-Can't say I'd want to go down it again.
-Hope it works out for you fella.
+And I’m never going down it again. Never!
+Hope it works out for you, bunny.
 <<set_has_spoken true>>
 ===
 title: js_vinny_second
@@ -33,7 +33,25 @@ colorID: 0
 position: 723,-282
 ---
 <<set_speaker vinny>>
-Love? Been down that road before.
-Can't say I'd want to go down it again.
-Hope it works out for you fella.
+You know the drill, man.
+Vinny is the name. Sellyastuff is the game.
+What are you in the market for?
+I got lots of health items for you this time...
+Health boosts that come in syringes or medical bags
+Over a hundred varieties of food items
+Skill points that increase your health
+You name it, I got it.
+Whaddaya say? 
+<<set_speaker romeo>>
+No thanks, Vinny.
+<<set_speaker vinny>>
+C’mon. The sea can be a dangerous place. Never know what you’ll encounter. It’s as easy as a button click.
+<<set_speaker romeo>>
+Button clicking? Never heard of that technique.
+I always thought buttons just belonged to clothes.
+Besides, you know all I need are the orbs for my shot at True Love.
+<<set_speaker vinny>>
+Love? I’ve been down that road before.
+And I’m never going down it again. Never!
+Hope it works out for you, bunny.
 ===
