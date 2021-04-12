@@ -8,9 +8,7 @@ Hey there, fella.
 Name's Vinny. Vinny Sellyastuff.
 If it's still unclear to you by the name, I'm here to sell you stuff.
 And I think I've got just the item you need.
-Whaddayasay, are you a gambling man?
-Because I gotta box right here for ya.
-It’s got your name on it and it’s full of loot! 
+Whaddayasay, are you a gambling man?Because I gotta box right here for ya.It’s got your name on it and it’s full of loot!
 You might like to call it a... loot box.
 <<set_speaker romeo>>
 Loot box? What's in it?
@@ -26,9 +24,9 @@ You'd have to see me a little later about that orb.
 No thanks Vinny, but I hope to see you later!
 I'm a little occupied with finding True Love.
 <<set_speaker vinny>>
-Love? Pfft.
-Been there done that.
-I'll see ya around, kid.
+Love? Pfft. It’s a stink deal, as we say in sales. 
+Been there, done that, and not getting involved with it again anytime soon!
+I'll see ya around, kid
 <<set_has_spoken true>>
 ===
 title: ft_vinny_second
@@ -37,7 +35,29 @@ colorID: 0
 position: 785,449
 ---
 <<set_speaker vinny>>
-Love? Pfft.
-Been there done that.
+How’s it goin’, pal? 
+You know the drill. Vinny’s the name. Sellyastuff is the game.
+And I think I've got just the item you need.
+Whaddayasay, are you a gambling man, Romeo?
+You feeling lucky?
+Because I gotta box right here for ya.
+It’s got your name on it and it’s full of loot! 
+You might like to call it a... loot box.
+<<set_speaker romeo>>
+Loot box? What's in it?
+<<set_speaker vinny>>
+Well, that's kind of the point there, bunny. You don't know until you try your luck and find out for yourself. All you gotta do is see if you win anything good.
+<<set_speaker romeo>>
+Is this how I win the orb?
+<<set_speaker vinny>>
+Orb? Whattaya talking about orb?
+No, I'm talking things like health items, currency, random stuff like leaves or hats.
+You'd have to see me a little later about that orb.
+<<set_speaker romeo>>
+Yeah, it's a no, for now, Vinny. Maybe I'll see you later then.
+I'm a little occupied with finding True Love.
+<<set_speaker vinny>>
+Love? Pfft. It’s a stink deal, as we say in sales. 
+Been there, done that, and not getting involved with it again anytime soon!
 I'll see ya around, kid.
 ===

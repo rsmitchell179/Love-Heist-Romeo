@@ -1,35 +1,71 @@
 title: ft_budalia_first
 tags: 
 colorID: 0
-position: 1115,-345
+position: 1115,-347
 ---
 <<set_speaker budalia>>
 My, my, my. Such a wonderful selection of purses they have to choose from here.
 <<set_speaker romeo>>
 Yeah, they sure look cool. I don’t have the shoulder for them though.
 <<set_speaker budalia>>
-You certainly don’t. Are you here to purchase anything then?
-<<set_speaker romeo>>
-Nope. Just trying to find an orb.
-<<set_speaker budalia>>
-Ah, so you have come to the right place after all.
-You must be the one I'm supposed to meet.
-Tell me. Are you Romeo?
+Tell me, shoulderless one. Are you Romeo?
 <<set_speaker romeo>>
 Yep, that's me! I don't think I've seen you before though.
-Did you learn about me in purse selling school or something? 
+Did my name come up in purse-selling school or something? 
 <<set_speaker budalia>>
-Oh no, no, no.
-My name is Budalia McMailman. I'm employed under her majesty the Wizard as a courier.
-I was sent here to act as her means of communication with you.
+Oh dear, no.
+My name is Budalia McMailman. I'm employed under her majesty the Wizard, here to act as her means of communication with you.
 <<set_speaker romeo>>
 Well, Budalia, it's nice to meet you here...
-Where are we again?
 <<set_speaker budalia>>
-We are in a fanciful boutique located near the heart of a dashing place called Fancy Town.
-These townsfolk sure do enjoy themselves here in this luxury shop when they're not busy gazing at the wondrous garden outside.
+Indeed, in such a fanciful boutique located near the heart of a dashing place called Fancy Town.
 <<set_speaker romeo>>
-Whoa, I've never really been in a place like this before. I could really get used to this!
+Whoa, I've never really been in a place like this before. I could get used to this!
+<<set_speaker budalia>>
+Well, perhaps not too used to it, since you do have that orb to discover.
+<<set_speaker romeo>>
+Yeah. Do you know which section I can find it in?
+<<set_speaker budalia>>
+Section? Romeo, the orb isn't hidden somewhere around this boutique. No, it would be much too simple.
+<<set_speaker romeo>>
+I like simple.
+<<set_speaker budalia>>
+That may be so. However, I do have something for you that can help.
+It's a personal letter from the Wizard that discloses the precise location of the orb.
+<<set_speaker romeo>>
+How cool! That is super awesome of her!
+I wish I could tell her thank you.
+<<set_speaker budalia>>
+I could pass that along to her. Though, I wouldn't thank her quite yet. She's typically not the type to be this nice… to anyone. 
+<<set_speaker romeo>>
+She seems nice enough to me.
+<<set_speaker budalia>>
+Right… Well, I'd best be off now and leave you to it.
+<<set_has_spoken true>>
+<<image_pop_up true>>
+===
+title: ft_budalia_second
+tags: 
+colorID: 0
+position: 787,-355
+---
+<<set_speaker budalia>>
+Well hello there again, Romeo! Don’t mind me. I’m just picking out some purses. 
+<<set_speaker romeo>>
+In that case, I wish you a happy shopping, Budalia!
+<<set_speaker budalia>>
+Oh, I’m just about wrapping it up. I was looking to upgrade for something that can help hold twice the amount of letters. 
+<<set_speaker romeo>>
+That Wizard sure loves to write a lot, doesn’t she? 
+<<set_speaker budalia>>
+It is one of her primary hobbies.
+Anyway, enough about that. Aren’t you wondering where you are? 
+<<set_speaker romeo>>
+Sorta, I guess. Where am I again? 
+<<set_speaker budalia>>
+You are in a fanciful boutique located near the heart of a dashing place called Fancy Town.
+<<set_speaker romeo>>
+Whoa, I've never really been in a place like this before. I could get used to this!
 <<set_speaker budalia>>
 Well, perhaps not too used to it, since you do have that orb to discover.
 <<set_speaker romeo>>
@@ -41,30 +77,18 @@ Romeo, the orb isn't hidden somewhere around this boutique. No, it would be much
 <<set_speaker romeo>>
 I like simple.
 <<set_speaker budalia>>
-That may be so. However, I do have something for you that can help.
-It's a personal letter from the Wizard. And it also discloses the precise location of the orb.
+That may be so. However, I do have something for you, again, that can help.
+It's another personal letter from the Wizard, disclosing the precise location of the orb as before.
 <<set_speaker romeo>>
-How cool!
-That is super awesome of her!
+How super awesome!
+This Wizard really cares about me finding True Love!
 I wish I could tell her thank you.
 <<set_speaker budalia>>
 I could pass that along to her.
 Though, I wouldn't thank her quite yet.
-She's typically not the type to be this nice.
+She’s not really one for caring about others.  
 <<set_speaker romeo>>
-She seems nice enough to me.
+I must be the exception! 
 <<set_speaker budalia>>
-Right...
-Well, I'd best be off now and leave you to it.
-<<set_has_spoken true>>
-<<image_pop_up true>>
-===
-title: ft_budalia_second
-tags: 
-colorID: 0
-position: 787,-355
----
-<<set_speaker budalia>>
-Right...
-Well, I'd best be off now and leave you to it.
+Right… Well, I'd best be off now and leave you to it.
 ===
