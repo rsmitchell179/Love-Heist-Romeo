@@ -110,7 +110,7 @@ public class LetterPopUp : MonoBehaviour
     public void letter_zoom_in()
     {
     	if(Input.GetKeyDown(KeyCode.Space)){
-        	Debug.Log("anim play");
+        	// Debug.Log("anim play");
         	anim.Play("letter_zoom");
         	animation_bool = false;
         }
