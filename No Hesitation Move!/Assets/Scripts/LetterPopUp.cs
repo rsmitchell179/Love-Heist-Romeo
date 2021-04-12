@@ -56,11 +56,7 @@ public class LetterPopUp : MonoBehaviour
         }
 
         if(animation_bool == true){
-            if(Input.GetKey(KeyCode.Space)){
-            	Debug.Log("anim play");
-            	anim.Play("letter_zoom");
-            	animation_bool = false;
-            }
+            letter_zoom_in();
 	    }
 
         // if(animation_bool == true)
@@ -84,11 +80,16 @@ public class LetterPopUp : MonoBehaviour
     {
     	// Debug.Log("in coroutine");
     	p_move.enabled = false;
-    	animation_bool = true;
-    	yield return new WaitForSecondsRealtime(3);
+    	set_anim_bool();
+    	yield return new WaitForSecondsRealtime(5);
     	p_move.enabled = true;
     	set_letter_true();
     	// Debug.Log("after coroutine");
+    }
+
+    public void set_anim_bool()
+    {
+    	animation_bool = true;
     }
 
     public void set_letter_true()
@@ -104,6 +105,15 @@ public class LetterPopUp : MonoBehaviour
        	 	p_move.enabled = true;
        	 	animation_bool = false;
     	}
+    }
+
+    public void letter_zoom_in()
+    {
+    	if(Input.GetKeyDown(KeyCode.Space)){
+        	Debug.Log("anim play");
+        	anim.Play("letter_zoom");
+        	animation_bool = false;
+        }
     }
 
     // public void letter_close(){
