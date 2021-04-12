@@ -29,6 +29,11 @@ public class DataManager : MonoBehaviour
     	{
     		File.Delete(file_path);
     	}
+
+    	for(int i = 0; i < 6; i++)
+    	{
+    		GlobalVars.bool_array[i] = false;
+    	}
     }
 
     public void load_save()
