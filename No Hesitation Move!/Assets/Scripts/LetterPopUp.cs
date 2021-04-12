@@ -11,17 +11,21 @@ public class LetterPopUp : MonoBehaviour
 	DialogueRunner diaRun = null;
 
 	// public GameObject player;
-
+	[Header("letter settings")]
 	public Image letter;
-
 	public bool letter_open = false;
-
     public playerMovement p_move;
+
+    [Header("animation settings")]
+    public bool animation_bool;
+    public Animator anim;
+    public AnimationClip letter_zoom;
 
 	void Awake()
 	{
 
 		// player = GameObject.FindWithTag("Player");
+		// anim = GetComponent<Animation>();
 
         try{
             diaRun = FindObjectOfType<DialogueRunner>();
@@ -48,15 +52,25 @@ public class LetterPopUp : MonoBehaviour
         // charles bless up
     	if(letter_open == true){
             p_move.enabled = false;
-            if(Input.GetKeyDown(KeyCode.Space)){
-                letter.enabled = false;
-                letter_open = false;
-                p_move.enabled = true;
-            }
+            letter_close();
         }
+
+        if(animation_bool == true){
+            if(Input.GetKey(KeyCode.Space)){
+            	Debug.Log("anim play");
+            	anim.Play("letter_zoom");
+            	animation_bool = false;
+            }
+	    }
+
+        // if(animation_bool == true)
+        // {
+        // 	anim.Play("letter_zoom");
+        // }
     }
 
-    public void image_pop_up(string[] parameters){
+    public void image_pop_up(string[] parameters)
+    {
     	// Debug.Log("image_pop_up");
     	letter.enabled = bool.Parse(parameters[0]);
     	StartCoroutine(letter_wait());
@@ -66,17 +80,30 @@ public class LetterPopUp : MonoBehaviour
     	
     }
 
-    public IEnumerator letter_wait(){
+    public IEnumerator letter_wait()
+    {
     	// Debug.Log("in coroutine");
     	p_move.enabled = false;
+    	animation_bool = true;
     	yield return new WaitForSecondsRealtime(3);
     	p_move.enabled = true;
     	set_letter_true();
     	// Debug.Log("after coroutine");
     }
 
-    public void set_letter_true(){
+    public void set_letter_true()
+    {
     	letter_open = true;
+    }
+
+    public void letter_close()
+    {
+    	if(Input.GetKeyDown(KeyCode.Space)){
+    		letter.enabled = false;
+       		letter_open = false;
+       	 	p_move.enabled = true;
+       	 	animation_bool = false;
+    	}
     }
 
     // public void letter_close(){
