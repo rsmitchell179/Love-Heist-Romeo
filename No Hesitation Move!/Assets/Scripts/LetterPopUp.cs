@@ -17,7 +17,7 @@ public class LetterPopUp : MonoBehaviour
     public playerMovement p_move;
 
     [Header("animation settings")]
-    public bool animation_bool;
+    public bool animation_bool = false;
     public Animator anim;
     public AnimationClip letter_zoom;
 

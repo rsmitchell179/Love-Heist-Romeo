@@ -6770,7 +6770,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 7964497761358341851}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7964497761358341852}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -12680,6 +12680,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7964497762324057055, guid: c47317f3cd929954cb14fa45533fae3a,
         type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 7964497761358341853}
+    - target: {fileID: 7964497762324057055, guid: c47317f3cd929954cb14fa45533fae3a,
+        type: 3}
       propertyPath: letter
       value: 
       objectReference: {fileID: 1245253409}
@@ -12688,6 +12693,11 @@ PrefabInstance:
       propertyPath: p_move
       value: 
       objectReference: {fileID: 1847836104}
+    - target: {fileID: 7964497762324057055, guid: c47317f3cd929954cb14fa45533fae3a,
+        type: 3}
+      propertyPath: letter_zoom
+      value: 
+      objectReference: {fileID: 7400000, guid: 9da724be0ecbb7848ac96d01c482edc7, type: 2}
     - target: {fileID: 7964497762329913848, guid: c47317f3cd929954cb14fa45533fae3a,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -12711,3 +12721,28 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c47317f3cd929954cb14fa45533fae3a, type: 3}
+--- !u!1 &7964497761358341852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7964497762329913851, guid: c47317f3cd929954cb14fa45533fae3a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7964497761358341851}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7964497761358341853
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7964497761358341852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6f962c22b96541f4d97527e6bdcb7992, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
