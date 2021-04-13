@@ -39,7 +39,7 @@ public class jsorbCollect : MonoBehaviour
 
     public void check_js_orb(){
         
-    	if(playerMovement.hasJSorb == true){
+    	if(GlobalVars.hasJSorb == true){
             hasCollect =true;
         	// Debug.Log("yes, it's true, all of it");
             owl.GetComponent<Patrol>().enabled = false;
