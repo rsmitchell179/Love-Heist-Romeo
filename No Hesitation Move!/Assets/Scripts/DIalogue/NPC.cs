@@ -60,7 +60,20 @@ public class NPC : MonoBehaviour
     }
 
     public void set_has_spoken(string[] parameters){
-        GlobalVars.bool_array[bool_index] = bool.Parse(parameters[0]);
+
+    	if(bool_index == 0 || bool_index % 2 == 0)
+    	{
+    		GlobalVars.bool_array[0] = bool.Parse(parameters[0]);
+    		GlobalVars.bool_array[2] = bool.Parse(parameters[0]);
+    		GlobalVars.bool_array[4] = bool.Parse(parameters[0]);
+    	}
+    	else
+    	{
+    		GlobalVars.bool_array[1] = bool.Parse(parameters[0]);
+    		GlobalVars.bool_array[3] = bool.Parse(parameters[0]);
+    		GlobalVars.bool_array[5] = bool.Parse(parameters[0]);
+    	}
+        
         // GlobalVars.print_array();
     }
 }
