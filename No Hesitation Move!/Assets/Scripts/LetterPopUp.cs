@@ -55,9 +55,9 @@ public class LetterPopUp : MonoBehaviour
             letter_close();
         }
 
-        if(animation_bool == true){
-            letter_zoom_in();
-	    }
+     //    if(animation_bool == true){
+     //        letter_zoom_in();
+	    // }
 
         // if(animation_bool == true)
         // {
@@ -69,6 +69,7 @@ public class LetterPopUp : MonoBehaviour
     {
     	// Debug.Log("image_pop_up");
     	letter.enabled = bool.Parse(parameters[0]);
+    	StartCoroutine(start_letter_zoom());
     	StartCoroutine(letter_wait());
     	// Debug.Log(bool.Parse(parameters[0]));
     	// letter_open = true;
@@ -79,12 +80,20 @@ public class LetterPopUp : MonoBehaviour
     public IEnumerator letter_wait()
     {
     	// Debug.Log("in coroutine");
-    	p_move.enabled = false;
-    	set_anim_bool();
-    	yield return new WaitForSecondsRealtime(5);
-    	p_move.enabled = true;
+    	// p_move.enabled = false;
+    	// set_anim_bool();
+    	yield return new WaitForSecondsRealtime(3);
+    	// p_move.enabled = true;
     	set_letter_true();
     	// Debug.Log("after coroutine");
+    }
+
+    public IEnumerator start_letter_zoom()
+    {
+    	p_move.enabled = false;
+    	yield return new WaitForSecondsRealtime(1);
+    	anim.Play("letter_zoom");
+
     }
 
     public void set_anim_bool()
