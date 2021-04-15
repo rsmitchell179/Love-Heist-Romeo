@@ -92,7 +92,7 @@ public class LetterPopUp : MonoBehaviour
     {
     	p_move.enabled = false;
     	yield return new WaitForSecondsRealtime(1);
-    	anim.Play("letter_zoom");
+    	anim.Play("letter_zoom", 0, 0f);
 
     }
 
@@ -113,6 +113,8 @@ public class LetterPopUp : MonoBehaviour
        		letter_open = false;
        	 	p_move.enabled = true;
        	 	animation_bool = false;
+       	 	anim.Rebind();
+       	 	anim.Update(0f);
     	}
     }
 
