@@ -428,6 +428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351566572}
   - component: {fileID: 351566571}
+  - component: {fileID: 351566573}
   m_Layer: 0
   m_Name: BlackMarketBase2
   m_TagString: Untagged
@@ -500,6 +501,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &351566573
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351566570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.2
+  m_Points:
+  - {x: 8.605872, y: 1.5798929}
+  - {x: 7.635257, y: 3.2892873}
+  - {x: 7.8520155, y: 7.9453354}
+  - {x: 2.5634165, y: 8.712501}
+  - {x: 1.4729476, y: 6.0596204}
+  - {x: -8.751966, y: 6.0729346}
+  - {x: -7.7466254, y: -3.4847803}
+  - {x: -7.7622156, y: -7.851623}
+  - {x: 7.791199, y: -8.574959}
+  - {x: 8.821438, y: -4.73816}
+  - {x: 7.1844945, y: -3.7240353}
+  - {x: 8.528448, y: 1.7679763}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &477231207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -960,7 +993,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -1.4819813, y: 0.45187283}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -971,7 +1004,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25, y: 25}
+  m_Size: {x: 31.535946, y: 30.169432}
   m_EdgeRadius: 0
 --- !u!212 &1466685908
 SpriteRenderer:
