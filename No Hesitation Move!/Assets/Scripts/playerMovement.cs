@@ -116,15 +116,17 @@ public class playerMovement : MonoBehaviour
         //     }
         // }
 
-        if(Input.GetKeyDown(KeyCode.P)){
+        // if(Input.GetKeyDown(KeyCode.P)){
 
-            Save_Data();
+        //     Save_Data();
             
-        }
+        // }
 
-        if(Input.GetKeyDown(KeyCode.O)){
-            Load_Data();
-        }
+        // if(Input.GetKeyDown(KeyCode.O)){
+        //     Load_Data();
+        // }
+
+        
     }
 
     void FixedUpdate()

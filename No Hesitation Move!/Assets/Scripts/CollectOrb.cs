@@ -18,7 +18,24 @@ public class CollectOrb : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        // DontDestroyOnLoad(this);
+        // for dev purposes
+        if(Input.GetKeyDown(KeyCode.I))
+        {
+            GlobalVars.hasJSorb = true;
+            SetImage1();
+        }
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            GlobalVars.hasFTorb = true;
+            SetImage2();
+        }
+
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            GlobalVars.hasRCorb = true;
+            SetImage3();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other) {
