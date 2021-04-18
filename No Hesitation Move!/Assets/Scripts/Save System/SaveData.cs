@@ -8,6 +8,9 @@ public class SaveData
     public bool[] bool_array; 
     public string scene;
     public float[] position;
+    public bool hasJSorb;
+    public bool hasFTorb;
+    public bool hasRCorb;
 
     public SaveData()
     {
@@ -26,6 +29,10 @@ public class SaveData
         position[0] = GlobalVars.position[0];
         position[1] = GlobalVars.position[1];
         position[2] = GlobalVars.position[2];
+
+        hasJSorb = GlobalVars.hasJSorb;
+        hasFTorb = GlobalVars.hasFTorb;
+        hasRCorb = GlobalVars.hasRCorb;
 
   //   	for(int i = 0; i < 6; i++)
 		// {

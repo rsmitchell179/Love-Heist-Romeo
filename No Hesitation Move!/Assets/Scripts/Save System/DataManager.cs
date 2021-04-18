@@ -34,6 +34,11 @@ public class DataManager : MonoBehaviour
     	{
     		GlobalVars.bool_array[i] = false;
     	}
+
+        GlobalVars.hasJSorb = false;
+        GlobalVars.hasFTorb = false;
+        GlobalVars.hasRCorb = false;
+
     }
 
     public void load_save()
@@ -50,6 +55,10 @@ public class DataManager : MonoBehaviour
 	        GlobalVars.bool_array[3] = new_data.bool_array[3];
 	        GlobalVars.bool_array[4] = new_data.bool_array[4];
 	        GlobalVars.bool_array[5] = new_data.bool_array[5];
+
+            GlobalVars.hasJSorb = new_data.hasJSorb;
+            GlobalVars.hasFTorb = new_data.hasFTorb;
+            GlobalVars.hasRCorb = new_data.hasRCorb;
 
 	        SceneManager.LoadScene(new_data.scene);
 
