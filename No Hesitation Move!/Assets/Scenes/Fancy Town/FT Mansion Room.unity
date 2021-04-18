@@ -1086,6 +1086,8 @@ GameObject:
   m_Component:
   - component: {fileID: 863261677}
   - component: {fileID: 863261676}
+  - component: {fileID: 863261679}
+  - component: {fileID: 863261678}
   m_Layer: 0
   m_Name: MansionRoomBase_1
   m_TagString: Untagged
@@ -1163,6 +1165,95 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &863261678
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863261675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: 0.42770356, y: -0.22603393}
+  - {x: -6.484458, y: -0.13806933}
+  - {x: -7.0825167, y: -0.726429}
+  - {x: -7.4628663, y: -2.657056}
+  - {x: -7.3007064, y: -4.2893085}
+  - {x: -7.0493793, y: -5.196718}
+  - {x: -6.185777, y: -5.720999}
+  - {x: -6.3486753, y: -6.9364624}
+  - {x: -6.350364, y: -5.773379}
+  - {x: -7.271252, y: -5.213789}
+  - {x: -7.635513, y: -3.6780226}
+  - {x: -7.6647644, y: -2.390056}
+  - {x: -7.2805057, y: -0.6294206}
+  - {x: -6.356287, y: 0.8374591}
+  - {x: 6.384776, y: 0.81937605}
+  - {x: 6.951431, y: 0.06534076}
+  - {x: 7.5118866, y: -1.1810994}
+  - {x: 7.78012, y: -2.650637}
+  - {x: 7.7295413, y: -3.523574}
+  - {x: 7.3068166, y: -4.8767643}
+  - {x: 6.588476, y: -5.77102}
+  - {x: 6.3963847, y: -6.7524495}
+  - {x: 6.3813167, y: -5.5543065}
+  - {x: 7.3149405, y: -4.7292204}
+  - {x: 7.6530414, y: -2.9708202}
+  - {x: 7.3500285, y: -1.0295866}
+  - {x: 6.8056574, y: -0.31494376}
+  - {x: 6.1251707, y: -0.15825397}
+  - {x: 0.19388947, y: -0.19777936}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &863261679
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863261675}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.1
+  m_Points:
+  - {x: 14.018036, y: -13.420804}
+  - {x: 1.5549778, y: -13.443668}
+  - {x: 0.8101031, y: -13.791201}
+  - {x: -1.5260196, y: -13.744479}
+  - {x: -2.5434835, y: -13.34504}
+  - {x: -14.084059, y: -13.388409}
+  - {x: -13.956203, y: -6.773919}
+  - {x: -12.896214, y: -6.8000364}
+  - {x: -11.489296, y: -2.4911408}
+  - {x: -9.970711, y: 0.9985394}
+  - {x: -14.0305605, y: 0.92457056}
+  - {x: -14.080044, y: 10.514356}
+  - {x: 13.900427, y: 10.510609}
+  - {x: 13.864798, y: 0.7397673}
+  - {x: 10.076163, y: 0.7468148}
+  - {x: 10.608669, y: -0.2754773}
+  - {x: 11.726762, y: -3.24993}
+  - {x: 12.853306, y: -6.630608}
+  - {x: 13.835599, y: -6.671346}
+  - {x: 13.784222, y: -13.505566}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &941672727
 GameObject:
   m_ObjectHideFlags: 0

@@ -1460,6 +1460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1069454206}
   - component: {fileID: 1069454205}
+  - component: {fileID: 1069454207}
   m_Layer: 0
   m_Name: Fitting room base
   m_TagString: Untagged
@@ -1532,6 +1533,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1069454207
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069454204}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 5.1587524, y: -5.1206393}
+  - {x: -5.1487713, y: -5.1803513}
+  - {x: -5.069633, y: 5.025991}
+  - {x: 5.160449, y: 5.031901}
+  - {x: 5.155327, y: -5.1934443}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!114 &1140869381 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4545725546948066582, guid: 1192951b297738b41b506e5540fd9ce4,
