@@ -466,6 +466,7 @@ GameObject:
   m_Component:
   - component: {fileID: 416630459}
   - component: {fileID: 416630458}
+  - component: {fileID: 416630460}
   m_Layer: 0
   m_Name: ArtGalleryBase2
   m_TagString: Untagged
@@ -538,6 +539,51 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &416630460
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416630457}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.2
+  m_Points:
+  - {x: 12.771959, y: 6.252383}
+  - {x: 12.949867, y: 11.320437}
+  - {x: 11.31786, y: 11.326625}
+  - {x: 6.634073, y: 11.254861}
+  - {x: 6.869471, y: 3.7709591}
+  - {x: 5.581496, y: 2.2651913}
+  - {x: 5.5785785, y: 5.341465}
+  - {x: 1.2208221, y: 5.1562996}
+  - {x: 1.2133064, y: 1.628862}
+  - {x: -2.3939037, y: -2.0331008}
+  - {x: -6.3283634, y: -2.1076384}
+  - {x: -10.316067, y: -6.0426955}
+  - {x: -10.237747, y: -4.0223174}
+  - {x: -13.362518, y: -4.096385}
+  - {x: -13.396709, y: -7.0736313}
+  - {x: -11.824696, y: -8.593908}
+  - {x: -11.991688, y: -8.570051}
+  - {x: -9.085234, y: -8.43413}
+  - {x: -4.8094, y: -3.798318}
+  - {x: -1.1602854, y: -3.7635477}
+  - {x: 2.7380142, y: -0.13340545}
+  - {x: 6.5160003, y: -0.0038387775}
+  - {x: 11.001726, y: 4.4820004}
+  - {x: 14.129702, y: 4.563488}
+  - {x: 12.393887, y: 6.304487}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1001 &557599125
 PrefabInstance:
   m_ObjectHideFlags: 0
