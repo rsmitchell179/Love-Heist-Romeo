@@ -11,6 +11,7 @@ public class globals : MonoBehaviour
     void Awake()
     {
         DontDestroyOnLoad(this.gameObject);
+        Cursor.visible = false;
     }
 
 }
