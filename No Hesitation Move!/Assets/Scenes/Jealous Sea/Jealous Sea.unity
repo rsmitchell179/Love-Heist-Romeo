@@ -199,7 +199,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794634, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Radius
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -7533,7 +7533,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1.25
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9113,7 +9113,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 0.5
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -10331,6 +10331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1689324175}
   - component: {fileID: 1689324174}
+  - component: {fileID: 1689324176}
   m_Layer: 0
   m_Name: Level Music
   m_TagString: Untagged
@@ -10349,7 +10350,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ab0645caba64bc540abb6f21e5e455d3, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
@@ -10448,6 +10449,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689324176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689324173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15068510dd50dc4ea459e1e24ba90d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1786208995
 GameObject:
   m_ObjectHideFlags: 0
