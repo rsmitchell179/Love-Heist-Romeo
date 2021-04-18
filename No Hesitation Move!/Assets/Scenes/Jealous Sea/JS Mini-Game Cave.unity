@@ -1743,6 +1743,18 @@ Transform:
   m_Father: {fileID: 1350955669}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737011649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1252726617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &738068325 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -3482,6 +3494,36 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: romeo
+      value: 
+      objectReference: {fileID: 1521875913}
+    - target: {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: npc_name
+      value: Grifton
+      objectReference: {fileID: 0}
+    - target: {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: other_box
+      value: 
+      objectReference: {fileID: 737011649}
+    - target: {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: romeo_box
+      value: 
+      objectReference: {fileID: 1445068756}
+    - target: {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: other_person
+      value: 
+      objectReference: {fileID: 1736842557}
+    - target: {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: dialogueRunner
+      value: 
+      objectReference: {fileID: 340443652}
     - target: {fileID: 2238729598728178162, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_Name
@@ -3557,6 +3599,12 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e4199eccbd206a4ea308258f3b3b2a0,
+        type: 3}
     - target: {fileID: 7106214381781906995, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_IsActive
@@ -3567,7 +3615,8 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
 --- !u!1001 &1277434757
 PrefabInstance:
@@ -4110,6 +4159,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1445068756 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7119185898968270519, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1252726617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1461668369 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -4470,6 +4531,8 @@ MonoBehaviour:
   dialogueRunner: {fileID: 340443652}
   romeo: {fileID: 1521875913}
   other_person: {fileID: 1736842557}
+  romeo_box: {fileID: 1445068756}
+  other_box: {fileID: 737011649}
   npc_name: grifton
 --- !u!167 &1505375011
 AudioReverbZone:
