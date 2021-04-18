@@ -3186,6 +3186,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &618768158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1107033554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &624637983
 GameObject:
   m_ObjectHideFlags: 0
@@ -5839,6 +5851,12 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 138
       objectReference: {fileID: 0}
+    - target: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d92b0011b90b70f4c881c8c5b5601e3b,
+        type: 3}
     - target: {fileID: 7106214381781906995, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_Name
@@ -10753,6 +10771,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 156901636}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1626116526 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7119185898968270519, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1107033554}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1628006714 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7360140750273730938, guid: 8d847543876ff9d40abb288793dee1e0,
@@ -13115,6 +13145,16 @@ PrefabInstance:
       propertyPath: romeo
       value: 
       objectReference: {fileID: 388529441}
+    - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: other_box
+      value: 
+      objectReference: {fileID: 618768158}
+    - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: romeo_box
+      value: 
+      objectReference: {fileID: 1626116526}
     - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
       propertyPath: other_person

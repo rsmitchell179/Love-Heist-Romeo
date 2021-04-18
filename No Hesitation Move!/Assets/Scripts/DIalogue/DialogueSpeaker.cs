@@ -8,9 +8,18 @@ using Yarn.Unity;
 public class DialogueSpeaker : MonoBehaviour
 {
 
+    [Header("Dialogue Runner")]
     public DialogueRunner dialogueRunner;
+
+    [Header("Character Portraits")]
     public Image romeo;
     public Image other_person;
+
+    [Header("Character Boxes")]
+    public Image romeo_box;
+    public Image other_box;
+
+    [Header("NPC Name")]
     public string npc_name = "";
 	
     public void Awake()
@@ -49,10 +58,14 @@ public class DialogueSpeaker : MonoBehaviour
         string speaker = parameters[0];
         if(string.Equals(npc_name, speaker)){
             other_person.enabled = true;
+            other_box.enabled = true;
             romeo.enabled = false;
+            romeo_box.enabled = false;
         }else{
             romeo.enabled = true;
+            romeo_box.enabled = true;
             other_person.enabled = false;
+            other_box.enabled = false;
         }
     }
 }
