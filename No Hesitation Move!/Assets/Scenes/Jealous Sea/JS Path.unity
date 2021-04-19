@@ -533,6 +533,7 @@ GameObject:
   - component: {fileID: 301882348}
   - component: {fileID: 301882351}
   - component: {fileID: 301882350}
+  - component: {fileID: 301882352}
   m_Layer: 0
   m_Name: door_to_Jealous_Sea
   m_TagString: Untagged
@@ -622,9 +623,10 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 384280351
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d897d3e08771f424e9ba4b6f0e53a387, type: 3}
+  m_Sprite: {fileID: 1093725048397242416, guid: 9dc83f81ec62f3d49adcab9153c122c9,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -635,6 +637,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &301882352
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301882347}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e772ca80a9d82dc44930e0228b571b65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &302888440 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -2974,7 +2995,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 384280351
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 5af87a5cdc1c5ed4cbfa58d088b70a47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3712,6 +3733,7 @@ GameObject:
   - component: {fileID: 1271971662}
   - component: {fileID: 1271971661}
   - component: {fileID: 1271971660}
+  - component: {fileID: 1271971664}
   m_Layer: 0
   m_Name: door_to_JS_Town
   m_TagString: Untagged
@@ -3746,18 +3768,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.711374, y: -2.7638245}
+  m_Offset: {x: -0.16048813, y: -0.36510968}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 25.006105, y: 20}
+    oldSize: {x: 3.96, y: 3.72}
     newSize: {x: 25.006105, y: 20}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 24.681381, y: 13.682692}
+  m_Size: {x: 2.235756, y: 1.8425612}
   m_EdgeRadius: 0
 --- !u!212 &1271971662
 SpriteRenderer:
@@ -3766,7 +3788,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271971659}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -3796,10 +3818,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1721794061
+  m_SortingLayer: 6
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e082a89f93900044aafd0b320c1b0661, type: 3}
+  m_Sprite: {fileID: -8274196694388497642, guid: 4c163278b695dfd4f85776eea4f8128f,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3818,12 +3841,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1271971659}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.16, y: 2.16, z: 0}
-  m_LocalScale: {x: 0.09397446, y: 0.1160012, z: 1}
+  m_LocalPosition: {x: 15.762, y: 2.398, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1271971664
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271971659}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 917c51ae222521743b59800f7102971d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1294006993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4792,7 +4834,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 6323227
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 32924ac7446fe524fae7a9b18faef846, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5412,7 +5454,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 6323227
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 32924ac7446fe524fae7a9b18faef846, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
