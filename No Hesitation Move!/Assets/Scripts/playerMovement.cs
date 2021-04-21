@@ -12,7 +12,7 @@ public class playerMovement : MonoBehaviour
     public static bool hasFTorb;
     public static bool hasRCorb;
 
-    public float moveSpeed = 5f;
+    public float moveSpeed;
 
     // rigidbody for motion and collisions
     public Rigidbody2D body;
@@ -102,7 +102,7 @@ public class playerMovement : MonoBehaviour
         if(Input.GetKey(KeyCode.LeftShift)) {
             moveSpeed = 6f;
         } else {
-            moveSpeed = 2.5f;
+            moveSpeed = 3.14f;
         }
 
         // charles bless up
