@@ -577,6 +577,8 @@ GameObject:
   m_Component:
   - component: {fileID: 283508455}
   - component: {fileID: 283508454}
+  - component: {fileID: 283508456}
+  - component: {fileID: 283508457}
   m_Layer: 0
   m_Name: js_pokermat_noreflection
   m_TagString: Untagged
@@ -624,7 +626,8 @@ SpriteRenderer:
   m_SortingLayerID: -1674865167
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e64274530fc25f74eb04d81b2e45b6a2, type: 3}
+  m_Sprite: {fileID: -8318760146430902273, guid: 379358519e274c44fbcacd149e3c62cb,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -649,6 +652,39 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &283508456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283508453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40d2e88aa07b3464ba576cc5453ddcca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  door: {fileID: 283508454}
+  door_opened: {fileID: 309371969380442823, guid: 379358519e274c44fbcacd149e3c62cb,
+    type: 3}
+  door_closed: {fileID: -8318760146430902273, guid: 379358519e274c44fbcacd149e3c62cb,
+    type: 3}
+--- !u!58 &283508457
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283508453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.014523888, y: 0.036688562}
+  serializedVersion: 2
+  m_Radius: 0.7605986
 --- !u!1001 &350014974
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2523,7 +2559,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1193802207
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 09c2b727fe8393743afc9c200d4163c2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
