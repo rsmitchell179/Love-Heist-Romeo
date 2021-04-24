@@ -1540,7 +1540,6 @@ GameObject:
   - component: {fileID: 151184648}
   - component: {fileID: 151184647}
   - component: {fileID: 151184650}
-  - component: {fileID: 151184652}
   - component: {fileID: 151184651}
   m_Layer: 0
   m_Name: door_to_path
@@ -1663,21 +1662,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!111 &151184652
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151184646}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: adbd26e102e92844d9992d4221fd8e0a, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &153084980
 PrefabInstance:
   m_ObjectHideFlags: 0
