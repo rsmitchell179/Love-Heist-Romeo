@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8684720778235822536}
   - component: {fileID: 8684720778235822551}
   - component: {fileID: 2066280566002317139}
+  - component: {fileID: 2179604731936282591}
   m_Layer: 0
   m_Name: vinny
   m_TagString: Untagged
@@ -97,8 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf378c3b6b7bf5d4784b5afd7731c8ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterName: vinny
+  diaRun: {fileID: 0}
   talkToNode: 
+  first_node: 
+  second_node: 
+  bool_index: 0
   scriptToLoad: {fileID: 0}
 --- !u!114 &8684720778235822551
 MonoBehaviour:
@@ -115,6 +119,8 @@ MonoBehaviour:
   dialogueRunner: {fileID: 0}
   romeo: {fileID: 0}
   other_person: {fileID: 0}
+  romeo_box: {fileID: 0}
+  other_box: {fileID: 0}
   npc_name: vinny
 --- !u!95 &2066280566002317139
 Animator:
@@ -135,3 +141,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &2179604731936282591
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8684720778235822550}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0034632683, y: -0.543725}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.7, y: 1.38}
+    newSize: {x: 0.7, y: 1.38}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4298687, y: 0.27869606}
+  m_EdgeRadius: 0

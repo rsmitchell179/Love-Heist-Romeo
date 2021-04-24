@@ -12387,7 +12387,6 @@ GameObject:
   - component: {fileID: 1963946202}
   - component: {fileID: 1963946201}
   - component: {fileID: 1963946200}
-  - component: {fileID: 1963946199}
   m_Layer: 0
   m_Name: cave signs_0
   m_TagString: Untagged
@@ -12395,21 +12394,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!111 &1963946199
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963946198}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &1963946200
 Animator:
   serializedVersion: 3
@@ -13229,6 +13213,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2480198943629176163, guid: 5c84f44f547ba3e458315617636d51f0,
         type: 3}
+    - target: {fileID: 8684720778235822537, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684720778235822537, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 6323227
+      objectReference: {fileID: 0}
     - target: {fileID: 8684720778235822538, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
       propertyPath: m_RootOrder
