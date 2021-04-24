@@ -8,9 +8,9 @@ using System.IO;
 
 public class playerMovement : MonoBehaviour
 {
-    public static bool hasJSorb;
-    public static bool hasFTorb;
-    public static bool hasRCorb;
+    // public static bool hasJSorb;
+    // public static bool hasFTorb;
+    // public static bool hasRCorb;
 
     public float moveSpeed;
 
