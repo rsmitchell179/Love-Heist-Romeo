@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DoughboyConvo : MonoBehaviour
+public class DoughboyConvoTrio : MonoBehaviour
 {
 
 	[Header("Bubbles")]
@@ -18,8 +18,8 @@ public class DoughboyConvo : MonoBehaviour
 	public TMP_Text ui_text_3;
 
 	[Header("Delay Times")]
-	private float char_delay = 0.1f;
-	private float time_delay = 0.5f;
+	private float char_delay = 0.05f;
+	private float time_delay = 0.3f;
 
 	[Header("Doughboy Dialogue")]
 	public string actual_text_1;
