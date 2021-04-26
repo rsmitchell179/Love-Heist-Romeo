@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Yarn.Unity;
+using TMPro;
 
 public class DialogueSpeaker : MonoBehaviour
 {
@@ -21,6 +22,11 @@ public class DialogueSpeaker : MonoBehaviour
 
     [Header("NPC Name")]
     public string npc_name = "";
+
+    [Header("TMP Text")]
+    public TMP_Text ui_text;
+    public Color romeo_color = new Color(0.0f, 0.0f, 0.5f, 1.0f);
+    public Color rc_color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
 	
     public void Awake()
     {
@@ -61,11 +67,13 @@ public class DialogueSpeaker : MonoBehaviour
             other_box.enabled = true;
             romeo.enabled = false;
             romeo_box.enabled = false;
+            ui_text.color = rc_color;
         }else{
             romeo.enabled = true;
             romeo_box.enabled = true;
             other_person.enabled = false;
             other_box.enabled = false;
+            ui_text.color = romeo_color;
         }
     }
 }

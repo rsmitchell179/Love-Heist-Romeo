@@ -150,6 +150,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2238729598143919048, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 2238729598160384653, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -266,6 +271,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: img_vinny
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -330
+      objectReference: {fileID: 0}
+    - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -270
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
@@ -655,6 +670,11 @@ PrefabInstance:
       propertyPath: romeo
       value: 
       objectReference: {fileID: 1910729347}
+    - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 2009737014}
     - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
       propertyPath: other_box
@@ -1807,6 +1827,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2009737014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2238729598143919051, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 38581247}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2123455791

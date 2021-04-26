@@ -4690,6 +4690,9 @@ MonoBehaviour:
   romeo_box: {fileID: 1445068756}
   other_box: {fileID: 737011649}
   npc_name: grifton
+  ui_text: {fileID: 2132213394}
+  romeo_color: {r: 0, g: 0, b: 0.5, a: 1}
+  rc_color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!167 &1505375011
 AudioReverbZone:
   m_ObjectHideFlags: 0
@@ -4748,7 +4751,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -333, y: -335}
+  m_AnchoredPosition: {x: -330, y: -270}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1521875913
@@ -5752,7 +5755,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 356, y: -214}
+  m_AnchoredPosition: {x: 360, y: -215}
   m_SizeDelta: {x: 242, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736842557
@@ -6912,6 +6915,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7138a8ec6fa786f489a1a81699e92bac, type: 3}
+--- !u!114 &2132213394 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2238729598143919051, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1252726617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2134275986
 GameObject:
   m_ObjectHideFlags: 0
