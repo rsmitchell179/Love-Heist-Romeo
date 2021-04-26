@@ -123,6 +123,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &15757426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526464070421143765, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 38581247}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &38581247
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -233,6 +245,11 @@ PrefabInstance:
     - target: {fileID: 2238729598728178173, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2623993557312660162, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3638626972906848523, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -685,6 +702,16 @@ PrefabInstance:
       propertyPath: romeo_box
       value: 
       objectReference: {fileID: 1830194172}
+    - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: other_label
+      value: 
+      objectReference: {fileID: 1292224917}
+    - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: romeo_label
+      value: 
+      objectReference: {fileID: 15757426}
     - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
       propertyPath: other_person
@@ -1166,6 +1193,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292224917 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7130471374601010211, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 38581247}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1377215482 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3638626972906848523, guid: 62c1d4f54e09f284b8ec3262624f9260,

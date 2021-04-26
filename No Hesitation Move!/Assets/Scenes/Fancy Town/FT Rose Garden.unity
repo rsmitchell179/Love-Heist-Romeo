@@ -9221,6 +9221,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2623993557312660162, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3638626972906848523, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_Sprite
@@ -9258,8 +9263,37 @@ PrefabInstance:
       propertyPath: m_Name
       value: img_vinny
       objectReference: {fileID: 0}
+    - target: {fileID: 8884477686002160325, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_text
+      value: Vinny
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
+--- !u!114 &1488917482 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7130471374601010211, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1488917481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1488917483 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526464070421143765, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1488917481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1525925355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -10787,6 +10821,16 @@ PrefabInstance:
       propertyPath: romeo_box
       value: 
       objectReference: {fileID: 1448557837}
+    - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: other_label
+      value: 
+      objectReference: {fileID: 1488917482}
+    - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: romeo_label
+      value: 
+      objectReference: {fileID: 1488917483}
     - target: {fileID: 8684720778235822551, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
       propertyPath: other_person

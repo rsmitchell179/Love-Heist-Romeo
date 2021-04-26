@@ -3438,6 +3438,11 @@ PrefabInstance:
     - target: {fileID: 5874658887751151500, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6197593717104567037, guid: 62c1d4f54e09f284b8ec3262624f9260,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -3458,7 +3463,7 @@ PrefabInstance:
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 320
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -3510,6 +3515,30 @@ MonoBehaviour:
 --- !u!114 &391184733 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2238729598143919051, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 391184730}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &391184734 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8884477686002160325, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 391184730}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &391184735 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526464070421143765, guid: 62c1d4f54e09f284b8ec3262624f9260,
     type: 3}
   m_PrefabInstance: {fileID: 391184730}
   m_PrefabAsset: {fileID: 0}
@@ -13387,6 +13416,16 @@ PrefabInstance:
       propertyPath: romeo_box
       value: 
       objectReference: {fileID: 391184732}
+    - target: {fileID: 7251836596353279239, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: other_label
+      value: 
+      objectReference: {fileID: 391184734}
+    - target: {fileID: 7251836596353279239, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: romeo_label
+      value: 
+      objectReference: {fileID: 391184735}
     - target: {fileID: 7251836596353279239, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
       propertyPath: other_person

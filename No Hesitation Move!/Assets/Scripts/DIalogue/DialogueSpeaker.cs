@@ -26,7 +26,11 @@ public class DialogueSpeaker : MonoBehaviour
     [Header("TMP Text")]
     public TMP_Text ui_text;
     public Color romeo_color = new Color(0.0f, 0.0f, 0.5f, 1.0f);
-    public Color rc_color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+    public Color other_color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+
+    [Header("Name Labels")]
+    public TMP_Text romeo_label;
+    public TMP_Text other_label;
 	
     public void Awake()
     {
@@ -36,6 +40,11 @@ public class DialogueSpeaker : MonoBehaviour
                 Debug.Log("got nullexceptionerror in DialogueSpeaker, don't worry about it for now");
             }
         // dialogueRunner.AddCommandHandler("set_speaker", set_speaker_in_scene);
+
+            romeo_label.color = romeo_color;
+            other_label.color = other_color;
+            romeo_label.enabled = false;
+            other_label.enabled = false;
     }
 
     // Start is called before the first frame update
@@ -67,13 +76,17 @@ public class DialogueSpeaker : MonoBehaviour
             other_box.enabled = true;
             romeo.enabled = false;
             romeo_box.enabled = false;
-            ui_text.color = rc_color;
+            ui_text.color = other_color;
+            other_label.enabled = true;
+            romeo_label.enabled = false;
         }else{
             romeo.enabled = true;
             romeo_box.enabled = true;
             other_person.enabled = false;
             other_box.enabled = false;
             ui_text.color = romeo_color;
+            romeo_label.enabled = true;
+            other_label.enabled = false;
         }
     }
 }
