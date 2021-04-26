@@ -38,7 +38,7 @@ public class RecurringBubble : MonoBehaviour
     		bubble_bool = true;
     	}
 
-        if(bubble_bool == true || GlobalVars.bool_array[bool_index] == true){
+        if(bubble_bool == true){
         	bubble.enabled = false;
         	space_bar.enabled = false;
         	// anim.enabled = false;
