@@ -124,7 +124,7 @@ public class DoughboyConvoDuo : MonoBehaviour
 
     void set_pos(Image bubble, GameObject db)
     {
-    	float y_offset = db.GetComponent<SpriteRenderer>().bounds.max.y + 0.5f;
+    	float y_offset = db.GetComponent<SpriteRenderer>().bounds.max.y + 0.4f;
     	Vector3 bub_position = new Vector3(db.transform.position.x, y_offset, db.transform.position.z);
     	bubble.transform.position = cam.WorldToScreenPoint(bub_position);
     }
