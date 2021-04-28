@@ -18,7 +18,7 @@ public class DoughboyConvoTrio : MonoBehaviour
 	public TMP_Text ui_text_3;
 
 	[Header("Delay Times")]
-	private float char_delay = 0.05f;
+	private float char_delay = 0.03f;
 	private float time_delay = 0.3f;
 
 	[Header("Doughboy Dialogue")]

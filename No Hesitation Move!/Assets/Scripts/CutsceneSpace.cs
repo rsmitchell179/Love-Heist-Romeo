@@ -28,7 +28,7 @@ public class CutsceneSpace : MonoBehaviour
         	StartCoroutine(wait_five());
         }
 
-        if(is_pressed = true)
+        if(is_pressed == true)
         {
         	wait_time = 8f;
         }

@@ -13,7 +13,7 @@ public class doughboyDialogue : MonoBehaviour
 	public TMP_Text ui_text;
 	// public Text ui_text;
 	public Camera cam;
-	public float delay = 0.5f;
+	private float delay = 0.03f;
 	public string actual_text;
 	private string current_text = "";
 
