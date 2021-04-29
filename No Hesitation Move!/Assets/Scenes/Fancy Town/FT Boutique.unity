@@ -2436,6 +2436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794634, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
+      propertyPath: m_Radius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794634, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -3474,6 +3479,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794634, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Radius
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794634, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -8530,9 +8540,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5d4fa13a8095ba944851f3a10106e8eb, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 78b7ddde3874d40458f8be0550db5f5c, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.22
   m_Pitch: 1
   Loop: 0
   Mute: 0
