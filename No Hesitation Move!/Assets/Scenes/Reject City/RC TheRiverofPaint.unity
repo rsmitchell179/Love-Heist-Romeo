@@ -546,7 +546,7 @@ GameObject:
   - component: {fileID: 573479282}
   - component: {fileID: 573479281}
   m_Layer: 0
-  m_Name: To Black Market
+  m_Name: door_to_black_market
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationScene: RC TheBlackMarket
-  destinationCoords: {x: 6.9, y: -4.32}
+  destinationCoords: {x: 15, y: -11.75}
 --- !u!212 &573479283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -651,7 +651,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573479280}
   m_LocalRotation: {x: -0, y: -0, z: 0.4962092, w: -0.86820304}
-  m_LocalPosition: {x: -6.77, y: -2.68, z: 0}
+  m_LocalPosition: {x: -6.85, y: -2.73, z: 0}
   m_LocalScale: {x: 0.04749986, y: 0.032129187, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -995,7 +995,7 @@ GameObject:
   - component: {fileID: 1078123504}
   - component: {fileID: 1078123503}
   m_Layer: 0
-  m_Name: To Skully Skate Park
+  m_Name: door_to_skate_park
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1099,13 +1099,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1078123502}
-  m_LocalRotation: {x: -0, y: -0, z: 0.26886192, w: -0.96317875}
-  m_LocalPosition: {x: 4.98, y: 9.35, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.22781126, w: -0.97370535}
+  m_LocalPosition: {x: 5.04, y: 9.45, z: 0}
   m_LocalScale: {x: 0.052729297, y: 0.032129187, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -31.193}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -26.336}
 --- !u!1001 &1605272485
 PrefabInstance:
   m_ObjectHideFlags: 0
