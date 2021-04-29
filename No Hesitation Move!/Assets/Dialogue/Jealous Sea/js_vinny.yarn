@@ -4,27 +4,22 @@ colorID: 0
 position: 1172,-215
 ---
 <<set_speaker vinny>>
-Hey there, man.
-Name's Vinny. Vinny Sellyastuff.
-If you can't already tell by the name,
-I'm here to sell you stuff. Are you in the market for health items?
-I got health boosts that come in syringes or medical bags
-Over a hundred varieties of food items
-Skill points that increase your health
-C’mon. Whaddaya say? 
+Hey there, bunny.
+Name's Vinny. Vinny Sellyastuff. The Cha Ching King of selling stuff.
+You want it, I got it. C’mon. Whaddaya say? 
 <<set_speaker romeo>>
 I'm just trying to find an orb.
 <<set_speaker vinny>>
-Can't help you there, bunny.
+Orb? Can't help you there, bunny.
 The sea can be a dangerous place, though.
-Are you sure you don't need any health items?
+Are you sure you don't need anything?
 <<set_speaker romeo>>
 No thanks, Vinny.
 I'm only in need of True Love.
 <<set_speaker vinny>>
-Love? Been down that road before.
+Love? I’ve been down that road before.
 And I’m never going down it again. Never!
-Hope it works out for you, bunny.
+Enough with this rancid trip down memory lane.
 <<set_has_spoken true>>
 ===
 title: js_vinny_second
@@ -33,25 +28,26 @@ colorID: 0
 position: 723,-282
 ---
 <<set_speaker vinny>>
-You know the drill, man.
-Vinny is the name. Sellyastuff is the game.
-What are you in the market for?
-I got lots of health items for you this time...
-Health boosts that come in syringes or medical bags
-Over a hundred varieties of food items
-Skill points that increase your health
-You name it, I got it.
-Whaddaya say? 
+You know the drill.
+Vinny’s the name. Sellyastuff is the - 
 <<set_speaker romeo>>
 No thanks, Vinny.
 <<set_speaker vinny>>
-C’mon. The sea can be a dangerous place. Never know what you’ll encounter. It’s as easy as a button click.
+C’mon. You didn’t even let me finish. 
 <<set_speaker romeo>>
-Button clicking? Never heard of that technique.
-I always thought buttons just belonged to clothes.
-Besides, you know all I need are the orbs for my shot at True Love.
+Vinny, how come you don’t believe in love? 
 <<set_speaker vinny>>
-Love? I’ve been down that road before.
-And I’m never going down it again. Never!
-Hope it works out for you, bunny.
+Ah, here we go again with love! 
+It’s not that I don’t believe in it, it’s that I didn’t have a good experience with it.
+<<set_speaker romeo>>
+I thought all love brings good experiences. 
+<<set_speaker vinny>>
+Yeah, pfft. Guess I got a stink deal out of that one then! That was some twisted form of luck I had!
+<<set_speaker romeo>>
+But luck led me here! 
+I walked a really long time in some scary woods until I finally found a Wizard that could promise me True Love, and now I’m one step closer to it!
+<<set_speaker vinny>>
+Yeah, I thought there was such a thing as fortuitous accidents too, but I was dead wrong, bunny. 
+Nothing honest ever comes from them.  
+Now, quit pestering me about my past and scram. 
 ===

@@ -6,37 +6,29 @@ position: 1221,-165
 <<set_speaker budalia>>
 Ahoy there, you must be the one they call Romeo.
 <<set_speaker romeo>>
-I'm the one they call Romeo. I don’t think I know you, though. 
-Have we met before?
+I'm the one they call Romeo! I don’t think I know you, though.
 <<set_speaker budalia>>
-My name is Budalia McMailman. I’m a courier working under the orders of her majesty the Wizard.
-She sent me here to act as a go-between for your communication.
+My name is Budalia McMailman. I work delivery for the Wizard.
 <<set_speaker romeo>>
 Well, nice to meet you, Budalia.
 <<set_speaker budalia>>
 Fancy meeting you here as well.
 <<set_speaker romeo>>
-Yay! I’m finally on a boat!
-This is so cool!
+Yeah! I’m finally on a boat!
 <<set_speaker budalia>>
-Well, you can't quite be on the Jealous Sea without a boat.
+Now, try not to exert all your excitement here. The boat isn’t your top priority, is it? 
 <<set_speaker romeo>>
-I wish my friend could see me now! I was always jealous of his boat privileges. 
+Boats are cool, but the orbs are what I’m really after!
 <<set_speaker budalia>>
-Now, try not to exert too much of your energy here. The boat isn’t your top priority, is it? 
+Well, I have something for you then, Romeo.
+This is a select chapter from the Wizard’s personal memoirs. 
+Within it is the disclosed location of the Jealous Sea orb.
 <<set_speaker romeo>>
-No, I should stay focused on the orbs, Orbs 
+So she wants to help me find my True Love after all.
 <<set_speaker budalia>>
-On that note, I have something for you here, Romeo.
-This is a letter direct from the Wizard herself. It discloses the location of the orb.
-<<set_speaker romeo>>
-Wow! How nice of her!
-She must really want to help me find my True Love after all.
-<<set_speaker budalia>>
-Oh, yeah...
-Being nice and helpful to others.
-That’s truly her star quality.
-Alright, I’ll be off now. Shouldn’t keep you any longer.
+Oh, sure...
+The Wizard being nice and helpful to others.
+That truly sounds like her...
 <<set_has_spoken true>>
 <<image_pop_up true>>
 ===
@@ -46,32 +38,26 @@ colorID: 0
 position: 703,7
 ---
 <<set_speaker budalia>>
-Welcome aboard, Romeo!
+Welcome aboard the Jealous Sea boat, Romeo!
 <<set_speaker romeo>>
 Welcome aboard to you too, Budalia!
 <<set_speaker budalia>>
-I hear much more excitement in your voice since when we last met.
+Oh, I can hear the earnestness in your voice from a mile away! Let it out!
 <<set_speaker romeo>>
-I’m finally on a boat!
-This is so cool!
+Boats are soooo COOL! 
+Has the Wizard ever been on a boat? 
 <<set_speaker budalia>>
-Well, you can't quite be on the Jealous Sea without a boat.
+She was away on a yacht once when I had a big delivery for her shop. 
+I think I overstayed my welcome there, though. I can’t seem to remember much about that day.
 <<set_speaker romeo>>
-It's been a lifelong dream of mine to step foot on a boat. I'm always jealous of my friend’s boating privileges. It's like his job.
+Did you ever find out what was in that delivery?
 <<set_speaker budalia>>
-Now, try not to exert too much of your energy on this boat. There’s still an orb to be gathered.  
+I can’t say for certain, but I have a feeling I did discover something I wasn’t supposed to. Nope, drawing blanks.
+Anyways, I have here another chapter for you from the Wizard’s memoirs. It should steer you in the right direction.
+See what I did there?
 <<set_speaker romeo>>
-Orbs are the only things on my mind.
-Ok, fine, one of two things. Orbs and boats!
+Another chapter? The Wizard is really trying to help!
 <<set_speaker budalia>>
-I have here for you another letter direct from the Wizard herself, revealing the location of the orb for this area, as per usual.
-<<set_speaker romeo>>
-Another letter? The Wizard is soooo helpful!
-Just totally nice of her!
-<<set_speaker budalia>>
-Oh, yeah...
-Being nice and helpful to others.
-That’s truly her star quality.
-Alright, I’ll be off now. Shouldn’t keep you any longer.
+Oh, yes, Romeo. Helping definitely sounds like her specialty...
 <<image_pop_up true>>
 ===

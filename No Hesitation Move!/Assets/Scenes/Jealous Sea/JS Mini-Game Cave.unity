@@ -3620,7 +3620,7 @@ GameObject:
   - component: {fileID: 1242878040}
   - component: {fileID: 1242878044}
   m_Layer: 0
-  m_Name: door_to_Hub
+  m_Name: door_to_MainHub
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3673,7 +3673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destinationScene: MainHub
-  destinationCoords: {x: 6.62, y: 14}
+  destinationCoords: {x: 5, y: 10.5}
 --- !u!224 &1242878043
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5145,7 +5145,6 @@ MonoBehaviour:
   character: {fileID: 1659253078}
   ui_text: {fileID: 1428059648}
   cam: {fileID: 0}
-  delay: 0.02
   actual_text: "Finally, someone\u2019s here besides me! Want to race? Please say
     yes!"
 --- !u!82 &1659253080

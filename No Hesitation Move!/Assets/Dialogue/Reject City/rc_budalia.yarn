@@ -5,49 +5,31 @@ position: 972,-659
 ---
 <<set_speaker budalia>>
 Greetings, fellow Reject Citizen!
-Can I interest you in a spray can for some colorful graffitiing?
 <<set_speaker romeo>>
-I think you have me confused with someone else. My name's not Reject Citizen. It's just Romeo.
+Reject Citizen? I think you have me confused with somebody else. My name’s Romeo. 
 <<set_speaker budalia>>
-Ahh, all those who reside in Reject City are called Reject Citizens. It's very unifying for the community.
+Ahh, those who reside here in Reject City are called Reject Citizens. 
 <<set_speaker romeo>>
-Reject City? This doesn't sound like a friendly place.
-Why would the Wizard want me to go here?
+Reject City? Why would the Wizard want me to go here?
 <<set_speaker budalia>>
-The Wizard? Sorry, what did you say your name was again?
+Wizard? Ah, yes, that's it! Romeo! You're the one I was supposed to meet!
 <<set_speaker romeo>>
-Romeo.
+Does that mean you have my orb?
 <<set_speaker budalia>>
-Ah, yes! Romeo. That's it! You're the one I was supposed to meet!
-<<set_speaker romeo>>
-Cool! Does that mean you have my orb?
-<<set_speaker budalia>>
-Heavens no! My name is Budalia McMailman. I'm the Wizard’s personal courier, sent here to be your means of communication with her.
+Heavens no! My name is Budalia McMailman. I’m a delivery worker for the Wizard.  
 <<set_speaker romeo>>
 Then it’s good to meet you, Budalia!
-Where exactly am I?
 <<set_speaker budalia>>
-It's called a skate park.
-Don't they have skateboarding where you're from?
+Certainly! In fact, I have something for you. 
+It's a chapter from the Wizard’s memoirs. This one reveals the location of Reject City’s orb.
 <<set_speaker romeo>>
-I'm not sure about skateboarding, but people do get on these wheel boards and do tricks and flips.
+That’s very kind of the Wizard to give me that. 
 <<set_speaker budalia>>
-That's precisely what skateboarding is. It's actually quite universal!
-<<set_speaker romeo>>
-I'm not sure about universal. Skateboarding in outer space doesn't sound very safe. I don't have to do that for the orb, do I? I have no helmet, I could scrape my knees, and the gravity-
-<<set_speaker budalia>>
-Certainly not! In fact, I have something here for you that can point you in the right direction. It's a personal letter from her majesty, the Wizard. It reveals the location of the orb.
-<<set_speaker romeo>>
-Now that's even cooler than skateboarding!
-She really is one kind Wizard for wanting to help me find my True Love!
-<<set_speaker budalia>>
-Yes, kindness is truly where her heart is at...
+Yes, kindness is indeed where her troubled heart lies...
 <<set_speaker romeo>>
 It sure seems that way to me!
 <<set_speaker budalia>>
-Well, alright. I'll let you be off now, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit!
-<<set_speaker romeo>>
-I will!
+Well, alright, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit!
 <<set_has_spoken true>> 
 <<image_pop_up true>>
 ===
@@ -57,39 +39,31 @@ colorID: 0
 position: 613,-760
 ---
 <<set_speaker budalia>>
-Greetings from Reject City, Romeo!
-Would you like a spray can to do some colorful graffitiing?
+Greetings from the Reject City skatepark, Romeo!
 <<set_speaker romeo>>
-Reject City? This doesn't sound like a friendly place.
-Why would the Wizard send me here?
+Oh! So that’s what this place is called! 
 <<set_speaker budalia>>
-I know it may sound unwelcoming, but you’re here because there is an orb to be found!
+Indeed! The Wizard was quite the skateboarder back in her childhood. 
+She frequented these parks regularly, as did I back in my youth. That’s about all we have in common.  
 <<set_speaker romeo>>
-Here? What exactly is this place? 
+I bet you two ruled the skatepark together!
 <<set_speaker budalia>>
-It's called a skate park. 
-Don't they have skateboarding where you're from?
+Oh, we grew up worlds away. I only met her while doing deliveries on my route. 
+Skateboarding actually inspired me to pursue delivery. 
 <<set_speaker romeo>>
-I'm not sure about skateboarding, but people do get on these wheel boards and do tricks and flips.
+Am I supposed to skateboard for the orb? Is that why we’re here? I don’t have a helmet or anything. 
 <<set_speaker budalia>>
-That's precisely what skateboarding is… 
+Heavens, no. That was just me taking you on a skate trip down memory lane. 
+There is another chapter from the Wizard’s memoirs for you, though. The orb’s true location is disclosed, same as always.
 <<set_speaker romeo>>
-So that’s what it’s called!
-<<set_speaker budalia>>
-Yes, and skateboarding's actually become quite universal!
-<<set_speaker romeo>>
-I'm not sure about universal. Skateboarding in outer space doesn't sound too safe.
-<<set_speaker budalia>>
-I can assure you won’t encounter any danger here. In fact, this should make things much clearer. It’s another letter from the Wizard, containing a helpful hint as usual as to the orb’s location. 
-<<set_speaker romeo>>
-Wow, another letter? Now that’s even cooler than skateboarding! You should’ve started with that!  
-The Wizard shows me so much kindness with her taking the time to write all these letters for my benefit!  
+Wow, another chapter? 
+The Wizard shows me so much kindness with her taking the time to write these for my benefit! 
 <<set_speaker budalia>>
 Yeah, kindness! That is certainly her intention with all this! Ha!  
 <<set_speaker romeo>>
 It sure seems that way to me!
 <<set_speaker budalia>>
-Well, alright. I'll let you be off now, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit! 
+Well, alright, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit!
 <<set_speaker romeo>>
 I will!
 <<image_pop_up true>>
