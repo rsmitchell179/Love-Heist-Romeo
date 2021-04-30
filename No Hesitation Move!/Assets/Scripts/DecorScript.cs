@@ -13,6 +13,8 @@ public class DecorScript : MonoBehaviour
 
 	public Color new_color;
 
+	public float dist_is;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +36,7 @@ public class DecorScript : MonoBehaviour
 
         float dist = Vector3.Distance(player.transform.position, this.transform.position);
 
-        if(dist < 0.8f && (this.GetComponent<SpriteRenderer>().sortingLayerName == above_layer))
+        if(dist < dist_is && (this.GetComponent<SpriteRenderer>().sortingLayerName == above_layer))
         {
         	new_color.a = 0.5f;
         	this.GetComponent<SpriteRenderer>().color = new_color;

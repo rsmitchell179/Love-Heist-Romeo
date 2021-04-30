@@ -40,26 +40,25 @@ public class DialogueSpeaker : MonoBehaviour
                 Debug.Log("got nullexceptionerror in DialogueSpeaker, don't worry about it for now");
             }
         // dialogueRunner.AddCommandHandler("set_speaker", set_speaker_in_scene);
-
-            romeo_label.color = romeo_color;
-            other_label.color = other_color;
-            romeo_label.enabled = false;
-            other_label.enabled = false;
     }
 
     // Start is called before the first frame update
     void Start()
     {
         try{
+            romeo_label.color = romeo_color;
             romeo.enabled = false;
+            romeo_label.enabled = false;
         }catch(NullReferenceException){
-                Debug.Log("got nullexceptionerror in DialogueSpeaker romeo.enabled, don't worry about it for now");
+                Debug.Log("got nullexceptionerror in DialogueSpeaker romeo stuff, don't worry about it for now");
             }
         
         try{
+            other_label.color = other_color;
             other_person.enabled = false;
+            other_label.enabled = false;
         }catch(NullReferenceException){
-                Debug.Log("got nullexceptionerror in DialogueSpeaker other_person.enabled, don't worry about it for now");
+                Debug.Log("got nullexceptionerror in DialogueSpeaker other_person stuff, don't worry about it for now");
             }
     }
 
