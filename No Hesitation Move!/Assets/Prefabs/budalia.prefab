@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7251836596353279237}
   - component: {fileID: 7251836596353279239}
   - component: {fileID: 9122448106857403878}
+  - component: {fileID: 2524460711975728878}
   m_Layer: 0
   m_Name: budalia
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 6323227
-  m_SortingLayer: 10
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -3036837450980745413, guid: 9c5963f2b9648b0419b52345ad6339f1,
     type: 3}
@@ -183,6 +184,11 @@ MonoBehaviour:
   romeo_box: {fileID: 0}
   other_box: {fileID: 0}
   npc_name: budalia
+  ui_text: {fileID: 0}
+  romeo_color: {r: 0, g: 0, b: 0.5, a: 1}
+  other_color: {r: 1, g: 1, b: 1, a: 1}
+  romeo_label: {fileID: 0}
+  other_label: {fileID: 0}
 --- !u!61 &9122448106857403878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -209,6 +215,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7972958, y: 0.4115529}
   m_EdgeRadius: 0
+--- !u!114 &2524460711975728878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7251836596353279234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: 0
+  runOnlyOnce: 1
 --- !u!1 &7251836596663307967
 GameObject:
   m_ObjectHideFlags: 0

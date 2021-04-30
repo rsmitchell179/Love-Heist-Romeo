@@ -170,6 +170,7 @@ GameObject:
   - component: {fileID: 66796888}
   - component: {fileID: 66796887}
   - component: {fileID: 66796889}
+  - component: {fileID: 66796890}
   m_Layer: 0
   m_Name: canvas3_2
   m_TagString: Untagged
@@ -243,8 +244,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b2486826e01cd748a40d0cc1e566bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -273,7 +274,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &66796890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66796885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &142864527
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,6 +713,7 @@ GameObject:
   - component: {fileID: 508936233}
   - component: {fileID: 508936232}
   - component: {fileID: 508936234}
+  - component: {fileID: 508936235}
   m_Layer: 0
   m_Name: canvas1_5
   m_TagString: Untagged
@@ -769,8 +787,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c140df86733045e4db2158070e41348c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -799,7 +817,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &508936235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 508936230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &537407588
 GameObject:
   m_ObjectHideFlags: 0
@@ -848,6 +882,7 @@ GameObject:
   - component: {fileID: 552304687}
   - component: {fileID: 552304686}
   - component: {fileID: 552304688}
+  - component: {fileID: 552304689}
   m_Layer: 0
   m_Name: canvas1_3
   m_TagString: Untagged
@@ -921,8 +956,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c140df86733045e4db2158070e41348c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -951,7 +986,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &552304689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552304684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &573479280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1399,7 @@ GameObject:
   - component: {fileID: 887206894}
   - component: {fileID: 887206893}
   - component: {fileID: 887206895}
+  - component: {fileID: 887206896}
   m_Layer: 0
   m_Name: canvas3_4
   m_TagString: Untagged
@@ -1421,8 +1473,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b2486826e01cd748a40d0cc1e566bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1451,7 +1503,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &887206896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887206891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1001 &983218209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1687,6 +1755,7 @@ GameObject:
   - component: {fileID: 1088232558}
   - component: {fileID: 1088232557}
   - component: {fileID: 1088232559}
+  - component: {fileID: 1088232560}
   m_Layer: 0
   m_Name: canvas3_3
   m_TagString: Untagged
@@ -1760,8 +1829,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b2486826e01cd748a40d0cc1e566bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1790,7 +1859,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1088232560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088232555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &1092589980
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,6 +1888,7 @@ GameObject:
   - component: {fileID: 1092589983}
   - component: {fileID: 1092589982}
   - component: {fileID: 1092589984}
+  - component: {fileID: 1092589985}
   m_Layer: 0
   m_Name: canvas1_1
   m_TagString: Untagged
@@ -1876,8 +1962,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c140df86733045e4db2158070e41348c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1906,7 +1992,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1092589985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092589980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &1182714123
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,6 +2021,7 @@ GameObject:
   - component: {fileID: 1182714126}
   - component: {fileID: 1182714125}
   - component: {fileID: 1182714127}
+  - component: {fileID: 1182714128}
   m_Layer: 0
   m_Name: canvas1_4
   m_TagString: Untagged
@@ -1992,8 +2095,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c140df86733045e4db2158070e41348c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2022,7 +2125,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1182714128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1182714123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &1198682783
 GameObject:
   m_ObjectHideFlags: 0
@@ -2035,6 +2154,7 @@ GameObject:
   - component: {fileID: 1198682786}
   - component: {fileID: 1198682785}
   - component: {fileID: 1198682787}
+  - component: {fileID: 1198682788}
   m_Layer: 0
   m_Name: canvas2_1
   m_TagString: Untagged
@@ -2108,8 +2228,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fb85bd16295e5fe428de2f88d77eaa31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2138,7 +2258,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1198682788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198682783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &1502585850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2151,6 +2287,7 @@ GameObject:
   - component: {fileID: 1502585853}
   - component: {fileID: 1502585852}
   - component: {fileID: 1502585854}
+  - component: {fileID: 1502585855}
   m_Layer: 0
   m_Name: canvas2_2
   m_TagString: Untagged
@@ -2224,8 +2361,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fb85bd16295e5fe428de2f88d77eaa31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2254,7 +2391,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1502585855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1502585850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &1538285974
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,6 +2453,7 @@ GameObject:
   - component: {fileID: 1549748071}
   - component: {fileID: 1549748070}
   - component: {fileID: 1549748072}
+  - component: {fileID: 1549748073}
   m_Layer: 0
   m_Name: canvas1_2
   m_TagString: Untagged
@@ -2373,8 +2527,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c140df86733045e4db2158070e41348c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2403,7 +2557,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1549748073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1549748068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &1556406568
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,6 +2586,7 @@ GameObject:
   - component: {fileID: 1556406571}
   - component: {fileID: 1556406570}
   - component: {fileID: 1556406572}
+  - component: {fileID: 1556406573}
   m_Layer: 0
   m_Name: canvas3_6
   m_TagString: Untagged
@@ -2489,8 +2660,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b2486826e01cd748a40d0cc1e566bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2519,7 +2690,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1556406573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556406568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1001 &1605272485
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2796,6 +2983,7 @@ GameObject:
   - component: {fileID: 1749814134}
   - component: {fileID: 1749814133}
   - component: {fileID: 1749814135}
+  - component: {fileID: 1749814136}
   m_Layer: 0
   m_Name: canvas2_4
   m_TagString: Untagged
@@ -2869,8 +3057,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fb85bd16295e5fe428de2f88d77eaa31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2899,7 +3087,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &1749814136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1749814131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &1817912096
 GameObject:
   m_ObjectHideFlags: 0
@@ -3176,6 +3380,7 @@ GameObject:
   - component: {fileID: 2028739979}
   - component: {fileID: 2028739978}
   - component: {fileID: 2028739980}
+  - component: {fileID: 2028739981}
   m_Layer: 0
   m_Name: canvas3_5
   m_TagString: Untagged
@@ -3249,8 +3454,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b2486826e01cd748a40d0cc1e566bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3279,7 +3484,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &2028739981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2028739976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &2070735119
 GameObject:
   m_ObjectHideFlags: 0
@@ -3292,6 +3513,7 @@ GameObject:
   - component: {fileID: 2070735122}
   - component: {fileID: 2070735121}
   - component: {fileID: 2070735123}
+  - component: {fileID: 2070735124}
   m_Layer: 0
   m_Name: canvas3_1
   m_TagString: Untagged
@@ -3365,8 +3587,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2b2486826e01cd748a40d0cc1e566bbf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3395,7 +3617,23 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &2070735124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070735119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
 --- !u!1 &2106280448
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,6 +3646,7 @@ GameObject:
   - component: {fileID: 2106280451}
   - component: {fileID: 2106280450}
   - component: {fileID: 2106280452}
+  - component: {fileID: 2106280453}
   m_Layer: 0
   m_Name: canvas2_3
   m_TagString: Untagged
@@ -3481,8 +3720,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 7
+  m_SortingLayerID: 1025404899
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fb85bd16295e5fe428de2f88d77eaa31, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3511,4 +3750,20 @@ MonoBehaviour:
   new_color: {r: 0, g: 0, b: 0, a: 0}
   y_offset: 0.2
   x_offset: 0.4
+  transparent: 0
   decor_script: {fileID: 0}
+--- !u!114 &2106280453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106280448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
+  offset: -1
+  runOnlyOnce: 1
