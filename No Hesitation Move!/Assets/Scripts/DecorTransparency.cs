@@ -8,13 +8,17 @@ public class DecorTransparency : MonoBehaviour
 	[Header("Player")]
 	public GameObject player;
 
-	[Header("Object's Opacity")]
+	[Header("Object Color")]
 	public Color new_color;
 
 	// public Vector3 player_pos;
-	[Header("GameObject Offset")]
+	[Header("Object Offset")]
 	public float y_offset;
 	public float x_offset;
+
+	[Header("Transparency Levels")]
+	public float transparent;
+	private float opaque = 1.0f;
 
 	[Header("Object's Layer")]
 	public DecorScript decor_script;
@@ -50,12 +54,12 @@ public class DecorTransparency : MonoBehaviour
         // 	&& (this.GetComponent<SpriteRenderer>().sortingLayerName == above_layer)
         // )
         {
-        	new_color.a = 0.5f;
+        	new_color.a = transparent;
         	this.GetComponent<SpriteRenderer>().color = new_color;
         }
         else
         {
-        	new_color.a = 1.0f;
+        	new_color.a = opaque;
         	this.GetComponent<SpriteRenderer>().color = new_color;
         }
     }
