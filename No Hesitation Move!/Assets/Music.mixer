@@ -6,7 +6,7 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: NewAudioMixer
+  m_Name: Music
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -15,8 +15,13 @@ AudioMixerController:
   m_SuspendThreshold: -80
   m_EnableSuspend: 1
   m_UpdateMode: 0
-  m_ExposedParameters: []
-  m_AudioMixerGroupViews: []
+  m_ExposedParameters:
+  - guid: b09386643890c604c82b394a63db145a
+    name: music
+  m_AudioMixerGroupViews:
+  - guids:
+    - e62ea55afd6bec74b9231e157f3a22bf
+    name: View
   m_CurrentViewIndex: 0
   m_TargetSnapshot: {fileID: 24500006}
 --- !u!243 &24300002
