@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -11,10 +13,17 @@ public class PauseMenu : MonoBehaviour
     public playerMovement p_move;
     public GameObject resume_button;
     public string main_menu_scene;
+    public Image background;
+
+    public GameObject settings_menu;
+    public AudioMixer music_mix;
+    public AudioMixer sfx_mix;
 
     void Awake()
     {
         main_menu_scene = "TitleScreen";
+        background.enabled = false;
+        settings_menu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -22,7 +31,7 @@ public class PauseMenu : MonoBehaviour
     {
     	if(Input.GetKeyDown(KeyCode.Escape))
     	{
-    		Debug.Log("pause");
+    		// Debug.Log("pause");
     		if(is_paused == false)
     		{
     			pause_game();
@@ -49,6 +58,7 @@ public class PauseMenu : MonoBehaviour
 
     public void pause_game()
     {
+    	background.enabled = true;
     	is_paused = true;
     	pause_menu.SetActive(true);
     	p_move.enabled = false;
@@ -58,11 +68,23 @@ public class PauseMenu : MonoBehaviour
 
     public void resume_game()
     {
+    	background.enabled = false;
     	is_paused = false;
     	pause_menu.SetActive(false);
+    	settings_menu.SetActive(false);
     	p_move.enabled = true;
     	Time.timeScale = 1f;
     	EventSystem.current.SetSelectedGameObject(null);
+    }
+
+    public void settings()
+    {
+    	background.enabled = true;
+    	pause_menu.SetActive(false);
+    	settings_menu.SetActive(true);
+    	p_move.enabled = false;
+    	Time.timeScale = 0f;
+    	settings_menu.SetActive(true);
     }
 
     public void quit_game()
@@ -73,10 +95,24 @@ public class PauseMenu : MonoBehaviour
 
     public void main_menu()
     {
+    	background.enabled = false;
         is_paused = false;
         pause_menu.SetActive(false);
+        settings_menu.SetActive(false);
         p_move.enabled = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene("TitleScreen");
+    }
+
+    // Settings Menu Stuff
+
+    public void set_music_volume(float volume)
+    {
+    	music_mix.SetFloat("music", volume);
+    }
+
+    public void set_sfx_volume(float volume)
+    {
+    	sfx_mix.SetFloat("sfx", volume);
     }
 }
