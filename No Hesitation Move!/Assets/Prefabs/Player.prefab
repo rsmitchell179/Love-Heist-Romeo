@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5868824327443656566}
   - component: {fileID: 2008615741}
   - component: {fileID: 2008615735}
+  - component: {fileID: 1803657418701242343}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1025404899
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: d696cc6820388404eb8fc5bbe82563d9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -168,8 +169,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
   body: {fileID: 5868824327443656571}
+  movement: {x: 0, y: 0}
   anim: {fileID: 5868824327443656569}
   interactionRadius: 2
+  file_path: 
 --- !u!81 &2008615741
 AudioListener:
   m_ObjectHideFlags: 0
@@ -196,3 +199,16 @@ MonoBehaviour:
   JSOrb: {fileID: 21300000, guid: f22e7691db629bf42912eb837864cb66, type: 3}
   FTOrb: {fileID: 21300000, guid: 15ea3b73868e0054faa9919aa61095ce, type: 3}
   RCOrb: {fileID: 21300000, guid: 30c57a51540d675499879edfe8d000b3, type: 3}
+--- !u!114 &1803657418701242343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5868824327443656567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sortingOrderBase: 5000
