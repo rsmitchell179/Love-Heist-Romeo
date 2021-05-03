@@ -24,13 +24,14 @@ public class CutsceneSpace : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space)){
         	set_is_pressed();
+        	StopAllCoroutines();
         	space_press.enabled = false;
-        	StartCoroutine(wait_five());
         }
 
         if(is_pressed == true)
         {
-        	wait_time = 8f;
+        	space_press.enabled = false;
+        	wait_time = 60f;
         }
     }
 
