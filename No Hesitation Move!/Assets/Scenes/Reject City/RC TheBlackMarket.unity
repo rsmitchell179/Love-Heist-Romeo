@@ -490,7 +490,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
   m_SortingLayer: 6
-  m_SortingOrder: -5
+  m_SortingOrder: -7
   m_Sprite: {fileID: 21300000, guid: 2437ce48ec8c7d94ca71d0cc20d2c253, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1034,7 +1034,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
   m_SortingLayer: 6
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 2437ce48ec8c7d94ca71d0cc20d2c253, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1485,7 +1485,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
   m_SortingLayer: 6
-  m_SortingOrder: -6
+  m_SortingOrder: -8
   m_Sprite: {fileID: 21300000, guid: aa2852442d72f354ba99f8f8bf935245, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5483,6 +5483,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1392281757}
   - component: {fileID: 1392281756}
+  - component: {fileID: 1392281759}
+  - component: {fileID: 1392281758}
   m_Layer: 0
   m_Name: VinnyStatue
   m_TagString: Untagged
@@ -5549,12 +5551,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392281755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.21, y: 15.38, z: 0}
+  m_LocalPosition: {x: 5.14, y: 14.57, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1392281758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392281755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: Environment_Behind
+  above_layer: Environment_Above
+  player: {fileID: 0}
+--- !u!114 &1392281759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392281755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  new_color: {r: 0, g: 0, b: 0, a: 0}
+  y_offset: 0.5
+  x_offset: 2
+  transparent: 0.5
+  decor_script: {fileID: 0}
 --- !u!1001 &1416379649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7603,7 +7638,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
   m_SortingLayer: 6
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: aa2852442d72f354ba99f8f8bf935245, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
