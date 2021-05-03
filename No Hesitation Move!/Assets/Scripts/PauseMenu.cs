@@ -8,20 +8,31 @@ using UnityEngine.Audio;
 
 public class PauseMenu : MonoBehaviour
 {
+	[Header("Is The Game Paused")]
     public static bool is_paused = false;
-    public GameObject pause_menu;
-    public playerMovement p_move;
-    public GameObject resume_button;
-    public string main_menu_scene;
-    public Image background;
 
+    [Header("Menus")]
+    public GameObject pause_menu;
     public GameObject settings_menu;
-    public AudioMixer music_mix;
-    public AudioMixer sfx_mix;
+
+    [Header("Player Movement Script")]
+    public playerMovement p_move;
+
+    [Header("UI Components")]
+    public GameObject resume_button;
     public TMPro.TMP_Dropdown reso_dropdown;
     public GameObject music_slider;
+    public Image background;
+
+    [Header("Audio Mixers")]
+    public AudioMixer music_mix;
+    public AudioMixer sfx_mix;
+
+    [Header("Is The Cursor Visible")]
     public bool cursor_visible = false;
+
     Resolution[] reso;
+    string main_menu_scene;
 
     void Awake()
     {
@@ -40,7 +51,7 @@ public class PauseMenu : MonoBehaviour
         for(int i = 0; i < reso.Length; i++)
         {
         	
-        	string reso_option = reso[i].width + " x " + reso[i].height + " " + reso[i].refreshRate + "hz";
+        	string reso_option = reso[i].width + " x " + reso[i].height + ", " + reso[i].refreshRate + "hz";
         	reso_options.Add(reso_option);
 
         	if(reso[i].width == Screen.width && reso[i].height == Screen.height){
