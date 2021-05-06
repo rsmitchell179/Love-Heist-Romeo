@@ -1,8 +1,9 @@
 title: rc_vinny_first
 tags: 
 colorID: 0
-position: 920,-785
+position: 920,-782
 ---
+<<set_has_spoken 1>>
 <<set_speaker vinny>>
 What's going on, bub? Name's Vinny. Vinny Sellyastuff.
 I’m the real deal figure in all aspects selling stuff! 
@@ -17,13 +18,13 @@ But a Wizard told me I could find the orb somewhere around here, and that it wou
 Wizard? Love? Gross, bunny.
 Love is twisted. There ain't nothing special or fantastic about love. It's all fiction, a dreamer's fantasy. And I want nothing to do with it!
 Get lost, pal.
-<<set_has_spoken true>>
 ===
 title: rc_vinny_second
 tags: 
 colorID: 0
-position: 440,-1023
+position: 441,-1025
 ---
+<<set_has_spoken 2>> 
 <<set_speaker vinny>>
 Heya Romeo! This place filling your stress meter yet? 
 Wouldn’t want you getting all nervous Nirva on me. 
@@ -46,5 +47,13 @@ A year-long commitment and the relationship was nothing but a foxing facade!
 You think you know the person, and it turns out you don’t know them at all. 
 So I’m done with all that! End of conversation. Get lost, pal.
 <<set_speaker romeo>>
-Ok, Vinny! But I hope I can prove you wrong about love. 
+Ok, Vinny! But I hope I can prove you wrong about love.
+===
+title: rc_vinny_third
+tags: 
+colorID: 0
+position: 797,-1099
+---
+<<set_speaker vinny>>
+Scram.
 ===

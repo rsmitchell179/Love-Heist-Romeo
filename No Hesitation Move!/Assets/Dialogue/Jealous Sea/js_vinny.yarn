@@ -1,8 +1,9 @@
 title: js_vinny_first
 tags: 
 colorID: 0
-position: 1172,-215
+position: 1170,-215
 ---
+<<set_has_spoken 1>>
 <<set_speaker vinny>>
 Hey there, bunny.
 Name's Vinny. Vinny Sellyastuff. The Cha Ching King of selling stuff.
@@ -20,13 +21,13 @@ I'm only in need of True Love.
 Love? I’ve been down that road before.
 And I’m never going down it again. Never!
 Enough with this rancid trip down memory lane.
-<<set_has_spoken true>>
 ===
 title: js_vinny_second
 tags: 
 colorID: 0
 position: 723,-282
 ---
+<<set_has_spoken 2>> 
 <<set_speaker vinny>>
 You know the drill.
 Vinny’s the name. Sellyastuff is the - 
@@ -49,5 +50,13 @@ I walked a really long time in some scary woods until I finally found a Wizard t
 <<set_speaker vinny>>
 Yeah, I thought there was such a thing as fortuitous accidents too, but I was dead wrong, bunny. 
 Nothing honest ever comes from them.  
-Now, quit pestering me about my past and scram. 
+Now, quit pestering me about my past and scram.
+===
+title: js_vinny_third
+tags: 
+colorID: 0
+position: 1164,-498
+---
+<< set_speaker vinny>>
+Beat it, kid.
 ===

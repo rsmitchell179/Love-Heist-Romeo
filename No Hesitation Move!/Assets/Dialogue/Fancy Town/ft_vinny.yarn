@@ -1,8 +1,9 @@
 title: ft_vinny_first
 tags: 
 colorID: 0
-position: 1080,411
+position: 1083,408
 ---
+<<set_has_spoken 1>> 
 <<set_speaker vinny>>
 Hey there, fella.
 Name's Vinny. Vinny Sellyastuff. The Cha Ching King of selling stuff!
@@ -18,13 +19,13 @@ Then, no thanks Vinny! I'm a little occupied with finding True Love. And I need 
 Love? Pfft. It’s a stink deal, as we say in sales. 
 Been there, done that, and not getting involved with it again anytime soon!
 I'll see ya around, bunny.
-<<set_has_spoken true>>
 ===
 title: ft_vinny_second
 tags: 
 colorID: 0
 position: 785,449
 ---
+<<set_has_spoken 2>> 
 <<set_speaker vinny>>
 Feeling lucky today, bunny? 
 I gotta box with your name on it and it’s full of loot!
@@ -46,4 +47,12 @@ That’s weird. There aren’t any cars in the Overworld.
 <<set_speaker vinny>>
 Like I said. It’s a tale from another life. 
 Now, move it along. That’s enough reminiscing.
+===
+title: ft_vinny_third
+tags: 
+colorID: 0
+position: 1015,113
+---
+<<set_speaker vinny>>
+Get out of here.
 ===
