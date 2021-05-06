@@ -172,12 +172,12 @@ public class playerMovement : MonoBehaviour
         SaveData new_data = SaveSys.load_data();
         // GlobalVars.print_array();
 
-        GlobalVars.bool_array[0] = new_data.bool_array[0];
-        GlobalVars.bool_array[1] = new_data.bool_array[1];
-        GlobalVars.bool_array[2] = new_data.bool_array[2];
-        GlobalVars.bool_array[3] = new_data.bool_array[3];
-        GlobalVars.bool_array[4] = new_data.bool_array[4];
-        GlobalVars.bool_array[5] = new_data.bool_array[5];
+        GlobalVars.recur_array[0] = new_data.recur_array[0];
+        GlobalVars.recur_array[1] = new_data.recur_array[1];
+        GlobalVars.recur_array[2] = new_data.recur_array[2];
+        GlobalVars.recur_array[3] = new_data.recur_array[3];
+        GlobalVars.recur_array[4] = new_data.recur_array[4];
+        GlobalVars.recur_array[5] = new_data.recur_array[5];
 
         SceneManager.LoadScene(new_data.scene);
 

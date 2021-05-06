@@ -1,8 +1,9 @@
 title: rc_budalia_first
 tags: 
 colorID: 0
-position: 972,-659
+position: 971,-659
 ---
+<<set_has_spoken 1>>
 <<set_speaker budalia>>
 Greetings, fellow Reject Citizen!
 <<set_speaker romeo>>
@@ -30,14 +31,14 @@ Yes, kindness is indeed where her troubled heart lies...
 It sure seems that way to me!
 <<set_speaker budalia>>
 Well, alright, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit!
-<<set_has_spoken true>> 
 <<image_pop_up true>>
 ===
 title: rc_budalia_second
 tags: 
 colorID: 0
-position: 613,-760
+position: 612,-761
 ---
+<< set_has_spoken 2>> 
 <<set_speaker budalia>>
 Greetings from the Reject City skatepark, Romeo!
 <<set_speaker romeo>>
@@ -67,4 +68,18 @@ Well, alright, Romeo. Go and claim the orb that only comes from a place of kindn
 <<set_speaker romeo>>
 I will!
 <<image_pop_up true>>
+===
+title: rc_budalia_third
+tags: 
+colorID: 0
+position: 903,-990
+---
+<<set_speaker budalia>>
+So, what's your name?
+<<set_speaker romeo>>
+Marty McFly Williams.
+<<set_speaker budalia>>
+And what're you about to do?
+<<set_speaker romeo>>
+I'm gonna bomb this master hill.
 ===

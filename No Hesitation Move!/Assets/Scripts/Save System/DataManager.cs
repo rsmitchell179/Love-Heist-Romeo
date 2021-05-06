@@ -32,7 +32,7 @@ public class DataManager : MonoBehaviour
 
     	for(int i = 0; i < 6; i++)
     	{
-    		GlobalVars.bool_array[i] = false;
+    		GlobalVars.recur_array[i] = 0;
     	}
 
         GlobalVars.hasJSorb = false;
@@ -49,12 +49,12 @@ public class DataManager : MonoBehaviour
 	        SaveData new_data = SaveSys.load_data();
 	        // GlobalVars.print_array();
 
-	        GlobalVars.bool_array[0] = new_data.bool_array[0];
-	        GlobalVars.bool_array[1] = new_data.bool_array[1];
-	        GlobalVars.bool_array[2] = new_data.bool_array[2];
-	        GlobalVars.bool_array[3] = new_data.bool_array[3];
-	        GlobalVars.bool_array[4] = new_data.bool_array[4];
-	        GlobalVars.bool_array[5] = new_data.bool_array[5];
+	        GlobalVars.recur_array[0] = new_data.recur_array[0];
+	        GlobalVars.recur_array[1] = new_data.recur_array[1];
+	        GlobalVars.recur_array[2] = new_data.recur_array[2];
+	        GlobalVars.recur_array[3] = new_data.recur_array[3];
+	        GlobalVars.recur_array[4] = new_data.recur_array[4];
+	        GlobalVars.recur_array[5] = new_data.recur_array[5];
 
             GlobalVars.hasJSorb = new_data.hasJSorb;
             GlobalVars.hasFTorb = new_data.hasFTorb;
@@ -65,12 +65,12 @@ public class DataManager : MonoBehaviour
 	        // Vector3 load_position = new Vector3(new_data.position[0], new_data.position[1], new_data.position[2]);
 	        // transform.position = load_position;
 
-	        // GlobalVars.bool_array.Add(new_data.bool_array[0]);
-	        // GlobalVars.bool_array.Add(new_data.bool_array[1]);
-	        // GlobalVars.bool_array.Add(new_data.bool_array[2]);
-	        // GlobalVars.bool_array.Add(new_data.bool_array[3]);
-	        // GlobalVars.bool_array.Add(new_data.bool_array[4]);
-	        // GlobalVars.bool_array.Add(new_data.bool_array[5]);
+	        // GlobalVars.recur_array.Add(new_data.recur_array[0]);
+	        // GlobalVars.recur_array.Add(new_data.recur_array[1]);
+	        // GlobalVars.recur_array.Add(new_data.recur_array[2]);
+	        // GlobalVars.recur_array.Add(new_data.recur_array[3]);
+	        // GlobalVars.recur_array.Add(new_data.recur_array[4]);
+	        // GlobalVars.recur_array.Add(new_data.recur_array[5]);
 	    }
 	    else
 	    {

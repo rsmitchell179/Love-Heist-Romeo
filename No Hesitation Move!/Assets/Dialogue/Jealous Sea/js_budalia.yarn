@@ -1,8 +1,9 @@
 title: js_budalia_first
 tags: 
 colorID: 0
-position: 1221,-165
+position: 1221,-162
 ---
+<<set_has_spoken 1>>
 <<set_speaker budalia>>
 Ahoy there, you must be the one they call Romeo.
 <<set_speaker romeo>>
@@ -29,14 +30,14 @@ So she wants to help me find my True Love after all.
 Oh, sure...
 The Wizard being nice and helpful to others.
 That truly sounds like her...
-<<set_has_spoken true>>
 <<image_pop_up true>>
 ===
 title: js_budalia_second
 tags: 
 colorID: 0
-position: 703,7
+position: 703,4
 ---
+<<set_has_spoken 2>> 
 <<set_speaker budalia>>
 Welcome aboard the Jealous Sea boat, Romeo!
 <<set_speaker romeo>>
@@ -60,4 +61,12 @@ Another chapter? The Wizard is really trying to help!
 <<set_speaker budalia>>
 Oh, yes, Romeo. Helping definitely sounds like her specialty...
 <<image_pop_up true>>
+===
+title: js_budalia_third
+tags: 
+colorID: 0
+position: 858,-440
+---
+<<set_speaker budalia>>
+I feel sea sick.
 ===

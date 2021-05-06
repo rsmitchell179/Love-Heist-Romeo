@@ -164,7 +164,7 @@ public class PauseMenu : MonoBehaviour
         settings_menu.SetActive(false);
         p_move.enabled = true;
         Time.timeScale = 1f;
-        SceneManager.LoadScene("TitleScreen");
+        SceneManager.LoadScene(main_menu_scene);
     }
 
     // Settings Menu Stuff

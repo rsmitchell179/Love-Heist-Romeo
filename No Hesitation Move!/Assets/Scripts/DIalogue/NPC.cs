@@ -14,6 +14,7 @@ public class NPC : MonoBehaviour
 
     public string first_node;
     public string second_node;
+    public string third_node;
 
     public int bool_index;
 
@@ -50,30 +51,48 @@ public class NPC : MonoBehaviour
 
     void Update()
     {
-    	if(GlobalVars.bool_array[bool_index] != true){
-    		// Debug.Log("talkToNode = first_node");
+    	if(GlobalVars.recur_array[bool_index] == 0){
     		talkToNode = first_node;
-    	}else{
-    		// Debug.Log("talkToNode = second_node");
+    	}else if(GlobalVars.recur_array[bool_index] == 1){
     		talkToNode = second_node;
-    	}
+    	}else if(GlobalVars.recur_array[bool_index] == 2){
+            talkToNode = third_node;
+        }
     }
 
     public void set_has_spoken(string[] parameters){
 
-    	if(bool_index == 0 || bool_index % 2 == 0)
-    	{
-    		GlobalVars.bool_array[0] = bool.Parse(parameters[0]);
-    		GlobalVars.bool_array[2] = bool.Parse(parameters[0]);
-    		GlobalVars.bool_array[4] = bool.Parse(parameters[0]);
-    	}
-    	else
-    	{
-    		GlobalVars.bool_array[1] = bool.Parse(parameters[0]);
-    		GlobalVars.bool_array[3] = bool.Parse(parameters[0]);
-    		GlobalVars.bool_array[5] = bool.Parse(parameters[0]);
-    	}
+    	// if(bool_index == 0 || bool_index % 2 == 0)
+    	// {
+    	// 	GlobalVars.recur_array[0] = Int32.Parse(parameters[0]);
+    	// 	GlobalVars.recur_array[2] = Int32.Parse(parameters[0]);
+    	// 	GlobalVars.recur_array[4] = Int32.Parse(parameters[0]);
+    	// }
+    	// else
+    	// {
+    		// GlobalVars.recur_array[1] = Int32.Parse(parameters[0]);
+    		// GlobalVars.recur_array[3] = Int32.Parse(parameters[0]);
+    		// GlobalVars.recur_array[5] = Int32.Parse(parameters[0]);
+    	// }
         
-        // GlobalVars.print_array();
+        if(GlobalVars.recur_array[bool_index] == 0)
+        {
+            if(bool_index == 0 || bool_index % 2 == 0)
+            {
+                GlobalVars.recur_array[0] = Int32.Parse(parameters[0]);
+                GlobalVars.recur_array[2] = Int32.Parse(parameters[0]);
+                GlobalVars.recur_array[4] = Int32.Parse(parameters[0]);
+            }
+            else
+            {
+                GlobalVars.recur_array[1] = Int32.Parse(parameters[0]);
+                GlobalVars.recur_array[3] = Int32.Parse(parameters[0]);
+                GlobalVars.recur_array[5] = Int32.Parse(parameters[0]);
+            }
+        }
+        else
+        {
+            GlobalVars.recur_array[bool_index] = Int32.Parse(parameters[0]);
+        }
     }
 }

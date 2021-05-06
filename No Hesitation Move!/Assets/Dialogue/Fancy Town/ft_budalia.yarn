@@ -1,8 +1,9 @@
 title: ft_budalia_first
 tags: 
 colorID: 0
-position: 1117,-347
+position: 1116,-347
 ---
+<<set_has_spoken 1>>
 <<set_speaker budalia>>
 My, what a wonderful selection of purses they have to choose from here.
 <<set_speaker romeo>>
@@ -32,14 +33,14 @@ Personal writing of hers for me? How cool!
 I wish I could tell her thank you.
 <<set_speaker budalia>>
 Now, don’t thank her quite yet. She's never been this nice… to anyone.
-<<set_has_spoken true>>
 <<image_pop_up true>>
 ===
 title: ft_budalia_second
 tags: 
 colorID: 0
-position: 787,-355
+position: 786,-355
 ---
+<<set_has_spoken 2>> 
 <<set_speaker budalia>>
 Hello again, Romeo! Don’t mind me. I’m browsing some purses. 
 <<set_speaker romeo>>
@@ -69,4 +70,12 @@ Now, don’t thank her quite yet. She's never been this nice… to anyone.
 <<set_speaker romeo>>
 I must be the exception!
 <<image_pop_up true>>
+===
+title: ft_budalia_third
+tags: 
+colorID: 0
+position: 904,-654
+---
+<<set_speaker budalia>>
+Purses purses purses.
 ===

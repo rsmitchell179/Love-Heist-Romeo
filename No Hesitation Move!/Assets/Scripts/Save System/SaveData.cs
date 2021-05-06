@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class SaveData
 {
-    public bool[] bool_array; 
+    public int[] recur_array; 
     public string scene;
     public float[] position;
     public bool hasJSorb;
@@ -14,14 +14,14 @@ public class SaveData
 
     public SaveData()
     {
-    	bool_array = new bool[6];
+    	recur_array = new int[6];
     	
-    	bool_array[0] = GlobalVars.bool_array[0];
-    	bool_array[1] = GlobalVars.bool_array[1];
-    	bool_array[2] = GlobalVars.bool_array[2];
-    	bool_array[3] = GlobalVars.bool_array[3];
-    	bool_array[4] = GlobalVars.bool_array[4];
-    	bool_array[5] = GlobalVars.bool_array[5];
+    	recur_array[0] = GlobalVars.recur_array[0];
+    	recur_array[1] = GlobalVars.recur_array[1];
+    	recur_array[2] = GlobalVars.recur_array[2];
+    	recur_array[3] = GlobalVars.recur_array[3];
+    	recur_array[4] = GlobalVars.recur_array[4];
+    	recur_array[5] = GlobalVars.recur_array[5];
 
         scene = GlobalVars.curr_scene;
 
@@ -36,7 +36,7 @@ public class SaveData
 
   //   	for(int i = 0; i < 6; i++)
 		// {
-		// 	Debug.Log("saved array index " + i + " is " + bool_array[i]);
+		// 	Debug.Log("saved array index " + i + " is " + recur_array[i]);
 		// }
     }
 }
