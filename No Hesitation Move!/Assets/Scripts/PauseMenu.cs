@@ -171,12 +171,17 @@ public class PauseMenu : MonoBehaviour
 
     public void set_music_volume(float volume)
     {
+      if(volume <= 0){
     	music_mix.SetFloat("music", volume);
+        }
+        
     }
 
     public void set_sfx_volume(float volume)
     {
+       if(volume <= 0){
     	sfx_mix.SetFloat("sfx", volume);
+        }
     }
 
     public void set_reso(int reso_index)
