@@ -1373,7 +1373,6 @@ GameObject:
   - component: {fileID: 2238729598494454074}
   - component: {fileID: 2238729598494454055}
   - component: {fileID: 2238729598494454052}
-  - component: {fileID: 2238729598494454053}
   m_Layer: 0
   m_Name: DialogueBox
   m_TagString: Untagged
@@ -1436,29 +1435,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2238729598494454075}
   m_CullTransparentMesh: 0
---- !u!114 &2238729598494454053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2238729598494454075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24bef40f1993e7c4fbf7305d0d57d854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueRunner: {fileID: 0}
-  romeo: {fileID: 0}
-  other_person: {fileID: 0}
-  romeo_box: {fileID: 0}
-  other_box: {fileID: 0}
-  npc_name: 
-  ui_text: {fileID: 0}
-  romeo_color: {r: 0, g: 0, b: 0.5, a: 1}
-  other_color: {r: 1, g: 1, b: 1, a: 1}
-  romeo_label: {fileID: 0}
-  other_label: {fileID: 0}
 --- !u!1 &2238729598728178162
 GameObject:
   m_ObjectHideFlags: 0
