@@ -4324,6 +4324,11 @@ PrefabInstance:
       objectReference: {fileID: 1190274580}
     - target: {fileID: 7964497762324057055, guid: c47317f3cd929954cb14fa45533fae3a,
         type: 3}
+      propertyPath: db_canvas
+      value: 
+      objectReference: {fileID: 2105078097}
+    - target: {fileID: 7964497762324057055, guid: c47317f3cd929954cb14fa45533fae3a,
+        type: 3}
       propertyPath: letter_zoom
       value: 
       objectReference: {fileID: 7400000, guid: 48990be31ccc07c46b665048de13d9ea, type: 2}
@@ -9736,6 +9741,12 @@ PrefabInstance:
       objectReference: {fileID: 1120374288}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b78e66ecd5a67a544ac4dae3b7619b2d, type: 3}
+--- !u!1 &2105078097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4545725546041761566, guid: 1192951b297738b41b506e5540fd9ce4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1243385448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2117705082 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,

@@ -10,7 +10,6 @@ public class LetterPopUp : MonoBehaviour
 
 	DialogueRunner diaRun = null;
 
-	// public GameObject player;
 	[Header("letter settings")]
 	public Image letter;
 	public bool letter_open = false;
@@ -21,12 +20,11 @@ public class LetterPopUp : MonoBehaviour
     public Animator anim;
     public AnimationClip letter_zoom;
 
+    [Header("doughboy dialogue canvas")]
+    public GameObject db_canvas;
+
 	void Awake()
 	{
-
-		// player = GameObject.FindWithTag("Player");
-		// anim = GetComponent<Animation>();
-
         try{
             diaRun = FindObjectOfType<DialogueRunner>();
             }catch(NullReferenceException){
@@ -54,43 +52,25 @@ public class LetterPopUp : MonoBehaviour
             p_move.enabled = false;
             letter_close();
         }
-
-     //    if(animation_bool == true){
-     //        letter_zoom_in();
-	    // }
-
-        // if(animation_bool == true)
-        // {
-        // 	anim.Play("letter_zoom");
-        // }
     }
 
     public void image_pop_up(string[] parameters)
     {
-    	// Debug.Log("image_pop_up");
     	letter.enabled = bool.Parse(parameters[0]);
     	StartCoroutine(start_letter_zoom());
-    	StartCoroutine(letter_wait());
-    	// Debug.Log(bool.Parse(parameters[0]));
-    	// letter_open = true;
-    	// StartCoroutine(letter_wait());
-    	
+    	StartCoroutine(letter_wait());	
     }
 
     public IEnumerator letter_wait()
     {
-    	// Debug.Log("in coroutine");
-    	// p_move.enabled = false;
-    	// set_anim_bool();
     	yield return new WaitForSecondsRealtime(3);
-    	// p_move.enabled = true;
     	set_letter_true();
-    	// Debug.Log("after coroutine");
     }
 
     public IEnumerator start_letter_zoom()
     {
     	p_move.enabled = false;
+    	db_canvas.SetActive(false);
     	yield return new WaitForSecondsRealtime(1);
     	anim.Play("letter_zoom", 0, 0f);
 
@@ -115,27 +95,7 @@ public class LetterPopUp : MonoBehaviour
        	 	animation_bool = false;
        	 	anim.Rebind();
        	 	anim.Update(0f);
+       	 	db_canvas.SetActive(true);
     	}
     }
-
-    public void letter_zoom_in()
-    {
-    	if(Input.GetKeyDown(KeyCode.Space)){
-        	// Debug.Log("anim play");
-        	anim.Play("letter_zoom");
-        	animation_bool = false;
-        }
-    }
-
-    // public void letter_close(){
-    // 	Debug.Log("in letter_close");
-    // 	if(letter.enabled == true){
-    // 		if(Input.GetKeyDown(KeyCode.Space)){
-    // 			letter.enabled = false;
-    // 			playerMovement.letter_open = false;
-    // 		}
-    // 	}
-    // }
-
-
 }
