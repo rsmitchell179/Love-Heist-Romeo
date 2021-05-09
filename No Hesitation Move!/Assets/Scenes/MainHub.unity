@@ -643,7 +643,6 @@ GameObject:
   m_Component:
   - component: {fileID: 53799231}
   - component: {fileID: 53799230}
-  - component: {fileID: 53799229}
   m_Layer: 0
   m_Name: RC Sound Cloud_3
   m_TagString: Untagged
@@ -651,18 +650,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &53799229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 53799228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dda0f645777d343a663e1afd9b5bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &53799230
 AudioSource:
   m_ObjectHideFlags: 0
@@ -674,8 +661,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 635e37ab9e1901a459c3e1db56bf1c0a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d7138a7ffd3a53a41bccc6df8881133d, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: babdcbde81b7fcd458d24722b975231f, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
@@ -9174,7 +9161,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1404721413}
   - component: {fileID: 1404721412}
-  - component: {fileID: 1404721411}
   m_Layer: 0
   m_Name: RC Sound Cloud_2
   m_TagString: Untagged
@@ -9182,18 +9168,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1404721411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1404721410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dda0f645777d343a663e1afd9b5bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1404721412
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9205,8 +9179,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 635e37ab9e1901a459c3e1db56bf1c0a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d7138a7ffd3a53a41bccc6df8881133d, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: babdcbde81b7fcd458d24722b975231f, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
@@ -10213,7 +10187,6 @@ GameObject:
   - component: {fileID: 1532013695}
   - component: {fileID: 1532013694}
   - component: {fileID: 1532013698}
-  - component: {fileID: 1532013699}
   m_Layer: 0
   m_Name: door_to_Reject_City
   m_TagString: Untagged
@@ -10337,8 +10310,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 635e37ab9e1901a459c3e1db56bf1c0a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d7138a7ffd3a53a41bccc6df8881133d, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: babdcbde81b7fcd458d24722b975231f, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.6
   m_Pitch: 1
   Loop: 1
@@ -10423,18 +10396,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1532013699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532013693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dda0f645777d343a663e1afd9b5bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1553920879 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -11267,7 +11228,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1647840862}
   - component: {fileID: 1647840861}
-  - component: {fileID: 1647840860}
   m_Layer: 0
   m_Name: RC Sound Cloud_1
   m_TagString: Untagged
@@ -11275,18 +11235,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1647840860
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647840859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dda0f645777d343a663e1afd9b5bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1647840861
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11298,8 +11246,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 635e37ab9e1901a459c3e1db56bf1c0a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d7138a7ffd3a53a41bccc6df8881133d, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: babdcbde81b7fcd458d24722b975231f, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
@@ -13849,7 +13797,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1959048337}
   - component: {fileID: 1959048336}
-  - component: {fileID: 1959048335}
   m_Layer: 0
   m_Name: RC Sound Cloud
   m_TagString: Untagged
@@ -13857,18 +13804,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1959048335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1959048334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25dda0f645777d343a663e1afd9b5bed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1959048336
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13880,8 +13815,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 635e37ab9e1901a459c3e1db56bf1c0a,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: d7138a7ffd3a53a41bccc6df8881133d, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: babdcbde81b7fcd458d24722b975231f, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
