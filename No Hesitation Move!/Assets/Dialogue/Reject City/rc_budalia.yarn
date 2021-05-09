@@ -44,29 +44,18 @@ Greetings from the Reject City skatepark, Romeo!
 <<set_speaker romeo>>
 Oh! So that’s what this place is called! 
 <<set_speaker budalia>>
-Indeed! The Wizard was quite the skateboarder back in her childhood. 
-She frequented these parks regularly, as did I back in my youth. That’s about all we have in common.  
+Indeed! The Wizard was quite fond of skate parks back in her youth until one day she didn’t feel so welcome in them anymore.  
 <<set_speaker romeo>>
-I bet you two ruled the skatepark together!
+What happened? Did she have an accident or something? Because those are the worst.  
 <<set_speaker budalia>>
-Oh, we grew up worlds away. I only met her while doing deliveries on my route. 
-Skateboarding actually inspired me to pursue delivery. 
+Oh, closed-minded people, as we’ll refer to them. Those afraid of someone being different than them. 
+They vilified her in the parks, tagged sections with taunting messages, but that Wizard could sure outskate them all! 
 <<set_speaker romeo>>
 Am I supposed to skateboard for the orb? Is that why we’re here? I don’t have a helmet or anything. 
 <<set_speaker budalia>>
-Heavens, no. That was just me taking you on a skate trip down memory lane. 
-There is another chapter from the Wizard’s memoirs for you, though. The orb’s true location is disclosed, same as always.
-<<set_speaker romeo>>
-Wow, another chapter? 
-The Wizard shows me so much kindness with her taking the time to write these for my benefit! 
-<<set_speaker budalia>>
-Yeah, kindness! That is certainly her intention with all this! Ha!  
-<<set_speaker romeo>>
-It sure seems that way to me!
-<<set_speaker budalia>>
-Well, alright, Romeo. Go and claim the orb that only comes from a place of kindness and not deceit!
-<<set_speaker romeo>>
-I will!
+Heavens, no. That was just a little skate trip down memory lane.   
+Though there is another chapter from the Wizard’s memoirs for you. 
+The orb’s true location is disclosed, same as always. 
 <<image_pop_up true>>
 ===
 title: rc_budalia_third
@@ -75,11 +64,6 @@ colorID: 0
 position: 903,-990
 ---
 <<set_speaker budalia>>
-So, what's your name?
-<<set_speaker romeo>>
-Marty McFly Williams.
-<<set_speaker budalia>>
-And what're you about to do?
-<<set_speaker romeo>>
-I'm gonna bomb this master hill.
+What are you still doing in the skate park? Follow the arrows!
+<<image_pop_up true>>
 ===

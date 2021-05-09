@@ -42,33 +42,25 @@ position: 786,-355
 ---
 <<set_has_spoken 2>> 
 <<set_speaker budalia>>
-Hello again, Romeo! Don’t mind me. I’m browsing some purses. 
-<<set_speaker romeo>>
-Happy shopping to you, Budalia!
-<<set_speaker budalia>>
-Oh, yes! I found something here that can hold twice what I’m carrying now! The Wizard’s memoirs only get longer. 
+Hello again, Romeo! I managed to find a purse here that can hold twice what I’m carrying now! 
+Those memoirs from the Wizard are only getting longer. 
 <<set_speaker romeo>>
 Yeah, the Wizard is doing a lot of writing lately! Are you in a lot of those chapters? 
 <<set_speaker budalia>>
-Well, I suppose I might be. 
-I’ve always stood by the Wizard as her delivery person, no matter where turbulent events led her, though some moments are foggy. 
+I suppose I would be in certain parts of them since I always stood by the Wizard. 
+I’d like to think of myself as her faithful delivery driver until the end.
 <<set_speaker romeo>>
-I hope she’ll include me too after I find all the orbs and bring them to her!
+End? But the Wizard’s still alive. She sent me here, remember?   
+<<set_speaker budalia>>
+The end of our run, Romeo. There was a time when I did more than just deliver supplies to her shop. The Wizard and I were very gracious of one another’s company.
+Turbulent events, however, spoiled the warm air between us and it’s never felt the same way ever since, as though a piece of herself vanished.  
+The Wizard only grew more restless with her writings and eventually would not need any more deliveries from me. I was completely out of her life by then. 
+<<set_speaker romeo>>
+That’s ok, Budalia. Maybe she’ll include us both again in her memoirs once I find all the orbs and bring them to her! 
 Speaking of orbs, do you know which section I can find this orb in?
 <<set_speaker budalia>>
 Section? Romeo, the orb isn't hidden somewhere around this boutique. That would be much too simple.
-<<set_speaker romeo>>
-I like simple.
-<<set_speaker budalia>>
-Well, I do have something for you, again, that can help.
-This new chapter from her memoirs discloses the orb’s fancy location. Don’t get too carried away in there.
-<<set_speaker romeo>>
-The Wizard really cares about me finding True Love!
-I wish I could tell her thank you.
-<<set_speaker budalia>>
-Now, don’t thank her quite yet. She's never been this nice… to anyone. 
-<<set_speaker romeo>>
-I must be the exception!
+No, this new chapter from her memoirs discloses the orb’s fancy location. 
 <<image_pop_up true>>
 ===
 title: ft_budalia_third
@@ -77,5 +69,6 @@ colorID: 0
 position: 904,-654
 ---
 <<set_speaker budalia>>
-Purses purses purses.
+It's time for me to checkout the purse, but here's the chapter again! 
+<<image_pop_up true>>
 ===

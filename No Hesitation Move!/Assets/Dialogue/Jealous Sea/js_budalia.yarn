@@ -48,18 +48,26 @@ Oh, I can hear the earnestness in your voice from a mile away! Let it out!
 Boats are soooo COOL! 
 Has the Wizard ever been on a boat? 
 <<set_speaker budalia>>
-She was away on a yacht once when I had a big delivery for her shop. 
-I think I overstayed my welcome there, though. I can’t seem to remember much about that day.
+I unfortunately can’t say that she has.
+She’s always envied those who got to share in the experience of being on a boat, for she was never allowed on one publicly.   
 <<set_speaker romeo>>
-Did you ever find out what was in that delivery?
+Boats were always off limits for me too! How come the Wizard couldn’t be on one?
 <<set_speaker budalia>>
-I can’t say for certain, but I have a feeling I did discover something I wasn’t supposed to. Nope, drawing blanks.
+I wish I could provide you with a good explanation for that, Romeo. 
+But I could never make sense of those sentiments myself. 
+<<set_speaker romeo>>
+Yeah, sometimes things just don’t make any sense! Though it sounds like you and the Wizard share a lot of stuff. 
+How do a delivery worker and a Wizard end up together? 
+<<set_speaker budalia>>
+We met when she first opened up her shop in town. I was contracted to deliver the necessary supplies for her.
+She was always in need of some very remarkable, yet very odd and unusual, items. 
+<<set_speaker romeo>>
+Wow, so what was the most interesting thing that you saw in her shop? 
+<<set_speaker budalia>>
+Well, I do remember seeing something interesting once, but I can’t say for certain what it was. 
+I have a feeling it was perhaps something I wasn’t supposed to discover. Nope. Drawing blanks.
 Anyways, I have here another chapter for you from the Wizard’s memoirs. It should steer you in the right direction.
 See what I did there?
-<<set_speaker romeo>>
-Another chapter? The Wizard is really trying to help!
-<<set_speaker budalia>>
-Oh, yes, Romeo. Helping definitely sounds like her specialty...
 <<image_pop_up true>>
 ===
 title: js_budalia_third
@@ -68,5 +76,6 @@ colorID: 0
 position: 858,-440
 ---
 <<set_speaker budalia>>
-I feel sea sick.
+Did you want to see the Jealous Sea chapter once more? 
+<<image_pop_up true>>
 ===
