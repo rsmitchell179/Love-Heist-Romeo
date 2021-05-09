@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour
 
     Resolution[] reso;
     string main_menu_scene;
+    GameObject last_button;
 
     void Awake()
     {
@@ -92,6 +93,15 @@ public class PauseMenu : MonoBehaviour
     		Cursor.visible = false;
     		Cursor.lockState = CursorLockMode.Locked;
     	}
+
+    	if(EventSystem.current.currentSelectedGameObject == null)
+        {
+        	EventSystem.current.SetSelectedGameObject(last_button);
+        }
+        else
+        {
+        	last_button = EventSystem.current.currentSelectedGameObject;
+        }
     }
 
     public void save_game()
@@ -161,6 +171,11 @@ public class PauseMenu : MonoBehaviour
         p_move.enabled = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene(main_menu_scene);
+    }
+
+    public void OnPointerDown(PointerEventData eventData)
+    {
+    	EventSystem.current.SetSelectedGameObject(last_button);
     }
 
     // Settings Menu Stuff
