@@ -79,23 +79,19 @@ public class PauseMenu : MonoBehaviour
     		else
     		{
     			resume_game();
-    			cursor_visible = false;
     		}
     	}
 
     	if(cursor_visible == true)
     	{
     		Cursor.visible = true;
+    		Cursor.lockState = CursorLockMode.None;
     	}
     	else
     	{
     		Cursor.visible = false;
+    		Cursor.lockState = CursorLockMode.Locked;
     	}
-
-    	// if(EventSystem.current.currentSelectedGameObject == null)
-     //    {
-     //    	EventSystem.current.SetSelectedGameObject(resume_button);
-     //    }
     }
 
     public void save_game()
@@ -103,12 +99,12 @@ public class PauseMenu : MonoBehaviour
         Debug.Log("SAVING DATA...");
         p_move.save_position();
         SaveSys.save_data();
-        // GlobalVars.print_array();
     }
 
     public void pause_game()
     {
     	stop_game();
+    	cursor_visible = false;
     	pause_menu.SetActive(true);
     	settings_menu.SetActive(false);
     	EventSystem.current.SetSelectedGameObject(resume_button);
