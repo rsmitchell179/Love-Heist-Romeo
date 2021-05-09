@@ -20,7 +20,7 @@ public class CutsceneScript : MonoBehaviour
 	public string talktonode;
 
 	[Header("Next Scene")]
-	public string next_scene = "TitleScreen";
+	public string next_scene = "";
 
 	void Awake()
 	{
