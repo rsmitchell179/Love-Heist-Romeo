@@ -10,14 +10,16 @@ public class FieldOfView : MonoBehaviour
     public float fov;
     public float viewDistance;
     private Vector3 origin;
-    public float startingAngle;
+    public float startingAngle, desiredAngle;
+    [Range(0, 0.1f)]
+    public float rotationSpeed = 1.0f;
 
     private Camera mainCam;
 
     private void Awake()
     {
         mainCam = Camera.main;
-        
+
         mesh = new Mesh();
         GetComponent<MeshFilter>().mesh = mesh;
         fov = 90f;
@@ -32,6 +34,7 @@ public class FieldOfView : MonoBehaviour
 
     private void LateUpdate()
     {
+        startingAngle = Mathf.Lerp(startingAngle, desiredAngle, rotationSpeed);
         int rayCount = 200;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
@@ -58,15 +61,15 @@ public class FieldOfView : MonoBehaviour
             }
             vertices[vertexIndex] = vertex;
 
-            if(i > 0)
+            if (i > 0)
             {
-                triangles[triangleIndex] = 0; 
-                triangles[triangleIndex + 1] = vertexIndex - 1; 
+                triangles[triangleIndex] = 0;
+                triangles[triangleIndex + 1] = vertexIndex - 1;
                 triangles[triangleIndex + 2] = vertexIndex;
 
                 triangleIndex += 3;
             }
-            
+
             vertexIndex++;
             angle -= angleIncrease;
         }
@@ -77,19 +80,52 @@ public class FieldOfView : MonoBehaviour
         mesh.bounds = new Bounds(origin, Vector3.one * 1000f);
     }
 
-    public void SetOrigin(Vector3 origin) {
+    public void SetOrigin(Vector3 origin)
+    {
         this.origin = origin;
     }
 
-    public void SetAimDirection(Vector3 aimDirection) {
-        startingAngle = GetAngleFromVectorFloat(aimDirection) + fov / 2f;
+    public void SetRandomAimDirection(int min = -90, int max = 90)
+    {
+
+        desiredAngle = startingAngle + UnityEngine.Random.Range(min, max); //GetAngleFromVectorFloat(aimDirection) + fov / 2f;
+        if (desiredAngle < 0) desiredAngle += 360;
+
+
+        if (desiredAngle > startingAngle)
+        {
+            Debug.Log("Fov make a LEFT rotation");
+        }
+        else
+        {
+            Debug.Log("Fov make a RIGHT rotation");
+        }
     }
 
-    public void SetFoV(float fov) {
+    public void SetAimFromDirection(Vector3 dir)
+    {
+        dir = dir.normalized;
+        desiredAngle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        if (desiredAngle < 0) desiredAngle += 360;
+
+
+        if (desiredAngle > startingAngle)
+        {
+            Debug.Log("Fov make a LEFT rotation");
+        }
+        else
+        {
+            Debug.Log("Fov make a RIGHT rotation");
+        }
+    }
+
+    public void SetFoV(float fov)
+    {
         this.fov = fov;
     }
 
-    public void SetViewDistance(float viewDistance) {
+    public void SetViewDistance(float viewDistance)
+    {
         this.viewDistance = viewDistance;
     }
 

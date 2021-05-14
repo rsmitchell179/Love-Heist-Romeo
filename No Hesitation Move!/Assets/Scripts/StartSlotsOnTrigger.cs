@@ -6,13 +6,16 @@ using UnityEngine.SceneManagement;
 public class StartSlotsOnTrigger : MonoBehaviour
 {
     [SerializeField]
-    GameObject SlotsGame;
+    GameObject SlotsButton;
+
+    [SerializeField]
+    string levelToLoad;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            SlotsGame.SetActive(true);
+            SlotsButton.SetActive(true);
         }
     }
 
@@ -20,7 +23,12 @@ public class StartSlotsOnTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            SlotsGame.SetActive(false);
+            SlotsButton.SetActive(false);
         }
+    }
+
+    public void OpenLevel()
+    {
+        SceneManager.LoadScene(levelToLoad);
     }
 }

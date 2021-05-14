@@ -12,8 +12,10 @@ public class SlotMachine : MonoBehaviour
     private int _numberOfRowsFinished = 0;
 
     private bool _canSpin = true;
+    private int _timesSpinned = 0;
 
     [SerializeField] private KeyCode _spinButton = KeyCode.Space;
+    [SerializeField] private KeyCode _spinButton2 = KeyCode.Space;
     [SerializeField] private GameObject[] _tiles;
     [SerializeField] private Row[] _row;
 
@@ -33,6 +35,11 @@ public class SlotMachine : MonoBehaviour
         {
             StartSpinning();
         }
+
+        if (Input.GetKeyDown(_spinButton2))
+        {
+            StartSpinning();
+        }
     }
 
     public void StartSpinning()
@@ -41,15 +48,26 @@ public class SlotMachine : MonoBehaviour
         {
             return;
         }
+        if (Between(_timesSpinned, 1, _tiles.Length-1))
+        {
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Remove();
+            }
+        }
         _canSpin = false;
         _numberOfRowsFinished = 0;
         for (int i = 0; i < _row.Length; i++)
         {
             _row[i].StartSpinning(i * .5f);
         }
-
+        _timesSpinned++;
     }
 
+    public bool Between(int value,int min,int max)
+    {
+        return value <= max && value >= min;
+    }
 
 
     public void FinishingSpinning(int index, SlotTile slotTile)

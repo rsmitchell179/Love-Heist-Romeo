@@ -12,7 +12,7 @@ public class Row : MonoBehaviour
 
     private float _maxY;
     private float _size;
-    private GameObject[] _tiles;
+    private List<GameObject> _tiles = new List<GameObject>();
 
     private bool _startSpinning;
 
@@ -23,7 +23,6 @@ public class Row : MonoBehaviour
 
     public void Init(GameObject[] tiles)
     {
-        _tiles = new GameObject[tiles.Length];
         Vector2 position = transform.position;
         position.x = 0;
         _size = tiles[0].GetComponent<RectTransform>().rect.height + _ySpacing;
@@ -32,8 +31,9 @@ public class Row : MonoBehaviour
         for (int i = 0; i < tiles.Length; i++)
         {
             position.y -= _size;
-            _tiles[i] = Instantiate(tiles[i], transform);
-            _tiles[i].transform.localPosition = position;
+            GameObject go = Instantiate(tiles[i], transform);
+            _tiles.Add(go);
+            go.transform.localPosition = position;
         }
     }
 
@@ -69,12 +69,30 @@ public class Row : MonoBehaviour
 
     }
 
+    public void Remove()
+    {
+        GameObject go = _tiles[0];
+        _tiles.RemoveAt(0);
+        Destroy(go);
+
+        Vector2 position = transform.position;
+        position.x = 0;
+        _size = _tiles[0].GetComponent<RectTransform>().rect.height + _ySpacing;
+        _maxY = (_tiles.Count / 2) * _size;
+        position.y = _maxY / 2f + _size + ((_tiles.Count % 4 == 0 || _tiles.Count % 4 == 1) ? _size : _size / 2f);
+        for (int i = 0; i < _tiles.Count; i++)
+        {
+            position.y -= _size;
+            _tiles[i].transform.localPosition = position;
+        }
+    }
+
     private void EndSpinning()
     {
         int closestIndex = 0;
         float smallestDistance = float.MaxValue;
 
-        for (int i = 0; i < _tiles.Length; i++)
+        for (int i = 0; i < _tiles.Count; i++)
         {
             if (Mathf.Abs(_tiles[i].transform.localPosition.y) < smallestDistance)
             {
@@ -87,7 +105,7 @@ public class Row : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < _tiles.Length; i++)
+        for (int i = 0; i < _tiles.Count; i++)
         {
             _tiles[i].transform.localPosition -= Vector3.up * Time.deltaTime * ((Mathf.Abs(smallestDistance) < 5f) ? _tiles[closestIndex].transform.localPosition.y : smallestDistance);
         }
@@ -103,11 +121,11 @@ public class Row : MonoBehaviour
 
     private void Loop()
     {
-        for (int i = 0; i < _tiles.Length; i++)
+        for (int i = 0; i < _tiles.Count; i++)
         {
             if (_tiles[i].transform.localPosition.y <= -_maxY)
             {
-                int nextIndex = (i + 1) % _tiles.Length;
+                int nextIndex = (i + 1) % _tiles.Count;
                 Vector3 newPosition = _tiles[nextIndex].transform.localPosition;
                 newPosition.y += _size;
                 _tiles[i].transform.localPosition = newPosition;
@@ -117,7 +135,7 @@ public class Row : MonoBehaviour
 
     private void NormalSpinning()
     {
-        for (int i = 0; i < _tiles.Length; i++)
+        for (int i = 0; i < _tiles.Count; i++)
         {
             _tiles[i].transform.localPosition -= Vector3.up * Time.deltaTime * _moveSpeed;
         }

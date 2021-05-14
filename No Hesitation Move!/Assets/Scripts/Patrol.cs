@@ -20,7 +20,7 @@ public class Patrol : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponent<AudioSource>(); 
+        source = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         fov = fieldOfView.fov;
         viewDistance = fieldOfView.viewDistance;
@@ -29,26 +29,42 @@ public class Patrol : MonoBehaviour
         lastMoveDir = new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), 0);
     }
 
-    void FixedUpdate(){
+    void FixedUpdate()
+    {
         FindTargetPlayer();
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
+        Vector3 aimDir = new Vector3(Random.Range(-20, 20), Random.Range(-20, 20));
+        //Debug.Log(Time.deltaTime);
         fieldOfView.SetOrigin(transform.position);
         transform.position = Vector2.MoveTowards(transform.position, moveSpots[Spot].position, speed * Time.deltaTime);
-        if (Vector2.Distance(transform.position, moveSpots[Spot].position) < 0.2f){
-            if(waitTime <= 0){
-                lastMoveDir = new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), 0);
-                if (Spot != moveSpots.Length -1){
-                    Spot ++;
-                } else {
+        if (Vector2.Distance(transform.position, moveSpots[Spot].position) < 0.2f)
+        {
+            if (waitTime <= 0)
+            {
+                if (Spot != moveSpots.Length - 1)
+                {
+                    Spot++;
+                }
+                else
+                {
                     Spot = 0;
                 }
                 waitTime = startWaitTime;
-                fieldOfView.SetAimDirection(lastMoveDir);
-            } else {
+
+                //Use this to have a rotation in the direction of the next spot
+                
+                fieldOfView.SetAimFromDirection(moveSpots[Spot].position - transform.position);
+                
+                
+                //Use this to have a random rotation in a certain range
+                //fieldOfView.SetRandomAimDirection(-90,90);
+            }
+            else
+            {
                 waitTime -= Time.deltaTime;
             }
         }
@@ -56,20 +72,27 @@ public class Patrol : MonoBehaviour
 
     }
 
-   private void FindTargetPlayer(){
-        if (Vector3.Distance(GetPosition(), player.transform.position) < viewDistance) {
+    private void FindTargetPlayer()
+    {
+        if (Vector3.Distance(GetPosition(), player.transform.position) < viewDistance)
+        {
             // Player inside viewDistance
             Vector3 dirToPlayer = (player.transform.position - GetPosition()).normalized;
-            if (Vector3.Angle(GetAimDir(), dirToPlayer) < fov / 2f) {
+            if (Vector3.Angle(GetAimDir(), dirToPlayer) < fov / 2f)
+            {
                 //Debug.Log("Player inside Field of View");
                 RaycastHit2D raycastHit2D = Physics2D.Raycast(GetPosition(), dirToPlayer, viewDistance, LayerMask.GetMask("Player", "BehindMask"));
                 Debug.DrawRay(GetPosition(), dirToPlayer, Color.white, 0.5f);
-                if (raycastHit2D.collider != null) {
+                if (raycastHit2D.collider != null)
+                {
                     // Hit something
-                    if (raycastHit2D.collider.gameObject.GetComponent<playerMovement>() != null) {
+                    if (raycastHit2D.collider.gameObject.GetComponent<playerMovement>() != null)
+                    {
                         // Hit Player
                         AttackingPlayer();
-                    } else {
+                    }
+                    else
+                    {
                         Debug.Log(raycastHit2D.collider.gameObject);
                         // Hit something else
                     }
@@ -78,7 +101,8 @@ public class Patrol : MonoBehaviour
         }
     }
 
-    public void AttackingPlayer() {
+    public void AttackingPlayer()
+    {
         source.Play();
         animatior.SetTrigger("FadeOut");
         waitTime = 1;
@@ -89,20 +113,23 @@ public class Patrol : MonoBehaviour
         // player.GetComponent<playerMovement>().enabled = true;
     }
 
-    IEnumerator delay_player(){
+    IEnumerator delay_player()
+    {
         Debug.Log("delay_player");
         player.GetComponent<playerMovement>().enabled = false;
         yield return new WaitForSecondsRealtime(1f);
-        animatior.SetTrigger("FadeIn");   
-        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
+        animatior.SetTrigger("FadeIn");
+        player.transform.position = new Vector3(-14f, 4.5f, 0f);
         player.GetComponent<playerMovement>().enabled = true;
     }
 
-    public Vector3 GetPosition() {
+    public Vector3 GetPosition()
+    {
         return transform.position;
     }
 
-    public Vector3 GetAimDir() {
+    public Vector3 GetAimDir()
+    {
         return lastMoveDir;
     }
 
