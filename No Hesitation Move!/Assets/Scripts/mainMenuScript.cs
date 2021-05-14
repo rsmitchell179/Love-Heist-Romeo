@@ -8,7 +8,8 @@ public class mainMenuScript : MonoBehaviour {
 	
     public string newGameScene;
     private GameObject last_button;
-
+    public Canvas menuCanvas;
+    public Canvas settings;
     // Start is called before the first frame update
     void Start() {
         
@@ -37,5 +38,9 @@ public class mainMenuScript : MonoBehaviour {
     }
     public void QuitGame() {
         Application.Quit();
+    }
+    public void Settings() {
+        menuCanvas.enabled = false;
+        settings.enabled = true;
     }
 }
