@@ -9,12 +9,14 @@ public class DataManager : MonoBehaviour
 
 	public string file_path;
 	public string new_game_load;
+    Vector2 load_pos;
 
     // Start is called before the first frame update
     void Start()
     {
         file_path = Application.persistentDataPath + "/player.lhr";
         new_game_load = "IntroCutscene";
+        load_pos = new Vector2(1.29f, 1.0f);
     }
 
     // Update is called once per frame
@@ -38,6 +40,8 @@ public class DataManager : MonoBehaviour
         GlobalVars.hasJSorb = false;
         GlobalVars.hasFTorb = false;
         GlobalVars.hasRCorb = false;
+
+        globals.destPos = load_pos;
 
     }
 
@@ -74,6 +78,7 @@ public class DataManager : MonoBehaviour
 	    }
 	    else
 	    {
+            clear_save();
 	    	SceneManager.LoadScene(new_game_load);
 	    }
     }
