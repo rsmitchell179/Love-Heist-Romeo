@@ -59,7 +59,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!114 &7964497762324057053
 MonoBehaviour:
@@ -118,6 +118,7 @@ MonoBehaviour:
   animation_bool: 0
   anim: {fileID: 7964497761358341853}
   letter_zoom: {fileID: 7400000, guid: 9da724be0ecbb7848ac96d01c482edc7, type: 2}
+  db_canvas: {fileID: 0}
 --- !u!1 &7964497762329913851
 GameObject:
   m_ObjectHideFlags: 0
