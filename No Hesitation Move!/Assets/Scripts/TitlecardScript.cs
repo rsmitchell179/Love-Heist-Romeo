@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class TitlecardScript : MonoBehaviour
 {
 
-	private float first_fade = 0.6f;
+	private float first_fade = 0.1f;
 	private float second_fade = 0.3f;
-	private float wait_time = 3.0f;
+	private float wait_time = 4.0f;
 	public bool is_fading;
 	private Image this_image;
 	private Color this_alpha;
