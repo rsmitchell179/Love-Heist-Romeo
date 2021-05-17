@@ -19,6 +19,8 @@ public class DecorTransparency : MonoBehaviour
 	[Header("Transparency Levels")]
 	public float transparent;
 	private float opaque = 1.0f;
+	private float fade_speed = 3.0f;
+	public bool is_behind;
 
 	[Header("Object's Layer")]
 	public DecorScript decor_script;
@@ -39,28 +41,45 @@ public class DecorTransparency : MonoBehaviour
         float dist_x = player.transform.position.x;
         // player_pos = player.transform.position;
 
-        if( this.GetComponent<SpriteRenderer>().bounds.min.y < dist_y - y_offset &&
+        if(
+        	this.GetComponent<SpriteRenderer>().bounds.min.y < dist_y - y_offset &&
         	this.GetComponent<SpriteRenderer>().bounds.max.y > dist_y + y_offset &&
         	this.GetComponent<SpriteRenderer>().bounds.min.x < dist_x - x_offset &&
         	this.GetComponent<SpriteRenderer>().bounds.max.x > dist_x + x_offset &&
 			this.GetComponent<SpriteRenderer>().sortingLayerName == decor_script.above_layer)
-        // (
-        // 	(
-        // 		(player_pos.y < this.GetComponent<SpriteRenderer>().bounds.max.y) &&
-        // 		(player_pos.x < this.GetComponent<SpriteRenderer>().bounds.max.x) &&
-        // 		(player_pos.y > this.GetComponent<SpriteRenderer>().bounds.min.y) &&
-        // 		(player_pos.x > this.GetComponent<SpriteRenderer>().bounds.min.x)
-        // 	)
-        // 	&& (this.GetComponent<SpriteRenderer>().sortingLayerName == above_layer)
-        // )
+			
         {
-        	new_color.a = transparent;
-        	this.GetComponent<SpriteRenderer>().color = new_color;
+        	// new_color.a = Mathf.Lerp(opaque, transparent, Time.time);
+        	// this.GetComponent<SpriteRenderer>().color = new_color;
+        	// if(this.GetComponent<SpriteRenderer>().sortingLayerName == decor_script.above_layer){
+        		is_behind = true;
+        	// }
         }
         else
         {
+        	is_behind = false;
         	new_color.a = opaque;
         	this.GetComponent<SpriteRenderer>().color = new_color;
+        	// StartCoroutine(grad_fade2());
         }
+
+        if(is_behind == true)
+        {
+        	StartCoroutine(grad_fade(opaque, transparent));
+        }
+    }
+
+    IEnumerator grad_fade(float first_state, float sec_state)
+    {
+
+    	float f_state = first_state;
+    	float s_state = sec_state;
+
+    	for(float t = 0.0f; t < 1.0f; t += Time.deltaTime * fade_speed)
+    	{
+    		new_color.a = Mathf.Lerp(f_state, s_state, t);
+    		this.GetComponent<SpriteRenderer>().color = new_color;
+    		yield return null;
+    	}
     }
 }
