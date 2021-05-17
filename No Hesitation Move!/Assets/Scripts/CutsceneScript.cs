@@ -33,9 +33,11 @@ public class CutsceneScript : MonoBehaviour
 	[Header("Character Boxes")]
 	public Image romeo_box;
 	public Image wiz_box;
+    public Image romeo_yell;
 
 	[Header("TMP Text")]
 	public TMP_Text ui_text;
+    public float text_size;
     public Color romeo_color = new Color(0.0f, 0.0f, 0.5f, 1.0f);
     public Color wiz_color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     public Color clear_color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
@@ -46,6 +48,7 @@ public class CutsceneScript : MonoBehaviour
 		diaRun.AddCommandHandler("next_frame", next_frame);
 		diaRun.AddCommandHandler("char_toggle", char_toggle);
 		diaRun.AddCommandHandler("next_bkgr", next_bkgr);
+        diaRun.AddCommandHandler("font_size", font_size);
 	}
 
     // Start is called before the first frame update
@@ -72,18 +75,21 @@ public class CutsceneScript : MonoBehaviour
     		wiz_box.enabled = true;
     		ui_text.color = wiz_color;
     		romeo_box.enabled = false;
+            romeo_yell.enabled = false;
     	}
     	else if(string.Equals("romeo", speaker))
     	{
     		romeo_box.enabled = true;
     		ui_text.color = romeo_color;
     		wiz_box.enabled = false;
+            romeo_yell.enabled = true;
     	}
     	else if(string.Equals("none", speaker))
     	{
     		wiz_box.enabled = false;
     		romeo_box.enabled = false;
     		ui_text.color = clear_color;
+            romeo_yell.enabled = false;
     	}
     }
 
@@ -109,5 +115,11 @@ public class CutsceneScript : MonoBehaviour
     		bkgr_count = bkgr_count + next_bkgr_count;
     		background.sprite = alt_bkgr[bkgr_count];
     	}
+    }
+
+    public void font_size(string[] parameters)
+    {
+        text_size = float.Parse(parameters[0]);
+        ui_text.fontSize = text_size;
     }
 }
