@@ -12,10 +12,12 @@ public class TitlecardScript : MonoBehaviour
 	public bool is_fading;
 	private Image this_image;
 	private Color this_alpha;
+	public playerMovement p_move;
 
 	void Awake()
 	{
 		this_image = this.GetComponent<Image>();
+		p_move = FindObjectOfType<playerMovement>();
 		// this_alpha = this_image.color;
 		// this_alpha.a = 0f;
 		// this_image.color = this_alpha;
@@ -48,9 +50,11 @@ public class TitlecardScript : MonoBehaviour
     IEnumerator titlecard_anim()
     {
     	is_fading = true;
+    	// p_move.moveSpeed = 0.2f;
 
     	yield return new WaitForSecondsRealtime(wait_time);
 
     	is_fading = false;
+    	// p_move.moveSpeed = 3.14f;
     }
 }
