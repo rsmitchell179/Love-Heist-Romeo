@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 1144252941}
   - component: {fileID: 1144252940}
   m_Layer: 0
-  m_Name: Cutscene
+  m_Name: cutscene_object
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,9 +475,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e12ab2313efe9ba4b929a50224d6d3da, type: 3}
   - {fileID: 21300000, guid: 0cde05459ef273a4dbdb3453ca61e042, type: 3}
   - {fileID: 21300000, guid: e9c7dff9de2dd164e942a3a92785f192, type: 3}
+  - {fileID: 21300000, guid: 5869e3a32b1afb54eb4932a165c36456, type: 3}
+  - {fileID: 21300000, guid: cbfeadc001a105f4bb6b9aee9cf62818, type: 3}
+  - {fileID: 21300000, guid: 7e263f483352fce4e82a4a8fe4b98b67, type: 3}
   curr_frame: {fileID: 1543388599}
   frame_count: 0
   background: {fileID: 1823962137}
+  alt_bkgr:
+  - {fileID: 21300000, guid: c38d4dfdc819dda45954fc0055acdf9e, type: 3}
+  - {fileID: 21300000, guid: 4d1be4c5c74393f46a62d48450fb8697, type: 3}
+  bkgr_count: 0
   diaRun: {fileID: 628928579}
   cutscene_text: {fileID: 2480198943629176163, guid: ebf349b0e2854c34d9b4aff21aa88034,
     type: 3}
@@ -596,7 +603,7 @@ GameObject:
   - component: {fileID: 1823962138}
   - component: {fileID: 1823962137}
   m_Layer: 0
-  m_Name: Interior
+  m_Name: bkgr_background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

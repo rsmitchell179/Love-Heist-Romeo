@@ -14,7 +14,7 @@ public class DataManager : MonoBehaviour
     void Start()
     {
         file_path = Application.persistentDataPath + "/player.lhr";
-        new_game_load = "IntroSlideShow";
+        new_game_load = "IntroCutscene";
     }
 
     // Update is called once per frame

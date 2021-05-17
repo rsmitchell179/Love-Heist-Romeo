@@ -14,8 +14,13 @@ public class CutsceneScript : MonoBehaviour
 	public Sprite[] frames;
 	public SpriteRenderer curr_frame;
 	public int frame_count = 0;
-	private int parse_param_int = 0;
+	private int next_frame_count = 0;
+
+	[Header("Background")]
 	public SpriteRenderer background;
+	public Sprite[] alt_bkgr;
+	public int bkgr_count = 0;
+	private int next_bkgr_count = 0;
 
 	[Header("Yarnspinner")]
 	public DialogueRunner diaRun;
@@ -40,6 +45,7 @@ public class CutsceneScript : MonoBehaviour
 		diaRun = FindObjectOfType<DialogueRunner>();
 		diaRun.AddCommandHandler("next_frame", next_frame);
 		diaRun.AddCommandHandler("char_toggle", char_toggle);
+		diaRun.AddCommandHandler("next_bkgr", next_bkgr);
 	}
 
     // Start is called before the first frame update
@@ -85,13 +91,23 @@ public class CutsceneScript : MonoBehaviour
     {
     	if(frame_count < frames.Length-1)
     	{
-    		parse_param_int = Int32.Parse(parameters[0]);
-    		frame_count = frame_count + parse_param_int;
+    		next_frame_count = Int32.Parse(parameters[0]);
+    		frame_count = frame_count + next_frame_count;
     		curr_frame.sprite = frames[frame_count];
     	}
     	else
     	{
     		SceneManager.LoadScene(next_scene);
+    	}
+    }
+
+    public void next_bkgr(string[] parameters)
+    {
+    	if(bkgr_count < alt_bkgr.Length)
+    	{
+    		next_bkgr_count = Int32.Parse(parameters[0]);
+    		bkgr_count = bkgr_count + next_bkgr_count;
+    		background.sprite = alt_bkgr[bkgr_count];
     	}
     }
 }
