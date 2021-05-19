@@ -453,8 +453,14 @@ PrefabInstance:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2877738252161348460, guid: d3a9a56bd3b40a9429ad79c3731356a2,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -463,12 +469,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.78
+      value: 4.4
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.55
+      value: 1.58
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -510,6 +516,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 1473747146}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 565299558}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: actual_text
+      value: There are so many interesting realms to explore around us!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 083a78ab445f02044b27eacd0c144f0f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &46442086 stripped
@@ -1075,6 +1101,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &72575922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
+    type: 3}
+  m_PrefabInstance: {fileID: 1319396137}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &72575923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -2702,8 +2734,14 @@ PrefabInstance:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6802501248302723333, guid: c2b7977fce47b414d8e16134e73bacd3,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -2759,6 +2797,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 558681965}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 768044553}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: actual_text
+      value: "Living right on the edge! But I\u2019ll never fall!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 0d4ebb2a5c1b94747b4e263e8e038daf, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &286197555
@@ -5726,7 +5784,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &492072489
 Transform:
   m_ObjectHideFlags: 0
@@ -8328,8 +8386,19 @@ PrefabInstance:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -8636221404721523813, guid: 00305abc4c45c4844a7519b62057c328,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -8385,6 +8454,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 2112867341}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 199928082}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: actual_text
+      value: Hello, and welcome to the Overworld!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 90c886a7bc9b23e4a85ba18e68603522, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &810097179
@@ -9225,6 +9314,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
     type: 3}
   m_PrefabInstance: {fileID: 826707944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &948346712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
+    type: 3}
+  m_PrefabInstance: {fileID: 1648043091}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &948346713 stripped
 Transform:
@@ -12307,6 +12402,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: db_5_2
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7661746593463424072, guid: ff2f1c61d6166214da0a320812dac13c,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -12315,12 +12416,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.62
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -12362,7 +12463,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 68f8d75fb8c02e1419ce68c137c95867, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &1320695468 stripped
 GameObject:
@@ -13660,13 +13767,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1444229607}
+  - component: {fileID: 1444229609}
+  - component: {fileID: 1444229608}
   m_Layer: 0
   m_Name: db_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1444229607
 Transform:
   m_ObjectHideFlags: 0
@@ -13675,7 +13784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1444229606}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.47, y: -3.39, z: 0}
+  m_LocalPosition: {x: 5.29, y: -3.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 948346713}
@@ -13683,6 +13792,44 @@ Transform:
   m_Father: {fileID: 1342789307}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &1444229608
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444229606}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.47397172, y: -0.63883156}
+  serializedVersion: 2
+  m_Radius: 1.6128036
+--- !u!114 &1444229609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444229606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7663db66a616b0428def2c1817d9bff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubble_1: {fileID: 112295073}
+  bubble_2: {fileID: 898215710}
+  ui_text_1: {fileID: 1849966520}
+  ui_text_2: {fileID: 1477389437}
+  actual_text_1: "Oh yeah, we\u2019re real!"
+  actual_text_2: As real as you!
+  db_1: {fileID: 948346712}
+  db_2: {fileID: 72575922}
+  current_text: 
+  cam: {fileID: 1892872371}
 --- !u!1 &1458993024 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -16325,6 +16472,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: db_5_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 5696739811755979445, guid: de16105a3dbf9bd4ebda1ee0d10f32f2,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -16380,7 +16533,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 112295073}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 1849966520}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d2bc9b87d4059044fbe1eaf0d8f4dd2b, type: 2}
+    m_RemovedComponents:
+    - {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &1649939807
 GameObject:
@@ -16519,8 +16688,14 @@ PrefabInstance:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1075993247170539406, guid: fe2d9cec1f03ced4db3e1faa218b0a48,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -16529,12 +16704,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.44
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.55
+      value: -1.33
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -16576,6 +16751,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 1473747146}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 565299558}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: actual_text
+      value: Poking around places can often be rewarding!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 714c32a41f2ec9b4a80a94809c262ffa, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &1672176041
@@ -17252,8 +17447,19 @@ PrefabInstance:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6537479257181401077, guid: 9fb9281b663a55042b7c170a1216e5a6,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -17309,6 +17515,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 1933977115}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 650123360}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: actual_text
+      value: Doors?! We love doors! You should too!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6882c10e038029b4496d834bbb45f0e9, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &1757307149
@@ -18386,8 +18612,14 @@ PrefabInstance:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1397905613109923623, guid: 3fc45c406145fd4488772dba34d21972,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -18443,6 +18675,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 1703542215}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 1656851711}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: actual_text
+      value: Overworld huh? What world is this going over?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 61bc8aa0d72cac04aa44c9600d50adfd, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &1870764394 stripped
@@ -19306,8 +19558,14 @@ PrefabInstance:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -988459141874504972, guid: d820135ef8e43ab4e86e3f5bd060d2ab,
+        type: 3}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
@@ -19363,6 +19621,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: bubble
+      value: 
+      objectReference: {fileID: 533682288}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: ui_text
+      value: 
+      objectReference: {fileID: 576378644}
+    - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: actual_text
+      value: "Everyone\u2019s so aggressive down there."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: bee54418b87d6fa43a5dc9bf45aabc86, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!114 &1933977115 stripped
