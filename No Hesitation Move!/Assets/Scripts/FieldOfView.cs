@@ -35,6 +35,7 @@ public class FieldOfView : MonoBehaviour
     private void LateUpdate()
     {
         startingAngle = Mathf.Lerp(startingAngle, desiredAngle, rotationSpeed);
+        //Debug.Log("startingAngle :" + startingAngle);
         int rayCount = 200;
         float angle = startingAngle;
         float angleIncrease = fov / rayCount;
@@ -94,11 +95,11 @@ public class FieldOfView : MonoBehaviour
 
         if (desiredAngle > startingAngle)
         {
-            Debug.Log("Fov make a LEFT rotation");
+            //Debug.Log("Fov make a LEFT rotation");
         }
         else
         {
-            Debug.Log("Fov make a RIGHT rotation");
+            //Debug.Log("Fov make a RIGHT rotation");
         }
     }
 
@@ -111,11 +112,11 @@ public class FieldOfView : MonoBehaviour
 
         if (desiredAngle > startingAngle)
         {
-            Debug.Log("Fov make a LEFT rotation");
+           // Debug.Log("Fov make a LEFT rotation");
         }
         else
         {
-            Debug.Log("Fov make a RIGHT rotation");
+            //Debug.Log("Fov make a RIGHT rotation");
         }
     }
 

@@ -59,7 +59,6 @@ public class Patrol : MonoBehaviour
                 
                 fieldOfView.SetAimFromDirection(moveSpots[Spot].position - transform.position);
                 
-                
                 //Use this to have a random rotation in a certain range
                 //fieldOfView.SetRandomAimDirection(-90,90);
             }
@@ -76,19 +75,22 @@ public class Patrol : MonoBehaviour
     {
         if (Vector3.Distance(GetPosition(), player.transform.position) < viewDistance)
         {
-            // Player inside viewDistance
+            //Debug.Log("Player inside viewDistance");
             Vector3 dirToPlayer = (player.transform.position - GetPosition()).normalized;
+            Debug.DrawRay(GetPosition(), dirToPlayer, Color.white, 0.5f);
+            Debug.DrawRay(GetPosition(), lastMoveDir, Color.red, 0.5f);
             if (Vector3.Angle(GetAimDir(), dirToPlayer) < fov / 2f)
             {
-                //Debug.Log("Player inside Field of View");
+                Debug.Log("Player inside Field of View");
                 RaycastHit2D raycastHit2D = Physics2D.Raycast(GetPosition(), dirToPlayer, viewDistance, LayerMask.GetMask("Player", "BehindMask"));
-                Debug.DrawRay(GetPosition(), dirToPlayer, Color.white, 0.5f);
                 if (raycastHit2D.collider != null)
                 {
                     // Hit something
+                    //Debug.Log("Hit something");
                     if (raycastHit2D.collider.gameObject.GetComponent<playerMovement>() != null)
                     {
                         // Hit Player
+                        //Debug.Log("Hit Player");
                         AttackingPlayer();
                     }
                     else
@@ -106,11 +108,11 @@ public class Patrol : MonoBehaviour
         source.Play();
         animatior.SetTrigger("FadeOut");
         waitTime = 1;
-        // player.GetComponent<playerMovement>().enabled = false;
+        player.GetComponent<playerMovement>().enabled = false;
         StartCoroutine(delay_player());
-        // source.Play();
-        // player.transform.position =  new Vector3(-14f, 4.5f, 0f);
-        // player.GetComponent<playerMovement>().enabled = true;
+        source.Play();
+        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
+        player.GetComponent<playerMovement>().enabled = true;
     }
 
     IEnumerator delay_player()
@@ -130,6 +132,10 @@ public class Patrol : MonoBehaviour
 
     public Vector3 GetAimDir()
     {
+        float deg = fieldOfView.startingAngle - fov / 2f;
+        float rad = deg * Mathf.Deg2Rad;
+        lastMoveDir.x = Mathf.Cos(rad);
+        lastMoveDir.y = Mathf.Sin(rad);
         return lastMoveDir;
     }
 
