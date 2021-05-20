@@ -1690,6 +1690,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   owl: {fileID: 1383902638}
   romeo: {fileID: 557599128}
+  diaRun: {fileID: 0}
+  scriptToLoad: {fileID: 2480198943629176163, guid: 8143dba6a96f1704cac82d35d54233fe,
+    type: 3}
+  talktonode: 
+  has_spoken: 0
 --- !u!212 &1383902640
 SpriteRenderer:
   m_ObjectHideFlags: 0
