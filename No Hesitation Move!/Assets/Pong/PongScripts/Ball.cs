@@ -83,6 +83,6 @@ public class Ball : MonoBehaviour
         transform.position = Vector3.zero;
         PongManager.Instance.ChangeBallSprite();
         GetComponent<Rigidbody2D>().velocity = Vector2.zero ;
-        Invoke("Start", 2);
+        Invoke("Start", 1);
     }
 }
