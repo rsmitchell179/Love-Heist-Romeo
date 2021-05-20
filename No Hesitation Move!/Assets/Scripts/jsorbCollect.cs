@@ -20,7 +20,6 @@ public class jsorbCollect : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GlobalVars.hasCollect =false;
         try{
             diaRun = FindObjectOfType<DialogueRunner>();
             }catch(NullReferenceException){
@@ -44,20 +43,15 @@ public class jsorbCollect : MonoBehaviour
     public void check_js_orb(){
         
     	if(GlobalVars.hasJSorb == true){
-            if (GlobalVars.hasCollect == false){
 	            GlobalVars.hasCollect =true;
 	        	// Debug.Log("yes, it's true, all of it");
 	            owl.GetComponent<Patrol>().enabled = false;
 	            FOV.SetActive(false);
 	            animatior.SetTrigger("FadeOut");
-
-	            if(has_spoken == false){
-	            	Debug.Log(has_spoken);
-	            	StartCoroutine(fade_in());
-	            }
+	            StartCoroutine(fade_in());
             }
         }
-    }
+
 
     IEnumerator fade_in(){
         yield return new WaitForSecondsRealtime(1);
