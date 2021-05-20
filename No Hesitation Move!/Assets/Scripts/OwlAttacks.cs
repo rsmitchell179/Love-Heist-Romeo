@@ -34,8 +34,8 @@ public class OwlAttacks : MonoBehaviour
 
     IEnumerator SpawnObstacleCoroutine()
     {
-        int count = 3;
-        GameObject[] go = new GameObject[3];
+        int count = 7;
+        GameObject[] go = new GameObject[7];
 
         System.Random rng = new System.Random();
         _puzzlePieces = Shuffle(rng, _puzzlePieces);
