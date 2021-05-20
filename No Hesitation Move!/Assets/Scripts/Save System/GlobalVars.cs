@@ -50,6 +50,7 @@ public class GlobalVars : MonoBehaviour
     public static bool hasRCorb;
     public static bool js_hasCollect;
     public static bool ft_hasCollect;
+    public static bool rc_hasCollect;
 
 	// test print, check if array stuff is being added
 	

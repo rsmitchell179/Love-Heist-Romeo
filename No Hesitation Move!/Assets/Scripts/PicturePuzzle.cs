@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PicturePuzzle : MonoBehaviour
 {
@@ -88,6 +89,9 @@ public class PicturePuzzle : MonoBehaviour
         if (i == puzzlepieces.Length)
         {
             Debug.Log("PuzzleComplete");
+            GlobalVars.rc_hasCollect = true;
+            SceneManager.LoadScene("RC TheArtGallery");
         }
+
     }
 }

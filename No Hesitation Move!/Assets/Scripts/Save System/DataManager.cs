@@ -45,6 +45,7 @@ public class DataManager : MonoBehaviour
 
         GlobalVars.js_hasCollect = false;
         GlobalVars.ft_hasCollect = false;
+        GlobalVars.rc_hasCollect = false;
     }
 
     public void load_save()
