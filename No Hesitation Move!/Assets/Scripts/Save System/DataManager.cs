@@ -43,6 +43,8 @@ public class DataManager : MonoBehaviour
 
         globals.destPos = load_pos;
 
+        GlobalVars.hasCollect = false;
+
     }
 
     public void load_save()

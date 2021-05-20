@@ -12,6 +12,8 @@ public class SaveData
     public bool hasFTorb;
     public bool hasRCorb;
 
+    public bool hasCollect;
+
     public SaveData()
     {
     	recur_array = new int[6];
@@ -33,6 +35,8 @@ public class SaveData
         hasJSorb = GlobalVars.hasJSorb;
         hasFTorb = GlobalVars.hasFTorb;
         hasRCorb = GlobalVars.hasRCorb;
+
+        hasCollect = GlobalVars.hasCollect;
 
   //   	for(int i = 0; i < 6; i++)
 		// {

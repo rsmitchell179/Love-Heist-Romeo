@@ -14,12 +14,13 @@ public class jsorbCollect : MonoBehaviour
     public Animator animatior;
 
     private string talktonode;
-    private bool hasCollect;
     private DialogueRunner diaRun = null;
+    public Patrol patrol_script;
+    public bool has_spoken;
     // Start is called before the first frame update
     void Start()
     {
-        hasCollect =false;
+        GlobalVars.hasCollect =false;
         try{
             diaRun = FindObjectOfType<DialogueRunner>();
             }catch(NullReferenceException){
@@ -32,21 +33,28 @@ public class jsorbCollect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (hasCollect ==false){
+        if (GlobalVars.hasCollect ==false){
             check_js_orb();  
-        }   
+        }else{
+        	patrol_script.enabled = false;
+        	FOV.SetActive(false);
+        }
     }
 
     public void check_js_orb(){
         
     	if(GlobalVars.hasJSorb == true){
-            if (hasCollect == false){
-            hasCollect =true;
-        	// Debug.Log("yes, it's true, all of it");
-            owl.GetComponent<Patrol>().enabled = false;
-            FOV.SetActive(false);
-            animatior.SetTrigger("FadeOut");
-            StartCoroutine(fade_in());
+            if (GlobalVars.hasCollect == false){
+	            GlobalVars.hasCollect =true;
+	        	// Debug.Log("yes, it's true, all of it");
+	            owl.GetComponent<Patrol>().enabled = false;
+	            FOV.SetActive(false);
+	            animatior.SetTrigger("FadeOut");
+
+	            if(has_spoken == false){
+	            	Debug.Log(has_spoken);
+	            	StartCoroutine(fade_in());
+	            }
             }
         }
     }
@@ -59,11 +67,10 @@ public class jsorbCollect : MonoBehaviour
         romeo.transform.position = new Vector3(16.5f, 5f, 0f);
         diaRun.Add(scriptToLoad);
         diaRun.StartDialogue(talktonode);
-
     }
     
     // public void OnFadeComplete(){
-    //     if(hasCollect == true) { 
+    //     if(GlobalVars.hasCollect == true) { 
     //         // Debug.Log("before animation");
     //         animatior.SetTrigger("FadeIn");
     //         // Debug.Log("after animation");           
