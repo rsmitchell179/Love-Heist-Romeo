@@ -36,6 +36,16 @@ public class CollectOrb : MonoBehaviour {
             GlobalVars.hasRCorb = true;
             SetImage3();
         }
+
+        if(GlobalVars.hasJSorb) {
+    		SetImage1();
+    	}
+    	if(GlobalVars.hasFTorb) {
+    		SetImage2();
+    	}
+    	if(GlobalVars.hasRCorb) {
+    		SetImage3();
+    	}
     }
 
     void OnTriggerEnter2D(Collider2D other) {
@@ -51,15 +61,7 @@ public class CollectOrb : MonoBehaviour {
     		Destroy(other.gameObject);
     		GlobalVars.hasRCorb = true;
     	}
-    	if(GlobalVars.hasJSorb) {
-    		SetImage1();
-    	}
-    	if(GlobalVars.hasFTorb) {
-    		SetImage2();
-    	}
-    	if(GlobalVars.hasRCorb) {
-    		SetImage3();
-    	}
+
     }
     public void SetImage1() {
     	JSOrbImage.sprite = JSOrb;
