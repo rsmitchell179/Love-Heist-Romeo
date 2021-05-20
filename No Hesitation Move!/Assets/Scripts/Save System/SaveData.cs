@@ -15,6 +15,7 @@ public class SaveData
     public bool js_hasCollect;
     public bool ft_hasCollect;
     public bool rc_hasCollect;
+    public bool rc_has_spoken;
 
     public SaveData()
     {
@@ -41,6 +42,7 @@ public class SaveData
         js_hasCollect = GlobalVars.js_hasCollect;
         ft_hasCollect = GlobalVars.ft_hasCollect;
         rc_hasCollect = GlobalVars.rc_hasCollect;
+        rc_has_spoken = GlobalVars.rc_has_spoken;
 
   //   	for(int i = 0; i < 6; i++)
 		// {

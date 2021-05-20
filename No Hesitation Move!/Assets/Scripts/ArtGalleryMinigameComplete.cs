@@ -13,8 +13,6 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
 	public YarnProgram scriptToLoad;
 	public string talktonode;
 
-	public bool has_spoken;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +23,7 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    	if(has_spoken == false){
+    	if(GlobalVars.rc_has_spoken == false){
     		start_grifton_dialogue();
     	}
     }
@@ -38,7 +36,7 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     		romeo.transform.position = new Vector3 (5.35f, 3.5f, 0.0f);
     		diaRun.Add(scriptToLoad);
     		diaRun.StartDialogue(talktonode);
-    		has_spoken = true;
+    		GlobalVars.rc_has_spoken = true;
     	}
     	
     	// yield return null;
