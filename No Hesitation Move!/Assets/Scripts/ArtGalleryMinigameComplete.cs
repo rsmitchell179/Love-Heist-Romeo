@@ -12,12 +12,24 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
 	public DialogueRunner diaRun;
 	public YarnProgram scriptToLoad;
 	public string talktonode;
+    public Sprite speaking_sprite;
+    Animator romeo_animator;
+    SpriteRenderer romeo_sprite;
+    playerMovement p_movement;
+
+    void Awake()
+    {
+        diaRun = FindObjectOfType<DialogueRunner>();
+        diaRun.AddCommandHandler("enable_animator", enable_animator);
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-    	diaRun = FindObjectOfType<DialogueRunner>();
+        romeo_sprite = romeo.GetComponent<SpriteRenderer>();
+        romeo_animator = romeo.GetComponent<Animator>();
 		talktonode = "Start";
+        p_movement = romeo.GetComponent<playerMovement>();
     }
 
     // Update is called once per frame
@@ -26,6 +38,12 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     	if(GlobalVars.rc_has_spoken == false){
     		start_grifton_dialogue();
     	}
+
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            romeo_animator.enabled = true;
+            p_movement.enabled = true;
+        }
     }
 
     public void start_grifton_dialogue(){
@@ -34,11 +52,21 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     	{
 			owl.transform.position = new Vector3 (7.01f, 4.08f, 0.0f);
     		romeo.transform.position = new Vector3 (5.35f, 3.5f, 0.0f);
+            p_movement.enabled = false;
+            romeo_animator.enabled = false;
+            romeo_sprite.sprite = speaking_sprite;
     		diaRun.Add(scriptToLoad);
     		diaRun.StartDialogue(talktonode);
     		GlobalVars.rc_has_spoken = true;
+
     	}
     	
     	// yield return null;
+    }
+
+    public void enable_animator(string[] parameters)
+    {
+        romeo_animator.enabled = true;
+        p_movement.enabled = true;
     }
 }
