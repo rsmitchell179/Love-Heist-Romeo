@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f64def86973adb0409be48e123b70443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlotsButton: {fileID: 0}
+  SlotsButton: {fileID: 1363909132}
   levelToLoad: 
 --- !u!61 &592761272
 BoxCollider2D:
@@ -2390,6 +2390,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353448676}
   m_CullTransparentMesh: 0
+--- !u!1 &1363909132 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8676006709226921340, guid: 47e61ec5b1978374cad9a3c98266589a,
+    type: 3}
+  m_PrefabInstance: {fileID: 75152815}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1432135484
 GameObject:
   m_ObjectHideFlags: 0

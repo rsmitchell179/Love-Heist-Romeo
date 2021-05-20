@@ -10,12 +10,30 @@ public class StartSlotsOnTrigger : MonoBehaviour
 
     [SerializeField]
     string levelToLoad;
+
+    playerMovement p_movement;
+
+    void Awake()
+    {
+        p_movement = FindObjectOfType<playerMovement>();
+    }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            SlotsButton.SetActive(false);
+            p_movement.enabled = true;
+        }
+    }
+
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
             SlotsButton.SetActive(true);
+            p_movement.enabled = false;
         }
     }
 
