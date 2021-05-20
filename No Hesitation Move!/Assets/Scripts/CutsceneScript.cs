@@ -67,24 +67,24 @@ public class CutsceneScript : MonoBehaviour
         }
     }
 
-    public void char_toggle(string[] parameters)
+    public void char_toggle(string[] parameters) // Toggles who is speaking, or whether anyone is speaking
     {
     	string speaker = parameters[0];
-    	if(string.Equals("wizard", speaker))
+    	if(string.Equals("wizard", speaker))     // <<char_toggle wizard>> to have the wizard speak
     	{
     		wiz_box.enabled = true;
     		ui_text.color = wiz_color;
     		romeo_box.enabled = false;
             romeo_yell.enabled = false;
     	}
-    	else if(string.Equals("romeo", speaker))
+    	else if(string.Equals("romeo", speaker)) // <<char_toggle romeo>> to have romeo speaking
     	{
     		romeo_box.enabled = true;
     		ui_text.color = romeo_color;
     		wiz_box.enabled = false;
             romeo_yell.enabled = true;
     	}
-    	else if(string.Equals("none", speaker))
+    	else if(string.Equals("none", speaker))  // <<char_toggle none>> to have the scene empty
     	{
     		wiz_box.enabled = false;
     		romeo_box.enabled = false;
@@ -93,7 +93,7 @@ public class CutsceneScript : MonoBehaviour
     	}
     }
 
-    public void next_frame(string[] parameters)
+    public void next_frame(string[] parameters)  // <<next_frame 1>> switches to the next frame in the array
     {
     	if(frame_count < frames.Length-1)
     	{
@@ -107,7 +107,7 @@ public class CutsceneScript : MonoBehaviour
     	}
     }
 
-    public void next_bkgr(string[] parameters)
+    public void next_bkgr(string[] parameters)   // <<next_bkgr 1>> switches to the next background in the array
     {
     	if(bkgr_count < alt_bkgr.Length)
     	{
@@ -117,9 +117,9 @@ public class CutsceneScript : MonoBehaviour
     	}
     }
 
-    public void font_size(string[] parameters)
-    {
-        text_size = float.Parse(parameters[0]);
+    public void font_size(string[] parameters)   // <<font_size [font size]>> changes font size, 
+    {                                            // note: any change in font size will need to be
+        text_size = float.Parse(parameters[0]);  // changed back to the original size, 25.
         ui_text.fontSize = text_size;
     }
 }

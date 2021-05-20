@@ -19,11 +19,16 @@ public class owlSlotPopUp : MonoBehaviour
 	public string talktonode;
 	public GameObject slot_canvas;
 	playerMovement p_movement;
+	SpriteRenderer romeo_sprite;
+	Animator romeo_animator;
+	public Sprite speaking_sprite;
 
 	void Awake()
 	{
 		talktonode = "Start";
 		diaRun = FindObjectOfType<DialogueRunner>();
+		romeo_sprite = romeo.GetComponent<SpriteRenderer>();
+		romeo_animator = romeo.GetComponent<Animator>();
 		diaRun.AddCommandHandler("enable_p_movement", enable_p_movement);
 	}
 
@@ -49,6 +54,12 @@ public class owlSlotPopUp : MonoBehaviour
 			slot_machine.enabled = false;
 			slot_canvas.SetActive(false);
     	}
+
+    	if(Input.GetKeyDown(KeyCode.Tab))
+    	{
+    		romeo_animator.enabled = true;
+    		p_movement.enabled = true;
+    	}
     }
 
     public void start_owl_dialogue()
@@ -56,6 +67,8 @@ public class owlSlotPopUp : MonoBehaviour
     	GlobalVars.ft_hasCollect = true;
     	romeo.transform.position = new Vector3(-5.95f, 0.35f, 0.0f);
     	owl.transform.position = new Vector3(-4.05f, 0.98f, 0.0f);
+    	romeo_sprite.sprite = speaking_sprite;
+    	romeo_animator.enabled = false;
     	diaRun.Add(scriptToLoad);
     	diaRun.StartDialogue(talktonode);
 
@@ -71,5 +84,6 @@ public class owlSlotPopUp : MonoBehaviour
     public void enable_p_movement(string[] parameters)
     {
     	p_movement.enabled = true;
+    	romeo_animator.enabled = true;
     }
 }
