@@ -12,7 +12,8 @@ public class SaveData
     public bool hasFTorb;
     public bool hasRCorb;
 
-    public bool hasCollect;
+    public bool js_hasCollect;
+    public bool ft_hasCollect;
 
     public SaveData()
     {
@@ -36,7 +37,8 @@ public class SaveData
         hasFTorb = GlobalVars.hasFTorb;
         hasRCorb = GlobalVars.hasRCorb;
 
-        hasCollect = GlobalVars.hasCollect;
+        js_hasCollect = GlobalVars.js_hasCollect;
+        ft_hasCollect = GlobalVars.ft_hasCollect;
 
   //   	for(int i = 0; i < 6; i++)
 		// {

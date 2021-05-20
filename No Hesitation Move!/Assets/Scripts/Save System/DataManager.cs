@@ -43,8 +43,8 @@ public class DataManager : MonoBehaviour
 
         globals.destPos = load_pos;
 
-        GlobalVars.hasCollect = false;
-
+        GlobalVars.js_hasCollect = false;
+        GlobalVars.ft_hasCollect = false;
     }
 
     public void load_save()

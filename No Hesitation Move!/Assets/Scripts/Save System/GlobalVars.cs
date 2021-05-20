@@ -48,7 +48,8 @@ public class GlobalVars : MonoBehaviour
 	public static bool hasJSorb;
     public static bool hasFTorb;
     public static bool hasRCorb;
-    public static bool hasCollect;
+    public static bool js_hasCollect;
+    public static bool ft_hasCollect;
 
 	// test print, check if array stuff is being added
 	

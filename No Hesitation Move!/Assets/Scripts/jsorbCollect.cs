@@ -32,7 +32,7 @@ public class jsorbCollect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GlobalVars.hasCollect ==false){
+        if (GlobalVars.js_hasCollect ==false){
             check_js_orb();  
         }else{
         	patrol_script.enabled = false;
@@ -43,7 +43,7 @@ public class jsorbCollect : MonoBehaviour
     public void check_js_orb(){
         
     	if(GlobalVars.hasJSorb == true){
-	            GlobalVars.hasCollect =true;
+	            GlobalVars.js_hasCollect =true;
 	        	// Debug.Log("yes, it's true, all of it");
 	            owl.GetComponent<Patrol>().enabled = false;
 	            FOV.SetActive(false);
@@ -64,7 +64,7 @@ public class jsorbCollect : MonoBehaviour
     }
     
     // public void OnFadeComplete(){
-    //     if(GlobalVars.hasCollect == true) { 
+    //     if(GlobalVars.js_hasCollect == true) { 
     //         // Debug.Log("before animation");
     //         animatior.SetTrigger("FadeIn");
     //         // Debug.Log("after animation");           
