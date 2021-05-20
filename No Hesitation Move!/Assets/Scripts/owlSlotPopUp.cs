@@ -18,17 +18,19 @@ public class owlSlotPopUp : MonoBehaviour
 	public DialogueRunner diaRun = null;
 	public string talktonode;
 	public GameObject slot_canvas;
+	playerMovement p_movement;
 
 	void Awake()
 	{
 		talktonode = "Start";
 		diaRun = FindObjectOfType<DialogueRunner>();
+		diaRun.AddCommandHandler("enable_p_movement", enable_p_movement);
 	}
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        p_movement = romeo.GetComponent<playerMovement>();
     }
 
     // Update is called once per frame
@@ -64,5 +66,10 @@ public class owlSlotPopUp : MonoBehaviour
     	float y_offset = owl.GetComponent<SpriteRenderer>().bounds.max.y + 0.5f;
     	Vector3 bub_position = new Vector3(owl.transform.position.x, y_offset, owl.transform.position.z);
     	bubble.transform.position = cam.WorldToScreenPoint(bub_position);
+    }
+
+    public void enable_p_movement(string[] parameters)
+    {
+    	p_movement.enabled = true;
     }
 }
