@@ -11,11 +11,13 @@ public class owlSlotPopUp : MonoBehaviour
 	public Image bubble;
 
 	public GameObject owl;
+	public GameObject romeo;
 	public Camera cam;
 
 	public YarnProgram scriptToLoad;
 	public DialogueRunner diaRun = null;
 	public string talktonode;
+	public GameObject slot_canvas;
 
 	void Awake()
 	{
@@ -43,12 +45,15 @@ public class owlSlotPopUp : MonoBehaviour
     	{
     		bubble.enabled = false;
 			slot_machine.enabled = false;
+			slot_canvas.SetActive(false);
     	}
     }
 
     public void start_owl_dialogue()
     {
     	GlobalVars.ft_hasCollect = true;
+    	romeo.transform.position = new Vector3(-5.95f, 0.35f, 0.0f);
+    	owl.transform.position = new Vector3(-4.05f, 0.98f, 0.0f);
     	diaRun.Add(scriptToLoad);
     	diaRun.StartDialogue(talktonode);
 
