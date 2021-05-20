@@ -40,13 +40,14 @@ public class jsorbCollect : MonoBehaviour
     public void check_js_orb(){
         
     	if(GlobalVars.hasJSorb == true){
+            if (hasCollect == false){
             hasCollect =true;
         	// Debug.Log("yes, it's true, all of it");
             owl.GetComponent<Patrol>().enabled = false;
             FOV.SetActive(false);
             animatior.SetTrigger("FadeOut");
             StartCoroutine(fade_in());
-
+            }
         }
     }
 
