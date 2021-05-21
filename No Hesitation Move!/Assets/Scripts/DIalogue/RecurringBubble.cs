@@ -26,7 +26,7 @@ public class RecurringBubble : MonoBehaviour
         bubble.enabled = false;
         space_bar.enabled = false;
         // anim.enabled = false;
-        Debug.Log("is_colliding is " + is_colliding);
+        // Debug.Log("is_colliding is " + is_colliding);
     }
 
     // Update is called once per frame
@@ -71,9 +71,9 @@ public class RecurringBubble : MonoBehaviour
     	{
 			set_pos(bubble);
 	    	set_pos(space_bar);
-	    	Debug.Log("is_colliding is " + is_colliding);
+	    	// Debug.Log("is_colliding is " + is_colliding);
 	    	is_colliding = true;
-	    	Debug.Log("is_colliding is " + is_colliding);
+	    	// Debug.Log("is_colliding is " + is_colliding);
     	}
     	
     }
