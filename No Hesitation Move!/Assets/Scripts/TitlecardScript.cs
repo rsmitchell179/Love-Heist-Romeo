@@ -34,14 +34,14 @@ public class TitlecardScript : MonoBehaviour
         if(is_fading == true && GlobalVars.has_seen_card[card_index] == false)
         {
         	this_image.CrossFadeAlpha(1, first_fade, false);
-            p_move.move_normal = 2.0f;
+            // p_move.move_normal = 2.0f;
         }
 
         if(is_fading == false)
         {
         	this_image.CrossFadeAlpha(0, second_fade, false);
             GlobalVars.has_seen_card[card_index] = true;
-            p_move.move_normal = 3.14f;
+            // p_move.move_normal = 3.14f;
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
