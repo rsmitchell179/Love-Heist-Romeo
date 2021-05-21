@@ -33,6 +33,16 @@ public class DoughboyConvoDuo : MonoBehaviour
 	[Header("Camera")]
 	public Camera cam;
 
+    [Header("Doughboy Class Script Reference")]
+    public doughboyClass db_class_1;
+    public doughboyClass db_class_2;
+
+    void Awake()
+    {
+        db_class_1 = db_1.gameObject.GetComponent<doughboyClass>();
+        db_class_2 = db_2.gameObject.GetComponent<doughboyClass>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,7 +76,7 @@ public class DoughboyConvoDuo : MonoBehaviour
     {
     	for(int i = 0; i <= actual_text_1.Length; i++)
     	{
-    		set_pos(bubble_1, db_1);
+    		set_pos(bubble_1, db_1, db_class_1.offset);
     		bubble_1.enabled = true;
     		ui_text_1.enabled = true;
     		current_text = actual_text_1.Substring(0, i);
@@ -78,7 +88,7 @@ public class DoughboyConvoDuo : MonoBehaviour
 
     	for(int i = 0; i <= actual_text_2.Length; i++)
     	{
-    		set_pos(bubble_2, db_2);
+    		set_pos(bubble_2, db_2, db_class_2.offset);
     		bubble_2.enabled = true;
     		ui_text_2.enabled = true;
     		current_text = actual_text_2.Substring(0, i);
@@ -102,8 +112,8 @@ public class DoughboyConvoDuo : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
     	if(other.gameObject.tag == "Player"){
-    		set_pos(bubble_1, db_1);
-    		set_pos(bubble_2, db_2);
+    		set_pos(bubble_1, db_1, db_class_1.offset);
+    		set_pos(bubble_2, db_2, db_class_2.offset);
     	}
     }
 
@@ -122,9 +132,9 @@ public class DoughboyConvoDuo : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.2f);
     }
 
-    void set_pos(Image bubble, GameObject db)
+    void set_pos(Image bubble, GameObject db, float offset)
     {
-    	float y_offset = db.GetComponent<SpriteRenderer>().bounds.max.y + 0.4f;
+    	float y_offset = db.GetComponent<SpriteRenderer>().bounds.max.y + offset;
     	Vector3 bub_position = new Vector3(db.transform.position.x, y_offset, db.transform.position.z);
     	bubble.transform.position = cam.WorldToScreenPoint(bub_position);
     }

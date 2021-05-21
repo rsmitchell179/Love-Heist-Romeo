@@ -17,6 +17,8 @@ public class doughboyDialogue : MonoBehaviour
 	public string actual_text;
 	private string current_text = "";
 
+	doughboyClass db_class;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,7 @@ public class doughboyDialogue : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        db_class = this.gameObject.GetComponent<doughboyClass>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -83,7 +85,7 @@ public class doughboyDialogue : MonoBehaviour
 
     void set_pos(Image bub)
     {
-    	float y_offset = character.GetComponent<SpriteRenderer>().bounds.max.y + 0.4f;
+    	float y_offset = character.GetComponent<SpriteRenderer>().bounds.max.y + db_class.offset;
     	Vector3 bub_position = new Vector3(character.transform.position.x, y_offset, character.transform.position.z);
     	bubble.transform.position = cam.WorldToScreenPoint(bub_position);
     }
