@@ -36,7 +36,6 @@ public class TitlecardScript : MonoBehaviour
     {
         if(is_fading == true && GlobalVars.has_seen_card[card_index] == false)
         {
-        	// this_image.enabled = true;
         	this_image.CrossFadeAlpha(1, first_fade, false);
         }
 
@@ -44,8 +43,11 @@ public class TitlecardScript : MonoBehaviour
         {
         	this_image.CrossFadeAlpha(0, second_fade, false);
             GlobalVars.has_seen_card[card_index] = true;
-        	// this_image.enabled = false;
+        }
 
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            is_fading = false;
         }
     }
 
