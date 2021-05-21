@@ -19,9 +19,6 @@ public class TitlecardScript : MonoBehaviour
 	{
 		this_image = this.GetComponent<Image>();
 		p_move = FindObjectOfType<playerMovement>();
-		// this_alpha = this_image.color;
-		// this_alpha.a = 0f;
-		// this_image.color = this_alpha;
 	}
 
     // Start is called before the first frame update

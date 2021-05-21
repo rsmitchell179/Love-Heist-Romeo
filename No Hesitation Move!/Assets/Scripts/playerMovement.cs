@@ -70,9 +70,6 @@ public class playerMovement : MonoBehaviour
             anim.enabled = false;
             movement.x = 0;
             movement.y = 0;
-            // anim.PlayInFixedTime("playerWalkLeft", 1, 0.0f);
-            // anim.SetFloat("Horizontal", movement.x);
-            // anim.SetFloat("Vertical", movement.y);
             return;
         }else{
             anim.enabled = true;
@@ -117,18 +114,6 @@ public class playerMovement : MonoBehaviour
         //         letter_open = false;
         //     }
         // }
-
-        // if(Input.GetKeyDown(KeyCode.P)){
-
-        //     Save_Data();
-            
-        // }
-
-        // if(Input.GetKeyDown(KeyCode.O)){
-        //     Load_Data();
-        // }
-
-        
     }
 
     void FixedUpdate()
@@ -182,16 +167,6 @@ public class playerMovement : MonoBehaviour
         GlobalVars.recur_array[5] = new_data.recur_array[5];
 
         SceneManager.LoadScene(new_data.scene);
-
-        // Vector3 load_position = new Vector3(new_data.position[0], new_data.position[1], new_data.position[2]);
-        // transform.position = load_position;
-
-        // GlobalVars.bool_array.Add(new_data.bool_array[0]);
-        // GlobalVars.bool_array.Add(new_data.bool_array[1]);
-        // GlobalVars.bool_array.Add(new_data.bool_array[2]);
-        // GlobalVars.bool_array.Add(new_data.bool_array[3]);
-        // GlobalVars.bool_array.Add(new_data.bool_array[4]);
-        // GlobalVars.bool_array.Add(new_data.bool_array[5]);
     }
 
 }
