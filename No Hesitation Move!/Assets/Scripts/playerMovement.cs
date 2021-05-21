@@ -13,6 +13,8 @@ public class playerMovement : MonoBehaviour
     // public static bool hasRCorb;
 
     public float moveSpeed;
+    public float move_fast = 6.0f;
+    public float move_normal = 3.14f;
 
     // rigidbody for motion and collisions
     public Rigidbody2D body;
@@ -100,9 +102,9 @@ public class playerMovement : MonoBehaviour
 
         // DEV RUN - GET RID OF WHEN FINAL VERSION IS REALEASED 
         if(Input.GetKey(KeyCode.LeftShift)) {
-            moveSpeed = 6f;
+            moveSpeed = move_fast;
         } else {
-            moveSpeed = 3.14f;
+            moveSpeed = move_normal;
         }
 
         // charles bless up

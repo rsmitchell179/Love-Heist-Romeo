@@ -37,12 +37,14 @@ public class TitlecardScript : MonoBehaviour
         if(is_fading == true && GlobalVars.has_seen_card[card_index] == false)
         {
         	this_image.CrossFadeAlpha(1, first_fade, false);
+            p_move.move_normal = 2.0f;
         }
 
         if(is_fading == false)
         {
         	this_image.CrossFadeAlpha(0, second_fade, false);
             GlobalVars.has_seen_card[card_index] = true;
+            p_move.move_normal = 3.14f;
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
@@ -54,11 +56,11 @@ public class TitlecardScript : MonoBehaviour
     IEnumerator titlecard_anim()
     {
     	is_fading = true;
-    	// p_move.moveSpeed = 0.2f;
+    	
 
     	yield return new WaitForSecondsRealtime(wait_time);
 
     	is_fading = false;
-    	// p_move.moveSpeed = 3.14f;
+    	
     }
 }
