@@ -4755,6 +4755,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8081709650803054248, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 102
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081709650803054248, guid: 10ec8137d4110834b89e27012f3ac649,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -797
       objectReference: {fileID: 0}
@@ -4767,7 +4772,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3014b4764fec9e240bae55d2bc777ac4,
+      objectReference: {fileID: 21300000, guid: 2d9bc099035d4da4c8c5a3478259e888,
         type: 3}
     - target: {fileID: 8081709650811904195, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}
@@ -4878,6 +4883,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081709650973643626, guid: 10ec8137d4110834b89e27012f3ac649,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081709650973643626, guid: 10ec8137d4110834b89e27012f3ac649,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ec8137d4110834b89e27012f3ac649, type: 3}

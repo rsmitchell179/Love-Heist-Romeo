@@ -26,7 +26,7 @@ public class RecurringBubble : MonoBehaviour
         bubble.enabled = false;
         space_bar.enabled = false;
         // anim.enabled = false;
-
+        Debug.Log("is_colliding is " + is_colliding);
     }
 
     // Update is called once per frame
@@ -49,34 +49,45 @@ public class RecurringBubble : MonoBehaviour
     {
     	if(other.gameObject.tag == "Player")
     	{
-    		StartCoroutine(play_space());
+    		play_space();
     		
     	}
     }
 
-    IEnumerator play_space()
+    public void play_space()
     {
     	Debug.Log("play_space");
-    	set_pos(bubble);
-    	set_pos(space_bar);
     	bubble.enabled = true;
     	space_bar.enabled = true;
+    	set_pos(bubble);
+    	set_pos(space_bar);
     	// anim.enabled = true;
-    	yield return new WaitForSecondsRealtime(0.2f);
+    	// yield return new WaitForSecondsRealtime(0.2f);
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-    	set_pos(bubble);
-    	set_pos(space_bar);
-    	is_colliding = true;
+    	if(other.gameObject.tag == "Player")
+    	{
+			set_pos(bubble);
+	    	set_pos(space_bar);
+	    	Debug.Log("is_colliding is " + is_colliding);
+	    	is_colliding = true;
+	    	Debug.Log("is_colliding is " + is_colliding);
+    	}
+    	
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-    	bubble.enabled = false;
-    	space_bar.enabled = false;
-    	is_colliding = false;
+
+    	if(other.gameObject.tag == "Player")
+    	{
+    		bubble.enabled = false;
+    		space_bar.enabled = false;
+    		is_colliding = false;
+    	}
+    	
     	// anim.enabled = false;
     }
 
