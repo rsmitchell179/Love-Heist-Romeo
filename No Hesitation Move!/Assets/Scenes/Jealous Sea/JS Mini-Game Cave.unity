@@ -368,6 +368,7 @@ GameObject:
   - component: {fileID: 27373477}
   - component: {fileID: 27373476}
   - component: {fileID: 27373475}
+  - component: {fileID: 27373482}
   m_Layer: 0
   m_Name: Octo_1
   m_TagString: Untagged
@@ -601,6 +602,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &27373482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27373474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0.55
 --- !u!1 &30669991
 GameObject:
   m_ObjectHideFlags: 0
@@ -4276,7 +4290,7 @@ PrefabInstance:
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -4292,7 +4306,7 @@ PrefabInstance:
     - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
@@ -4415,6 +4429,7 @@ GameObject:
   - component: {fileID: 1319085223}
   - component: {fileID: 1319085222}
   - component: {fileID: 1319085221}
+  - component: {fileID: 1319085228}
   m_Layer: 0
   m_Name: Octo_2
   m_TagString: Untagged
@@ -4648,6 +4663,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1319085228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319085220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0.55
 --- !u!1 &1320362638
 GameObject:
   m_ObjectHideFlags: 0
@@ -5745,6 +5773,7 @@ GameObject:
   - component: {fileID: 1659253086}
   - component: {fileID: 1659253079}
   - component: {fileID: 1659253080}
+  - component: {fileID: 1659253085}
   m_Layer: 0
   m_Name: Octo
   m_TagString: Untagged
@@ -5967,6 +5996,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
   m_Radius: 1.15
+--- !u!114 &1659253085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659253078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0.55
 --- !u!114 &1659253086
 MonoBehaviour:
   m_ObjectHideFlags: 0
