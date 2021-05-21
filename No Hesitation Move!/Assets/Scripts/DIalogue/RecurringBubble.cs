@@ -56,6 +56,7 @@ public class RecurringBubble : MonoBehaviour
 
     IEnumerator play_space()
     {
+    	Debug.Log("play_space");
     	set_pos(bubble);
     	set_pos(space_bar);
     	bubble.enabled = true;
