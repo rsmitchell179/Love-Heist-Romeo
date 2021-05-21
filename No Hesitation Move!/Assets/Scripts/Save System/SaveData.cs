@@ -16,6 +16,7 @@ public class SaveData
     public bool ft_hasCollect;
     public bool rc_hasCollect;
     public bool rc_has_spoken;
+    public static bool[] has_seen_card;
 
     public SaveData()
     {
@@ -44,6 +45,11 @@ public class SaveData
         rc_hasCollect = GlobalVars.rc_hasCollect;
         rc_has_spoken = GlobalVars.rc_has_spoken;
 
+        has_seen_card = new bool[4];
+        has_seen_card[0] = GlobalVars.has_seen_card[0];
+        has_seen_card[1] = GlobalVars.has_seen_card[1];
+        has_seen_card[2] = GlobalVars.has_seen_card[2];
+        has_seen_card[3] = GlobalVars.has_seen_card[3];
   //   	for(int i = 0; i < 6; i++)
 		// {
 		// 	Debug.Log("saved array index " + i + " is " + recur_array[i]);

@@ -52,6 +52,7 @@ public class GlobalVars : MonoBehaviour
     public static bool ft_hasCollect;
     public static bool rc_hasCollect;
     public static bool rc_has_spoken;
+    public static bool[] has_seen_card = new bool[4];
 
 	// test print, check if array stuff is being added
 	

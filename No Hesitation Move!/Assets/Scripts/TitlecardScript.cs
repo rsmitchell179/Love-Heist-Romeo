@@ -13,6 +13,7 @@ public class TitlecardScript : MonoBehaviour
 	private Image this_image;
 	private Color this_alpha;
 	public playerMovement p_move;
+    public int card_index;
 
 	void Awake()
 	{
@@ -33,7 +34,7 @@ public class TitlecardScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(is_fading == true)
+        if(is_fading == true && GlobalVars.has_seen_card[card_index] == false)
         {
         	// this_image.enabled = true;
         	this_image.CrossFadeAlpha(1, first_fade, false);
@@ -42,6 +43,7 @@ public class TitlecardScript : MonoBehaviour
         if(is_fading == false)
         {
         	this_image.CrossFadeAlpha(0, second_fade, false);
+            GlobalVars.has_seen_card[card_index] = true;
         	// this_image.enabled = false;
 
         }

@@ -47,6 +47,11 @@ public class DataManager : MonoBehaviour
         GlobalVars.ft_hasCollect = false;
         GlobalVars.rc_hasCollect = false;
         GlobalVars.rc_has_spoken = false;
+
+        for(int i = 0; i < 4; i++)
+        {
+        	GlobalVars.has_seen_card[i] = false;
+        }
     }
 
     public void load_save()
