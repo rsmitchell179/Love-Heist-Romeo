@@ -23,6 +23,9 @@ public class LetterPopUp : MonoBehaviour
     [Header("doughboy dialogue canvas")]
     public GameObject db_canvas;
 
+    Vector3 set_position;
+    bool stop_player_movement;
+
 	void Awake()
 	{
         try{
@@ -52,6 +55,11 @@ public class LetterPopUp : MonoBehaviour
             p_move.enabled = false;
             letter_close();
         }
+
+        if(stop_player_movement == true)
+        {
+            p_move.gameObject.transform.position = set_position;
+        }
     }
 
     public void image_pop_up(string[] parameters)
@@ -69,6 +77,8 @@ public class LetterPopUp : MonoBehaviour
 
     public IEnumerator start_letter_zoom()
     {
+        set_position = p_move.gameObject.transform.position;
+        stop_player_movement = true;
     	p_move.enabled = false;
     	db_canvas.SetActive(false);
     	yield return new WaitForSecondsRealtime(1);
@@ -92,6 +102,7 @@ public class LetterPopUp : MonoBehaviour
     		letter.enabled = false;
        		letter_open = false;
        	 	p_move.enabled = true;
+            stop_player_movement = false;
        	 	animation_bool = false;
        	 	anim.Rebind();
        	 	anim.Update(0f);
