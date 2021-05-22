@@ -88,12 +88,12 @@ public class LetterPopUp : MonoBehaviour
 
     public void set_anim_bool()
     {
-    	animation_bool = true;
+        animation_bool = true;
     }
 
     public void set_letter_true()
     {
-    	letter_open = true;
+        letter_open = true;
     }
 
     public void letter_close()
