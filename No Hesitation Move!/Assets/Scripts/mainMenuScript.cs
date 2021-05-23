@@ -22,9 +22,14 @@ public class mainMenuScript : MonoBehaviour {
     public GameObject sfxSlider;
     public GameObject resolutionDropdown;
     public GameObject fullscreenToggle;
-    public GameObject backButton;
+    public GameObject back_ButtonS;
     public Button settings_Button;
+    public Button credits_Button;
+    public Button back_ButtonC;
     public Slider music_slider;
+    public GameObject creditsBg;
+    public GameObject creditsWords;
+    public GameObject backToMenuC;
 
     [Header("Audio Mixers")]
     public AudioMixer music_mix;
@@ -73,10 +78,10 @@ public class mainMenuScript : MonoBehaviour {
 		sfxSlider.SetActive(true);
 		resolutionDropdown.SetActive(true);
 		fullscreenToggle.SetActive(true);
-		backButton.SetActive(true);
+		back_ButtonS.SetActive(true);
 		music_slider.Select();
     }
-    public void backToMainMenu() {
+    public void backToMainMenuS() {
     	titleCloud.SetActive(true);
     	star1.SetActive(true);
 		star2.SetActive(true);
@@ -89,7 +94,7 @@ public class mainMenuScript : MonoBehaviour {
 		sfxSlider.SetActive(false);
 		resolutionDropdown.SetActive(false);
 		fullscreenToggle.SetActive(false);
-		backButton.SetActive(false);
+		back_ButtonS.SetActive(false);
 		Cursor.visible = false;
 		settings_Button.Select();
     }
@@ -106,5 +111,35 @@ public class mainMenuScript : MonoBehaviour {
        if(volume <= 0){
     	sfx_mix.SetFloat("sfx", volume);
         }
+    }
+
+    public void credits() {
+        titleCloud.SetActive(false);
+        star1.SetActive(false);
+        star2.SetActive(false);
+        newGameButton.SetActive(false);
+        loadGameButton.SetActive(false);
+        quitGameButton.SetActive(false);
+        settingsButton.SetActive(false);
+        creditsButton.SetActive(false);
+        creditsBg.SetActive(true);
+        creditsWords.SetActive(true);
+        backToMenuC.SetActive(true);
+        back_ButtonC.Select();
+    }
+
+    public void backToMainMenuC() {
+        titleCloud.SetActive(true);
+        star1.SetActive(true);
+        star2.SetActive(true);
+        newGameButton.SetActive(true);
+        loadGameButton.SetActive(true);
+        quitGameButton.SetActive(true);
+        settingsButton.SetActive(true);
+        creditsButton.SetActive(true);
+        creditsBg.SetActive(false);
+        creditsWords.SetActive(false);
+        backToMenuC.SetActive(false);
+        credits_Button.Select();
     }
 }
