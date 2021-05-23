@@ -54,6 +54,8 @@ public class CutsceneScript_Outro : MonoBehaviour
     public int orb_count = 0;
     public int next_orb_count = 0;
 
+    private string scene_to_load;
+
 	void Awake()
 	{
 		diaRun = FindObjectOfType<DialogueRunner>();
@@ -76,6 +78,7 @@ public class CutsceneScript_Outro : MonoBehaviour
 		diaRun.StartDialogue(talktonode);
 		// orbs.SetActive(false);
 		beams.enabled = false;
+		scene_to_load = "TitleScreen";
     }
 
     // Update is called once per frame
@@ -115,7 +118,11 @@ public class CutsceneScript_Outro : MonoBehaviour
 
     public void next_frame(string[] parameters)  // <<next_frame 1>> switches to the next frame in the array
     {
-    	if(frame_count < frames.Length-1)
+    	if(parameters[0] == "next")
+    	{
+    		SceneManager.LoadScene(scene_to_load);
+    	}
+    	else
     	{
     		next_frame_count = Int32.Parse(parameters[0]);
     		curr_frame.sprite = frames[next_frame_count];

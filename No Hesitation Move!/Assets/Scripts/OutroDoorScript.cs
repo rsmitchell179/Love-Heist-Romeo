@@ -49,7 +49,7 @@ public class OutroDoorScript : MonoBehaviour
         {
             globals.putPlayer = true;
             // globals.destPos = destinationCoords;
-            SceneManager.LoadScene("OutroSlideShow");
+            SceneManager.LoadScene("OutroCutscene");
 
         }
     }

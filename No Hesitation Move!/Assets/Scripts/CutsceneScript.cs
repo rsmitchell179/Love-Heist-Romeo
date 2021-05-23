@@ -95,15 +95,18 @@ public class CutsceneScript : MonoBehaviour
 
     public void next_frame(string[] parameters)  // <<next_frame 1>> switches to the next frame in the array
     {
-    	if(frame_count < frames.Length-1)
-    	{
-    		next_frame_count = Int32.Parse(parameters[0]);
-    		curr_frame.sprite = frames[next_frame_count];
-    	}
-    	else
+
+    	if(parameters[0] == "next")
     	{
     		SceneManager.LoadScene(next_scene);
     	}
+    	else
+    	{
+    		next_frame_count = Int32.Parse(parameters[0]);
+			curr_frame.sprite = frames[next_frame_count];
+    	}
+
+		
     }
 
     public void next_bkgr(string[] parameters)   // <<next_bkgr 1>> switches to the next background in the array
