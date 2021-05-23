@@ -14,7 +14,7 @@ public class CutsceneScript : MonoBehaviour
 	public Sprite[] frames;
 	public SpriteRenderer curr_frame;
 	public int frame_count = 0;
-	private int next_frame_count = 0;
+	public int next_frame_count = 0;
 
 	[Header("Background")]
 	public SpriteRenderer background;
@@ -49,6 +49,7 @@ public class CutsceneScript : MonoBehaviour
 		diaRun.AddCommandHandler("char_toggle", char_toggle);
 		diaRun.AddCommandHandler("next_bkgr", next_bkgr);
         diaRun.AddCommandHandler("font_size", font_size);
+        diaRun.AddCommandHandler("enable_romeo_yell", enable_romeo_yell);
 	}
 
     // Start is called before the first frame update
@@ -82,7 +83,6 @@ public class CutsceneScript : MonoBehaviour
     		romeo_box.enabled = true;
     		ui_text.color = romeo_color;
     		wiz_box.enabled = false;
-            romeo_yell.enabled = true;
     	}
     	else if(string.Equals("none", speaker))  // <<char_toggle none>> to have the scene empty
     	{
@@ -98,8 +98,7 @@ public class CutsceneScript : MonoBehaviour
     	if(frame_count < frames.Length-1)
     	{
     		next_frame_count = Int32.Parse(parameters[0]);
-    		frame_count = frame_count + next_frame_count;
-    		curr_frame.sprite = frames[frame_count];
+    		curr_frame.sprite = frames[next_frame_count];
     	}
     	else
     	{
@@ -121,5 +120,10 @@ public class CutsceneScript : MonoBehaviour
     {                                            // note: any change in font size will need to be
         text_size = float.Parse(parameters[0]);  // changed back to the original size, 25.
         ui_text.fontSize = text_size;
+    }
+
+    public void enable_romeo_yell(string[] parameters)
+    {
+    	romeo_yell.enabled = bool.Parse(parameters[0]);
     }
 }

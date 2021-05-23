@@ -1,39 +1,42 @@
 title: Beginning
 tags: 
 colorID: 0
-position: 739,-821
+position: 738,-824
 ---
 <<char_toggle none>>
 ......
 <<next_frame 1>>
 ......
-<<next_frame 1>>
+<<next_frame 2>>
 ......
-<<next_frame 1>>
+<<next_frame 3>>
 ......
 <<font_size 50>>
+<<enable_romeo_yell true>> 
 <<char_toggle romeo>>
 HELLO!
 <<char_toggle none>>
 ......
-<<next_frame 1>>
+<<next_frame 4>>
 ......
-<<next_frame 1>>
+<<next_frame 5>>
 ......
-<<next_frame 1>>
+<<next_frame 6>>
 <<font_size 25>>
 <<char_toggle wizard>>
 Who dares disturb me while I’m writing my memoirs?!
-<<next_frame 1>>
+<<enable_romeo_yell false>> 
 <<char_toggle romeo>>
+<<next_frame 7>>
 My name’s Romeo.
 I was told I could find a wizard out in these woods.
 Are you her?
-<<next_frame 1>>
+<<next_frame 8>>
 <<char_toggle wizard>>
 Yes, of course, it is I. A Wizard, just like it said on the sign. 
-<<next_frame 1>>
-Now leave me to drink away my wretched sorrows in peace!  
+<<next_frame 9>>
+Now leave me to drink away my wretched sorrows in peace!
+<<enable_romeo_yell true>> 
 <<char_toggle romeo>>
 Do wizards usually drink this much?
 <<char_toggle wizard>>
@@ -42,11 +45,11 @@ They certainly do once they reach this point in their lives.
 I thought you wizards weren't supposed to age.
 <<char_toggle wizard>>
 ...
-<<next_frame 1>>
+<<next_frame 10>>
 Oh for magic's sake, what is it you want from me?
 <<char_toggle romeo>>
 I was told you could help me find love. I want to feel and experience what True Love is like.
-<<next_frame 1>>
+<<next_frame 11>>
 <<char_toggle wizard>>
 Ha! Don’t we all! Do we get it...? 
 Almost never.
@@ -58,28 +61,29 @@ I divided what remained of them into three individual orbs and scattered them ac
 Until the orbs are back within my grasp, there’s nothing I can do for you.  
 <<char_toggle romeo>>
 How much farther do I have to walk for those?
-<<next_frame 1>>
+<<next_frame 12>>
 <<char_toggle wizard>>
 Silly being. The orbs are not in this world. You must traverse the OVERWORLD! 
 Only I hold the power to send you to where you need to go.
 <<char_toggle romeo>>
 And you promise to give me True Love if I find them?
-<<next_frame 1>>
+<<next_frame 13>>
 <<char_toggle wizard>>
 Indeed I would. Bring all three orbs to me and your wish will be duly granted.
-<<next_frame 1>>
 <<char_toggle romeo>>
 Then retrieve your orbs I shall! Where do I start?
-<<next_frame 1>>
+<<next_frame 14>>
 <<char_toggle wizard>>
 Ha Ha Ha.
+<<next_frame 15>>
+HA HA HA.
 <<char_toggle none>>
 <<next_bkgr 1>>
-<<next_frame 1>>
+<<next_frame 16>>
 ...
-<<next_frame 1>>
+<<next_frame 17>>
 ...
-<<next_frame 1>>
+<<next_frame 18>>
 ...
-<<next_frame 1>>
+<<next_frame 19>>
 ===
