@@ -6,6 +6,12 @@ using UnityEngine.Events;
 
 public class SlotMachine : MonoBehaviour
 {
+     AudioSource[] source;
+     AudioSource lever;
+     AudioSource slot;
+     AudioSource lose;
+     AudioSource win;
+
     public static event Action<int, SlotTile> OnFinishedSpinning;
     public UnityEvent OnAllValuesAreTheSame;
     private SlotTile[] _slotTile = new SlotTile[3];
@@ -21,6 +27,12 @@ public class SlotMachine : MonoBehaviour
 
     private void Awake()
     {
+        source = GetComponents<AudioSource>(); 
+        lever = source[1];
+        slot  = source[2];
+        lose  = source[3];
+        win   = source[0];
+
         OnFinishedSpinning += FinishingSpinning;
         for (int i = 0; i < _row.Length; i++)
         {
@@ -30,7 +42,10 @@ public class SlotMachine : MonoBehaviour
     }
 
     private void Update()
-    {
+    {   
+        if(win.time >= win.clip.length){    //Wait for Win Sound then have Dialogue 
+                  OnAllValuesAreTheSame?.Invoke();
+                }
         if (Input.GetKeyDown(_spinButton))
         {
             StartSpinning();
@@ -43,10 +58,14 @@ public class SlotMachine : MonoBehaviour
     }
 
     public void StartSpinning()
-    {
+    {   
+        lever.Play();
+        slot.Play();
         if (!_canSpin)
         {
+
             return;
+            
         }
         if (Between(_timesSpinned, 1, _tiles.Length-1))
         {
@@ -55,6 +74,7 @@ public class SlotMachine : MonoBehaviour
                 _row[i].Remove();
             }
         }
+        
         _canSpin = false;
         _numberOfRowsFinished = 0;
         for (int i = 0; i < _row.Length; i++)
@@ -75,7 +95,8 @@ public class SlotMachine : MonoBehaviour
         _slotTile[index] = slotTile;
         _numberOfRowsFinished++;
         if (_numberOfRowsFinished == 3)
-        {
+        {   
+            slot.Stop();
             int count = 0;
             for (int i = 0; i < _slotTile.Length; i++)
             {
@@ -87,8 +108,15 @@ public class SlotMachine : MonoBehaviour
             }
             print("count : " + count);
             if (count == 3)
-            {
-                OnAllValuesAreTheSame?.Invoke();
+            {   
+                win.Play();
+                if(win.time == win.clip.length){
+                  OnAllValuesAreTheSame?.Invoke();
+                }
+                
+                
+            }else{
+              lose.Play();
             }
             _canSpin = true;
         }
