@@ -1,15 +1,15 @@
 title: Closing
 tags: 
 colorID: 0
-position: 872,-839
+position: 872,-841
 ---
 <<char_toggle none>>
 ......
 <<next_frame 1>>
 ......
-<<next_frame 1>>
+<<next_frame 2>>
 ......
-<<next_frame 1>>
+<<next_frame 3>>
 <<enable_romeo_textbox true>>
 <<next_orbs 1>>
 ......
@@ -17,42 +17,44 @@ position: 872,-839
 ......
 <<next_orbs 1>>
 ......
+<<enable_beam true>>
+<<next_frame 4>>
 <<next_orbs 1>>
 ......
-<<enable_beam true>>
-......
-<<next_frame 1>>
 <<next_beam 1>>
 ......
 <<char_toggle romeo>>
 Wow. Is that the love filling the air? 
 Will that beam reveal my True Love?
+<<next_frame 5>>
 <<char_toggle wizard>>
 Foolish soul. You still don’t understand. 
+<<next_frame 6>>
 Love cannot be dealt out like a deck of cards. 
 No. It must be developed, grown, and nurtured with mutual acceptance.
 <<char_toggle romeo>>
 Oh, I see... So are these orbs just for show then? 
 It’s a very pretty light show.
-<<next_frame 1>> 
 <<char_toggle wizard>>
-Foolish soul! These orbs serve a much greater, fouler purpose. 
+These orbs serve a much greater, fouler purpose. 
 They contained what was once my love but will now vanquish all other remnants of love from this world! 
 <<char_toggle romeo>>
 But that’s so evil! I never took you for a villain!
 Why would you do this?
-<<next_frame 1>>
+<<next_frame 7>>
 <<char_toggle wizard>>
-Because I seek to take the joy from others as mine was stolen from me long ago. 
+Because I seek to take the joy from others as mine was stolen from me long ago.
+<<next_frame 8>>
 I want people to experience the same hurt that I’ve endured.
 <<char_toggle romeo>>
 Your happiness was taken from you?
+<<next_frame 9>>
 <<char_toggle wizard>>
 Yes, and that’s why this cosmic beam will suck it from all others!
 <<char_toggle romeo>>
 Well, I’m not feeling it yet.
-<<next_frame 1>>
 <<char_toggle wizard>>
+<<next_frame 10>> 
 You're not?
 <<char_toggle romeo>>
 Nope. I am completely unaffected.
@@ -60,36 +62,36 @@ Nope. I am completely unaffected.
 That’s strange. It should work instantly...
 <<char_toggle romeo>>
 Wizard, I didn’t take you for this bitter of a person when we met.
-<<next_frame 1>>
+<<next_frame 11>> 
 <<char_toggle wizard>>
 I wasn’t always this bitter. There was a time when I had a love in my life.
 We met fortuitously and developed a deep connection. 
 However, when I revealed my magic, everything crumbled.
+<<next_frame 12>>
 I was made a laughing stock and was hated by everyone!
-<<next_frame 1>>
+<<next_frame 13>> 
 So I isolated myself.
-<<next_frame 1>>
+<<next_frame 14>>
 Now, I’ve been waiting for this moment.
 To take this pain I’ve carried and project it onto the world! 
 <<char_toggle romeo>>
 Well, that doesn’t sound like love. 
 If love requires acceptance, what happened doesn’t seem like love. 
-<<next_frame 1>>
+<<next_frame 15>>
 <<char_toggle wizard>>
 It was a betrayal of the most heinous kind.
-<<next_frame 1>>
 <<char_toggle romeo>>
 But you can’t let the past ruin what others have, or what even you could still have.
 Wizard, you could be better than this. You are amazing and I believe in you!
-<<next_frame 1>>
 <<char_toggle wizard>>
 You’re right. What was I thinking? 
 <<finish_beams>>
+<<next_frame 16>>
 How my hatred drove me to such measures.
-<<next_frame 1>>
 <<char_toggle romeo>>
 It’s alright because you’re back.
 And I really do admire you for who you are.
+<<next_frame 17>>
 <<char_toggle wizard>>
 Oh, Romeo, you are the sweetest. I truly hope you go out and find your True Love, whoever that may be.
 <<char_toggle romeo>>

@@ -14,7 +14,7 @@ public class CutsceneScript_Outro : MonoBehaviour
 	public Sprite[] frames;
 	public SpriteRenderer curr_frame;
 	public int frame_count = 0;
-	private int next_frame_count = 0;
+	public int next_frame_count = 0;
 
 	[Header("Background")]
 	public SpriteRenderer background;
@@ -118,12 +118,7 @@ public class CutsceneScript_Outro : MonoBehaviour
     	if(frame_count < frames.Length-1)
     	{
     		next_frame_count = Int32.Parse(parameters[0]);
-    		frame_count = frame_count + next_frame_count;
-    		curr_frame.sprite = frames[frame_count];
-    	}
-    	else
-    	{
-    		SceneManager.LoadScene(next_scene);
+    		curr_frame.sprite = frames[next_frame_count];
     	}
     }
 
