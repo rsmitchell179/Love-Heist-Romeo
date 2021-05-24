@@ -104,7 +104,6 @@ public class PauseMenuTutorial : MonoBehaviour
     	pause_menu.SetActive(true);
     	settings_menu.SetActive(false);
     	tutorial_menu.SetActive(false);
-    	Time.timeScale = 1f;
 
     	heist_button.Select();
     	heist_button.OnSelect(null);
