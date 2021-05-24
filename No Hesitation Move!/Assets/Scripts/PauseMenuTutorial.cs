@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Yarn.Unity;
 
 public class PauseMenuTutorial : MonoBehaviour
 {
@@ -17,25 +18,21 @@ public class PauseMenuTutorial : MonoBehaviour
     public Image tutorial;
     public Sprite[] tutorial_slides;
     public int tutorial_frame;
-    // public bool is_fading;
-
-    // private float fade_in_time = 0.5f;
-    // private float fade_out_time = 0.5f;
     private float first_wait_time = 0.1f;
     private float second_wait_time = 0.5f;
     public bool after_fade;
 
     public Button heist_button;
 
+    DialogueRunner diaRun;
+
     void Awake()
     {
     	tutorial.enabled = false;
     	background.enabled = false;
     	tutorial_menu.SetActive(false);
-    	// Color bkgr_color = background.color;
-    	// bkgr_color.a = 1;
-    	// background.color = bkgr_color;
-    	// background.CrossFadeAlpha(0, 0.0f, true);
+    	diaRun = FindObjectOfType<DialogueRunner>();
+
     }
 
     // Start is called before the first frame update
@@ -69,9 +66,13 @@ public class PauseMenuTutorial : MonoBehaviour
     public void switch_to_tutorial()
     {
     	Debug.Log("inside switch_to_tutorial");
+    	// diaRun.enabled = false;
+    	diaRun.Stop();
     	tutorial_menu.SetActive(true);
+    	Time.timeScale = 0f;
     	pause_menu.SetActive(false);
     	settings_menu.SetActive(false);
+
     	StartCoroutine(start_slides());
     }
 
@@ -103,6 +104,7 @@ public class PauseMenuTutorial : MonoBehaviour
     	pause_menu.SetActive(true);
     	settings_menu.SetActive(false);
     	tutorial_menu.SetActive(false);
+    	Time.timeScale = 1f;
 
     	heist_button.Select();
     	heist_button.OnSelect(null);

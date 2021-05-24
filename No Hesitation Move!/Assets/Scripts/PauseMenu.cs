@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using Yarn.Unity;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -34,11 +35,15 @@ public class PauseMenu : MonoBehaviour
     Resolution[] reso;
     string main_menu_scene;
     GameObject last_button;
+    DialogueRunner diaRun;
+    DialogueUI diaUI;
 
     void Awake()
     {
     	pause_menu.SetActive(false);
     	settings_menu.SetActive(false);
+        diaRun = FindObjectOfType<DialogueRunner>();
+        diaUI = FindObjectOfType<DialogueUI>();
     }
 
     void Start()
@@ -96,7 +101,7 @@ public class PauseMenu : MonoBehaviour
 
     	if(EventSystem.current.currentSelectedGameObject == null)
         {
-        	EventSystem.current.SetSelectedGameObject(last_button);
+        	EventSystem.current.SetSelectedGameObject(resume_button);
         }
         else
         {
@@ -117,7 +122,7 @@ public class PauseMenu : MonoBehaviour
     	cursor_visible = false;
     	pause_menu.SetActive(true);
     	settings_menu.SetActive(false);
-    	EventSystem.current.SetSelectedGameObject(resume_button);
+    	EventSystem.current.SetSelectedGameObject(null);
     }
 
     public void resume_game()
@@ -125,7 +130,7 @@ public class PauseMenu : MonoBehaviour
     	start_game();
     	pause_menu.SetActive(false);
     	settings_menu.SetActive(false);
-    	EventSystem.current.SetSelectedGameObject(null);
+    	EventSystem.current.SetSelectedGameObject(resume_button);
     	cursor_visible = false;
     }
 
@@ -151,6 +156,8 @@ public class PauseMenu : MonoBehaviour
     	is_paused = true;
     	p_move.enabled = false;
     	Time.timeScale = 0f;
+        diaUI.DialogueComplete();
+        diaRun.Stop();
     }
 
 	// general operations that are required in multiple buttons
