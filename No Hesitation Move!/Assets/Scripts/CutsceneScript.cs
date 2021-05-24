@@ -42,6 +42,16 @@ public class CutsceneScript : MonoBehaviour
     public Color wiz_color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
     public Color clear_color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
 
+    [Header("Fade")]
+    public Image img_fade;
+   	private float fade_in_time = 0.3f;
+   	private float fade_out_time = 0.5f;
+    private float first_wait_time = 0.5f;
+    private float second_wait_time = 1.3f;
+    private float third_wait_time = 1.0f;
+    private float fourth_wait_time = 1.0f;
+    public bool is_fading;
+
 	void Awake()
 	{
 		diaRun = FindObjectOfType<DialogueRunner>();
@@ -50,6 +60,9 @@ public class CutsceneScript : MonoBehaviour
 		diaRun.AddCommandHandler("next_bkgr", next_bkgr);
         diaRun.AddCommandHandler("font_size", font_size);
         diaRun.AddCommandHandler("enable_romeo_yell", enable_romeo_yell);
+        diaRun.AddCommandHandler("start_fade", start_fade);
+
+        img_fade.CrossFadeAlpha(0, 0.0f, true);
 	}
 
     // Start is called before the first frame update
@@ -65,6 +78,16 @@ public class CutsceneScript : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Tab))
         {
         	SceneManager.LoadScene(next_scene);
+        }
+
+        if(is_fading == true)
+        {
+        	img_fade.CrossFadeAlpha(1, fade_in_time, false);
+        }
+        
+        if(is_fading == false)
+        {
+        	img_fade.CrossFadeAlpha(0, fade_out_time, false);
         }
     }
 
@@ -128,5 +151,40 @@ public class CutsceneScript : MonoBehaviour
     public void enable_romeo_yell(string[] parameters)
     {
     	romeo_yell.enabled = bool.Parse(parameters[0]);
+    }
+
+    public void start_fade(string[] parameters, System.Action onComplete)
+    {
+    	StartCoroutine(fade_routine(onComplete));
+    }
+
+    IEnumerator fade_routine(System.Action onComplete)
+    {
+
+    	yield return new WaitForSecondsRealtime(first_wait_time);
+
+    	is_fading = true;
+
+    	yield return new WaitForSecondsRealtime(second_wait_time);
+
+    	wiz_box.enabled = false;
+    	romeo_box.enabled = false;
+		ui_text.color = clear_color;
+        romeo_yell.enabled = false;
+
+    	bkgr_count++;
+    	background.sprite = alt_bkgr[bkgr_count];
+
+		next_frame_count++;
+		curr_frame.sprite = frames[next_frame_count];
+		Debug.Log(next_frame_count);
+
+    	yield return new WaitForSecondsRealtime(third_wait_time);
+
+    	is_fading = false;
+
+    	yield return new WaitForSecondsRealtime(fourth_wait_time);
+
+    	onComplete(); 
     }
 }
