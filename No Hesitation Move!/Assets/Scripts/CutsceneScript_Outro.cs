@@ -56,6 +56,9 @@ public class CutsceneScript_Outro : MonoBehaviour
 
     private string scene_to_load;
 
+    [Header("Credits")]
+    public Image credits;
+
 	void Awake()
 	{
 		diaRun = FindObjectOfType<DialogueRunner>();
@@ -69,6 +72,7 @@ public class CutsceneScript_Outro : MonoBehaviour
         diaRun.AddCommandHandler("next_orbs", next_orbs);
         diaRun.AddCommandHandler("finish_beams",  finish_beams);
         diaRun.AddCommandHandler("enable_romeo_textbox", enable_romeo_textbox);
+        diaRun.AddCommandHandler("enable_credits", enable_credits);
 	}
 
     // Start is called before the first frame update
@@ -78,6 +82,7 @@ public class CutsceneScript_Outro : MonoBehaviour
 		diaRun.StartDialogue(talktonode);
 		// orbs.SetActive(false);
 		beams.enabled = false;
+        credits.enabled = false;
 		scene_to_load = "TitleScreen";
     }
 
@@ -204,5 +209,20 @@ public class CutsceneScript_Outro : MonoBehaviour
     public void enable_romeo_textbox(string[] parameters)
     {
     	romeo_box.enabled = bool.Parse(parameters[0]);
+    }
+
+    public void enable_credits(string[] parameters, System.Action onComplete)
+    {
+
+        StartCoroutine(credits_wait(onComplete));
+    }
+
+    IEnumerator credits_wait(System.Action onComplete)
+    {
+        credits.enabled = true;
+
+        yield return new WaitForSecondsRealtime(3.0f);
+
+        onComplete();
     }
 }
