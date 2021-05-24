@@ -156,8 +156,8 @@ public class PauseMenu : MonoBehaviour
     	is_paused = true;
     	p_move.enabled = false;
     	Time.timeScale = 0f;
-        diaUI.DialogueComplete();
-        diaRun.Stop();
+        // diaUI.DialogueComplete();
+        // diaRun.Stop();
     }
 
 	// general operations that are required in multiple buttons

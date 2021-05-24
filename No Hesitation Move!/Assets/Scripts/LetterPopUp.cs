@@ -20,8 +20,9 @@ public class LetterPopUp : MonoBehaviour
     public Animator anim;
     public AnimationClip letter_zoom;
 
-    [Header("doughboy dialogue canvas")]
+    [Header("canvas")]
     public GameObject db_canvas;
+    public GameObject tutorial_canvas;
 
     Vector3 set_position;
     bool stop_player_movement;
@@ -59,6 +60,18 @@ public class LetterPopUp : MonoBehaviour
         if(stop_player_movement == true)
         {
             p_move.gameObject.transform.position = set_position;
+        }
+
+        if(tutorial_canvas.activeSelf == true)
+        {
+            letter.enabled = false;
+            letter_open = false;
+            p_move.enabled = true;
+            stop_player_movement = false;
+            animation_bool = false;
+            anim.Rebind();
+            anim.Update(0f);
+            db_canvas.SetActive(true);
         }
     }
 

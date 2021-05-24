@@ -6543,6 +6543,16 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8123814585454499293, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8782282643407527545, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8863946253103685234, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -13799,6 +13809,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1870559304}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1881621004 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8123814585454499293, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 780661422}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1883503237
 GameObject:
   m_ObjectHideFlags: 0
@@ -16160,6 +16176,11 @@ PrefabInstance:
       propertyPath: db_canvas
       value: 
       objectReference: {fileID: 1418053584}
+    - target: {fileID: 7964497762324057055, guid: c47317f3cd929954cb14fa45533fae3a,
+        type: 3}
+      propertyPath: tutorial_canvas
+      value: 
+      objectReference: {fileID: 1881621004}
     - target: {fileID: 7964497762329913850, guid: c47317f3cd929954cb14fa45533fae3a,
         type: 3}
       propertyPath: m_Sprite

@@ -1209,7 +1209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2342667099933696742
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1661,7 +1661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 4
-    m_SelectOnUp: {fileID: 7265740996391901504}
+    m_SelectOnUp: {fileID: 7209843454536021261}
     m_SelectOnDown: {fileID: 2342667100039946557}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
@@ -2387,7 +2387,7 @@ MonoBehaviour:
   m_Navigation:
     m_Mode: 4
     m_SelectOnUp: {fileID: 2342667099232623985}
-    m_SelectOnDown: {fileID: 7265740996391901504}
+    m_SelectOnDown: {fileID: 2342667100835843532}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
@@ -3708,11 +3708,11 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
     m_HighlightedColor: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.8674866, g: 0.7311321, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.6039216}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -3726,7 +3726,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1187776096364335012}
   m_OnClick:
     m_PersistentCalls:
@@ -3984,7 +3984,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7511249891951888704
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4028,9 +4028,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7e263f483352fce4e82a4a8fe4b98b67, type: 3}
   - {fileID: 21300000, guid: cbfeadc001a105f4bb6b9aee9cf62818, type: 3}
   tutorial_frame: 0
-  is_fading: 0
   after_fade: 0
   heist_button: {fileID: 7265740996391901504}
+  p_move: {fileID: 0}
+  diaRun: {fileID: 0}
+  diaUI: {fileID: 0}
 --- !u!1 &8354987895573404633
 GameObject:
   m_ObjectHideFlags: 0

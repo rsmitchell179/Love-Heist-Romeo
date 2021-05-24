@@ -714,6 +714,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &84285520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8123814585454499293, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1049207513}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &111343240
 GameObject:
   m_ObjectHideFlags: 0
@@ -4398,6 +4404,11 @@ PrefabInstance:
       propertyPath: letter_zoom
       value: 
       objectReference: {fileID: 7400000, guid: 48990be31ccc07c46b665048de13d9ea, type: 2}
+    - target: {fileID: 7964497762324057055, guid: c47317f3cd929954cb14fa45533fae3a,
+        type: 3}
+      propertyPath: tutorial_canvas
+      value: 
+      objectReference: {fileID: 84285520}
     - target: {fileID: 7964497762329913848, guid: c47317f3cd929954cb14fa45533fae3a,
         type: 3}
       propertyPath: m_SizeDelta.x

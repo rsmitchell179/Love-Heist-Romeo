@@ -24,7 +24,12 @@ public class PauseMenuTutorial : MonoBehaviour
 
     public Button heist_button;
 
-    DialogueRunner diaRun;
+    public playerMovement p_move;
+    public DialogueRunner diaRun;
+    public DialogueUI diaUI;
+
+    private bool stop_p_movement;
+    Vector3 set_position;
 
     void Awake()
     {
@@ -32,6 +37,8 @@ public class PauseMenuTutorial : MonoBehaviour
     	background.enabled = false;
     	tutorial_menu.SetActive(false);
     	diaRun = FindObjectOfType<DialogueRunner>();
+    	diaUI = FindObjectOfType<DialogueUI>();
+    	p_move = GameObject.FindWithTag("Player").GetComponent<playerMovement>();
 
     }
 
@@ -61,12 +68,21 @@ public class PauseMenuTutorial : MonoBehaviour
         		}
         	}
         }
+
+        if(stop_p_movement == true)
+        {
+        	p_move.gameObject.transform.position = set_position;
+        	p_move.enabled = false;
+        }
     }
 
     public void switch_to_tutorial()
     {
     	Debug.Log("inside switch_to_tutorial");
     	// diaRun.enabled = false;
+    	set_position = p_move.gameObject.transform.position;
+    	stop_p_movement = true;
+    	diaUI.DialogueComplete();
     	diaRun.Stop();
     	tutorial_menu.SetActive(true);
     	Time.timeScale = 0f;
@@ -107,6 +123,11 @@ public class PauseMenuTutorial : MonoBehaviour
 
     	heist_button.Select();
     	heist_button.OnSelect(null);
+
+    	diaUI.DialogueComplete();
+    	diaRun.Stop();
+
+    	p_move.enabled = true;
 
     	tutorial_frame = 0;
     	tutorial.sprite = tutorial_slides[tutorial_frame];
