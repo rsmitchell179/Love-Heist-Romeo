@@ -107,7 +107,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &5868824327443656568
@@ -168,6 +168,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
+  move_fast: 6
+  move_normal: 3.14
   body: {fileID: 5868824327443656571}
   movement: {x: 0, y: 0}
   anim: {fileID: 5868824327443656569}
@@ -212,3 +214,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingOrderBase: 5000
+  offset: 0
+  runOnlyOnce: 0
