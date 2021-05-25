@@ -8,6 +8,7 @@ public class RCExit : MonoBehaviour
 	public SpriteRenderer door;
 	public Sprite door_opened;
 	public Sprite door_closed;
+    public BoxCollider2D door_collider;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +19,14 @@ public class RCExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(GlobalVars.hasRCorb == true)
+        {
+            door_collider.enabled = true;
+        }
+        else
+        {
+            door_collider.enabled = false;
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
