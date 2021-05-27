@@ -377,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 7251836596353279238, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
       propertyPath: m_Radius
-      value: 1.25
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279238, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
@@ -6074,11 +6074,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8081709650803054248, guid: 10ec8137d4110834b89e27012f3ac649,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 102
+      objectReference: {fileID: 0}
     - target: {fileID: 8081709650803054254, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5674b7f7780080e4f8905feb79af0abc,
+      objectReference: {fileID: 21300000, guid: 1119eb5c2f5bf854e8cda0de14c0609a,
         type: 3}
     - target: {fileID: 8081709650811904195, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}

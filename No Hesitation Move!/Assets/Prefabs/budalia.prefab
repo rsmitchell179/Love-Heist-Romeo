@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7251836596353279237}
   - component: {fileID: 7251836596353279239}
   - component: {fileID: 9122448106857403878}
-  - component: {fileID: 2524460711975728878}
+  - component: {fileID: 9159033818061702148}
   m_Layer: 0
   m_Name: budalia
   m_TagString: Untagged
@@ -163,6 +163,7 @@ MonoBehaviour:
   talkToNode: budalia_start
   first_node: 
   second_node: 
+  third_node: 
   bool_index: 0
   scriptToLoad: {fileID: 2480198943629176163, guid: 688d5d457e421ae438df997d5cadc87a,
     type: 3}
@@ -202,10 +203,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.14438975, y: -0.43000722}
+  m_Offset: {x: -0.21861792, y: -0.14145756}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.3}
     oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
@@ -213,9 +214,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7972958, y: 0.4115529}
+  m_Size: {x: 0.6404748, y: 0.29027843}
   m_EdgeRadius: 0
---- !u!114 &2524460711975728878
+--- !u!114 &9159033818061702148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,12 +225,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7251836596353279234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!1 &7251836596663307967
 GameObject:
   m_ObjectHideFlags: 0
