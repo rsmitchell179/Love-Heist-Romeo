@@ -8,7 +8,7 @@ public class TitlecardScript : MonoBehaviour
 
 	private float first_fade = 0.25f;
 	private float second_fade = 0.3f;
-	private float wait_time = 4.0f;
+	private float wait_time = 2.5f;
 	public bool is_fading;
 	private Image this_image;
 	private Color this_alpha;
@@ -17,6 +17,7 @@ public class TitlecardScript : MonoBehaviour
 
 	void Awake()
 	{
+		StartCoroutine(titlecard_anim());
 		this_image = this.GetComponent<Image>();
 		p_move = FindObjectOfType<playerMovement>();
 	}
@@ -25,7 +26,6 @@ public class TitlecardScript : MonoBehaviour
     void Start()
     {
     	this_image.CrossFadeAlpha(0, 0.0f, true);
-        StartCoroutine(titlecard_anim());
     }
 
     // Update is called once per frame
@@ -34,7 +34,8 @@ public class TitlecardScript : MonoBehaviour
         if(is_fading == true && GlobalVars.has_seen_card[card_index] == false)
         {
         	this_image.CrossFadeAlpha(1, first_fade, false);
-            // p_move.move_normal = 2.0f;
+            p_move.move_normal = 0.0f;
+            p_move.anim.enabled = false;
         }
 
         if(is_fading == false)
@@ -42,6 +43,7 @@ public class TitlecardScript : MonoBehaviour
         	this_image.CrossFadeAlpha(0, second_fade, false);
             GlobalVars.has_seen_card[card_index] = true;
             // p_move.move_normal = 3.14f;
+        	StartCoroutine(start_walk());
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
@@ -59,5 +61,19 @@ public class TitlecardScript : MonoBehaviour
 
     	is_fading = false;
     	
+    }
+
+    IEnumerator start_walk()
+    {
+    	yield return new WaitForSecondsRealtime(1.0f);
+
+    	// while(p_move.move_normal <= 3.14f)
+    	// {
+    	// 	p_move.move_normal += 0.1f;
+    	// 	yield return null;
+    	// }
+
+    	p_move.move_normal = 3.14f;
+    	p_move.anim.enabled = true;
     }
 }
