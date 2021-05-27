@@ -17,9 +17,10 @@ public class TitlecardScript : MonoBehaviour
 
 	void Awake()
 	{
-		StartCoroutine(titlecard_anim());
+		
 		this_image = this.GetComponent<Image>();
 		p_move = FindObjectOfType<playerMovement>();
+        StartCoroutine(titlecard_anim());
 	}
 
     // Start is called before the first frame update
@@ -34,16 +35,17 @@ public class TitlecardScript : MonoBehaviour
         if(is_fading == true && GlobalVars.has_seen_card[card_index] == false)
         {
         	this_image.CrossFadeAlpha(1, first_fade, false);
+
             p_move.move_normal = 0.0f;
-            p_move.anim.enabled = false;
         }
 
         if(is_fading == false)
         {
         	this_image.CrossFadeAlpha(0, second_fade, false);
             GlobalVars.has_seen_card[card_index] = true;
-            // p_move.move_normal = 3.14f;
         	StartCoroutine(start_walk());
+
+            p_move.move_normal = 3.14f;
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
@@ -54,8 +56,8 @@ public class TitlecardScript : MonoBehaviour
 
     IEnumerator titlecard_anim()
     {
+
     	is_fading = true;
-    	
 
     	yield return new WaitForSecondsRealtime(wait_time);
 
@@ -72,8 +74,5 @@ public class TitlecardScript : MonoBehaviour
     	// 	p_move.move_normal += 0.1f;
     	// 	yield return null;
     	// }
-
-    	p_move.move_normal = 3.14f;
-    	p_move.anim.enabled = true;
     }
 }
