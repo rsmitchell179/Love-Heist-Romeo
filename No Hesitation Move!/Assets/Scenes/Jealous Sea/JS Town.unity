@@ -9016,6 +9016,21 @@ MonoBehaviour:
   anim: {fileID: 2141207500}
   character: {fileID: 1225530583}
   cam: {fileID: 1011765416}
+--- !u!114 &1225530588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225530583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: Environment_Behind
+  above_layer: Environment_Above
+  player: {fileID: 0}
 --- !u!4 &1226288198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7360140750273730938, guid: 8d847543876ff9d40abb288793dee1e0,
@@ -17106,6 +17121,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2179604731936282591, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.11422539
+      objectReference: {fileID: 0}
+    - target: {fileID: 2179604731936282591, guid: 1c90bb7545cf1b047bac9777ba164f64,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.17999744
+      objectReference: {fileID: 0}
     - target: {fileID: 8684720778235822536, guid: 1c90bb7545cf1b047bac9777ba164f64,
         type: 3}
       propertyPath: bool_index
@@ -17247,5 +17272,6 @@ PrefabInstance:
       propertyPath: dialogueRunner
       value: 
       objectReference: {fileID: 1107033555}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4421207367900327914, guid: 1c90bb7545cf1b047bac9777ba164f64, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1c90bb7545cf1b047bac9777ba164f64, type: 3}

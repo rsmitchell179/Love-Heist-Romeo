@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8684720778235822551}
   - component: {fileID: 2066280566002317139}
   - component: {fileID: 2179604731936282591}
-  - component: {fileID: 4421207367900327914}
+  - component: {fileID: 2304070320031633633}
   m_Layer: 0
   m_Name: vinny
   m_TagString: Untagged
@@ -103,6 +103,7 @@ MonoBehaviour:
   talkToNode: 
   first_node: 
   second_node: 
+  third_node: 
   bool_index: 0
   scriptToLoad: {fileID: 0}
 --- !u!114 &8684720778235822551
@@ -160,10 +161,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0034632683, y: -0.543725}
+  m_Offset: {x: 0.0034632683, y: -0.17999744}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.3}
     oldSize: {x: 0.7, y: 1.38}
     newSize: {x: 0.7, y: 1.38}
     adaptiveTilingThreshold: 0.5
@@ -171,9 +172,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.4298687, y: 0.27869606}
+  m_Size: {x: 0.23377228, y: 0.11422539}
   m_EdgeRadius: 0
---- !u!114 &4421207367900327914
+--- !u!114 &2304070320031633633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,9 +183,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8684720778235822550}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
+  behind_layer: Environment_Behind
+  above_layer: Environment_Above
+  player: {fileID: 0}
