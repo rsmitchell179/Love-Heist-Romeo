@@ -86,6 +86,7 @@ public class RecurringBubble : MonoBehaviour
     		bubble.enabled = false;
     		space_bar.enabled = false;
     		is_colliding = false;
+            bubble_bool = false;
     	}
     	
     	// anim.enabled = false;
