@@ -38,6 +38,9 @@ public class PauseMenu : MonoBehaviour
     DialogueRunner diaRun;
     DialogueUI diaUI;
 
+    public Slider m_slider;
+    public Slider s_slider;
+
     void Awake()
     {
     	pause_menu.SetActive(false);
@@ -68,7 +71,11 @@ public class PauseMenu : MonoBehaviour
         reso_dropdown.AddOptions(reso_options);
         reso_dropdown.value = curr_reso;
         reso_dropdown.RefreshShownValue();
-
+        
+        float set_m_volume = PlayerPrefs.GetFloat("music_volume");
+        m_slider.value = set_m_volume;
+        float set_s_volume = PlayerPrefs.GetFloat("sfx_volume");
+        s_slider.value = set_s_volume;
     }
     
 
@@ -189,17 +196,16 @@ public class PauseMenu : MonoBehaviour
 
     public void set_music_volume(float volume)
     {
-      if(volume <= 0){
     	music_mix.SetFloat("music", volume);
-        }
-        
+        PlayerPrefs.SetFloat("music_volume", volume);
+        PlayerPrefs.Save(); 
     }
 
     public void set_sfx_volume(float volume)
     {
-       if(volume <= 0){
     	sfx_mix.SetFloat("sfx", volume);
-        }
+        PlayerPrefs.SetFloat("sfx_volume", volume);
+        PlayerPrefs.Save();
     }
 
     public void set_reso(int reso_index)
