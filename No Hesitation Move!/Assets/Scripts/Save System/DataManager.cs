@@ -52,6 +52,8 @@ public class DataManager : MonoBehaviour
         {
         	GlobalVars.has_seen_card[i] = false;
         }
+
+        // PlayerPrefs.DeleteAll();
     }
 
     public void load_save()
