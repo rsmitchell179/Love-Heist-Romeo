@@ -546,7 +546,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &50116989
 RectTransform:
@@ -952,9 +952,10 @@ GameObject:
   - component: {fileID: 90466172}
   - component: {fileID: 90466171}
   - component: {fileID: 90466170}
+  - component: {fileID: 90466174}
   m_Layer: 0
   m_Name: Chapter IV
-  m_TagString: Untagged
+  m_TagString: Chapter IV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -972,8 +973,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterRender: {fileID: 90466172}
-  letter_opened: {fileID: 21300000, guid: adde6173037664644a70b8b4d609e2e6, type: 3}
-  letter_closed: {fileID: 21300000, guid: 4bc4e1cf383917349a7b082e842510b5, type: 3}
+  letter_opened: {fileID: 8250379650287324805, guid: c135063bba0b661448519a6b9dc3c4a2,
+    type: 3}
+  letter_closed: {fileID: 8871099144867154836, guid: c135063bba0b661448519a6b9dc3c4a2,
+    type: 3}
   letter: {fileID: 550631808}
   letter_open: 0
   p_move: {fileID: 302988212}
@@ -993,9 +996,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04847835, y: -0.27179214}
+  m_Offset: {x: 0.014798164, y: -0.038461447}
   serializedVersion: 2
-  m_Radius: 2.789296
+  m_Radius: 0.66558266
 --- !u!212 &90466172
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1036,7 +1039,8 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4bc4e1cf383917349a7b082e842510b5, type: 3}
+  m_Sprite: {fileID: 8871099144867154836, guid: c135063bba0b661448519a6b9dc3c4a2,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1055,12 +1059,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90466169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.02, y: 1.27, z: 0}
-  m_LocalScale: {x: 0.2032836, y: 0.2032836, z: 0.2032836}
+  m_LocalPosition: {x: -0.054, y: 1.222, z: 0}
+  m_LocalScale: {x: 0.59213537, y: 0.59213537, z: 0.59213537}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &90466174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90466169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc28500fb519454089bff99706ec1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bool_index: 0
+  bubble_bool: 0
+  is_colliding: 0
+  bubble: {fileID: 2141207502}
+  space_bar: {fileID: 2141207501}
+  anim: {fileID: 2141207500}
+  character: {fileID: 90466169}
+  cam: {fileID: 1011765416}
 --- !u!114 &93316154 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2194682306441758756, guid: aed96efbcc937254aa45a84a6d3ab1cd,
@@ -2516,12 +2540,12 @@ PrefabInstance:
     - target: {fileID: 5868824327443656573, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.02
+      value: -5.07
       objectReference: {fileID: 0}
     - target: {fileID: 5868824327443656573, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.28
+      value: -16.51
       objectReference: {fileID: 0}
     - target: {fileID: 5868824327443656573, guid: 7138a8ec6fa786f489a1a81699e92bac,
         type: 3}
@@ -5787,9 +5811,10 @@ GameObject:
   - component: {fileID: 872639450}
   - component: {fileID: 872639449}
   - component: {fileID: 872639452}
+  - component: {fileID: 872639453}
   m_Layer: 0
   m_Name: Chapter I
-  m_TagString: Untagged
+  m_TagString: Chapter I
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5807,9 +5832,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04847835, y: -0.27179214}
+  m_Offset: {x: 0.035489272, y: -0.032337893}
   serializedVersion: 2
-  m_Radius: 2.789296
+  m_Radius: 0.8477833
 --- !u!212 &872639450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5850,7 +5875,8 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4bc4e1cf383917349a7b082e842510b5, type: 3}
+  m_Sprite: {fileID: 8871099144867154836, guid: c135063bba0b661448519a6b9dc3c4a2,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5869,8 +5895,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 872639448}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.35, y: -6.39, z: 0}
-  m_LocalScale: {x: 0.2032836, y: 0.2032836, z: 0.2032836}
+  m_LocalPosition: {x: 9.958, y: -6.235, z: 0}
+  m_LocalScale: {x: 0.59213537, y: 0.59213537, z: 0.59213537}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
@@ -5888,14 +5914,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterRender: {fileID: 872639450}
-  letter_opened: {fileID: 21300000, guid: adde6173037664644a70b8b4d609e2e6, type: 3}
-  letter_closed: {fileID: 21300000, guid: 4bc4e1cf383917349a7b082e842510b5, type: 3}
+  letter_opened: {fileID: 8250379650287324805, guid: c135063bba0b661448519a6b9dc3c4a2,
+    type: 3}
+  letter_closed: {fileID: 8871099144867154836, guid: c135063bba0b661448519a6b9dc3c4a2,
+    type: 3}
   letter: {fileID: 1602281136}
   letter_open: 0
   p_move: {fileID: 302988212}
   animation_bool: 0
   anim: {fileID: 1602281135}
   letter_zoom: {fileID: 7400000, guid: 478d2b0741b916c48bb6cdfd297cd088, type: 2}
+--- !u!114 &872639453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872639448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc28500fb519454089bff99706ec1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bool_index: 0
+  bubble_bool: 0
+  is_colliding: 0
+  bubble: {fileID: 2141207502}
+  space_bar: {fileID: 2141207501}
+  anim: {fileID: 2141207500}
+  character: {fileID: 872639448}
+  cam: {fileID: 1011765416}
 --- !u!1001 &883580351
 PrefabInstance:
   m_ObjectHideFlags: 0

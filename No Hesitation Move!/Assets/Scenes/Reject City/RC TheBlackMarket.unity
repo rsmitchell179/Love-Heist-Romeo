@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 24044785}
   - component: {fileID: 24044787}
   - component: {fileID: 24044786}
+  - component: {fileID: 24044788}
   m_Layer: 0
   m_Name: tent_5
   m_TagString: Untagged
@@ -401,6 +402,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &24044788
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24044783}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &31150185
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -923,6 +950,7 @@ GameObject:
   - component: {fileID: 99998925}
   - component: {fileID: 99998927}
   - component: {fileID: 99998926}
+  - component: {fileID: 99998928}
   m_Layer: 0
   m_Name: tent4_6
   m_TagString: Untagged
@@ -1029,6 +1057,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &99998928
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 99998923}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &100158879
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1311,6 +1365,7 @@ GameObject:
   - component: {fileID: 105485973}
   - component: {fileID: 105485975}
   - component: {fileID: 105485974}
+  - component: {fileID: 105485976}
   m_Layer: 0
   m_Name: tent1_1
   m_TagString: Untagged
@@ -1417,6 +1472,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &105485976
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105485971}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &118500246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1792,6 +1873,7 @@ GameObject:
   - component: {fileID: 145181949}
   - component: {fileID: 145181951}
   - component: {fileID: 145181950}
+  - component: {fileID: 145181952}
   m_Layer: 0
   m_Name: tent7_2
   m_TagString: Untagged
@@ -1898,6 +1980,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &145181952
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145181947}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &165900412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +2056,7 @@ GameObject:
   - component: {fileID: 177019925}
   - component: {fileID: 177019927}
   - component: {fileID: 177019926}
+  - component: {fileID: 177019928}
   m_Layer: 0
   m_Name: tent4_5
   m_TagString: Untagged
@@ -2054,6 +2163,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &177019928
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177019923}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!114 &189624964 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9106792920448335546, guid: 5f37705fcd9827b40b3a99d62071c390,
@@ -2244,7 +2379,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_TargetDisplay: 0
 --- !u!224 &195765797
 RectTransform:
@@ -3100,6 +3235,7 @@ GameObject:
   - component: {fileID: 349293284}
   - component: {fileID: 349293286}
   - component: {fileID: 349293285}
+  - component: {fileID: 349293287}
   m_Layer: 0
   m_Name: tent3_11
   m_TagString: Untagged
@@ -3206,6 +3342,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &349293287
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 349293282}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &351566570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,6 +3379,7 @@ GameObject:
   - component: {fileID: 351566572}
   - component: {fileID: 351566571}
   - component: {fileID: 351566573}
+  - component: {fileID: 351566574}
   m_Layer: 0
   m_Name: base_black_market
   m_TagString: Untagged
@@ -3317,6 +3480,38 @@ EdgeCollider2D:
   - {x: -17.240688, y: -8.125961}
   - {x: -17.511152, y: -19.027477}
   - {x: 17.79063, y: -19.043537}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &351566574
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351566570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 17.401579, y: 15.876842}
+  - {x: 14.392605, y: 12.087174}
+  - {x: 12.883534, y: 11.994418}
+  - {x: 12.873486, y: 13.814513}
+  - {x: 10.999665, y: 13.193225}
+  - {x: 10.915278, y: 12.013651}
+  - {x: 9.125731, y: 12.044121}
+  - {x: 6.7661843, y: 16.15723}
+  - {x: 6.2539897, y: 17.314198}
+  - {x: 6.367089, y: 17.518026}
+  - {x: 9.1458435, y: 17.805983}
+  - {x: 11.157492, y: 18.456352}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -3808,6 +4003,7 @@ GameObject:
   - component: {fileID: 388390102}
   - component: {fileID: 388390104}
   - component: {fileID: 388390103}
+  - component: {fileID: 388390105}
   m_Layer: 0
   m_Name: tent3_8
   m_TagString: Untagged
@@ -3914,6 +4110,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &388390105
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388390100}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &409864315
 GameObject:
   m_ObjectHideFlags: 0
@@ -3926,6 +4148,7 @@ GameObject:
   - component: {fileID: 409864317}
   - component: {fileID: 409864319}
   - component: {fileID: 409864318}
+  - component: {fileID: 409864320}
   m_Layer: 0
   m_Name: tent6_1
   m_TagString: Untagged
@@ -4032,6 +4255,32 @@ MonoBehaviour:
   transparent: 0.5
   is_behind: 0
   decor_script: {fileID: 0}
+--- !u!61 &409864320
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409864315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &413015278 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -4278,6 +4527,7 @@ GameObject:
   - component: {fileID: 433417010}
   - component: {fileID: 433417012}
   - component: {fileID: 433417011}
+  - component: {fileID: 433417013}
   m_Layer: 0
   m_Name: tent5_10
   m_TagString: Untagged
@@ -4384,6 +4634,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &433417013
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433417008}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &457246525
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4612,6 +4888,7 @@ GameObject:
   - component: {fileID: 467520700}
   - component: {fileID: 467520702}
   - component: {fileID: 467520701}
+  - component: {fileID: 467520703}
   m_Layer: 0
   m_Name: tent1_2
   m_TagString: Untagged
@@ -4718,6 +4995,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &467520703
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467520698}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &477231207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5126,6 +5429,7 @@ GameObject:
   - component: {fileID: 501352168}
   - component: {fileID: 501352170}
   - component: {fileID: 501352169}
+  - component: {fileID: 501352171}
   m_Layer: 0
   m_Name: tent5_5
   m_TagString: Untagged
@@ -5232,6 +5536,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &501352171
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501352166}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!114 &501745193 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4040319273769559306, guid: 5f37705fcd9827b40b3a99d62071c390,
@@ -5256,6 +5586,7 @@ GameObject:
   - component: {fileID: 501963390}
   - component: {fileID: 501963392}
   - component: {fileID: 501963391}
+  - component: {fileID: 501963393}
   m_Layer: 0
   m_Name: tent4_3
   m_TagString: Untagged
@@ -5362,6 +5693,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &501963393
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501963388}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &503780109
 GameObject:
   m_ObjectHideFlags: 0
@@ -5374,6 +5731,7 @@ GameObject:
   - component: {fileID: 503780111}
   - component: {fileID: 503780113}
   - component: {fileID: 503780112}
+  - component: {fileID: 503780114}
   m_Layer: 0
   m_Name: tent6_3
   m_TagString: Untagged
@@ -5480,6 +5838,32 @@ MonoBehaviour:
   transparent: 0.5
   is_behind: 0
   decor_script: {fileID: 0}
+--- !u!61 &503780114
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 503780109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &514206651 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -5920,6 +6304,7 @@ GameObject:
   - component: {fileID: 567844457}
   - component: {fileID: 567844459}
   - component: {fileID: 567844458}
+  - component: {fileID: 567844460}
   m_Layer: 0
   m_Name: tent4_4
   m_TagString: Untagged
@@ -6026,6 +6411,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &567844460
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567844455}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &572777425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6134,6 +6545,7 @@ GameObject:
   - component: {fileID: 590303285}
   - component: {fileID: 590303287}
   - component: {fileID: 590303286}
+  - component: {fileID: 590303288}
   m_Layer: 0
   m_Name: tent3
   m_TagString: Untagged
@@ -6240,6 +6652,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &590303288
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 590303283}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.028161287, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.879056, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &604139712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -6373,6 +6811,7 @@ GameObject:
   - component: {fileID: 622549774}
   - component: {fileID: 622549776}
   - component: {fileID: 622549775}
+  - component: {fileID: 622549777}
   m_Layer: 0
   m_Name: tent3_9
   m_TagString: Untagged
@@ -6479,6 +6918,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &622549777
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622549772}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &650004731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8210,6 +8675,7 @@ GameObject:
   - component: {fileID: 797291328}
   - component: {fileID: 797291330}
   - component: {fileID: 797291329}
+  - component: {fileID: 797291331}
   m_Layer: 0
   m_Name: tent4_10
   m_TagString: Untagged
@@ -8316,6 +8782,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &797291331
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797291326}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &828885881
 GameObject:
   m_ObjectHideFlags: 0
@@ -8328,6 +8820,7 @@ GameObject:
   - component: {fileID: 828885883}
   - component: {fileID: 828885885}
   - component: {fileID: 828885884}
+  - component: {fileID: 828885886}
   m_Layer: 0
   m_Name: tent_2
   m_TagString: Untagged
@@ -8434,6 +8927,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &828885886
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828885881}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &839310250 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -8682,6 +9201,7 @@ GameObject:
   - component: {fileID: 843272245}
   - component: {fileID: 843272247}
   - component: {fileID: 843272246}
+  - component: {fileID: 843272248}
   m_Layer: 0
   m_Name: tent5_6
   m_TagString: Untagged
@@ -8788,6 +9308,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &843272248
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843272243}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.011370301, y: 0.32166153}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5849626, y: 0.7619778}
+  m_EdgeRadius: 0
 --- !u!4 &863208284 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -9174,6 +9720,7 @@ GameObject:
   - component: {fileID: 927965519}
   - component: {fileID: 927965521}
   - component: {fileID: 927965520}
+  - component: {fileID: 927965522}
   m_Layer: 0
   m_Name: tent3_3
   m_TagString: Untagged
@@ -9280,6 +9827,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &927965522
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927965517}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &946689355
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9402,6 +9975,7 @@ GameObject:
   - component: {fileID: 963782760}
   - component: {fileID: 963782762}
   - component: {fileID: 963782761}
+  - component: {fileID: 963782763}
   m_Layer: 0
   m_Name: tent6
   m_TagString: Untagged
@@ -9508,6 +10082,32 @@ MonoBehaviour:
   transparent: 0.5
   is_behind: 0
   decor_script: {fileID: 0}
+--- !u!61 &963782763
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963782758}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &965982733
 GameObject:
   m_ObjectHideFlags: 0
@@ -9600,6 +10200,7 @@ GameObject:
   - component: {fileID: 970732558}
   - component: {fileID: 970732560}
   - component: {fileID: 970732559}
+  - component: {fileID: 970732561}
   m_Layer: 0
   m_Name: tent_1
   m_TagString: Untagged
@@ -9706,6 +10307,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &970732561
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970732556}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &982087817
 GameObject:
   m_ObjectHideFlags: 0
@@ -9718,6 +10345,7 @@ GameObject:
   - component: {fileID: 982087819}
   - component: {fileID: 982087821}
   - component: {fileID: 982087820}
+  - component: {fileID: 982087822}
   m_Layer: 0
   m_Name: tent2_3
   m_TagString: Untagged
@@ -9824,6 +10452,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &982087822
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982087817}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &995352493
 GameObject:
   m_ObjectHideFlags: 0
@@ -9836,6 +10490,7 @@ GameObject:
   - component: {fileID: 995352495}
   - component: {fileID: 995352497}
   - component: {fileID: 995352496}
+  - component: {fileID: 995352498}
   m_Layer: 0
   m_Name: tent7
   m_TagString: Untagged
@@ -9942,6 +10597,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &995352498
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995352493}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1001137816
 GameObject:
   m_ObjectHideFlags: 0
@@ -10040,6 +10721,7 @@ GameObject:
   - component: {fileID: 1030824972}
   - component: {fileID: 1030824974}
   - component: {fileID: 1030824973}
+  - component: {fileID: 1030824975}
   m_Layer: 0
   m_Name: tent2_1
   m_TagString: Untagged
@@ -10146,6 +10828,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1030824975
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030824970}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1043532483
 GameObject:
   m_ObjectHideFlags: 0
@@ -10158,6 +10866,7 @@ GameObject:
   - component: {fileID: 1043532485}
   - component: {fileID: 1043532487}
   - component: {fileID: 1043532486}
+  - component: {fileID: 1043532488}
   m_Layer: 0
   m_Name: tent5_2
   m_TagString: Untagged
@@ -10264,6 +10973,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1043532488
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043532483}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &1044516572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10492,6 +11227,7 @@ GameObject:
   - component: {fileID: 1051771349}
   - component: {fileID: 1051771351}
   - component: {fileID: 1051771350}
+  - component: {fileID: 1051771352}
   m_Layer: 0
   m_Name: tent4_9
   m_TagString: Untagged
@@ -10598,6 +11334,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1051771352
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051771347}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &1052910780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10835,6 +11597,7 @@ GameObject:
   - component: {fileID: 1057014288}
   - component: {fileID: 1057014290}
   - component: {fileID: 1057014289}
+  - component: {fileID: 1057014291}
   m_Layer: 0
   m_Name: tent5_8
   m_TagString: Untagged
@@ -10941,6 +11704,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1057014291
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057014286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1059081501 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -11385,6 +12174,7 @@ GameObject:
   - component: {fileID: 1095091784}
   - component: {fileID: 1095091786}
   - component: {fileID: 1095091785}
+  - component: {fileID: 1095091787}
   m_Layer: 0
   m_Name: tent3_1
   m_TagString: Untagged
@@ -11491,6 +12281,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1095091787
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095091782}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1115619856 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -11997,6 +12813,7 @@ GameObject:
   - component: {fileID: 1186457532}
   - component: {fileID: 1186457534}
   - component: {fileID: 1186457533}
+  - component: {fileID: 1186457535}
   m_Layer: 0
   m_Name: tent5_3
   m_TagString: Untagged
@@ -12103,6 +12920,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1186457535
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1186457530}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1189819245 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -12966,6 +13809,7 @@ GameObject:
   - component: {fileID: 1283585594}
   - component: {fileID: 1283585596}
   - component: {fileID: 1283585595}
+  - component: {fileID: 1283585597}
   m_Layer: 0
   m_Name: tent3_6
   m_TagString: Untagged
@@ -13072,6 +13916,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1283585597
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1283585592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1283769261
 GameObject:
   m_ObjectHideFlags: 0
@@ -13427,6 +14297,7 @@ GameObject:
   - component: {fileID: 1321402356}
   - component: {fileID: 1321402358}
   - component: {fileID: 1321402357}
+  - component: {fileID: 1321402359}
   m_Layer: 0
   m_Name: tent7_1
   m_TagString: Untagged
@@ -13533,6 +14404,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1321402359
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321402354}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1343036941
 GameObject:
   m_ObjectHideFlags: 0
@@ -13655,6 +14552,7 @@ GameObject:
   - component: {fileID: 1369869171}
   - component: {fileID: 1369869173}
   - component: {fileID: 1369869172}
+  - component: {fileID: 1369869174}
   m_Layer: 0
   m_Name: tent_3
   m_TagString: Untagged
@@ -13761,6 +14659,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1369869174
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369869169}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!114 &1377215482 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3638626972906848523, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -13881,6 +14805,7 @@ GameObject:
   - component: {fileID: 1388024348}
   - component: {fileID: 1388024350}
   - component: {fileID: 1388024349}
+  - component: {fileID: 1388024351}
   m_Layer: 0
   m_Name: tent1
   m_TagString: Untagged
@@ -13987,6 +14912,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1388024351
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1388024346}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1392281755
 GameObject:
   m_ObjectHideFlags: 0
@@ -13999,6 +14950,7 @@ GameObject:
   - component: {fileID: 1392281756}
   - component: {fileID: 1392281759}
   - component: {fileID: 1392281758}
+  - component: {fileID: 1392281760}
   m_Layer: 0
   m_Name: VinnyStatue
   m_TagString: Untagged
@@ -14105,6 +15057,32 @@ MonoBehaviour:
   transparent: 0.5
   is_behind: 0
   decor_script: {fileID: 0}
+--- !u!61 &1392281760
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392281755}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.3777454, y: -0.36101818}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.2}
+    oldSize: {x: 25.6, y: 25.6}
+    newSize: {x: 25.6, y: 25.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.9349446, y: 3.5456595}
+  m_EdgeRadius: 0
 --- !u!1001 &1416379649
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14116,7 +15094,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 5674b7f7780080e4f8905feb79af0abc,
+      objectReference: {fileID: 21300000, guid: 1119eb5c2f5bf854e8cda0de14c0609a,
         type: 3}
     - target: {fileID: 8081709650811904195, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}
@@ -14242,6 +15220,7 @@ GameObject:
   - component: {fileID: 1416919826}
   - component: {fileID: 1416919828}
   - component: {fileID: 1416919827}
+  - component: {fileID: 1416919829}
   m_Layer: 0
   m_Name: tent3_5
   m_TagString: Untagged
@@ -14348,6 +15327,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1416919829
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416919824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1426745872 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -14596,6 +15601,7 @@ GameObject:
   - component: {fileID: 1460630382}
   - component: {fileID: 1460630384}
   - component: {fileID: 1460630383}
+  - component: {fileID: 1460630385}
   m_Layer: 0
   m_Name: tent2_2
   m_TagString: Untagged
@@ -14702,6 +15708,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1460630385
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460630380}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &1464913342
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14933,6 +15965,7 @@ GameObject:
   - component: {fileID: 1476464158}
   - component: {fileID: 1476464160}
   - component: {fileID: 1476464159}
+  - component: {fileID: 1476464161}
   m_Layer: 0
   m_Name: tent2_4
   m_TagString: Untagged
@@ -15039,6 +16072,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1476464161
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476464156}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1486196343
 GameObject:
   m_ObjectHideFlags: 0
@@ -15051,6 +16110,7 @@ GameObject:
   - component: {fileID: 1486196345}
   - component: {fileID: 1486196347}
   - component: {fileID: 1486196346}
+  - component: {fileID: 1486196348}
   m_Layer: 0
   m_Name: tent3_4
   m_TagString: Untagged
@@ -15157,6 +16217,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1486196348
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486196343}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!114 &1493617086 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -15181,6 +16267,7 @@ GameObject:
   - component: {fileID: 1499835326}
   - component: {fileID: 1499835328}
   - component: {fileID: 1499835327}
+  - component: {fileID: 1499835329}
   m_Layer: 0
   m_Name: tent
   m_TagString: Untagged
@@ -15287,6 +16374,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1499835329
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1499835324}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &1511800880
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15708,6 +16821,7 @@ GameObject:
   - component: {fileID: 1585626283}
   - component: {fileID: 1585626285}
   - component: {fileID: 1585626284}
+  - component: {fileID: 1585626286}
   m_Layer: 0
   m_Name: tent5_9
   m_TagString: Untagged
@@ -15814,6 +16928,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1585626286
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585626281}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1603086518 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -16183,6 +17323,7 @@ GameObject:
   - component: {fileID: 1635013807}
   - component: {fileID: 1635013809}
   - component: {fileID: 1635013808}
+  - component: {fileID: 1635013810}
   m_Layer: 0
   m_Name: tent2
   m_TagString: Untagged
@@ -16289,6 +17430,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1635013810
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635013805}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1635566178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -16922,6 +18089,7 @@ GameObject:
   - component: {fileID: 1709948339}
   - component: {fileID: 1709948341}
   - component: {fileID: 1709948340}
+  - component: {fileID: 1709948342}
   m_Layer: 0
   m_Name: tent6_2
   m_TagString: Untagged
@@ -17028,6 +18196,32 @@ MonoBehaviour:
   transparent: 0.5
   is_behind: 0
   decor_script: {fileID: 0}
+--- !u!61 &1709948342
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709948337}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!4 &1724052619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -17611,6 +18805,7 @@ GameObject:
   - component: {fileID: 1756975468}
   - component: {fileID: 1756975470}
   - component: {fileID: 1756975469}
+  - component: {fileID: 1756975471}
   m_Layer: 0
   m_Name: tent3_10
   m_TagString: Untagged
@@ -17717,6 +18912,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1756975471
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756975466}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!114 &1763629078 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2238729598093778573, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -17741,6 +18962,7 @@ GameObject:
   - component: {fileID: 1763807515}
   - component: {fileID: 1763807517}
   - component: {fileID: 1763807516}
+  - component: {fileID: 1763807518}
   m_Layer: 0
   m_Name: tent5_4
   m_TagString: Untagged
@@ -17847,6 +19069,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1763807518
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1763807513}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!4 &1785141373 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -18049,6 +19297,7 @@ GameObject:
   - component: {fileID: 1816979786}
   - component: {fileID: 1816979788}
   - component: {fileID: 1816979787}
+  - component: {fileID: 1816979789}
   m_Layer: 0
   m_Name: tent3_2
   m_TagString: Untagged
@@ -18155,6 +19404,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1816979789
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1816979784}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1820216273
 GameObject:
   m_ObjectHideFlags: 0
@@ -18627,6 +19902,7 @@ GameObject:
   - component: {fileID: 1864140137}
   - component: {fileID: 1864140139}
   - component: {fileID: 1864140138}
+  - component: {fileID: 1864140140}
   m_Layer: 0
   m_Name: tent3_7
   m_TagString: Untagged
@@ -18733,6 +20009,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1864140140
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864140135}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1865274426
 GameObject:
   m_ObjectHideFlags: 0
@@ -18745,6 +20047,7 @@ GameObject:
   - component: {fileID: 1865274428}
   - component: {fileID: 1865274430}
   - component: {fileID: 1865274429}
+  - component: {fileID: 1865274431}
   m_Layer: 0
   m_Name: tent4_1
   m_TagString: Untagged
@@ -18851,6 +20154,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1865274431
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865274426}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1868982219
 GameObject:
   m_ObjectHideFlags: 0
@@ -19084,6 +20413,7 @@ GameObject:
   - component: {fileID: 1921834422}
   - component: {fileID: 1921834424}
   - component: {fileID: 1921834423}
+  - component: {fileID: 1921834425}
   m_Layer: 0
   m_Name: tent4_2
   m_TagString: Untagged
@@ -19190,6 +20520,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1921834425
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921834420}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1930678185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -19323,6 +20679,7 @@ GameObject:
   - component: {fileID: 1933902094}
   - component: {fileID: 1933902096}
   - component: {fileID: 1933902095}
+  - component: {fileID: 1933902097}
   m_Layer: 0
   m_Name: tent2_5
   m_TagString: Untagged
@@ -19429,6 +20786,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1933902097
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1933902092}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1937455540
 GameObject:
   m_ObjectHideFlags: 0
@@ -19477,6 +20860,7 @@ GameObject:
   - component: {fileID: 1938768967}
   - component: {fileID: 1938768969}
   - component: {fileID: 1938768968}
+  - component: {fileID: 1938768970}
   m_Layer: 0
   m_Name: tent5_7
   m_TagString: Untagged
@@ -19583,6 +20967,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1938768970
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1938768965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!224 &1940533592 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4040319274207659790, guid: 5f37705fcd9827b40b3a99d62071c390,
@@ -19714,11 +21124,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1948467482}
   - component: {fileID: 1948467481}
-  - component: {fileID: 1948467480}
   - component: {fileID: 1948467479}
+  - component: {fileID: 1948467480}
+  - component: {fileID: 1948467483}
   m_Layer: 0
   m_Name: Chapter V
-  m_TagString: Untagged
+  m_TagString: Chapter V
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19736,8 +21147,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letterRender: {fileID: 1948467481}
-  letter_opened: {fileID: 21300000, guid: adde6173037664644a70b8b4d609e2e6, type: 3}
-  letter_closed: {fileID: 21300000, guid: 4bc4e1cf383917349a7b082e842510b5, type: 3}
+  letter_opened: {fileID: -3094557096603773800, guid: 23a1c4d4a04368d4f98fca62506821c2,
+    type: 3}
+  letter_closed: {fileID: -5910226647887011691, guid: 23a1c4d4a04368d4f98fca62506821c2,
+    type: 3}
   letter: {fileID: 375008895}
   letter_open: 0
   p_move: {fileID: 2123455793}
@@ -19757,9 +21170,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.04847835, y: -0.27179214}
+  m_Offset: {x: 0.035489272, y: -0.032337893}
   serializedVersion: 2
-  m_Radius: 2.789296
+  m_Radius: 0.8477833
 --- !u!212 &1948467481
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19800,7 +21213,8 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4bc4e1cf383917349a7b082e842510b5, type: 3}
+  m_Sprite: {fileID: -5910226647887011691, guid: 23a1c4d4a04368d4f98fca62506821c2,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19820,11 +21234,31 @@ Transform:
   m_GameObject: {fileID: 1948467478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.694, y: 10.917, z: 0}
-  m_LocalScale: {x: 0.2032836, y: 0.2032836, z: 0.2032836}
+  m_LocalScale: {x: 0.59213537, y: 0.59213537, z: 0.59213537}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1948467483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948467478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcc28500fb519454089bff99706ec1d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bool_index: 0
+  bubble_bool: 0
+  is_colliding: 0
+  bubble: {fileID: 1005072568}
+  space_bar: {fileID: 252659049}
+  anim: {fileID: 252659048}
+  character: {fileID: 1948467478}
+  cam: {fileID: 1820216277}
 --- !u!1 &1952678239
 GameObject:
   m_ObjectHideFlags: 0
@@ -19837,6 +21271,7 @@ GameObject:
   - component: {fileID: 1952678241}
   - component: {fileID: 1952678243}
   - component: {fileID: 1952678242}
+  - component: {fileID: 1952678244}
   m_Layer: 0
   m_Name: tent_4
   m_TagString: Untagged
@@ -19943,6 +21378,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1952678244
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952678239}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &1953763524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20051,6 +21512,7 @@ GameObject:
   - component: {fileID: 1953792924}
   - component: {fileID: 1953792926}
   - component: {fileID: 1953792925}
+  - component: {fileID: 1953792927}
   m_Layer: 0
   m_Name: tent5_1
   m_TagString: Untagged
@@ -20157,6 +21619,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1953792927
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953792922}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1961180380
 GameObject:
   m_ObjectHideFlags: 0
@@ -20169,6 +21657,7 @@ GameObject:
   - component: {fileID: 1961180382}
   - component: {fileID: 1961180384}
   - component: {fileID: 1961180383}
+  - component: {fileID: 1961180385}
   m_Layer: 0
   m_Name: tent4_8
   m_TagString: Untagged
@@ -20275,6 +21764,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1961180385
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1961180380}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1964987423
 GameObject:
   m_ObjectHideFlags: 0
@@ -21529,6 +23044,7 @@ GameObject:
   - component: {fileID: 1972771729}
   - component: {fileID: 1972771731}
   - component: {fileID: 1972771730}
+  - component: {fileID: 1972771732}
   m_Layer: 0
   m_Name: tent4_7
   m_TagString: Untagged
@@ -21635,6 +23151,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1972771732
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972771727}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &1994588460
 GameObject:
   m_ObjectHideFlags: 0
@@ -21647,6 +23189,7 @@ GameObject:
   - component: {fileID: 1994588462}
   - component: {fileID: 1994588464}
   - component: {fileID: 1994588463}
+  - component: {fileID: 1994588465}
   m_Layer: 0
   m_Name: tent5
   m_TagString: Untagged
@@ -21753,6 +23296,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &1994588465
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1994588460}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.038291812, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.3}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.574701, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!114 &2008926011 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7072005456362666543, guid: 5f37705fcd9827b40b3a99d62071c390,
@@ -21899,6 +23468,7 @@ GameObject:
   - component: {fileID: 2033508055}
   - component: {fileID: 2033508057}
   - component: {fileID: 2033508056}
+  - component: {fileID: 2033508058}
   m_Layer: 0
   m_Name: tent3_12
   m_TagString: Untagged
@@ -22005,6 +23575,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &2033508058
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033508053}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1 &2048985349 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -22385,6 +23981,7 @@ GameObject:
   - component: {fileID: 2123048192}
   - component: {fileID: 2123048194}
   - component: {fileID: 2123048193}
+  - component: {fileID: 2123048195}
   m_Layer: 0
   m_Name: tent4
   m_TagString: Untagged
@@ -22491,6 +24088,32 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
+--- !u!61 &2123048195
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123048190}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03153801, y: 0.25162473}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.8858094, y: 0.7794871}
+  m_EdgeRadius: 0
 --- !u!1001 &2123455791
 PrefabInstance:
   m_ObjectHideFlags: 0

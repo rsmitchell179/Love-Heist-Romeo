@@ -37,14 +37,51 @@ public class ExtraLetters : MonoBehaviour {
         {
             p_move.gameObject.transform.position = set_position;
         }
+        if(GlobalVars.chapISeen == true && gameObject.tag == "Chapter I") {
+            letterRender.sprite = letter_opened;
+        }
+        if(GlobalVars.chapIVSeen == true && gameObject.tag == "Chapter IV") {
+            letterRender.sprite = letter_opened;
+        }
+        if(GlobalVars.chapIXSeen == true && gameObject.tag == "Chapter IX") {
+            letterRender.sprite = letter_opened;
+        }
+        if(GlobalVars.chapIISeen == true && gameObject.tag == "Chapter II") {
+            letterRender.sprite = letter_opened;
+        }
+        if(GlobalVars.chapVIIISeen == true && gameObject.tag == "Chapter VIII") {
+            letterRender.sprite = letter_opened;
+        }
+        if(GlobalVars.chapVSeen == true && gameObject.tag == "Chapter V") {
+            letterRender.sprite = letter_opened;
+        }
     }
 
     private void OnTriggerStay2D(Collider2D other) {
     	if(other.gameObject.tag == "Player") {
     		if (Input.GetKeyDown(KeyCode.Space) && animation_bool == false) {
-        		letterRender.sprite = letter_opened;
+        		if(gameObject.tag == "Chapter I") {
+                GlobalVars.chapISeen = true;
+                }
+                if(gameObject.tag == "Chapter IV") {
+                    GlobalVars.chapIVSeen = true;
+                }
+                if(gameObject.tag == "Chapter IX") {
+                    GlobalVars.chapIXSeen = true;
+                }
+                if(gameObject.tag == "Chapter II") {
+                    GlobalVars.chapIISeen = true;
+                }
+                if(gameObject.tag == "Chapter VIII") {
+                    GlobalVars.chapVIIISeen = true;
+                }
+                if(gameObject.tag == "Chapter V") {
+                    GlobalVars.chapVSeen = true;
+                }
+                letterRender.sprite = letter_opened;
         		animation_bool = true;
         		image_pop_up();
+
         	}
     	}
     }
