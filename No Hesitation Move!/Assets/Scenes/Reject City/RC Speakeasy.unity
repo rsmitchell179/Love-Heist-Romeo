@@ -777,7 +777,7 @@ PrefabInstance:
     - target: {fileID: 4040319274207659790, guid: 5f37705fcd9827b40b3a99d62071c390,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4040319274207659790, guid: 5f37705fcd9827b40b3a99d62071c390,
         type: 3}
@@ -1133,6 +1133,7 @@ Transform:
   m_Children:
   - {fileID: 667128827}
   - {fileID: 1788060586}
+  - {fileID: 822323184}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1369,8 +1370,8 @@ Transform:
   m_Father: {fileID: 384736585}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &667128828
-CircleCollider2D:
+--- !u!61 &667128828
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1382,9 +1383,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.15429807, y: -0.6110196}
+  m_Offset: {x: 0.121376395, y: 0.42481375}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 2.2775128
+  m_Size: {x: 4.464719, y: 4.453683}
+  m_EdgeRadius: 0
 --- !u!114 &667128829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1609,7 +1620,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 384736585}
     m_Modifications:
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1625,7 +1636,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1724,6 +1735,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
+--- !u!4 &822323184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
+    type: 3}
+  m_PrefabInstance: {fileID: 779186126}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &887334841
 GameObject:
   m_ObjectHideFlags: 0
@@ -1848,7 +1865,7 @@ PrefabInstance:
     - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: offset
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
