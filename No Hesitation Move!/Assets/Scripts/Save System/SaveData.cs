@@ -11,6 +11,12 @@ public class SaveData
     public bool hasJSorb;
     public bool hasFTorb;
     public bool hasRCorb;
+    public bool seenChapI;
+    public bool seenChapIV;
+    public bool seenChapIX;
+    public bool seenChapII;
+    public bool seenChapVIII;
+    public bool seenChapV;
 
     public bool js_hasCollect;
     public bool ft_hasCollect;

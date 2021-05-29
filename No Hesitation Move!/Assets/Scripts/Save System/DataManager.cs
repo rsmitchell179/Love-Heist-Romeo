@@ -47,6 +47,12 @@ public class DataManager : MonoBehaviour
         GlobalVars.ft_hasCollect = false;
         GlobalVars.rc_hasCollect = false;
         GlobalVars.rc_has_spoken = false;
+        GlobalVars.chapISeen = false;
+    	GlobalVars.chapIVSeen = false;
+    	GlobalVars.chapIXSeen = false;
+    	GlobalVars.chapIISeen = false;
+    	GlobalVars.chapVIIISeen = false;
+    	GlobalVars.chapVSeen = false;
 
         for(int i = 0; i < 4; i++)
         {
@@ -74,6 +80,12 @@ public class DataManager : MonoBehaviour
             GlobalVars.hasJSorb = new_data.hasJSorb;
             GlobalVars.hasFTorb = new_data.hasFTorb;
             GlobalVars.hasRCorb = new_data.hasRCorb;
+      		// GlobalVars.chapISeen = new_data.chapISeen;
+	    	// GlobalVars.chapIVSeen = new_data.chapIVSeen;
+	    	// GlobalVars.chapIXSeen = new_data.chapIXSeen;
+	    	// GlobalVars.chapIISeen = new_data.chapIISeen;
+	    	// GlobalVars.chapVIIISeen = new_data.chapVIIISeen;
+	    	// GlobalVars.chapVSeen = new_data.chapVSeen;
 
 	        SceneManager.LoadScene(new_data.scene);
 
