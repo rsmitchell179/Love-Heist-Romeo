@@ -34,6 +34,12 @@ public class playerMovement : MonoBehaviour
 
     // public LetterPopUp letterpp;
 
+    public bool move_vertical;
+
+    Scene current_scene;
+    string compare_scene_name;
+    string speakeasy_scene_name = "RC Speakeasy";
+
     void OnDrawGizmosSelected() {
             Gizmos.color = Color.blue;
 
@@ -53,6 +59,14 @@ public class playerMovement : MonoBehaviour
         	SaveData load_pos_data = SaveSys.load_data();
         	Vector3 load_position = new Vector3(load_pos_data.position[0], load_pos_data.position[1], load_pos_data.position[2]);
         	transform.position = load_position;
+        }
+
+        current_scene = SceneManager.GetActiveScene();
+        compare_scene_name = current_scene.name;
+
+        if(compare_scene_name != speakeasy_scene_name)
+        {
+            move_vertical = true;
         }
     }
 
@@ -81,15 +95,32 @@ public class playerMovement : MonoBehaviour
 
         // Set animation vars
         // make sure we don't set them if the player is standing still, to prevent weird flipping
-        if (movement.x != 0)
-        {
-            anim.SetFloat("Horizontal", movement.x);
-        }
+        
 
-        if (movement.y != 0)
-        {
-            anim.SetFloat("Vertical", movement.y);
-        }
+        // if(move_vertical == false)
+        // {
+        //     if (movement.x != 0)
+        //     {
+        //         anim.SetFloat("Horizontal", movement.x);
+        //     }
+
+        //     if (movement.y != 0)
+        //     {
+        //         anim.SetFloat("Vertical", movement.y);
+        //     }
+        // }
+        // else
+        // {
+            if(movement.x != 0.0f)
+            {
+                anim.SetFloat("Horizontal", movement.x);
+            }
+
+            if(movement.y != 0.0f)
+            {
+                anim.SetFloat("Vertical", movement.y);
+            }
+        // }
 
         anim.SetFloat("Speed", movement.sqrMagnitude); //some sort of wild magic variable that pulls the squared length of the vector
 
@@ -113,13 +144,28 @@ public class playerMovement : MonoBehaviour
         //         letterpp.letter.enabled = false;
         //         letter_open = false;
         //     }
-        // }
+        // 
+        
+        if(move_vertical == false)
+        {
+            body.velocity = new Vector2(movement.x * moveSpeed, body.velocity.y);
+        }
+        else
+        {
+            body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
+        }
     }
 
     void FixedUpdate()
     {
-
-        body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
+        // if(move_vertical == false)
+        // {
+        //     body.velocity = new Vector2(movement.x * moveSpeed, body.velocity.y);
+        // }
+        // else
+        // {
+        //     body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
+        // }
     }
 
     public void CheckForNearbyNPC ()
