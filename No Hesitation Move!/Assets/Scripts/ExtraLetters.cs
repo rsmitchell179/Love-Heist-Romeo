@@ -95,7 +95,7 @@ public class ExtraLetters : MonoBehaviour {
 
     public IEnumerator letter_wait()
     {
-    	yield return new WaitForSecondsRealtime(3);
+    	yield return new WaitForSecondsRealtime(0);
     	set_letter_true();
     }
 

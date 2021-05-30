@@ -93,7 +93,7 @@ public class LetterSpaceToInteract : MonoBehaviour {
 
     void set_pos(Image bub)
     {
-    	float y_offset = character.GetComponent<SpriteRenderer>().bounds.max.y + 0.4f;
+    	float y_offset = character.GetComponent<SpriteRenderer>().bounds.max.y + 0.6f;
     	Vector3 bub_position = new Vector3(character.transform.position.x, y_offset, character.transform.position.z);
     	bubble.transform.position = cam.WorldToScreenPoint(bub_position);
     }
