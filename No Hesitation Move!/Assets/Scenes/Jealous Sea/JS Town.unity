@@ -2608,7 +2608,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "*mouth full of seaweed* Please don\u2019t tell my parents"
+      value: "*mouth full of seaweed* Please don\u2019t tell my parents."
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -3132,7 +3132,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "Oh this? This is a cave. What\u2019s inside? Beats me, I just stand
+      value: "Oh, this? This is a cave. What\u2019s inside? Beats me. I just stand
         out here."
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
@@ -6344,7 +6344,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: They never invite me to hang out
+      value: No one ever invites me to hang out.
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -6542,7 +6542,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "The fountain sure is nice\u2026 wish my house was closer to it"
+      value: "The fountain sure is nice\u2026 wish my house was closer to it."
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -7217,7 +7217,7 @@ MonoBehaviour:
   ui_text_1: {fileID: 2040312348}
   ui_text_2: {fileID: 616895789}
   actual_text_1: Did you lose the key again?
-  actual_text_2: "I didn\u2019t know we had a key"
+  actual_text_2: "I didn\u2019t know we had a key."
   db_1: {fileID: 1900682475}
   db_2: {fileID: 1450944782}
   current_text: 
@@ -7998,7 +7998,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "This isn\u2019t my house\u2026 yet"
+      value: "This isn\u2019t my house\u2026 yet."
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -9850,7 +9850,7 @@ MonoBehaviour:
   ui_text_1: {fileID: 2040312348}
   ui_text_2: {fileID: 616895789}
   ui_text_3: {fileID: 93316154}
-  actual_text_1: We should invite them to hang out.
+  actual_text_1: We should invite others to hang out.
   actual_text_2: "But they aren\u2019t fun!"
   actual_text_3: Neither are we.
   db_1: {fileID: 1497841810}
@@ -9912,8 +9912,8 @@ MonoBehaviour:
   ui_text_1: {fileID: 2040312348}
   ui_text_2: {fileID: 616895789}
   actual_text_1: This is where we had our first date...
-  actual_text_2: "It\u2019s also where we had our first breakup\u2026 it\u2019s a
-    small town"
+  actual_text_2: "It\u2019s also where we had our first breakup\u2026 It's a small
+    town."
   db_1: {fileID: 230047529}
   db_2: {fileID: 454231287}
   current_text: 
@@ -14902,7 +14902,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "I hate my neighbor, he won\u2019t stop yelling about shells!"
+      value: "I hate my neighbor! He won\u2019t stop yelling about shells!"
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -16183,7 +16183,7 @@ MonoBehaviour:
   ui_text_1: {fileID: 2040312348}
   ui_text_2: {fileID: 616895789}
   ui_text_3: {fileID: 93316154}
-  actual_text_1: The fountain looks so nice
+  actual_text_1: The fountain looks so nice.
   actual_text_2: "Don\u2019t you want to jump in?"
   actual_text_3: "I bet you can\u2019t splash like me!"
   db_1: {fileID: 693597381}
@@ -17041,7 +17041,7 @@ GameObject:
   - component: {fileID: 2145873185}
   - component: {fileID: 2145873186}
   m_Layer: 0
-  m_Name: js_t_doughboys
+  m_Name: js_t_db
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17055,7 +17055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145873184}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.05, y: 1.65, z: -1.1817858}
+  m_LocalPosition: {x: -2.05, y: 1.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1469904233}
