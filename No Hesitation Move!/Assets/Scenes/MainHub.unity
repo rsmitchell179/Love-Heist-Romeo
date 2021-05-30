@@ -496,6 +496,7 @@ GameObject:
   - component: {fileID: 26807978}
   - component: {fileID: 26807979}
   - component: {fileID: 26807980}
+  - component: {fileID: 26807981}
   m_Layer: 0
   m_Name: ftflower2_2
   m_TagString: Untagged
@@ -583,6 +584,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &26807981
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26807977}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1001 &31512545
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2373,6 +2390,7 @@ GameObject:
   - component: {fileID: 139268301}
   - component: {fileID: 139268302}
   - component: {fileID: 139268303}
+  - component: {fileID: 139268304}
   m_Layer: 0
   m_Name: ftflower2_6
   m_TagString: Untagged
@@ -2460,6 +2478,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &139268304
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139268300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &143867904 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -2807,6 +2841,7 @@ GameObject:
   - component: {fileID: 152018791}
   - component: {fileID: 152018792}
   - component: {fileID: 152018793}
+  - component: {fileID: 152018794}
   m_Layer: 0
   m_Name: ftflower
   m_TagString: Untagged
@@ -2894,6 +2929,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &152018794
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152018790}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &155039471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -4703,6 +4754,7 @@ GameObject:
   - component: {fileID: 337667399}
   - component: {fileID: 337667401}
   - component: {fileID: 337667400}
+  - component: {fileID: 337667402}
   m_Layer: 0
   m_Name: ftflower_4
   m_TagString: Untagged
@@ -4790,6 +4842,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &337667402
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337667398}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &344101493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4875,6 +4943,7 @@ GameObject:
   - component: {fileID: 354713445}
   - component: {fileID: 354713447}
   - component: {fileID: 354713446}
+  - component: {fileID: 354713448}
   m_Layer: 0
   m_Name: ftflower_5
   m_TagString: Untagged
@@ -4962,6 +5031,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &354713448
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354713444}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &357666582
 GameObject:
   m_ObjectHideFlags: 0
@@ -5748,6 +5833,7 @@ Transform:
   m_LocalScale: {x: 0.55, y: 0.35, z: 0.4}
   m_Children:
   - {fileID: 66741075}
+  - {fileID: 1822923082}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7978,6 +8064,98 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f37705fcd9827b40b3a99d62071c390, type: 3}
+--- !u!1 &489634278
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 489634279}
+  - component: {fileID: 489634280}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &489634279
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489634278}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.039284706, y: 0.05533123, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_Children: []
+  m_Father: {fileID: 1532013697}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &489634280
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 489634278}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.2449589, y: -1.1563368}
+  - {x: -0.42758656, y: -1.1220913}
+  - {x: -0.58784103, y: -0.7313299}
+  - {x: -0.628068, y: -0.41340065}
+  - {x: -0.49062157, y: -0.18976116}
+  - {x: -0.65611553, y: 0.4415474}
+  - {x: -0.59207153, y: 0.5257063}
+  - {x: 0.51395893, y: 0.54063797}
+  - {x: 0.70051384, y: 0.02757454}
+  - {x: 0.8531437, y: -0.36631298}
+  - {x: 0.597126, y: -0.6642914}
+  - {x: 0.7147846, y: -1.0410576}
+  - {x: 1.4190693, y: -1.0558805}
+  - {x: 1.3763638, y: -0.713192}
+  - {x: 1.606535, y: -0.6390219}
+  - {x: 1.6413412, y: -0.22081089}
+  - {x: 1.338273, y: -0.24210548}
+  - {x: 1.3319426, y: -0.15943432}
+  - {x: 1.3172235, y: 0.2783079}
+  - {x: 1.5061293, y: 0.32547188}
+  - {x: 1.4621735, y: 0.6481123}
+  - {x: 1.3211708, y: 0.6712532}
+  - {x: 1.3068514, y: 0.9864149}
+  - {x: 1.2951126, y: 1.0998955}
+  - {x: 1.0125494, y: 1.0947218}
+  - {x: 0.361475, y: 1.0593452}
+  - {x: -0.44990635, y: 0.9941397}
+  - {x: -1.140708, y: 0.93931675}
+  - {x: -1.1803617, y: 0.6196432}
+  - {x: -1.184495, y: 0.5388365}
+  - {x: -1.4674482, y: 0.51830673}
+  - {x: -1.485733, y: 0.12780094}
+  - {x: -1.2444315, y: 0.12567997}
+  - {x: -1.2676592, y: -0.30079365}
+  - {x: -1.2801523, y: -0.3580141}
+  - {x: -1.5666656, y: -0.3978815}
+  - {x: -1.574049, y: -0.69377804}
+  - {x: -1.5410137, y: -0.8160467}
+  - {x: -1.2885361, y: -0.81034374}
+  - {x: -1.2512541, y: -1.084877}
+  - {x: -1.2454672, y: -1.1558714}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &491836068
 GameObject:
   m_ObjectHideFlags: 0
@@ -9117,6 +9295,7 @@ GameObject:
   - component: {fileID: 606166424}
   - component: {fileID: 606166425}
   - component: {fileID: 606166426}
+  - component: {fileID: 606166427}
   m_Layer: 0
   m_Name: ftflower1_4
   m_TagString: Untagged
@@ -9204,6 +9383,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &606166427
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606166423}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &622864743
 GameObject:
   m_ObjectHideFlags: 0
@@ -9215,6 +9410,7 @@ GameObject:
   - component: {fileID: 622864744}
   - component: {fileID: 622864745}
   - component: {fileID: 622864746}
+  - component: {fileID: 622864747}
   m_Layer: 0
   m_Name: ftflower1
   m_TagString: Untagged
@@ -9302,6 +9498,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &622864747
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622864743}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &640307155
 GameObject:
   m_ObjectHideFlags: 0
@@ -9313,6 +9525,7 @@ GameObject:
   - component: {fileID: 640307156}
   - component: {fileID: 640307157}
   - component: {fileID: 640307158}
+  - component: {fileID: 640307159}
   m_Layer: 0
   m_Name: ftflower_3
   m_TagString: Untagged
@@ -9400,6 +9613,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &640307159
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640307155}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!114 &650123360 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6342995712771208734, guid: aed96efbcc937254aa45a84a6d3ab1cd,
@@ -11253,6 +11482,7 @@ GameObject:
   - component: {fileID: 786004761}
   - component: {fileID: 786004762}
   - component: {fileID: 786004763}
+  - component: {fileID: 786004764}
   m_Layer: 0
   m_Name: ftflower2
   m_TagString: Untagged
@@ -11340,6 +11570,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &786004764
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786004760}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &786378105 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -13549,6 +13795,7 @@ GameObject:
   - component: {fileID: 993561726}
   - component: {fileID: 993561727}
   - component: {fileID: 993561728}
+  - component: {fileID: 993561729}
   m_Layer: 0
   m_Name: ftflower1_2
   m_TagString: Untagged
@@ -13636,6 +13883,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &993561729
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993561725}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &993877677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14663,6 +14926,7 @@ GameObject:
   - component: {fileID: 1079049860}
   - component: {fileID: 1079049861}
   - component: {fileID: 1079049862}
+  - component: {fileID: 1079049863}
   m_Layer: 0
   m_Name: ftflower1_5
   m_TagString: Untagged
@@ -14750,6 +15014,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1079049863
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079049859}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &1080034673
 GameObject:
   m_ObjectHideFlags: 0
@@ -16835,6 +17115,7 @@ GameObject:
   - component: {fileID: 1277323019}
   - component: {fileID: 1277323020}
   - component: {fileID: 1277323021}
+  - component: {fileID: 1277323022}
   m_Layer: 0
   m_Name: ftflower2_4
   m_TagString: Untagged
@@ -16922,6 +17203,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1277323022
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277323018}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &1278476651
 GameObject:
   m_ObjectHideFlags: 0
@@ -18342,6 +18639,7 @@ GameObject:
   - component: {fileID: 1370195825}
   - component: {fileID: 1370195826}
   - component: {fileID: 1370195827}
+  - component: {fileID: 1370195828}
   m_Layer: 0
   m_Name: ftflower_2
   m_TagString: Untagged
@@ -18429,6 +18727,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1370195828
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370195824}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &1371607260
 GameObject:
   m_ObjectHideFlags: 0
@@ -18440,6 +18754,7 @@ GameObject:
   - component: {fileID: 1371607261}
   - component: {fileID: 1371607262}
   - component: {fileID: 1371607263}
+  - component: {fileID: 1371607264}
   m_Layer: 0
   m_Name: ftflower1_6
   m_TagString: Untagged
@@ -18527,6 +18842,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1371607264
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371607260}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &1391006886
 GameObject:
   m_ObjectHideFlags: 0
@@ -19366,6 +19697,7 @@ GameObject:
   - component: {fileID: 1490880525}
   - component: {fileID: 1490880526}
   - component: {fileID: 1490880527}
+  - component: {fileID: 1490880528}
   m_Layer: 0
   m_Name: ftflower2_1
   m_TagString: Untagged
@@ -19453,6 +19785,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1490880528
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490880524}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &1495135620 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -20579,6 +20927,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children:
   - {fileID: 1238910662}
+  - {fileID: 489634279}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22033,6 +22382,7 @@ GameObject:
   - component: {fileID: 1624689715}
   - component: {fileID: 1624689716}
   - component: {fileID: 1624689717}
+  - component: {fileID: 1624689718}
   m_Layer: 0
   m_Name: ftflower2_5
   m_TagString: Untagged
@@ -22120,6 +22470,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1624689718
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624689714}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1001 &1624864451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23490,6 +23856,7 @@ GameObject:
   - component: {fileID: 1713981920}
   - component: {fileID: 1713981921}
   - component: {fileID: 1713981922}
+  - component: {fileID: 1713981923}
   m_Layer: 0
   m_Name: ftflower1_1
   m_TagString: Untagged
@@ -23577,6 +23944,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1713981923
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713981919}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &1714829758
 GameObject:
   m_ObjectHideFlags: 0
@@ -25082,6 +25465,130 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1822923081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1822923082}
+  - component: {fileID: 1822923084}
+  - component: {fileID: 1822923083}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1822923082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822923081}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 373894229}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1822923083
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822923081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 2.403874, y: 0.4049765}
+  - {x: 2.5465956, y: 0.5166789}
+  - {x: 2.6954193, y: 0.59515536}
+  - {x: 2.9565332, y: 0.5734498}
+  - {x: 3.176922, y: 0.39142603}
+  - {x: 3.280442, y: 0.13362065}
+  - {x: 3.262797, y: -0.25393623}
+  - {x: 3.1604307, y: -0.48135215}
+  - {x: 3.084193, y: -0.622079}
+  - {x: 3.0631785, y: -0.7958494}
+  - {x: 3.1176887, y: -0.86055475}
+  - {x: 3.2195723, y: -1.1323111}
+  - {x: 3.4297984, y: -1.188962}
+  - {x: 3.6582398, y: -1.2624768}
+  - {x: 3.7616122, y: -1.4980614}
+  - {x: 3.752234, y: -1.8119622}
+  - {x: 3.6245742, y: -2.111601}
+  - {x: 3.4360313, y: -2.3802238}
+  - {x: 3.3887343, y: -2.7206476}
+  - {x: 3.048417, y: -2.7795272}
+  - {x: 2.8611677, y: -2.7048354}
+  - {x: 2.7501254, y: -2.5083377}
+  - {x: 2.673508, y: -2.511771}
+  - {x: 2.636046, y: -2.6411083}
+  - {x: 2.066804, y: -2.523809}
+  - {x: 1.8943353, y: -2.678716}
+  - {x: 1.4750385, y: -2.6304598}
+  - {x: 1.0464149, y: -2.6242063}
+  - {x: 0.8143669, y: -2.6050074}
+  - {x: 0.692385, y: -2.532335}
+  - {x: 1.0675813, y: -1.9724681}
+  - {x: 1.6216444, y: -1.0586629}
+  - {x: 2.1295624, y: -0.2846854}
+  - {x: 2.4031696, y: 0.40677205}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!68 &1822923084
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822923081}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.8723402, y: -2.3246243}
+  - {x: -1.8257484, y: -1.2177302}
+  - {x: -2.61245, y: 0.034035265}
+  - {x: -2.8722258, y: 0.091021374}
+  - {x: -3.0641534, y: -0.049607426}
+  - {x: -3.0404627, y: -0.5059134}
+  - {x: -2.9641807, y: -0.7495172}
+  - {x: -3.355111, y: -1.0435132}
+  - {x: -3.5418315, y: -1.0510526}
+  - {x: -3.821024, y: -1.3921709}
+  - {x: -4.1168137, y: -1.4702307}
+  - {x: -4.3307924, y: -1.628971}
+  - {x: -4.3097057, y: -2.337183}
+  - {x: -3.906005, y: -2.5005338}
+  - {x: -3.2223141, y: -2.4181392}
+  - {x: -2.8107674, y: -2.3685427}
+  - {x: -1.9276772, y: -2.3296819}
+  - {x: -0.90886307, y: -2.3562539}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1839000441
 GameObject:
   m_ObjectHideFlags: 0
@@ -26287,6 +26794,7 @@ GameObject:
   - component: {fileID: 1902718848}
   - component: {fileID: 1902718849}
   - component: {fileID: 1902718850}
+  - component: {fileID: 1902718851}
   m_Layer: 0
   m_Name: ftflower2_3
   m_TagString: Untagged
@@ -26374,6 +26882,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &1902718851
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902718847}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1001 &1928053331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28067,6 +28591,7 @@ GameObject:
   - component: {fileID: 2064128839}
   - component: {fileID: 2064128840}
   - component: {fileID: 2064128841}
+  - component: {fileID: 2064128842}
   m_Layer: 0
   m_Name: ftflower1_3
   m_TagString: Untagged
@@ -28154,6 +28679,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &2064128842
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064128838}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &2064395043
 GameObject:
   m_ObjectHideFlags: 0
@@ -28165,6 +28706,7 @@ GameObject:
   - component: {fileID: 2064395044}
   - component: {fileID: 2064395045}
   - component: {fileID: 2064395046}
+  - component: {fileID: 2064395047}
   m_Layer: 0
   m_Name: ftflower_1
   m_TagString: Untagged
@@ -28252,6 +28794,22 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!58 &2064395047
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064395043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.20745142, y: -1.4576459}
+  serializedVersion: 2
+  m_Radius: 0.53835624
 --- !u!1 &2087719563
 GameObject:
   m_ObjectHideFlags: 0
