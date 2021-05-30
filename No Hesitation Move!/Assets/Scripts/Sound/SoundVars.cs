@@ -16,5 +16,7 @@ public class SoundVars : MonoBehaviour
 	public static int   RCorbplayed = 0;
         public static int   RCStart = 0;
         public static int   STOPRCINIT = 0;
+        public static int   CSIntro = 0;
+        public static int   STOPCSINTRO = 0;
 	
 }
