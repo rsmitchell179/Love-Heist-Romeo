@@ -14,6 +14,7 @@ public class LetterPopUp : MonoBehaviour
 	public Image letter;
 	public bool letter_open = false;
     public playerMovement p_move;
+    public Rigidbody2D r_rb;
 
     [Header("animation settings")]
     public bool animation_bool = false;
@@ -29,6 +30,9 @@ public class LetterPopUp : MonoBehaviour
 
 	void Awake()
 	{
+
+        r_rb = GameObject.FindWithTag("Player").GetComponent<Rigidbody2D>();
+
         try{
             diaRun = FindObjectOfType<DialogueRunner>();
             }catch(NullReferenceException){
@@ -54,48 +58,50 @@ public class LetterPopUp : MonoBehaviour
         // charles bless up
     	if(letter_open == true){
             p_move.enabled = false;
+            // r_rb.constraints = RigidbodyConstraints2D.FreezePosition;
             letter_close();
         }
 
-        if(stop_player_movement == true)
-        {
-            p_move.gameObject.transform.position = set_position;
-        }
+        // if(stop_player_movement == true)
+        // {
+        //     // p_move.gameObject.transform.position = set_position;
+        //     r_rb.constraints = RigidbodyConstraints2D.FreezeAll;
+        // }
 
-        if(tutorial_canvas.activeSelf == true)
-        {
-            letter.enabled = false;
-            letter_open = false;
-            p_move.enabled = true;
-            stop_player_movement = false;
-            animation_bool = false;
-            anim.Rebind();
-            anim.Update(0f);
-            db_canvas.SetActive(true);
-        }
+        // if(tutorial_canvas.activeSelf == true)
+        // {
+        //     letter.enabled = false;
+        //     letter_open = false;
+        //     p_move.enabled = true;
+        //     // stop_player_movement = false;
+        //     animation_bool = false;
+        //     anim.Rebind();
+        //     anim.Update(0f);
+        //     db_canvas.SetActive(true);
+        // }
     }
 
     public void image_pop_up(string[] parameters)
     {
     	letter.enabled = bool.Parse(parameters[0]);
-    	StartCoroutine(start_letter_zoom());
-    	StartCoroutine(letter_wait());	
-    }
-
-    public IEnumerator letter_wait()
-    {
-    	yield return new WaitForSecondsRealtime(3);
-    	set_letter_true();
+    	StartCoroutine(start_letter_zoom());	
     }
 
     public IEnumerator start_letter_zoom()
     {
-        set_position = p_move.gameObject.transform.position;
-        stop_player_movement = true;
+        // set_position = p_move.gameObject.transform.position;
+        // stop_player_movement = true;
+        
+        r_rb.constraints = RigidbodyConstraints2D.FreezeAll;
     	p_move.enabled = false;
     	db_canvas.SetActive(false);
-    	yield return new WaitForSecondsRealtime(1);
+
+    	yield return new WaitForSecondsRealtime(1.0f);
+
     	anim.Play("letter_zoom", 0, 0f);
+
+        yield return new WaitForSecondsRealtime(2.0f);
+        set_letter_true();
 
     }
 
@@ -115,7 +121,9 @@ public class LetterPopUp : MonoBehaviour
     		letter.enabled = false;
        		letter_open = false;
        	 	p_move.enabled = true;
-            stop_player_movement = false;
+            r_rb.constraints = RigidbodyConstraints2D.None;
+            r_rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+            // stop_player_movement = false;
        	 	animation_bool = false;
        	 	anim.Rebind();
        	 	anim.Update(0f);

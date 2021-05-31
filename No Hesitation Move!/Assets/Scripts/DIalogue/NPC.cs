@@ -40,11 +40,8 @@ public class NPC : MonoBehaviour
 
     void Start()
     {
-    	// has_spoken = false;
-
         if (scriptToLoad != null)
         {
-            // Yarn.Unity.DialogueRunner dialogueRunner = FindObjectOfType<Yarn.Unity.DialogueRunner>();
             diaRun.Add(scriptToLoad);
         }
     }
@@ -61,19 +58,6 @@ public class NPC : MonoBehaviour
     }
 
     public void set_has_spoken(string[] parameters){
-
-    	// if(bool_index == 0 || bool_index % 2 == 0)
-    	// {
-    	// 	GlobalVars.recur_array[0] = Int32.Parse(parameters[0]);
-    	// 	GlobalVars.recur_array[2] = Int32.Parse(parameters[0]);
-    	// 	GlobalVars.recur_array[4] = Int32.Parse(parameters[0]);
-    	// }
-    	// else
-    	// {
-    		// GlobalVars.recur_array[1] = Int32.Parse(parameters[0]);
-    		// GlobalVars.recur_array[3] = Int32.Parse(parameters[0]);
-    		// GlobalVars.recur_array[5] = Int32.Parse(parameters[0]);
-    	// }
         
         if(GlobalVars.recur_array[bool_index] == 0)
         {
