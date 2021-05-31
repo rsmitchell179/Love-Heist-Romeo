@@ -79,6 +79,8 @@ public class playerMovement : MonoBehaviour
     void Update()
     {
 
+        moveSpeed = move_normal;
+
         if(diaRun.IsDialogueRunning == true)
         {
             anim.enabled = false;
