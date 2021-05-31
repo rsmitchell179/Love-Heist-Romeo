@@ -65,8 +65,8 @@ public class owlSlotPopUp : MonoBehaviour
     public void start_owl_dialogue()
     {
     	GlobalVars.ft_hasCollect = true;
-    	romeo.transform.position = new Vector3(-5.95f, 0.35f, 0.0f);
-    	owl.transform.position = new Vector3(-4.05f, 0.98f, 0.0f);
+    	romeo.transform.position = new Vector3(-6.0f, -5.6f, 0.0f);
+    	owl.transform.position = new Vector3(-4.4f, -5.0f, 0.0f);
     	romeo_sprite.sprite = speaking_sprite;
     	romeo_animator.enabled = false;
     	diaRun.Add(scriptToLoad);
