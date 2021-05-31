@@ -73,6 +73,8 @@ public class CutsceneScript_Outro : MonoBehaviour
         diaRun.AddCommandHandler("finish_beams",  finish_beams);
         diaRun.AddCommandHandler("enable_romeo_textbox", enable_romeo_textbox);
         diaRun.AddCommandHandler("enable_credits", enable_credits);
+        diaRun.AddCommandHandler("best_friends_forever", best_friends_forever);
+        diaRun.AddCommandHandler("wait_some", wait_some);
 	}
 
     // Start is called before the first frame update
@@ -222,6 +224,33 @@ public class CutsceneScript_Outro : MonoBehaviour
         credits.enabled = true;
 
         yield return new WaitForSecondsRealtime(3.0f);
+
+        onComplete();
+    }
+
+    public void best_friends_forever(string[] parameters, System.Action onComplete)
+    {
+        StartCoroutine(bff_start(onComplete));
+    }
+
+    IEnumerator bff_start(System.Action onComplete)
+    {
+        next_frame_count++;
+        curr_frame.sprite = frames[next_frame_count];
+
+        yield return new WaitForSecondsRealtime(2.0f);
+
+        onComplete();
+    }
+
+    public void wait_some(string[] parameters, System.Action onComplete)
+    {
+        StartCoroutine(wait_some_time(onComplete));
+    }
+
+    IEnumerator wait_some_time(System.Action onComplete)
+    {
+        yield return new WaitForSecondsRealtime(0.9f);
 
         onComplete();
     }

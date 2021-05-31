@@ -12,17 +12,17 @@ position: 872,-841
 <<next_frame 3>>
 <<enable_romeo_textbox true>>
 <<next_orbs 1>>
-......
+<<wait_some>>
 <<next_orbs 1>>
-......
+<<wait_some>>
 <<next_orbs 1>>
-......
+<<wait_some>>
 <<enable_beam true>>
 <<next_frame 4>>
 <<next_orbs 1>>
-......
+<<wait_some>>
 <<next_beam 1>>
-......
+<<wait_some>>
 <<char_toggle romeo>>
 Wow. Is that the love filling the air? 
 Will that beam reveal my True Love?
@@ -113,8 +113,13 @@ Sounds great, Nirva! But what happens to the Overworld now?
 Well, with my mind more at ease, you could say that it’s slowly beginning to diminish.  
 Now, come on. Let’s forget about that and enjoy some poetry. 
 <<char_toggle none>>
+<<enable_orbs false>>
+<<enable_beam false>>
 <<next_bkgr 1>>
-<<next_frame 18>>
+<<best_friends_forever>>
+...
+<<next_bkgr 1>>
+<<next_frame 19>>
 <<enable_credits true>>
 ...
 <<next_frame next>>
