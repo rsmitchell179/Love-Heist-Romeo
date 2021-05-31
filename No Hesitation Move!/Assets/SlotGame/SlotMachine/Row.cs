@@ -71,20 +71,13 @@ public class Row : MonoBehaviour
 
     public void Remove()
     {
-        GameObject go = _tiles[0];
-        _tiles.RemoveAt(0);
-        Destroy(go);
 
-        Vector2 position = transform.position;
-        position.x = 0;
-        _size = _tiles[0].GetComponent<RectTransform>().rect.height + _ySpacing;
-        _maxY = (_tiles.Count / 2) * _size;
-        position.y = _maxY / 2f + _size + ((_tiles.Count % 4 == 0 || _tiles.Count % 4 == 1) ? _size : _size / 2f);
-        for (int i = 0; i < _tiles.Count; i++)
+        for (int i = _tiles.Count-1; i >= 0; i--)
         {
-            position.y -= _size;
-            _tiles[i].transform.localPosition = position;
+            Destroy(_tiles[i]);
+            _tiles.RemoveAt(i);
         }
+
     }
 
     private void EndSpinning()

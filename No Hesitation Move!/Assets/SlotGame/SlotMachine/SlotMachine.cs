@@ -14,6 +14,7 @@ public class SlotMachine : MonoBehaviour
 
     public static event Action<int, SlotTile> OnFinishedSpinning;
     public UnityEvent OnAllValuesAreTheSame;
+    public UnityEvent OnAllValuesAreTheSameButNotOrb;
     private SlotTile[] _slotTile = new SlotTile[3];
     private int _numberOfRowsFinished = 0;
 
@@ -23,6 +24,10 @@ public class SlotMachine : MonoBehaviour
     [SerializeField] private KeyCode _spinButton = KeyCode.Space;
     [SerializeField] private KeyCode _spinButton2 = KeyCode.Space;
     [SerializeField] private GameObject[] _tiles;
+    [SerializeField] private GameObject[] _tiles2;
+    [SerializeField] private GameObject[] _tiles3;
+    [SerializeField] private GameObject[] _tiles4;
+    [SerializeField] private GameObject[] _tiles5;
     [SerializeField] private Row[] _row;
 
     private void Awake()
@@ -59,6 +64,49 @@ public class SlotMachine : MonoBehaviour
 
     public void StartSpinning()
     {   
+        if (_timesSpinned == 1) {  
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Remove();
+
+            }     
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Init(_tiles2);
+            }
+                }
+        if (_timesSpinned == 2) {    
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Remove();
+            }   
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Init(_tiles3);
+            }
+                }
+        if (_timesSpinned == 3) {  
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Remove();
+            }     
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Init(_tiles4);
+            }
+                }
+        if (_timesSpinned == 4) {  
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Remove();
+            }     
+            for (int i = 0; i < _row.Length; i++)
+            {
+                _row[i].Init(_tiles5);
+            }
+                }
+
+        
         lever.Play();
         slot.Play();
         if (!_canSpin)
@@ -67,13 +115,14 @@ public class SlotMachine : MonoBehaviour
             return;
             
         }
-        if (Between(_timesSpinned, 1, _tiles.Length-1))
+        /*if (Between(_timesSpinned, 1, _tiles.Length-1))
         {
             for (int i = 0; i < _row.Length; i++)
             {
                 _row[i].Remove();
             }
         }
+        */
         
         _canSpin = false;
         _numberOfRowsFinished = 0;
@@ -106,19 +155,39 @@ public class SlotMachine : MonoBehaviour
                     count++;
                 }
             }
+            int count2 = 0;
+            for (int i = 0; i < _slotTile.Length; i++)
+            {
+                if (_slotTile[i].Value == 0)
+                {
+                    count2++;
+                }
+            }
+            print("timesSpinned : " + _timesSpinned);
             print("count : " + count);
-            if (count == 3)
+            print("count2 : " + count2);
+            if (count == 3 && count2!= 3)
             {   
                 win.Play();
                 if(win.time == win.clip.length){
-                  OnAllValuesAreTheSame?.Invoke();
+                  OnAllValuesAreTheSameButNotOrb?.Invoke();
+                  print("OnAllValuesAreTheSameButNotOrb Invoke");
                 }
                 
                 
-            }else{
-              lose.Play();
+            }else if (count == 3 && count2 == 3){
+
+                win.Play();
+                if(win.time == win.clip.length){
+                  OnAllValuesAreTheSame?.Invoke();
+                  print("OnAllValuesAreTheSame Invoke");
+                }
+              
+            } else {
+                lose.Play();
             }
             _canSpin = true;
+
         }
     }
 
