@@ -835,7 +835,7 @@ Transform:
   - {fileID: 72697082}
   - {fileID: 1460793628}
   m_Father: {fileID: 1610045164}
-  m_RootOrder: 19
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &110884605
 CircleCollider2D:
@@ -4275,7 +4275,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906857814}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.009, y: -3.964, z: 0}
+  m_LocalPosition: {x: -7.281, y: -2.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2102708911}
@@ -10157,10 +10157,10 @@ Transform:
   - {fileID: 1605893037}
   - {fileID: 915196014}
   - {fileID: 1058702592}
+  - {fileID: 110884604}
   - {fileID: 1052269957}
   - {fileID: 1055031793}
   - {fileID: 220990039}
-  - {fileID: 110884604}
   - {fileID: 104693641}
   - {fileID: 1381661561}
   - {fileID: 1086041717}
@@ -12451,12 +12451,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.921
+      value: 0.958
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.31
+      value: 0.516
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
