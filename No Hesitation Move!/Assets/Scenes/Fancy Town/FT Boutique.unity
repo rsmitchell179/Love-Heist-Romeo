@@ -1374,12 +1374,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.327
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1636,12 +1636,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.18
+      value: -1.354
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.9
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -2969,12 +2969,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.362
+      value: 1.271
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.008
+      value: 0.903
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -7906,8 +7906,8 @@ Transform:
   m_Father: {fileID: 171208126}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1600086198
-CircleCollider2D:
+--- !u!61 &1600086198
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -7919,9 +7919,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.041305125, y: 0.503186}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.794858
+  m_Size: {x: 3.9365044, y: 2.006372}
+  m_EdgeRadius: 0
 --- !u!114 &1600086199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7940,8 +7950,8 @@ MonoBehaviour:
   ui_text_1: {fileID: 241049940}
   ui_text_2: {fileID: 1163080755}
   ui_text_3: {fileID: 1877452035}
-  actual_text_1: So is this one! I need them all!
-  actual_text_2: This dress is like sooo you!
+  actual_text_1: This dress is like sooo you!
+  actual_text_2: So is this one! I need them all!
   actual_text_3: Can you please just decide already?!
   db_1: {fileID: 2044226224}
   db_2: {fileID: 1797826438}
