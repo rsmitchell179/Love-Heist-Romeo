@@ -4120,6 +4120,7 @@ GameObject:
   - component: {fileID: 999090517}
   - component: {fileID: 999090521}
   - component: {fileID: 999090520}
+  - component: {fileID: 999090522}
   m_Layer: 0
   m_Name: JSorb
   m_TagString: JSOrb
@@ -4317,6 +4318,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &999090522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 999090516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c8e4f904b672c40993ccfc43eb85b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1007104499
 GameObject:
   m_ObjectHideFlags: 0
@@ -6559,7 +6572,7 @@ PrefabInstance:
     - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -6575,7 +6588,7 @@ PrefabInstance:
     - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2238729598494454053, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
