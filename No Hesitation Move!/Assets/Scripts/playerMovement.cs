@@ -170,6 +170,11 @@ public class playerMovement : MonoBehaviour
         // }
     }
 
+    void LateUpdate()
+    {
+        
+    }
+
     public void CheckForNearbyNPC ()
     {
         var allParticipants = new List<NPC> (FindObjectsOfType<NPC> ());

@@ -13,6 +13,8 @@ public class StartSlotsOnTrigger : MonoBehaviour
 
     playerMovement p_movement;
 
+    bool is_colliding;
+
     void Awake()
     {
         p_movement = FindObjectOfType<playerMovement>();
@@ -20,20 +22,35 @@ public class StartSlotsOnTrigger : MonoBehaviour
 
     void Update()
     {
+
+    }
+
+    void LateUpdate()
+    {
+
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             SlotsButton.SetActive(false);
             p_movement.enabled = true;
+            // is_colliding = false;
+        }
+
+        if(is_colliding == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                SlotsButton.SetActive(true);
+                p_movement.enabled = false;
+            }
         }
     }
 
     // Start is called before the first frame update
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            SlotsButton.SetActive(true);
-            p_movement.enabled = false;
+            is_colliding = true;
         }
     }
 
@@ -42,6 +59,7 @@ public class StartSlotsOnTrigger : MonoBehaviour
         if (collision.gameObject.tag.Equals("Player"))
         {
             SlotsButton.SetActive(false);
+            is_colliding = false;
         }
     }
 

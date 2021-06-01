@@ -57,8 +57,8 @@ public class jsorbCollect : MonoBehaviour
         yield return new WaitForSecondsRealtime(1);
         animatior.SetTrigger("FadeIn");
         Debug.Log("start grifton function");
-        owl.transform.position = new Vector3(18.5f, 6f, 0f);
-        romeo.transform.position = new Vector3(16.5f, 5f, 0f);
+        owl.transform.position = new Vector3(25.5f, 9.5f, 0f);
+        romeo.transform.position = new Vector3(23.5f, 8.6f, 0f);
         diaRun.Add(scriptToLoad);
         diaRun.StartDialogue(talktonode);
     }
@@ -81,8 +81,8 @@ public class jsorbCollect : MonoBehaviour
 
     public void start_grifton(){
         Debug.Log("start grifton function");
-        owl.transform.position = new Vector3(18.5f, 6f, 0f);
-        romeo.transform.position = new Vector3(16.5f, 5f, 0f);
+        owl.transform.position = new Vector3(18.25f, 4.75f, 0f);
+        romeo.transform.position = new Vector3(16.5f, 4f, 0f);
 
         diaRun.Add(scriptToLoad);
         diaRun.StartDialogue(talktonode);
