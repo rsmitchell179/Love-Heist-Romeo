@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PuzzleTrigger : MonoBehaviour
 {
+    [SerializeField] GameObject Door;
     // Start is called before the first frame update
     void Start()
     {
@@ -11,11 +12,11 @@ public class PuzzleTrigger : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-        this.GetComponent<doorScript>().enabled = true;
+        Door.SetActive(true);
         }
     }
 }
