@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class OwlAttacks : MonoBehaviour
 {
+    AudioSource source;
     [SerializeField] private float _timeBetweenAttacks = 2.5f;
     [SerializeField] private float _timeUntilDestroyingObstacles = 2f;
     [SerializeField] private Rigidbody2D _target;
@@ -12,6 +13,7 @@ public class OwlAttacks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        source = GetComponent<AudioSource>();
         _puzzlePieces = FindObjectsOfType<PicturePuzzlePiece>();
         StartCoroutine(AttacksCoroutine());
     }
@@ -36,7 +38,7 @@ public class OwlAttacks : MonoBehaviour
     {
         int count = 7;
         GameObject[] go = new GameObject[7];
-
+        source.Play();
         System.Random rng = new System.Random();
         _puzzlePieces = Shuffle(rng, _puzzlePieces);
         for (int i = 0; i < count; i++)
@@ -59,7 +61,7 @@ public class OwlAttacks : MonoBehaviour
     IEnumerator BlowBackPlayerCoroutine()
     {
         Vector3 velocity;
-
+        source.Play();
         velocity = Vector3.down;
         print(velocity);
         float timer = 0;
