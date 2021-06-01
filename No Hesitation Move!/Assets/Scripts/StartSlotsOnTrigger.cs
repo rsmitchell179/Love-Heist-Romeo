@@ -32,8 +32,12 @@ public class StartSlotsOnTrigger : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
+            if (Input.GetKeyDown(KeyCode.Space))
+        {
             SlotsButton.SetActive(true);
             p_movement.enabled = false;
+        }
+            
         }
     }
 
