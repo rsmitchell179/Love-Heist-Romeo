@@ -53,12 +53,12 @@ public class GlobalVars : MonoBehaviour
     public static bool rc_hasCollect;
     public static bool rc_has_spoken;
     public static bool[] has_seen_card = new bool[4];
-    public static bool chapISeen = false;
-    public static bool chapIVSeen = false;
-    public static bool chapIXSeen = false;
-    public static bool chapIISeen = false;
-    public static bool chapVIIISeen = false;
-    public static bool chapVSeen = false;
+    public static bool chapISeen;
+    public static bool chapIVSeen;
+    public static bool chapIXSeen;
+    public static bool chapIISeen;
+    public static bool chapVIIISeen;
+    public static bool chapVSeen;
 
 	// test print, check if array stuff is being added
 	

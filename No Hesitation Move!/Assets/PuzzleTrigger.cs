@@ -14,7 +14,7 @@ public class PuzzleTrigger : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && GlobalVars.rc_hasCollect == false)
         {
         Door.SetActive(true);
         }
