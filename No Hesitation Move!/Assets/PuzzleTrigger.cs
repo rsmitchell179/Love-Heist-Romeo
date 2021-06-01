@@ -14,8 +14,8 @@ public class PuzzleTrigger : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-        ｛
-        this.GetComponent<doorScript>()enabled = true;
-        ｝
+        {
+        this.GetComponent<doorScript>().enabled = true;
+        }
     }
 }

@@ -64,6 +64,14 @@ public class SlotMachine : MonoBehaviour
 
     public void StartSpinning()
     {   
+
+        if (!_canSpin)
+        {
+            
+            return;
+            
+        }
+        
         if (_timesSpinned == 1) {  
             for (int i = 0; i < _row.Length; i++)
             {
@@ -109,12 +117,6 @@ public class SlotMachine : MonoBehaviour
         
         lever.Play();
         slot.Play();
-        if (!_canSpin)
-        {
-
-            return;
-            
-        }
         /*if (Between(_timesSpinned, 1, _tiles.Length-1))
         {
             for (int i = 0; i < _row.Length; i++)
