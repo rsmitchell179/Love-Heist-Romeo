@@ -8064,6 +8064,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f37705fcd9827b40b3a99d62071c390, type: 3}
+--- !u!1 &486538520 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8461262567418571507, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2342667099594183884}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &489634278
 GameObject:
   m_ObjectHideFlags: 0
@@ -29921,10 +29927,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 71519992046440718, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2342667099933696741, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2342667100794626274, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
@@ -30036,10 +30047,20 @@ PrefabInstance:
       propertyPath: p_move
       value: 
       objectReference: {fileID: 763679669}
+    - target: {fileID: 2342667100794626275, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: savePromptText
+      value: 
+      objectReference: {fileID: 486538520}
     - target: {fileID: 2342667100794626278, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_Name
       value: pause_stuff
+      objectReference: {fileID: 0}
+    - target: {fileID: 2342667100794626278, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6204819743128107248, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}

@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour
     GameObject last_button;
     DialogueRunner diaRun;
     DialogueUI diaUI;
+    public GameObject savePromptText;
 
     public Slider m_slider;
     public Slider s_slider;
@@ -116,11 +117,18 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    IEnumerator SavePrompt() {
+    	savePromptText.SetActive(true);
+    	yield return new WaitForSeconds(1);
+    	savePromptText.SetActive(false);
+    }
+
     public void save_game()
     {
         Debug.Log("SAVING DATA...");
         p_move.save_position();
         SaveSys.save_data();
+        StartCoroutine(SavePrompt());
     }
 
     public void pause_game()
