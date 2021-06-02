@@ -14,6 +14,7 @@ public class StartSlotsOnTrigger : MonoBehaviour
     playerMovement p_movement;
 
     bool is_colliding;
+    [SerializeField]bool is_Spining;
 
     void Awake()
     {
@@ -25,15 +26,29 @@ public class StartSlotsOnTrigger : MonoBehaviour
 
     }
 
+    public void isSpin(){
+        is_Spining = true;
+    }
+
+    public void isNotSpin(){
+        is_Spining = false;
+    }
+
     void LateUpdate()
     {
-
-        if(Input.GetKeyDown(KeyCode.Tab))
-        {
-            SlotsButton.SetActive(false);
-            p_movement.enabled = true;
-            // is_colliding = false;
+        if(is_Spining == true){
+        p_movement.enabled = false;
         }
+
+        if(is_Spining == false){
+            if(Input.GetKeyDown(KeyCode.Tab))
+            {
+                SlotsButton.SetActive(false);
+                p_movement.enabled = true;
+                // is_colliding = false;
+            }
+        }
+        
 
         if(is_colliding == true)
         {
