@@ -2792,7 +2792,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 31, y: 8}
+  m_Size: {x: 30, y: 8}
   m_EdgeRadius: 0
 --- !u!1 &1383902638
 GameObject:
@@ -2808,6 +2808,7 @@ GameObject:
   - component: {fileID: 1383902642}
   - component: {fileID: 1383902643}
   - component: {fileID: 1383902644}
+  - component: {fileID: 1383902645}
   m_Layer: 0
   m_Name: Owl
   m_TagString: Untagged
@@ -2894,7 +2895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383902638}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.01, y: 4.08, z: 0}
+  m_LocalPosition: {x: 7.25, y: 3.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2955,10 +2956,10 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.01787293, y: -0.6041019}
+  m_Offset: {x: -0.01787293, y: -0.13879156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.25}
     oldSize: {x: 1.26, y: 1.82}
     newSize: {x: 1.26, y: 1.82}
     adaptiveTilingThreshold: 0.5
@@ -2966,8 +2967,23 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3520596, y: 0.55460405}
+  m_Size: {x: 0.3520596, y: 0.27303505}
   m_EdgeRadius: 0
+--- !u!114 &1383902645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383902638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!114 &1527125556 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7119185898968270519, guid: 62c1d4f54e09f284b8ec3262624f9260,
