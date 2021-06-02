@@ -8990,6 +8990,7 @@ GameObject:
   - component: {fileID: 1505375009}
   - component: {fileID: 1505375010}
   - component: {fileID: 1505375011}
+  - component: {fileID: 1505375012}
   m_Layer: 14
   m_Name: owl
   m_TagString: Untagged
@@ -9268,6 +9269,32 @@ AudioReverbZone:
   m_Density: 100
   m_LFReference: 250
   m_RoomLF: -6000
+--- !u!61 &1505375012
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1505375004}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.01787293, y: -0.6041019}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.26, y: 1.82}
+    newSize: {x: 1.26, y: 1.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.3520596, y: 0.55460405}
+  m_EdgeRadius: 0
 --- !u!1 &1521875911
 GameObject:
   m_ObjectHideFlags: 0
