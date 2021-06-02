@@ -15,6 +15,8 @@ public class SlotMachine : MonoBehaviour
     public static event Action<int, SlotTile> OnFinishedSpinning;
     public UnityEvent OnAllValuesAreTheSame;
     public UnityEvent OnAllValuesAreTheSameButNotOrb;
+    public UnityEvent IsSpin;
+    public UnityEvent IsNotSpin;
     private SlotTile[] _slotTile = new SlotTile[3];
     private int _numberOfRowsFinished = 0;
 
@@ -48,6 +50,12 @@ public class SlotMachine : MonoBehaviour
 
     private void Update()
     {   
+        if (!_canSpin){
+            IsSpin?.Invoke();
+        } else{
+            IsNotSpin?.Invoke();
+        }
+
         if(win.time >= win.clip.length){    //Wait for Win Sound then have Dialogue 
                   OnAllValuesAreTheSame?.Invoke();
                 }

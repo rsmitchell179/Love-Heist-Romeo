@@ -50,8 +50,8 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     	// yield return new WaitForSecondsRealtime(1.0f);
     	if(GlobalVars.rc_hasCollect == true)
     	{
-			owl.transform.position = new Vector3 (7.01f, 4.08f, 0.0f);
-    		romeo.transform.position = new Vector3 (5.35f, 3.5f, 0.0f);
+			owl.transform.position = new Vector3 (7.25f, 3.6f, 0.0f);
+    		romeo.transform.position = new Vector3 (6.0f, 3.45f, 0.0f);
             p_movement.enabled = false;
             romeo_animator.enabled = false;
             romeo_sprite.sprite = speaking_sprite;
