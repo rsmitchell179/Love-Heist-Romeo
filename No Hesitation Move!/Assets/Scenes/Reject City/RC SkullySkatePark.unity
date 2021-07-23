@@ -258,6 +258,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15480675}
   m_CullTransparentMesh: 0
+--- !u!1 &41165873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2238729598087878154, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 1639422222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &42069250 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8081709650973643625, guid: 10ec8137d4110834b89e27012f3ac649,
@@ -4087,6 +4093,7 @@ GameObject:
   m_Component:
   - component: {fileID: 871636359}
   - component: {fileID: 871636358}
+  - component: {fileID: 871636360}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -4120,6 +4127,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &871636360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871636357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb0e8390ed62a44ac1314e2d5f2bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doughboy_canvas: {fileID: 101404013}
+  dialogue_canvas: {fileID: 41165873}
 --- !u!1001 &876140502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9818,8 +9839,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1193802207
-  m_SortingLayer: 10
+  m_SortingLayerID: 1653710801
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 6470529948003065633, guid: e78b16daeada65c48a88e41323974b00,
     type: 3}
@@ -10313,11 +10334,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2238729598143919048, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 2238729598160384653, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -10398,40 +10414,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6197593717104567037, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7526464070421143765, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 38e55de97dd41ca4caf2707b86ab158e,
-        type: 2}
-    - target: {fileID: 7526464070421143765, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 3552541078666602645, guid: 38e55de97dd41ca4caf2707b86ab158e,
-        type: 2}
-    - target: {fileID: 8884477686002160325, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_text
-      value: Budalia
-      objectReference: {fileID: 0}
-    - target: {fileID: 8884477686002160325, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: 38e55de97dd41ca4caf2707b86ab158e,
-        type: 2}
-    - target: {fileID: 8884477686002160325, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 3552541078666602645, guid: 38e55de97dd41ca4caf2707b86ab158e,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
 --- !u!1001 &1686978707

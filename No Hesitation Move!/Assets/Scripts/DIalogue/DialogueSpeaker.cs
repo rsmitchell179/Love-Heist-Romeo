@@ -62,12 +62,6 @@ public class DialogueSpeaker : MonoBehaviour
             }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void set_speaker_in_scene(string[] parameters){
         string speaker = parameters[0];
         if(string.Equals(npc_name, speaker)){

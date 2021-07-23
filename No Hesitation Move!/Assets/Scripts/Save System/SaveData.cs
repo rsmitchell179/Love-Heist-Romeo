@@ -22,6 +22,7 @@ public class SaveData
     public bool ft_hasCollect;
     public bool rc_hasCollect;
     public bool rc_has_spoken;
+    public bool rc_has_seen_fade;
     public static bool[] has_seen_card;
 
     public SaveData()
@@ -50,6 +51,7 @@ public class SaveData
         ft_hasCollect = GlobalVars.ft_hasCollect;
         rc_hasCollect = GlobalVars.rc_hasCollect;
         rc_has_spoken = GlobalVars.rc_has_spoken;
+        rc_has_seen_fade = GlobalVars.rc_has_seen_fade;
 
         has_seen_card = new bool[4];
         has_seen_card[0] = GlobalVars.has_seen_card[0];

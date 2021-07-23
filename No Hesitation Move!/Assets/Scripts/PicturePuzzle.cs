@@ -2,14 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PicturePuzzle : MonoBehaviour
 {
 
     public Transform[] puzzlepieces;
+    public Image img_fade;
     [SerializeField]
     int[] zRoatations;
     private bool _active = false;
+    public OwlAttacks owl_attacks;
+
+    void Awake()
+    {
+        img_fade.CrossFadeAlpha(0, 0.0f, true);
+
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -88,10 +98,32 @@ public class PicturePuzzle : MonoBehaviour
         Debug.Log(i);
         if (i == puzzlepieces.Length)
         {
+            owl_attacks.enabled = false;
             Debug.Log("PuzzleComplete");
             GlobalVars.rc_hasCollect = true;
-            SceneManager.LoadScene("RC TheArtGallery");
+
+            var puzzle_script = Object.FindObjectsOfType<PicturePuzzlePiece>();
+            foreach(var puzzle in puzzle_script)
+            {
+                puzzle.is_not_finished = false;
+                Debug.Log("in here");
+                // puzzle.enabled = false;
+            }
+            StartCoroutine(next_scene());
+
+            // SceneManager.LoadScene("RC TheArtGallery");
         }
 
+    }
+
+    IEnumerator next_scene()
+    {
+        yield return new WaitForSecondsRealtime(2.0f);
+
+        img_fade.CrossFadeAlpha(1, 2.0f, false);
+
+        yield return new WaitForSecondsRealtime(4.0f);
+
+        SceneManager.LoadScene("RC TheArtGallery");
     }
 }

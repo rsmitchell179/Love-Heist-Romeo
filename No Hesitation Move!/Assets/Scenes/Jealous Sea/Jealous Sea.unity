@@ -3045,11 +3045,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2238729598143919048, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 2238729598160384653, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -3129,63 +3124,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3638626972906848523, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: cfc73bd7a8bd7364bb0804098d6a17a5,
-        type: 3}
-    - target: {fileID: 5874658887751151500, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6197593717104567037, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 160
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 360
-      objectReference: {fileID: 0}
-    - target: {fileID: 6241990782344269390, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -210
-      objectReference: {fileID: 0}
-    - target: {fileID: 7026057067127737177, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 2e208caae11b02e4596f74e45a3cfab4,
-        type: 3}
-    - target: {fileID: 7106214381781906995, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_Name
-      value: img_budalia
-      objectReference: {fileID: 0}
-    - target: {fileID: 7279843828607542920, guid: 62c1d4f54e09f284b8ec3262624f9260,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62c1d4f54e09f284b8ec3262624f9260, type: 3}
@@ -3394,6 +3332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 411509885}
   - component: {fileID: 411509884}
+  - component: {fileID: 411509886}
   m_Layer: 0
   m_Name: Room
   m_TagString: Untagged
@@ -3427,6 +3366,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &411509886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 411509883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2cb0e8390ed62a44ac1314e2d5f2bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doughboy_canvas: {fileID: 1418053584}
+  dialogue_canvas: {fileID: 1005444425}
 --- !u!114 &414016945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6530,6 +6483,12 @@ MonoBehaviour:
   sortingOrderBase: 5000
   offset: 0
   runOnlyOnce: 1
+--- !u!1 &1005444425 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2238729598087878154, guid: 62c1d4f54e09f284b8ec3262624f9260,
+    type: 3}
+  m_PrefabInstance: {fileID: 391184730}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1013902950 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3638626972906848523, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -9850,7 +9809,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.5
+  orthographic size: 3.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

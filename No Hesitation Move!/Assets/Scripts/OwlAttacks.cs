@@ -36,42 +36,45 @@ public class OwlAttacks : MonoBehaviour
 
     IEnumerator SpawnObstacleCoroutine()
     {
-        int count = 7;
-        GameObject[] go = new GameObject[7];
-        source.Play();
-        System.Random rng = new System.Random();
-        _puzzlePieces = Shuffle(rng, _puzzlePieces);
-        for (int i = 0; i < count; i++)
-        {
-            go[i] = Instantiate(_obstacle, transform.position, Quaternion.identity);
-            Vector3 nextPosition = _puzzlePieces[i].transform.position + (Vector3)Random.insideUnitCircle;
-            while (Vector2.Distance(go[i].transform.position, nextPosition) >0)
-            {
-                go[i].transform.position = Vector2.MoveTowards(go[i].transform.position, nextPosition, Time.deltaTime * 10f);
-                yield return null;
-            }
-        }
-        yield return new WaitForSeconds(_timeUntilDestroyingObstacles);
-        for (int i = 0; i < count; i++)
-        {
-            Destroy(go[i]);
-            yield return new WaitForSeconds(.1f);
-        }
+        // int count = 7;
+        // GameObject[] go = new GameObject[7];
+        // source.Play();
+        // System.Random rng = new System.Random();
+        // _puzzlePieces = Shuffle(rng, _puzzlePieces);
+        // for (int i = 0; i < count; i++)
+        // {
+        //     go[i] = Instantiate(_obstacle, transform.position, Quaternion.identity);
+        //     Vector3 nextPosition = _puzzlePieces[i].transform.position + (Vector3)Random.insideUnitCircle;
+        //     while (Vector2.Distance(go[i].transform.position, nextPosition) >0)
+        //     {
+        //         go[i].transform.position = Vector2.MoveTowards(go[i].transform.position, nextPosition, Time.deltaTime * 10f);
+        //         yield return null;
+        //     }
+        // }
+        // yield return new WaitForSeconds(_timeUntilDestroyingObstacles);
+        // for (int i = 0; i < count; i++)
+        // {
+        //     Destroy(go[i]);
+        //     yield return new WaitForSeconds(.1f);
+        // }
+
+        // for video or testing purposes
+        yield return null;
     }
     IEnumerator BlowBackPlayerCoroutine()
     {
-        Vector3 velocity;
-        source.Play();
-        velocity = Vector3.down;
-        print(velocity);
-        float timer = 0;
+        // Vector3 velocity;
+        // source.Play();
+        // velocity = Vector3.down;
+        // print(velocity);
+        // float timer = 0;
 
-        while (timer<1f)
-        {
-            timer += Time.deltaTime;
-            _target.transform.position += velocity * Time.deltaTime * 5f;
-            yield return null;
-        }
+        // while (timer<1f)
+        // {
+        //     timer += Time.deltaTime;
+        //     _target.transform.position += velocity * Time.deltaTime * 5f;
+        //     yield return null;
+        // }
 
         yield return null;
     }

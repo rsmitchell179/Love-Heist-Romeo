@@ -83,7 +83,7 @@ public class playerMovement : MonoBehaviour
 
         if(diaRun.IsDialogueRunning == true)
         {
-            anim.enabled = false;
+            anim.SetFloat("Speed", 0.0f);
             movement.x = 0;
             movement.y = 0;
             return;

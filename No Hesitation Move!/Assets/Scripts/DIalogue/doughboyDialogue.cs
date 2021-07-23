@@ -25,11 +25,6 @@ public class doughboyDialogue : MonoBehaviour
     	cam = Camera.main;
         bubble.enabled = false;
         ui_text.enabled = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         db_class = this.gameObject.GetComponent<doughboyClass>();
     }
 
@@ -62,6 +57,7 @@ public class doughboyDialogue : MonoBehaviour
     {
     	if(other.tag == "Player"){
     		bubble.enabled = true;
+            bubble.CrossFadeAlpha(1.0f, 0.0f, false);
     		set_pos(bubble);
     	}
     }
@@ -71,6 +67,7 @@ public class doughboyDialogue : MonoBehaviour
     	if(other.tag == "Player"){
     		StopAllCoroutines();
     		current_text = "";
+            bubble.CrossFadeAlpha(0.0f, 0.5f, false);
     		StartCoroutine(delay_setfalse());
     	// bubble.enabled = false;
     	}
@@ -78,9 +75,20 @@ public class doughboyDialogue : MonoBehaviour
 
     IEnumerator delay_setfalse()
     {
-    	yield return new WaitForSeconds (0.0f);
-    	ui_text.enabled = false;
+
+        Vector3 save_position = bubble.transform.position;
+        bubble.transform.position = cam.WorldToScreenPoint(save_position);
+        Debug.Log("here 1");
+
+        yield return new WaitForSecondsRealtime(3.0f);
+
+        Debug.Log("here 2");
     	bubble.enabled = false;
+        ui_text.enabled = false;
+
+        yield return new WaitForSeconds (0.0f);
+
+
     }
 
     void set_pos(Image bub)

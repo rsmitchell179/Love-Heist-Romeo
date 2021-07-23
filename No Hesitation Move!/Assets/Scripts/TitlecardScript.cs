@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TitlecardScript : MonoBehaviour
 {
 
-	private float first_fade = 0.25f;
+	private float first_fade = 0.3f;
 	private float second_fade = 0.3f;
 	private float wait_time = 2.5f;
 	public bool is_fading;
@@ -36,11 +36,17 @@ public class TitlecardScript : MonoBehaviour
         {
         	this_image.CrossFadeAlpha(1, first_fade, false);
 
+            p_move.gameObject.GetComponent<SpriteRenderer>().enabled = false;
             p_move.move_normal = 0.0f;
+            p_move.anim.SetFloat("Speed", 0.0f);
+            p_move.movement.x = 0;
+            p_move.movement.y = 0;
+            
         }
 
         if(is_fading == false)
         {
+            p_move.gameObject.GetComponent<SpriteRenderer>().enabled = true;
         	this_image.CrossFadeAlpha(0, second_fade, false);
             GlobalVars.has_seen_card[card_index] = true;
         	StartCoroutine(start_walk());
