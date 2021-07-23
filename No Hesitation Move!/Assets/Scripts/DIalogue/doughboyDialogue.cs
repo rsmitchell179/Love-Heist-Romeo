@@ -67,7 +67,7 @@ public class doughboyDialogue : MonoBehaviour
     	if(other.tag == "Player"){
     		StopAllCoroutines();
     		current_text = "";
-            bubble.CrossFadeAlpha(0.0f, 0.5f, false);
+            // bubble.CrossFadeAlpha(0.0f, 0.5f, false);
     		StartCoroutine(delay_setfalse());
     	// bubble.enabled = false;
     	}
@@ -76,13 +76,13 @@ public class doughboyDialogue : MonoBehaviour
     IEnumerator delay_setfalse()
     {
 
-        Vector3 save_position = bubble.transform.position;
-        bubble.transform.position = cam.WorldToScreenPoint(save_position);
-        Debug.Log("here 1");
+        // Vector3 save_position = bubble.transform.position;
+        // bubble.transform.position = cam.WorldToScreenPoint(save_position);
+        // Debug.Log("here 1");
 
-        yield return new WaitForSecondsRealtime(3.0f);
+        // yield return new WaitForSecondsRealtime(3.0f);
 
-        Debug.Log("here 2");
+        // Debug.Log("here 2");
     	bubble.enabled = false;
         ui_text.enabled = false;
 
