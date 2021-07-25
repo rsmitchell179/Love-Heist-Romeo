@@ -61,6 +61,8 @@ public class CutsceneScript : MonoBehaviour
         diaRun.AddCommandHandler("font_size", font_size);
         diaRun.AddCommandHandler("enable_romeo_yell", enable_romeo_yell);
         diaRun.AddCommandHandler("start_fade", start_fade);
+        diaRun.AddCommandHandler("text_align_left", text_align_left);
+        diaRun.AddCommandHandler("text_align_center", text_align_center);
 
         img_fade.CrossFadeAlpha(0, 0.0f, true);
 	}
@@ -186,5 +188,15 @@ public class CutsceneScript : MonoBehaviour
     	yield return new WaitForSecondsRealtime(fourth_wait_time);
 
     	onComplete(); 
+    }
+
+    public void text_align_left(string[] parameters)
+    {
+        ui_text.alignment = TextAlignmentOptions.Left;
+    }
+
+    public void text_align_center(string[] parameters)
+    {
+        ui_text.alignment = TextAlignmentOptions.Center;
     }
 }
