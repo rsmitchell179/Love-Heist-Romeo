@@ -5,86 +5,107 @@ using UnityEngine.UI;
 using TMPro;
 using Yarn.Unity;
 
-public class doughboyDialogue : MonoBehaviour
+public class DoughboyDialogue : MonoBehaviour
 {
 
-	public Image bubble;
-	public GameObject character;
-	public TMP_Text ui_text;
-	// public Text ui_text;
-	public Camera cam;
-	private float delay = 0.03f;
-	public string actual_text;
-	private string current_text = "";
+    [Header("UI Components")]
+    public Image bubble;
+    public TMP_Text ui_text;
 
-	doughboyClass db_class;
+    [Header("This Character")]
+    public GameObject character;
+
+    [Header("Camera")]
+    public Camera cam;
+
+    [Header("Char Delay")]
+    private float delay = 0.03f;
+
+    [Header("Dialogue Text")]
+    public string actual_text;
+    private string current_text = "";
+
+    [Header("Bubble Enabled")]
+    public bool exit_area;
+
+    public DoughboyClass db_class;
 
     // Start is called before the first frame update
     void Start()
     {
-    	cam = Camera.main;
+        cam = Camera.main;
         bubble.enabled = false;
         ui_text.enabled = false;
-        db_class = this.gameObject.GetComponent<doughboyClass>();
+        db_class = this.gameObject.GetComponent<DoughboyClass>();
+        actual_text = db_class.doughboy_text;
+
+        bubble.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text.CrossFadeAlpha(0.0f, 0.0f, false);
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-    	if(other.gameObject.tag == "Player")
-    	{
-    		// Debug.Log("collision detected");
-    		// bubble.enabled = true;
-    		current_text = "";
-    		// ui_text.text = actual_text;
-    		// ui_text.enabled = true;
-    		// set_pos(bubble);
-    		StartCoroutine(start_text());
-    	}
+        if(other.gameObject.tag == "Player")
+        {
+            current_text = "";
+            StartCoroutine(start_text());
+        }
+    }
+
+    void Update()
+    {
+        if(exit_area == true)
+        {
+            set_pos(bubble);
+        }
     }
 
     IEnumerator start_text()
     {
-    	for(int i = 0; i <= actual_text.Length; i++)
-    	{	
-    		ui_text.enabled = true;
-    		current_text = actual_text.Substring(0, i);
-    		ui_text.text = current_text;
-    		yield return new WaitForSecondsRealtime(delay);
-    	}
+
+        bubble.CrossFadeAlpha(1.0f, 0.1f, false);
+        ui_text.CrossFadeAlpha(1.0f, 0.1f, false);
+
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        for(int i = 0; i <= actual_text.Length; i++)
+        {   
+            ui_text.enabled = true;
+            current_text = actual_text.Substring(0, i);
+            ui_text.text = current_text;
+            yield return new WaitForSecondsRealtime(delay);
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-    	if(other.tag == "Player"){
-    		bubble.enabled = true;
-            bubble.CrossFadeAlpha(1.0f, 0.0f, false);
-    		set_pos(bubble);
-    	}
+        if(other.tag == "Player"){
+            bubble.enabled = true;
+            set_pos(bubble);
+        }
     }
 
     void OnTriggerExit2D(Collider2D other)
-    {	
-    	if(other.tag == "Player"){
-    		StopAllCoroutines();
-    		current_text = "";
-            // bubble.CrossFadeAlpha(0.0f, 0.5f, false);
-    		StartCoroutine(delay_setfalse());
-    	// bubble.enabled = false;
-    	}
+    {   
+        if(other.tag == "Player"){
+            StopAllCoroutines();
+            current_text = "";
+            exit_area = true;
+            StartCoroutine(end_text());
+        }
     }
 
-    IEnumerator delay_setfalse()
+    IEnumerator end_text()
     {
+        bubble.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text.CrossFadeAlpha(0.0f, 0.1f, false);
 
-        // Vector3 save_position = bubble.transform.position;
-        // bubble.transform.position = cam.WorldToScreenPoint(save_position);
-        // Debug.Log("here 1");
+        yield return new WaitForSecondsRealtime(0.2f);
 
-        // yield return new WaitForSecondsRealtime(3.0f);
-
-        // Debug.Log("here 2");
-    	bubble.enabled = false;
         ui_text.enabled = false;
+        bubble.enabled = false;
+        exit_area = false;
 
         yield return new WaitForSeconds (0.0f);
 
@@ -93,8 +114,8 @@ public class doughboyDialogue : MonoBehaviour
 
     void set_pos(Image bub)
     {
-    	float y_offset = character.GetComponent<SpriteRenderer>().bounds.max.y + db_class.offset;
-    	Vector3 bub_position = new Vector3(character.transform.position.x, y_offset, character.transform.position.z);
-    	bubble.transform.position = cam.WorldToScreenPoint(bub_position);
+        float y_offset = character.GetComponent<SpriteRenderer>().bounds.max.y + db_class.offset;
+        Vector3 bub_position = new Vector3(character.transform.position.x, y_offset, character.transform.position.z);
+        bubble.transform.position = cam.WorldToScreenPoint(bub_position);
     }
 }

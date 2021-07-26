@@ -34,13 +34,13 @@ public class DoughboyConvoDuo : MonoBehaviour
 	public Camera cam;
 
     [Header("Doughboy Class Script Reference")]
-    public doughboyClass db_class_1;
-    public doughboyClass db_class_2;
+    public DoughboyClass db_class_1;
+    public DoughboyClass db_class_2;
 
     void Awake()
     {
-        db_class_1 = db_1.gameObject.GetComponent<doughboyClass>();
-        db_class_2 = db_2.gameObject.GetComponent<doughboyClass>();
+        db_class_1 = db_1.gameObject.GetComponent<DoughboyClass>();
+        db_class_2 = db_2.gameObject.GetComponent<DoughboyClass>();
     }
 
     // Start is called before the first frame update
