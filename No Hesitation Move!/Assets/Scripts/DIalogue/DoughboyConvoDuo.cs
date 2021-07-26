@@ -41,6 +41,12 @@ public class DoughboyConvoDuo : MonoBehaviour
     {
         db_class_1 = db_1.gameObject.GetComponent<DoughboyClass>();
         db_class_2 = db_2.gameObject.GetComponent<DoughboyClass>();
+
+        ui_text_1 = bubble_1.GetComponentInChildren<TMP_Text>();
+        ui_text_2 = bubble_2.GetComponentInChildren<TMP_Text>();
+
+        actual_text_1 = db_class_1.doughboy_text;
+        actual_text_2 = db_class_2.doughboy_text;
     }
 
     // Start is called before the first frame update
@@ -51,12 +57,6 @@ public class DoughboyConvoDuo : MonoBehaviour
 
         ui_text_1.enabled = false;
         ui_text_2.enabled = false;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void OnTriggerEnter2D(Collider2D other)

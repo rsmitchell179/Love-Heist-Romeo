@@ -245,6 +245,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944211019}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -324,7 +334,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: Welcome to the underwater!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -335,6 +345,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: doughboy_text
+      value: Welcome to the underwater!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -433,6 +448,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944211019}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.56
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -512,7 +537,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "You can breathe here! Don\u2019t question it!"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -523,6 +548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: doughboy_text
+      value: "You can breathe here! Don\u2019t question it!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -578,7 +608,7 @@ Transform:
   m_LocalScale: {x: 1.52772, y: 1.8311346, z: 6.0247874}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &301882350
 CircleCollider2D:
@@ -832,6 +862,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944211019}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -911,7 +951,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: Hi! Sound travels weird underwater!!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -922,6 +962,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: doughboy_text
+      value: Hi! Sound travels weird underwater!!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -1057,7 +1102,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &424304463
 PrefabInstance:
@@ -1066,6 +1111,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944211019}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -1145,7 +1200,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: Feeling jelly? The Jealous Sea will do that to you!
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1156,6 +1211,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: doughboy_text
+      value: Feeling jelly? The Jealous Sea will do that to you!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -1172,6 +1232,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944211019}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -1251,7 +1321,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "Orbs? I haven\u2019t seen any, maybe check in town?"
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1262,6 +1332,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset
       value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: doughboy_text
+      value: "Orbs? I haven\u2019t seen any, maybe check in town?"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -1434,7 +1509,7 @@ Transform:
   m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &839486511
 EdgeCollider2D:
@@ -3162,7 +3237,7 @@ Transform:
   m_Children:
   - {fileID: 847394727}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152658360 stripped
 GameObject:
@@ -3386,7 +3461,7 @@ Transform:
   m_LocalScale: {x: 1.7138969, y: 1.2353306, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1185062572
 GameObject:
@@ -3709,7 +3784,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1271971664
 Animator:
@@ -3783,7 +3858,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1325429494
 GameObject:
@@ -3874,6 +3949,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1944211019}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -3953,7 +4038,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: actual_text
-      value: "It\u2019s hard to get a tan this deep underwater."
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794636, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -3964,6 +4049,11 @@ PrefabInstance:
         type: 3}
       propertyPath: offset
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: doughboy_text
+      value: "It\u2019s hard to get a tan this deep underwater."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -3998,7 +4088,7 @@ PrefabInstance:
     - target: {fileID: 6342995712281244048, guid: aed96efbcc937254aa45a84a6d3ab1cd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6342995712281244048, guid: aed96efbcc937254aa45a84a6d3ab1cd,
         type: 3}
@@ -4431,7 +4521,7 @@ PrefabInstance:
     - target: {fileID: 7835999688933678913, guid: 79f662bfd16925c439168db951dde744,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7835999688933678913, guid: 79f662bfd16925c439168db951dde744,
         type: 3}
@@ -4818,7 +4908,7 @@ PrefabInstance:
     - target: {fileID: 2238729598728178173, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 2238729598728178173, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -4998,7 +5088,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1923619337 stripped
 Transform:
@@ -5040,7 +5130,7 @@ Transform:
   - {fileID: 424304464}
   - {fileID: 1346480132}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2000246624
 PrefabInstance:
@@ -5062,7 +5152,7 @@ PrefabInstance:
     - target: {fileID: 2342667100794626274, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 2342667100794626274, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
@@ -5335,7 +5425,7 @@ Transform:
   - {fileID: 1713486299}
   - {fileID: 1730816645}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2092116011
 GameObject:

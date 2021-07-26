@@ -47,6 +47,14 @@ public class DoughboyConvoTrio : MonoBehaviour
         db_class_1 = db_1.gameObject.GetComponent<DoughboyClass>();
         db_class_2 = db_2.gameObject.GetComponent<DoughboyClass>();
         db_class_3 = db_3.gameObject.GetComponent<DoughboyClass>();
+
+        ui_text_1 = bubble_1.GetComponentInChildren<TMP_Text>();
+        ui_text_2 = bubble_2.GetComponentInChildren<TMP_Text>();
+        ui_text_3 = bubble_3.GetComponentInChildren<TMP_Text>();
+
+        actual_text_1 = db_class_1.doughboy_text;
+        actual_text_2 = db_class_2.doughboy_text;
+        actual_text_3 = db_class_3.doughboy_text;
     }
 
     // Start is called before the first frame update

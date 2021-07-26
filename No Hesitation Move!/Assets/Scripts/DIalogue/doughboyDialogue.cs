@@ -33,12 +33,13 @@ public class DoughboyDialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         cam = Camera.main;
+        ui_text = bubble.GetComponentInChildren<TMP_Text>();
+        db_class = this.gameObject.GetComponent<DoughboyClass>();
         bubble.enabled = false;
         ui_text.enabled = false;
-        db_class = this.gameObject.GetComponent<DoughboyClass>();
         actual_text = db_class.doughboy_text;
-
         bubble.CrossFadeAlpha(0.0f, 0.0f, false);
         ui_text.CrossFadeAlpha(0.0f, 0.0f, false);
 
