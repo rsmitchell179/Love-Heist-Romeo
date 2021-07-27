@@ -99,6 +99,9 @@ public class DoughboyDialogue : MonoBehaviour
 
     IEnumerator end_text()
     {
+
+        // yield return new WaitForSecondsRealtime(0.5f);
+
         bubble.CrossFadeAlpha(0.0f, 0.1f, false);
         ui_text.CrossFadeAlpha(0.0f, 0.1f, false);
 
