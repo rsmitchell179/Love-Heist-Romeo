@@ -70,6 +70,13 @@ public class DoughboyConvoTrio : MonoBehaviour
         ui_text_1.enabled = false;
         ui_text_2.enabled = false;
         ui_text_3.enabled = false;
+
+        bubble_1.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_1.CrossFadeAlpha(0.0f, 0.0f, false);
+        bubble_2.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_2.CrossFadeAlpha(0.0f, 0.0f, false);
+        bubble_3.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_3.CrossFadeAlpha(0.0f, 0.0f, false);
     }
 
     // Update is called once per frame
@@ -85,15 +92,24 @@ public class DoughboyConvoTrio : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        bubble_1.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_1.CrossFadeAlpha(0.0f, 0.0f, false);
+        bubble_2.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_2.CrossFadeAlpha(0.0f, 0.0f, false);
+        bubble_3.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_3.CrossFadeAlpha(0.0f, 0.0f, false);
+
     	StartCoroutine(start_text());
     }
 
     IEnumerator start_text()
     {
+        bubble_1.CrossFadeAlpha(1.0f, 0.1f, false);
+        ui_text_1.CrossFadeAlpha(1.0f, 0.1f, false);
+
     	for(int i = 0; i <= actual_text_1.Length; i++)
     	{
     		set_pos(bubble_1, db_1, db_class_1.offset);
-    		bubble_1.enabled = true;
     		ui_text_1.enabled = true;
     		current_text = actual_text_1.Substring(0, i);
     		ui_text_1.text = current_text;
@@ -102,10 +118,12 @@ public class DoughboyConvoTrio : MonoBehaviour
 
     	yield return new WaitForSecondsRealtime(time_delay);
 
+        bubble_2.CrossFadeAlpha(1.0f, 0.1f, false);
+        ui_text_2.CrossFadeAlpha(1.0f, 0.1f, false);
+
     	for(int i = 0; i <= actual_text_2.Length; i++)
     	{
     		set_pos(bubble_2, db_2, db_class_2.offset);
-    		bubble_2.enabled = true;
     		ui_text_2.enabled = true;
     		current_text = actual_text_2.Substring(0, i);
     		ui_text_2.text = current_text;
@@ -114,10 +132,12 @@ public class DoughboyConvoTrio : MonoBehaviour
 
     	yield return new WaitForSecondsRealtime(time_delay);
 
+        bubble_3.CrossFadeAlpha(1.0f, 0.1f, false);
+        ui_text_3.CrossFadeAlpha(1.0f, 0.1f, false);
+
     	for(int i = 0; i <= actual_text_3.Length; i++)
     	{
     		set_pos(bubble_3, db_3, db_class_3.offset);
-    		bubble_3.enabled = true;
     		ui_text_3.enabled = true;
     		current_text = actual_text_3.Substring(0, i);
     		ui_text_3.text = current_text;
@@ -130,7 +150,7 @@ public class DoughboyConvoTrio : MonoBehaviour
     	if(other.tag == "Player"){
             StopAllCoroutines();
             current_text = "";
-            StartCoroutine(delay_setfalse());
+            StartCoroutine(end_text());
             exit_area = true;
     	}
     }
@@ -138,13 +158,18 @@ public class DoughboyConvoTrio : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
     	if(other.gameObject.tag == "Player"){
+
+            bubble_1.enabled = true;
+            bubble_2.enabled = true;
+            bubble_3.enabled = true;
+
             set_pos(bubble_1, db_1, db_class_1.offset);
             set_pos(bubble_2, db_2, db_class_2.offset);
             set_pos(bubble_3, db_3, db_class_3.offset);
     	}
     }
 
-    IEnumerator delay_setfalse()
+    IEnumerator end_text()
     {
     	bubble_1.CrossFadeAlpha(0.0f, 0.1f, false);
         ui_text_1.CrossFadeAlpha(0.0f, 0.1f, false);
@@ -166,7 +191,7 @@ public class DoughboyConvoTrio : MonoBehaviour
         ui_text_3.enabled = false;
         exit_area = false;
 
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(0.0f);
     }
 
     void set_pos(Image bubble, GameObject db, float offset)

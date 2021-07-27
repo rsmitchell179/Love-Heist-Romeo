@@ -60,6 +60,11 @@ public class DoughboyConvoDuo : MonoBehaviour
 
         ui_text_1.enabled = false;
         ui_text_2.enabled = false;
+
+        bubble_1.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_1.CrossFadeAlpha(0.0f, 0.0f, false);
+        bubble_2.CrossFadeAlpha(0.0f, 0.0f, false);
+        ui_text_2.CrossFadeAlpha(0.0f, 0.0f, false);
     }
 
     void Update()
@@ -75,17 +80,24 @@ public class DoughboyConvoDuo : MonoBehaviour
     {
     	if(other.gameObject.tag == "Player")
     	{
+            bubble_1.CrossFadeAlpha(0.0f, 0.0f, false);
+            ui_text_1.CrossFadeAlpha(0.0f, 0.0f, false);
+            bubble_2.CrossFadeAlpha(0.0f, 0.0f, false);
+            ui_text_2.CrossFadeAlpha(0.0f, 0.0f, false);
+
     		StartCoroutine(start_text());
     	}
     }
 
     IEnumerator start_text()
     {
+        bubble_1.CrossFadeAlpha(1.0f, 0.1f, false);
+        ui_text_1.CrossFadeAlpha(1.0f, 0.1f, false);
+
     	for(int i = 0; i <= actual_text_1.Length; i++)
     	{
     		set_pos(bubble_1, db_1, db_class_1.offset);
-    		bubble_1.enabled = true;
-    		ui_text_1.enabled = true;
+            ui_text_1.enabled = true;
     		current_text = actual_text_1.Substring(0, i);
     		ui_text_1.text = current_text;
     		yield return new WaitForSecondsRealtime(char_delay);
@@ -93,11 +105,13 @@ public class DoughboyConvoDuo : MonoBehaviour
 
     	yield return new WaitForSecondsRealtime(time_delay);
 
+        bubble_2.CrossFadeAlpha(1.0f, 0.1f, false);
+        ui_text_2.CrossFadeAlpha(1.0f, 0.1f, false);
+
     	for(int i = 0; i <= actual_text_2.Length; i++)
     	{
     		set_pos(bubble_2, db_2, db_class_2.offset);
-    		bubble_2.enabled = true;
-    		ui_text_2.enabled = true;
+            ui_text_2.enabled = true;
     		current_text = actual_text_2.Substring(0, i);
     		ui_text_2.text = current_text;
     		yield return new WaitForSecondsRealtime(char_delay);
@@ -119,6 +133,9 @@ public class DoughboyConvoDuo : MonoBehaviour
     void OnTriggerStay2D(Collider2D other)
     {
     	if(other.gameObject.tag == "Player"){
+            bubble_1.enabled = true;
+            bubble_2.enabled = true;
+
     		set_pos(bubble_1, db_1, db_class_1.offset);
     		set_pos(bubble_2, db_2, db_class_2.offset);
     	}
