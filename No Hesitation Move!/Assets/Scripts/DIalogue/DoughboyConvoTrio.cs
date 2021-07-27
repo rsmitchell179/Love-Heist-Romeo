@@ -22,9 +22,9 @@ public class DoughboyConvoTrio : MonoBehaviour
 	private float time_delay = 0.3f;
 
 	[Header("Doughboy Dialogue")]
-	public string actual_text_1;
-	public string actual_text_2;
-	public string actual_text_3;
+	public string curr_text_1;
+	public string curr_text_2;
+	public string curr_text_3;
 
 	[Header("Doughboys")]
 	public GameObject db_1;
@@ -38,7 +38,7 @@ public class DoughboyConvoTrio : MonoBehaviour
 	public Camera cam;
 
     [Header("Bubble Enabled")]
-    public bool exit_area;
+    public bool render_dialogue;
 
     [Header("Doughboy Class Script Reference")]
     public DoughboyClass db_class_1;
@@ -55,9 +55,9 @@ public class DoughboyConvoTrio : MonoBehaviour
         ui_text_2 = bubble_2.GetComponentInChildren<TMP_Text>();
         ui_text_3 = bubble_3.GetComponentInChildren<TMP_Text>();
 
-        actual_text_1 = db_class_1.doughboy_text;
-        actual_text_2 = db_class_2.doughboy_text;
-        actual_text_3 = db_class_3.doughboy_text;
+        curr_text_1 = db_class_1.doughboy_text;
+        curr_text_2 = db_class_2.doughboy_text;
+        curr_text_3 = db_class_3.doughboy_text;
     }
 
     // Start is called before the first frame update
@@ -82,7 +82,7 @@ public class DoughboyConvoTrio : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(exit_area == true)
+        if(render_dialogue == true)
         {
             set_pos(bubble_1, db_1, db_class_1.offset);
             set_pos(bubble_2, db_2, db_class_2.offset);
@@ -92,54 +92,58 @@ public class DoughboyConvoTrio : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        bubble_1.CrossFadeAlpha(0.0f, 0.0f, false);
-        ui_text_1.CrossFadeAlpha(0.0f, 0.0f, false);
-        bubble_2.CrossFadeAlpha(0.0f, 0.0f, false);
-        ui_text_2.CrossFadeAlpha(0.0f, 0.0f, false);
-        bubble_3.CrossFadeAlpha(0.0f, 0.0f, false);
-        ui_text_3.CrossFadeAlpha(0.0f, 0.0f, false);
-
-    	StartCoroutine(start_text());
+        if(other.gameObject.tag == "Player")
+        {
+            bubble_1.CrossFadeAlpha(0.0f, 0.0f, false);
+            ui_text_1.CrossFadeAlpha(0.0f, 0.0f, false);
+            bubble_2.CrossFadeAlpha(0.0f, 0.0f, false);
+            ui_text_2.CrossFadeAlpha(0.0f, 0.0f, false);
+            bubble_3.CrossFadeAlpha(0.0f, 0.0f, false);
+            ui_text_3.CrossFadeAlpha(0.0f, 0.0f, false);
+        }
     }
 
     IEnumerator start_text()
     {
+        bubble_1.enabled = true;
         bubble_1.CrossFadeAlpha(1.0f, 0.1f, false);
         ui_text_1.CrossFadeAlpha(1.0f, 0.1f, false);
 
-    	for(int i = 0; i <= actual_text_1.Length; i++)
+    	for(int i = 0; i <= curr_text_1.Length; i++)
     	{
     		set_pos(bubble_1, db_1, db_class_1.offset);
     		ui_text_1.enabled = true;
-    		current_text = actual_text_1.Substring(0, i);
+    		current_text = curr_text_1.Substring(0, i);
     		ui_text_1.text = current_text;
     		yield return new WaitForSecondsRealtime(char_delay);
     	}
 
     	yield return new WaitForSecondsRealtime(time_delay);
 
+        bubble_2.enabled = true;
         bubble_2.CrossFadeAlpha(1.0f, 0.1f, false);
         ui_text_2.CrossFadeAlpha(1.0f, 0.1f, false);
 
-    	for(int i = 0; i <= actual_text_2.Length; i++)
+    	for(int i = 0; i <= curr_text_2.Length; i++)
     	{
     		set_pos(bubble_2, db_2, db_class_2.offset);
     		ui_text_2.enabled = true;
-    		current_text = actual_text_2.Substring(0, i);
+    		current_text = curr_text_2.Substring(0, i);
     		ui_text_2.text = current_text;
     		yield return new WaitForSecondsRealtime(char_delay);
     	}
 
     	yield return new WaitForSecondsRealtime(time_delay);
 
+        bubble_3.enabled = true;
         bubble_3.CrossFadeAlpha(1.0f, 0.1f, false);
         ui_text_3.CrossFadeAlpha(1.0f, 0.1f, false);
 
-    	for(int i = 0; i <= actual_text_3.Length; i++)
+    	for(int i = 0; i <= curr_text_3.Length; i++)
     	{
     		set_pos(bubble_3, db_3, db_class_3.offset);
     		ui_text_3.enabled = true;
-    		current_text = actual_text_3.Substring(0, i);
+    		current_text = curr_text_3.Substring(0, i);
     		ui_text_3.text = current_text;
     		yield return new WaitForSecondsRealtime(char_delay);
     	}
@@ -151,21 +155,14 @@ public class DoughboyConvoTrio : MonoBehaviour
             StopAllCoroutines();
             current_text = "";
             StartCoroutine(end_text());
-            exit_area = true;
     	}
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-    	if(other.gameObject.tag == "Player"){
-
-            bubble_1.enabled = true;
-            bubble_2.enabled = true;
-            bubble_3.enabled = true;
-
-            set_pos(bubble_1, db_1, db_class_1.offset);
-            set_pos(bubble_2, db_2, db_class_2.offset);
-            set_pos(bubble_3, db_3, db_class_3.offset);
+    	if(other.gameObject.tag == "Player" && render_dialogue == false){
+            render_dialogue = true;
+            StartCoroutine(start_text());
     	}
     }
 
@@ -189,9 +186,10 @@ public class DoughboyConvoTrio : MonoBehaviour
         ui_text_2.enabled = false;
         bubble_3.enabled = false;
         ui_text_3.enabled = false;
-        exit_area = false;
 
         yield return new WaitForSecondsRealtime(0.0f);
+
+        render_dialogue = false;
     }
 
     void set_pos(Image bubble, GameObject db, float offset)
@@ -199,10 +197,5 @@ public class DoughboyConvoTrio : MonoBehaviour
     	float y_offset = db.GetComponent<SpriteRenderer>().bounds.max.y + offset;
     	Vector3 bub_position = new Vector3(db.transform.position.x, y_offset, db.transform.position.z);
     	bubble.transform.position = cam.WorldToScreenPoint(bub_position);
-    }
-
-    IEnumerator wait_seconds()
-    {
-    	yield return new WaitForSecondsRealtime(time_delay);
     }
 }

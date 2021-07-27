@@ -20,8 +20,8 @@ public class DoughboyConvoDuo : MonoBehaviour
 	private float time_delay = 0.3f;
 
 	[Header("Doughboy Dialogue")]
-	public string actual_text_1;
-	public string actual_text_2;
+	public string curr_text_1;
+	public string curr_text_2;
 
 	[Header("Doughboys")]
 	public GameObject db_1;
@@ -34,7 +34,7 @@ public class DoughboyConvoDuo : MonoBehaviour
 	public Camera cam;
 
     [Header("Bubble Enabled")]
-    public bool exit_area;
+    public bool render_dialogue;
 
     [Header("Doughboy Class Script Reference")]
     public DoughboyClass db_class_1;
@@ -48,8 +48,8 @@ public class DoughboyConvoDuo : MonoBehaviour
         ui_text_1 = bubble_1.GetComponentInChildren<TMP_Text>();
         ui_text_2 = bubble_2.GetComponentInChildren<TMP_Text>();
 
-        actual_text_1 = db_class_1.doughboy_text;
-        actual_text_2 = db_class_2.doughboy_text;
+        curr_text_1 = db_class_1.doughboy_text;
+        curr_text_2 = db_class_2.doughboy_text;
     }
 
     // Start is called before the first frame update
@@ -69,7 +69,7 @@ public class DoughboyConvoDuo : MonoBehaviour
 
     void Update()
     {
-        if(exit_area == true)
+        if(render_dialogue == true)
         {
             set_pos(bubble_1, db_1, db_class_1.offset);
             set_pos(bubble_2, db_2, db_class_2.offset);
@@ -84,35 +84,33 @@ public class DoughboyConvoDuo : MonoBehaviour
             ui_text_1.CrossFadeAlpha(0.0f, 0.0f, false);
             bubble_2.CrossFadeAlpha(0.0f, 0.0f, false);
             ui_text_2.CrossFadeAlpha(0.0f, 0.0f, false);
-
-    		StartCoroutine(start_text());
     	}
     }
 
     IEnumerator start_text()
     {
+        bubble_1.enabled = true;
         bubble_1.CrossFadeAlpha(1.0f, 0.1f, false);
         ui_text_1.CrossFadeAlpha(1.0f, 0.1f, false);
 
-    	for(int i = 0; i <= actual_text_1.Length; i++)
+    	for(int i = 0; i <= curr_text_1.Length; i++)
     	{
-    		set_pos(bubble_1, db_1, db_class_1.offset);
             ui_text_1.enabled = true;
-    		current_text = actual_text_1.Substring(0, i);
+    		current_text = curr_text_1.Substring(0, i);
     		ui_text_1.text = current_text;
     		yield return new WaitForSecondsRealtime(char_delay);
     	}
 
     	yield return new WaitForSecondsRealtime(time_delay);
 
+        bubble_2.enabled = true;
         bubble_2.CrossFadeAlpha(1.0f, 0.1f, false);
         ui_text_2.CrossFadeAlpha(1.0f, 0.1f, false);
 
-    	for(int i = 0; i <= actual_text_2.Length; i++)
+    	for(int i = 0; i <= curr_text_2.Length; i++)
     	{
-    		set_pos(bubble_2, db_2, db_class_2.offset);
             ui_text_2.enabled = true;
-    		current_text = actual_text_2.Substring(0, i);
+    		current_text = curr_text_2.Substring(0, i);
     		ui_text_2.text = current_text;
     		yield return new WaitForSecondsRealtime(char_delay);
     	}
@@ -122,22 +120,18 @@ public class DoughboyConvoDuo : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D other)
     {	
-    	if(other.tag == "Player"){
+    	if(other.gameObject.tag == "Player"){
     		StopAllCoroutines();
     		current_text = "";
     		StartCoroutine(end_text());
-            exit_area = true;
     	}
     }
 
     void OnTriggerStay2D(Collider2D other)
     {
-    	if(other.gameObject.tag == "Player"){
-            bubble_1.enabled = true;
-            bubble_2.enabled = true;
-
-    		set_pos(bubble_1, db_1, db_class_1.offset);
-    		set_pos(bubble_2, db_2, db_class_2.offset);
+    	if(other.gameObject.tag == "Player" && render_dialogue == false){
+    		render_dialogue = true;
+            StartCoroutine(start_text());
     	}
     }
 
@@ -156,9 +150,10 @@ public class DoughboyConvoDuo : MonoBehaviour
     	ui_text_1.enabled = false;
         bubble_2.enabled = false;
         ui_text_2.enabled = false;
-        exit_area = false;
         
         yield return new WaitForSecondsRealtime(0.2f);
+
+        render_dialogue = false;
     }
 
     void set_pos(Image bubble, GameObject db, float offset)

@@ -22,7 +22,7 @@ public class DoughboyDialogue : MonoBehaviour
     private float delay = 0.03f;
 
     [Header("Dialogue Text")]
-    public string actual_text;
+    public string curr_text;
     private string current_text = "";
 
     [Header("Bubble Enabled")]
@@ -39,7 +39,7 @@ public class DoughboyDialogue : MonoBehaviour
         db_class = this.gameObject.GetComponent<DoughboyClass>();
         bubble.enabled = false;
         ui_text.enabled = false;
-        actual_text = db_class.doughboy_text;
+        curr_text = db_class.doughboy_text;
         bubble.CrossFadeAlpha(0.0f, 0.0f, false);
         ui_text.CrossFadeAlpha(0.0f, 0.0f, false);
 
@@ -70,10 +70,10 @@ public class DoughboyDialogue : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(0.1f);
 
-        for(int i = 0; i <= actual_text.Length; i++)
+        for(int i = 0; i <= curr_text.Length; i++)
         {   
             ui_text.enabled = true;
-            current_text = actual_text.Substring(0, i);
+            current_text = curr_text.Substring(0, i);
             ui_text.text = current_text;
             yield return new WaitForSecondsRealtime(delay);
         }
@@ -93,6 +93,9 @@ public class DoughboyDialogue : MonoBehaviour
             StopAllCoroutines();
             current_text = "";
             exit_area = true;
+
+            bubble.CrossFadeAlpha(0.0f, 0.1f, false);
+            ui_text.CrossFadeAlpha(0.0f, 0.1f, false);
             StartCoroutine(end_text());
         }
     }
@@ -101,9 +104,6 @@ public class DoughboyDialogue : MonoBehaviour
     {
 
         // yield return new WaitForSecondsRealtime(0.5f);
-
-        bubble.CrossFadeAlpha(0.0f, 0.1f, false);
-        ui_text.CrossFadeAlpha(0.0f, 0.1f, false);
 
         yield return new WaitForSecondsRealtime(0.2f);
 
