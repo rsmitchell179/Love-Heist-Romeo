@@ -48,6 +48,9 @@ public class DoughboyTeaPartyConvo : MonoBehaviour
     [Header("Camera")]
     public Camera cam;
 
+    [Header("Bubble Enabled")]
+    public bool exit_area;
+
     [Header("Doughboy Class Script Reference")]
     public DoughboyClass db_class_1;
     public DoughboyClass db_class_2;
@@ -101,23 +104,26 @@ public class DoughboyTeaPartyConvo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(exit_area == true)
+        {
+            set_pos(bubble_1, db_1, db_class_1.offset);
+            set_pos(bubble_2, db_2, db_class_2.offset);
+            set_pos(bubble_3, db_3, db_class_3.offset);
+            set_pos(bubble_4, db_4, db_class_4.offset);
+            set_pos(bubble_5, db_5, db_class_5.offset);
+            set_pos(bubble_6, db_6, db_class_6.offset);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.tag == "Player")
         {
-            start_convo();
+            StartCoroutine(start_text());
         }
     }
 
-    public void start_convo()
-    {
-        StartCoroutine(db_convo());
-    }
-
-    IEnumerator db_convo()
+    IEnumerator start_text()
     {
         for(int i = 0; i <= actual_text_1.Length; i++)
         {
@@ -196,7 +202,7 @@ public class DoughboyTeaPartyConvo : MonoBehaviour
             StopAllCoroutines();
             current_text = "";
             StartCoroutine(delay_setfalse());
-        // bubble.enabled = false;
+            exit_area = true;
         }
     }
 
@@ -214,27 +220,43 @@ public class DoughboyTeaPartyConvo : MonoBehaviour
 
     IEnumerator delay_setfalse()
     {
-        // yield return new WaitForSecondsRealtime(0.5f);
-        // set_pos(bubble_1, db_1);
+        bubble_1.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text_1.CrossFadeAlpha(0.0f, 0.1f, false);
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        bubble_2.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text_2.CrossFadeAlpha(0.0f, 0.1f, false);
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        bubble_3.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text_3.CrossFadeAlpha(0.0f, 0.1f, false);
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        bubble_4.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text_4.CrossFadeAlpha(0.0f, 0.1f, false);
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        bubble_5.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text_5.CrossFadeAlpha(0.0f, 0.1f, false);
+        yield return new WaitForSecondsRealtime(0.1f);
+
+        bubble_6.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text_6.CrossFadeAlpha(0.0f, 0.1f, false);
+        yield return new WaitForSecondsRealtime(0.1f);
+
         bubble_1.enabled = false;
         ui_text_1.enabled = false;
-        // yield return new WaitForSecondsRealtime(0.2f);
-        // set_pos(bubble_2, db_2);
         bubble_2.enabled = false;
         ui_text_2.enabled = false;
-        // yield return new WaitForSecondsRealtime(0.2f);
-        // set_pos(bubble_3, db_3);
         bubble_3.enabled = false;
         ui_text_3.enabled = false;
-
         bubble_4.enabled = false;
         ui_text_4.enabled = false;
-
         bubble_5.enabled = false;
         ui_text_5.enabled = false;
-
         bubble_6.enabled = false;
         ui_text_6.enabled = false;
+        exit_area = false;
         yield return new WaitForSecondsRealtime(0.2f);
     }
 
