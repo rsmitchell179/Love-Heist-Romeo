@@ -26,7 +26,7 @@ public class DoughboyDialogue : MonoBehaviour
     private string current_text = "";
 
     [Header("Bubble Enabled")]
-    public bool exit_area;
+    public bool render_dialogue;
 
     public DoughboyClass db_class;
 
@@ -49,14 +49,14 @@ public class DoughboyDialogue : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
-            current_text = "";
-            StartCoroutine(start_text());
+            bubble.CrossFadeAlpha(0.0f, 0.0f, false);
+            ui_text.CrossFadeAlpha(0.0f, 0.0f, false);
         }
     }
 
     void Update()
     {
-        if(exit_area == true)
+        if(render_dialogue == true)
         {
             set_pos(bubble);
         }
@@ -64,7 +64,7 @@ public class DoughboyDialogue : MonoBehaviour
 
     IEnumerator start_text()
     {
-
+        bubble.enabled = true;
         bubble.CrossFadeAlpha(1.0f, 0.1f, false);
         ui_text.CrossFadeAlpha(1.0f, 0.1f, false);
 
@@ -81,9 +81,9 @@ public class DoughboyDialogue : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if(other.tag == "Player"){
-            bubble.enabled = true;
-            set_pos(bubble);
+        if(other.tag == "Player" && render_dialogue == false){
+            render_dialogue = true;
+            StartCoroutine(start_text());
         }
     }
 
@@ -92,10 +92,7 @@ public class DoughboyDialogue : MonoBehaviour
         if(other.tag == "Player"){
             StopAllCoroutines();
             current_text = "";
-            exit_area = true;
 
-            bubble.CrossFadeAlpha(0.0f, 0.1f, false);
-            ui_text.CrossFadeAlpha(0.0f, 0.1f, false);
             StartCoroutine(end_text());
         }
     }
@@ -105,13 +102,16 @@ public class DoughboyDialogue : MonoBehaviour
 
         // yield return new WaitForSecondsRealtime(0.5f);
 
-        yield return new WaitForSecondsRealtime(0.2f);
+        bubble.CrossFadeAlpha(0.0f, 0.1f, false);
+        ui_text.CrossFadeAlpha(0.0f, 0.1f, false);
+        yield return new WaitForSecondsRealtime(0.1f);
 
         ui_text.enabled = false;
         bubble.enabled = false;
-        exit_area = false;
 
-        yield return new WaitForSeconds (0.0f);
+        yield return new WaitForSeconds (0.2f);
+
+        render_dialogue = false;
 
 
     }
