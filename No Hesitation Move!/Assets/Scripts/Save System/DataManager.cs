@@ -19,12 +19,6 @@ public class DataManager : MonoBehaviour
         load_pos = new Vector2(1.29f, 1.0f);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void clear_save()
     {
     	if(File.Exists(file_path))
