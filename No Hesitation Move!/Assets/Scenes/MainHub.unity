@@ -4566,12 +4566,13 @@ MonoBehaviour:
   bubble_2: {fileID: 1388077579}
   ui_text_1: {fileID: 565299558}
   ui_text_2: {fileID: 1849966520}
-  actual_text_1: My tree is nice!
-  actual_text_2: Not as nice as mine!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1960074636}
   db_2: {fileID: 1458993024}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!1 &225780395
@@ -5128,12 +5129,13 @@ MonoBehaviour:
   bubble_2: {fileID: 1929629125}
   ui_text_1: {fileID: 199928082}
   ui_text_2: {fileID: 1477389437}
-  actual_text_1: Shop shop shop!
-  actual_text_2: Til we drop!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 389613703}
   db_2: {fileID: 365620158}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &265506385
@@ -6535,12 +6537,13 @@ MonoBehaviour:
   bubble_2: {fileID: 544862463}
   ui_text_1: {fileID: 650123360}
   ui_text_2: {fileID: 768044553}
-  actual_text_1: "I can\u2019t swim!"
-  actual_text_2: "Don\u2019t worry! Me either!"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 671298768}
   db_2: {fileID: 512063245}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &344101496
@@ -8569,14 +8572,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 650123360}
   ui_text_2: {fileID: 768044553}
   ui_text_3: {fileID: 576378644}
-  actual_text_1: We like to eat sand!
-  actual_text_2: "I\u2019m gonna eat the most sand!"
-  actual_text_3: How I wish I had their zeal for sand!
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 1495135620}
   db_2: {fileID: 822013268}
   db_3: {fileID: 1327588856}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -9777,12 +9781,13 @@ MonoBehaviour:
   bubble_2: {fileID: 1905902999}
   ui_text_1: {fileID: 565299558}
   ui_text_2: {fileID: 1849966520}
-  actual_text_1: Why are they called spooky trees?
-  actual_text_2: "Who says they\u2019re called spooky trees?"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1643587460}
   db_2: {fileID: 742682006}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!1 &474272875
@@ -10550,12 +10555,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 484232156}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &486538520 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8461262567418571507, guid: 615f7e7cae6f75e48a54864267a9ae9e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2342667099594183884}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &489634278
 GameObject:
   m_ObjectHideFlags: 0
@@ -10698,12 +10697,13 @@ MonoBehaviour:
   bubble_2: {fileID: 313694827}
   ui_text_1: {fileID: 199928082}
   ui_text_2: {fileID: 1477389437}
-  actual_text_1: Why did we buy just these dresses?
-  actual_text_2: "You\u2019re right! Why didn\u2019t we buy more?!"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1545054006}
   db_2: {fileID: 76397363}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &491836071
@@ -14610,14 +14610,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 199928082}
   ui_text_2: {fileID: 1477389437}
   ui_text_3: {fileID: 1656851711}
-  actual_text_1: Caviar and champagne!
-  actual_text_2: Fine wine and cheese!
-  actual_text_3: That Fancy Town is truly indulgent, eh?
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 1870764394}
   db_2: {fileID: 681922479}
   db_3: {fileID: 970427162}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -21522,12 +21523,13 @@ MonoBehaviour:
   bubble_2: {fileID: 1926056324}
   ui_text_1: {fileID: 199928082}
   ui_text_2: {fileID: 1477389437}
-  actual_text_1: This is NOTHING like Reject City!
-  actual_text_2: Is that a bad thing?
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1509580795}
   db_2: {fileID: 2103385599}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1145585290
@@ -21826,14 +21828,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 565299558}
   ui_text_2: {fileID: 1849966520}
   ui_text_3: {fileID: 1568871244}
-  actual_text_1: I wanna skate!
-  actual_text_2: I wanna do graffiti!
-  actual_text_3: TAX EVASION!!!!
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 266733103}
   db_2: {fileID: 786378105}
   db_3: {fileID: 723789899}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -22022,12 +22025,13 @@ MonoBehaviour:
   bubble_2: {fileID: 1488565255}
   ui_text_1: {fileID: 199928082}
   ui_text_2: {fileID: 1477389437}
-  actual_text_1: Vases.
-  actual_text_2: "It\u2019s pronounced vah-zes."
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 188881162}
   db_2: {fileID: 1699825222}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1190820538
@@ -24079,12 +24083,13 @@ MonoBehaviour:
   bubble_2: {fileID: 689397203}
   ui_text_1: {fileID: 199928082}
   ui_text_2: {fileID: 1477389437}
-  actual_text_1: Who waters these flowers?
-  actual_text_2: "They\u2019re too fancy for plain water!"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 871071434}
   db_2: {fileID: 479773251}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1277038723
@@ -24694,14 +24699,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 565299558}
   ui_text_2: {fileID: 1849966520}
   ui_text_3: {fileID: 1568871244}
-  actual_text_1: Boundary boys!!!!!!
-  actual_text_2: Boys on the boundary!!!!!
-  actual_text_3: This is our boundary! Get out!
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 155039471}
   db_2: {fileID: 988240583}
   db_3: {fileID: 319358232}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -26835,12 +26841,13 @@ MonoBehaviour:
   bubble_2: {fileID: 955401119}
   ui_text_1: {fileID: 650123360}
   ui_text_2: {fileID: 768044553}
-  actual_text_1: "And so I say, swimmer? I hardly know \u2018er!"
-  actual_text_2: 'Please stop telling that joke. '
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1601243498}
   db_2: {fileID: 115570539}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1391006889
@@ -27540,12 +27547,13 @@ MonoBehaviour:
   bubble_2: {fileID: 898215710}
   ui_text_1: {fileID: 1849966520}
   ui_text_2: {fileID: 1477389437}
-  actual_text_1: "Oh yeah, we\u2019re real!"
-  actual_text_2: As real as you!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 948346712}
   db_2: {fileID: 72575922}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!1 &1453991665
@@ -28227,12 +28235,13 @@ MonoBehaviour:
   bubble_2: {fileID: 590298415}
   ui_text_1: {fileID: 650123360}
   ui_text_2: {fileID: 768044553}
-  actual_text_1: Yeehaw!
-  actual_text_2: "It\u2019s pronounced \u201CAhoy.\u201D"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1237714454}
   db_2: {fileID: 1024167824}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1480893278
@@ -28629,12 +28638,13 @@ MonoBehaviour:
   bubble_2: {fileID: 1240267209}
   ui_text_1: {fileID: 565299558}
   ui_text_2: {fileID: 1849966520}
-  actual_text_1: You headed to the heart of the city?
-  actual_text_2: Yeah, cuz art is a part of the heart!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 2140393428}
   db_2: {fileID: 1663534299}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!1 &1508036738
@@ -28687,12 +28697,13 @@ MonoBehaviour:
   bubble_2: {fileID: 876789666}
   ui_text_1: {fileID: 650123360}
   ui_text_2: {fileID: 768044553}
-  actual_text_1: Yo ho-ho-ho and a bottle of
-  actual_text_2: '*buuuuUUURRP*'
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1736778256}
   db_2: {fileID: 995458896}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1508036741
@@ -30545,12 +30556,13 @@ MonoBehaviour:
   bubble_2: {fileID: 505021898}
   ui_text_1: {fileID: 565299558}
   ui_text_2: {fileID: 1849966520}
-  actual_text_1: Are you a reject without a cause?
-  actual_text_2: Nah. My cause is having a good time!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1223978934}
   db_2: {fileID: 1117540737}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!1 &1579354199
@@ -32870,14 +32882,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 650123360}
   ui_text_2: {fileID: 768044553}
   ui_text_3: {fileID: 576378644}
-  actual_text_1: Come sail away, come sail away!
-  actual_text_2: Come sail away with meeeeee!
-  actual_text_3: I wish I had their angelic voices!
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 14138981}
   db_2: {fileID: 66460837}
   db_3: {fileID: 1364178228}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -36942,12 +36955,13 @@ MonoBehaviour:
   bubble_2: {fileID: 2001253232}
   ui_text_1: {fileID: 650123360}
   ui_text_2: {fileID: 768044553}
-  actual_text_1: So are these trees or kelp?
-  actual_text_2: Yes!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1567026380}
   db_2: {fileID: 767174746}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1901933242
@@ -39514,14 +39528,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 199928082}
   ui_text_2: {fileID: 1477389437}
   ui_text_3: {fileID: 1656851711}
-  actual_text_1: The vases are fancy!
-  actual_text_2: The flowers are fancy!
-  actual_text_3: Even the doors are fancy!
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 1320695468}
   db_2: {fileID: 46442086}
   db_3: {fileID: 767833385}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -40720,14 +40735,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 565299558}
   ui_text_2: {fileID: 1849966520}
   ui_text_3: {fileID: 1568871244}
-  actual_text_1: "I can\u2019t climb this tree."
-  actual_text_2: " It\u2019s too tall!"
-  actual_text_3: Who made us this short?!
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 2128315584}
   db_2: {fileID: 943355777}
   db_3: {fileID: 143867904}
   current_text: 
   cam: {fileID: 1892872371}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -41682,6 +41698,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 542815184108422689, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2342667099933696741, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_IsActive
@@ -41801,7 +41822,7 @@ PrefabInstance:
         type: 3}
       propertyPath: savePromptText
       value: 
-      objectReference: {fileID: 486538520}
+      objectReference: {fileID: 0}
     - target: {fileID: 2342667100794626278, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_Name
@@ -41812,6 +41833,73 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 460.59644
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 81.22705
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 220.2002
+      objectReference: {fileID: 0}
+    - target: {fileID: 5016995413176926923, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 61.700195
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463430178150332903, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_text
+      value: Progress Saved
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463430178150332903, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463430178150332903, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8117c7e71801ef24590aba5530ade610,
+        type: 2}
+    - target: {fileID: 5463430178150332903, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5463430178150332903, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 3100664808299434309, guid: 8117c7e71801ef24590aba5530ade610,
+        type: 2}
     - target: {fileID: 6204819743128107248, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_AnchorMax.x

@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.Audio;
 using Yarn.Unity;
+using TMPro;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class PauseMenu : MonoBehaviour
     GameObject last_button;
     DialogueRunner diaRun;
     DialogueUI diaUI;
-    public GameObject savePromptText;
+    public TMP_Text save_prompt_text;
 
     public Slider m_slider;
     public Slider s_slider;
@@ -48,6 +49,7 @@ public class PauseMenu : MonoBehaviour
     	settings_menu.SetActive(false);
         diaRun = FindObjectOfType<DialogueRunner>();
         diaUI = FindObjectOfType<DialogueUI>();
+        save_prompt_text.CrossFadeAlpha(0.0f, 0.0f, false);
     }
 
     void Start()
@@ -118,9 +120,11 @@ public class PauseMenu : MonoBehaviour
     }
 
     IEnumerator SavePrompt() {
-    	savePromptText.SetActive(true);
-    	yield return new WaitForSeconds(1);
-    	savePromptText.SetActive(false);
+    	// save_prompt_text.enabled = true;
+        save_prompt_text.CrossFadeAlpha(1.0f, 0.5f, true);
+        yield return new WaitForSecondsRealtime(2.5f);
+        save_prompt_text.CrossFadeAlpha(0.0f, 1.0f, true);
+    	// save_prompt_text.enabled = false;
     }
 
     public void save_game()
@@ -138,6 +142,7 @@ public class PauseMenu : MonoBehaviour
     	pause_menu.SetActive(true);
     	settings_menu.SetActive(false);
     	EventSystem.current.SetSelectedGameObject(null);
+        save_prompt_text.CrossFadeAlpha(0.0f, 0.0f, false);
     }
 
     public void resume_game()
