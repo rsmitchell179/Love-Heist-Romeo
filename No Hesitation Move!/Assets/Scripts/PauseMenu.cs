@@ -33,7 +33,11 @@ public class PauseMenu : MonoBehaviour
     [Header("Is The Cursor Visible")]
     public bool cursor_visible = false;
 
-    Resolution[] reso;
+    Resolution[] all_resolutions;
+    List<string> reso_options;
+    List<Resolution> selected_resolutions;
+    Resolution[] final_resolutions;
+
     string main_menu_scene;
     GameObject last_button;
     DialogueRunner diaRun;
@@ -55,20 +59,46 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
     	main_menu_scene = "TitleScreen";
-        
-        reso = Screen.resolutions;
+
+        // get the quotient ratio of 1920 x 1080 resolutions for comparisons later
+        float reso_temp = 1920f / 1080f;
+
+        all_resolutions = Screen.resolutions;
+        List<Resolution> selected_resolutions = new List<Resolution>();
         reso_dropdown.ClearOptions();
         int curr_reso = 0;
         List<string> reso_options = new List<string>();
-        for(int i = 0; i < reso.Length; i++)
+        for(int i = 0; i < all_resolutions.Length; i++)
         {
         	
-        	string reso_option = reso[i].width + " x " + reso[i].height + ", " + reso[i].refreshRate + "hz";
-        	reso_options.Add(reso_option);
+        	string reso_option = all_resolutions[i].width + " x " + all_resolutions[i].height + ", " + all_resolutions[i].refreshRate + "hz";
 
-        	if(reso[i].width == Screen.width && reso[i].height == Screen.height){
+            // For Debugging, seeing current resolution ratio
+            // Debug.Log((float)all_resolutions[i].width / (float)all_resolutions[i].height);
+
+            if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) != reso_temp)){
+                continue;
+            }
+
+            if(all_resolutions[i].refreshRate > 60 || all_resolutions[i].refreshRate < 59){
+                continue;
+            }
+
+            selected_resolutions.Add(all_resolutions[i]);
+            reso_options.Add(reso_option);
+
+        	if(all_resolutions[i].width == Screen.width && all_resolutions[i].height == Screen.height){
         		curr_reso = i;
-        	}
+        	}else{
+                curr_reso = 2;
+            }
+        }
+
+        // do this whack ass conversion bc the list wasn't working
+        final_resolutions = new Resolution[selected_resolutions.Count];
+        for(int i = 0; i < selected_resolutions.Count; i++)
+        {
+            final_resolutions[i] = selected_resolutions[i];
         }
 
         reso_dropdown.AddOptions(reso_options);
@@ -223,8 +253,8 @@ public class PauseMenu : MonoBehaviour
 
     public void set_reso(int reso_index)
     {
-    	Resolution reso_t = reso[reso_index];
-    	Screen.SetResolution(reso_t.width, reso_t.height, Screen.fullScreen);
+    	Resolution new_reso = final_resolutions[reso_index];
+    	Screen.SetResolution(new_reso.width, new_reso.height, Screen.fullScreen);
     }
 
     public void set_full(bool is_full)
