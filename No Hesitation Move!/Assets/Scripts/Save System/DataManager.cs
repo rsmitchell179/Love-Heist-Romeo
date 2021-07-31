@@ -53,6 +53,9 @@ public class DataManager : MonoBehaviour
         	GlobalVars.has_seen_card[i] = false;
         }
 
+        // GlobalVars.curr_resolution = 0;
+        // GlobalVars.boot_resolution = false;
+
         // PlayerPrefs.DeleteAll();
     }
 
@@ -81,17 +84,10 @@ public class DataManager : MonoBehaviour
 	    	// GlobalVars.chapVIIISeen = new_data.chapVIIISeen;
 	    	// GlobalVars.chapVSeen = new_data.chapVSeen;
 
+            GlobalVars.curr_resolution = new_data.curr_resolution;
+            GlobalVars.boot_resolution = new_data.boot_resolution;
+            
 	        SceneManager.LoadScene(new_data.scene);
-
-	        // Vector3 load_position = new Vector3(new_data.position[0], new_data.position[1], new_data.position[2]);
-	        // transform.position = load_position;
-
-	        // GlobalVars.recur_array.Add(new_data.recur_array[0]);
-	        // GlobalVars.recur_array.Add(new_data.recur_array[1]);
-	        // GlobalVars.recur_array.Add(new_data.recur_array[2]);
-	        // GlobalVars.recur_array.Add(new_data.recur_array[3]);
-	        // GlobalVars.recur_array.Add(new_data.recur_array[4]);
-	        // GlobalVars.recur_array.Add(new_data.recur_array[5]);
 	    }
 	    else
 	    {

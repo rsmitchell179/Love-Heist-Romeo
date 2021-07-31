@@ -37,6 +37,7 @@ public class PauseMenu : MonoBehaviour
     List<string> reso_options;
     List<Resolution> selected_resolutions;
     Resolution[] final_resolutions;
+    int curr_resolution;
 
     string main_menu_scene;
     GameObject last_button;
@@ -49,6 +50,7 @@ public class PauseMenu : MonoBehaviour
 
     void Awake()
     {
+        Debug.Log(GlobalVars.boot_resolution);
     	pause_menu.SetActive(false);
     	settings_menu.SetActive(false);
         diaRun = FindObjectOfType<DialogueRunner>();
@@ -66,14 +68,13 @@ public class PauseMenu : MonoBehaviour
         all_resolutions = Screen.resolutions;
         List<Resolution> selected_resolutions = new List<Resolution>();
         reso_dropdown.ClearOptions();
-        int curr_reso = 0;
+        curr_resolution = GlobalVars.curr_resolution;
         List<string> reso_options = new List<string>();
         for(int i = 0; i < all_resolutions.Length; i++)
         {
-        	
         	string reso_option = all_resolutions[i].width + " x " + all_resolutions[i].height + ", " + all_resolutions[i].refreshRate + "hz";
 
-            // For Debugging, seeing current resolution ratio
+            /* For Debugging, seeing current resolution ratio */
             // Debug.Log((float)all_resolutions[i].width / (float)all_resolutions[i].height);
 
             if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) != reso_temp)){
@@ -87,14 +88,16 @@ public class PauseMenu : MonoBehaviour
             selected_resolutions.Add(all_resolutions[i]);
             reso_options.Add(reso_option);
 
-        	if(all_resolutions[i].width == Screen.width && all_resolutions[i].height == Screen.height){
-        		curr_reso = i;
-        	}else{
-                curr_reso = 2;
-            }
+             
+            /* commented out this bit of code because the resolution keeps getting reset. */
+        	// if(final_resolutions[i].width == Screen.width && final_resolutions[i].height == Screen.height){
+        	// 	curr_resolution = i;
+        	// }else{
+         //        curr_resolution = 2;
+         //    }
         }
 
-        // do this whack ass conversion bc the list wasn't working
+        /* do this whack ass conversion bc the list wasn't working */
         final_resolutions = new Resolution[selected_resolutions.Count];
         for(int i = 0; i < selected_resolutions.Count; i++)
         {
@@ -102,7 +105,7 @@ public class PauseMenu : MonoBehaviour
         }
 
         reso_dropdown.AddOptions(reso_options);
-        reso_dropdown.value = curr_reso;
+        reso_dropdown.value = curr_resolution;
         reso_dropdown.RefreshShownValue();
         
         float set_m_volume = PlayerPrefs.GetFloat("music_volume");
@@ -255,6 +258,7 @@ public class PauseMenu : MonoBehaviour
     {
     	Resolution new_reso = final_resolutions[reso_index];
     	Screen.SetResolution(new_reso.width, new_reso.height, Screen.fullScreen);
+        GlobalVars.curr_resolution = reso_index;
     }
 
     public void set_full(bool is_full)

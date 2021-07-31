@@ -23,7 +23,9 @@ public class SaveData
     public bool rc_hasCollect;
     public bool rc_has_spoken;
     public bool rc_has_seen_fade;
-    public static bool[] has_seen_card;
+    public bool[] has_seen_card;
+    public bool boot_resolution;
+    public int curr_resolution;
 
     public SaveData()
     {
@@ -58,6 +60,9 @@ public class SaveData
         has_seen_card[1] = GlobalVars.has_seen_card[1];
         has_seen_card[2] = GlobalVars.has_seen_card[2];
         has_seen_card[3] = GlobalVars.has_seen_card[3];
+
+        boot_resolution = GlobalVars.boot_resolution;
+        curr_resolution = GlobalVars.curr_resolution;
   //   	for(int i = 0; i < 6; i++)
 		// {
 		// 	Debug.Log("saved array index " + i + " is " + recur_array[i]);
