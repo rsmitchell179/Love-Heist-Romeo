@@ -53,9 +53,6 @@ public class DataManager : MonoBehaviour
         	GlobalVars.has_seen_card[i] = false;
         }
 
-        // GlobalVars.curr_resolution = 0;
-        // GlobalVars.boot_resolution = false;
-
         // PlayerPrefs.DeleteAll();
     }
 
@@ -83,9 +80,6 @@ public class DataManager : MonoBehaviour
 	    	// GlobalVars.chapIISeen = new_data.chapIISeen;
 	    	// GlobalVars.chapVIIISeen = new_data.chapVIIISeen;
 	    	// GlobalVars.chapVSeen = new_data.chapVSeen;
-
-            GlobalVars.curr_resolution = new_data.curr_resolution;
-            GlobalVars.boot_resolution = new_data.boot_resolution;
             
 	        SceneManager.LoadScene(new_data.scene);
 	    }

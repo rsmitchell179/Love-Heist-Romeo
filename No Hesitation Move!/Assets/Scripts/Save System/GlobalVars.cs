@@ -60,8 +60,6 @@ public class GlobalVars : MonoBehaviour
     public static bool chapIISeen;
     public static bool chapVIIISeen;
     public static bool chapVSeen;
-    public static bool boot_resolution;
-    public static int curr_resolution;
 
 	// test print, check if array stuff is being added
 	

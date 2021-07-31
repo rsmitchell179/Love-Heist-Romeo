@@ -61,8 +61,6 @@ public class SaveData
         has_seen_card[2] = GlobalVars.has_seen_card[2];
         has_seen_card[3] = GlobalVars.has_seen_card[3];
 
-        boot_resolution = GlobalVars.boot_resolution;
-        curr_resolution = GlobalVars.curr_resolution;
   //   	for(int i = 0; i < 6; i++)
 		// {
 		// 	Debug.Log("saved array index " + i + " is " + recur_array[i]);

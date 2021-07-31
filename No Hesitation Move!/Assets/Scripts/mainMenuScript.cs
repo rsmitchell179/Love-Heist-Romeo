@@ -36,62 +36,51 @@ public class mainMenuScript : MonoBehaviour {
     public AudioMixer music_mix;
     public AudioMixer sfx_mix;
 
+    [Header("Sliders")]
     public Slider m_slider;
     public Slider s_slider;
+
+    [Header("Dropdown")]
+    public TMPro.TMP_Dropdown reso_dropdown;
     Resolution[] all_resolutions;
     List<string> reso_options;
     List<Resolution> selected_resolutions;
     Resolution[] final_resolutions;
-    public TMPro.TMP_Dropdown reso_dropdown;
     int curr_resolution;
 
     void Awake()
     {
-        Debug.Log(GlobalVars.boot_resolution);
-        if(GlobalVars.boot_resolution == false)
-        {
-            Debug.Log("here");
-            GlobalVars.curr_resolution = 2;
-            GlobalVars.boot_resolution = true;
-            Debug.Log(GlobalVars.boot_resolution);
-        }
+        curr_resolution = PlayerPrefs.GetInt("dropdown_index");
+        // Debug.Log(curr_resolution);
     }
 
     // Start is called before the first frame update
     void Start() {
 
-        // get the quotient ratio of 1920 x 1080 resolutions for comparisons later
+        /* get the quotient ratio of 1920 x 1080 resolutions for comparisons later */
         float reso_temp = 1920f / 1080f;
 
         all_resolutions = Screen.resolutions;
         List<Resolution> selected_resolutions = new List<Resolution>();
         reso_dropdown.ClearOptions();
-        curr_resolution = GlobalVars.curr_resolution;
         List<string> reso_options = new List<string>();
         for(int i = 0; i < all_resolutions.Length; i++)
         {
             string reso_option = all_resolutions[i].width + " x " + all_resolutions[i].height + ", " + all_resolutions[i].refreshRate + "hz";
 
-            // For Debugging, seeing current resolution ratio
+            /* For Debugging, seeing current resolution ratio */
             // Debug.Log((float)all_resolutions[i].width / (float)all_resolutions[i].height);
 
             if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) != reso_temp)){
                 continue;
             }
 
-            if(all_resolutions[i].refreshRate > 60 || all_resolutions[i].refreshRate < 59){
+            if(all_resolutions[i].refreshRate > 61 || all_resolutions[i].refreshRate < 59){
                 continue;
             }
 
             selected_resolutions.Add(all_resolutions[i]);
             reso_options.Add(reso_option);
-
-            /* commented out this bit of code because the resolution keeps getting reset. */
-            // if(final_resolutions[i].width == Screen.width && final_resolutions[i].height == Screen.height){
-            //     curr_resolution = i;
-            // }else{
-            //     curr_resolution = 2;
-            // }
         }
 
         /* do this whack ass conversion bc the list wasn't working */
@@ -103,6 +92,8 @@ public class mainMenuScript : MonoBehaviour {
         }
 
         reso_dropdown.AddOptions(reso_options);
+
+        Debug.Log(curr_resolution);
         reso_dropdown.value = curr_resolution;
         reso_dropdown.RefreshShownValue();
         
@@ -219,7 +210,8 @@ public class mainMenuScript : MonoBehaviour {
     {
     	Resolution reso_t = final_resolutions[reso_index];
     	Screen.SetResolution(reso_t.width, reso_t.height, Screen.fullScreen);
-        GlobalVars.curr_resolution = reso_index;
+        PlayerPrefs.SetInt("dropdown_index", reso_index);
+        PlayerPrefs.Save();
     }
     public void set_full(bool is_full)
     {

@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour
     [Header("Is The Cursor Visible")]
     public bool cursor_visible = false;
 
+
     Resolution[] all_resolutions;
     List<string> reso_options;
     List<Resolution> selected_resolutions;
@@ -49,26 +50,30 @@ public class PauseMenu : MonoBehaviour
     public Slider s_slider;
 
     void Awake()
-    {
-        Debug.Log(GlobalVars.boot_resolution);
+    {   
+        /* Turn off canvases initially */
     	pause_menu.SetActive(false);
     	settings_menu.SetActive(false);
+
+        /* Find Yarnspinner stuff */ 
         diaRun = FindObjectOfType<DialogueRunner>();
         diaUI = FindObjectOfType<DialogueUI>();
         save_prompt_text.CrossFadeAlpha(0.0f, 0.0f, false);
+
+        curr_resolution = PlayerPrefs.GetInt("dropdown_index");
+        // Debug.Log(curr_resolution);
     }
 
     void Start()
     {
     	main_menu_scene = "TitleScreen";
 
-        // get the quotient ratio of 1920 x 1080 resolutions for comparisons later
+        /* get the quotient ratio of 1920 x 1080 resolutions for comparisons later */
         float reso_temp = 1920f / 1080f;
 
         all_resolutions = Screen.resolutions;
         List<Resolution> selected_resolutions = new List<Resolution>();
         reso_dropdown.ClearOptions();
-        curr_resolution = GlobalVars.curr_resolution;
         List<string> reso_options = new List<string>();
         for(int i = 0; i < all_resolutions.Length; i++)
         {
@@ -81,20 +86,12 @@ public class PauseMenu : MonoBehaviour
                 continue;
             }
 
-            if(all_resolutions[i].refreshRate > 60 || all_resolutions[i].refreshRate < 59){
+            if(all_resolutions[i].refreshRate > 61 || all_resolutions[i].refreshRate < 59){
                 continue;
             }
 
             selected_resolutions.Add(all_resolutions[i]);
             reso_options.Add(reso_option);
-
-             
-            /* commented out this bit of code because the resolution keeps getting reset. */
-        	// if(final_resolutions[i].width == Screen.width && final_resolutions[i].height == Screen.height){
-        	// 	curr_resolution = i;
-        	// }else{
-         //        curr_resolution = 2;
-         //    }
         }
 
         /* do this whack ass conversion bc the list wasn't working */
@@ -256,9 +253,10 @@ public class PauseMenu : MonoBehaviour
 
     public void set_reso(int reso_index)
     {
-    	Resolution new_reso = final_resolutions[reso_index];
-    	Screen.SetResolution(new_reso.width, new_reso.height, Screen.fullScreen);
-        GlobalVars.curr_resolution = reso_index;
+    	Resolution reso_t = final_resolutions[reso_index];
+        Screen.SetResolution(reso_t.width, reso_t.height, Screen.fullScreen);
+        PlayerPrefs.SetInt("dropdown_index", reso_index);
+        PlayerPrefs.Save();
     }
 
     public void set_full(bool is_full)
