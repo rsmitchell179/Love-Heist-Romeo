@@ -57,8 +57,9 @@ public class mainMenuScript : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
 
-        /* get the quotient ratio of 1920 x 1080 resolutions for comparisons later */
-        float reso_temp = 1920f / 1080f;
+        /* get the aspect ratios for filtering */
+        float reso_1 = 16f / 9f;
+        float reso_2 = 16f / 10f;
 
         all_resolutions = Screen.resolutions;
         List<Resolution> selected_resolutions = new List<Resolution>();
@@ -71,7 +72,17 @@ public class mainMenuScript : MonoBehaviour {
             /* For Debugging, seeing current resolution ratio */
             // Debug.Log((float)all_resolutions[i].width / (float)all_resolutions[i].height);
 
-            if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) != reso_temp)){
+            if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) == reso_1)){
+                selected_resolutions.Add(all_resolutions[i]);
+                reso_options.Add(reso_option);
+            }
+            else if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) == reso_2))
+            {
+                selected_resolutions.Add(all_resolutions[i]);
+                reso_options.Add(reso_option);
+            }
+            else
+            {
                 continue;
             }
 
@@ -79,8 +90,8 @@ public class mainMenuScript : MonoBehaviour {
             //     continue;
             // }
 
-            selected_resolutions.Add(all_resolutions[i]);
-            reso_options.Add(reso_option);
+            // selected_resolutions.Add(all_resolutions[i]);
+            // reso_options.Add(reso_option);
         }
 
         /* do this whack ass conversion bc the list wasn't working */
