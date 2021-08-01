@@ -217,6 +217,7 @@ public class PauseMenu : MonoBehaviour
     	is_paused = true;
     	p_move.enabled = false;
     	Time.timeScale = 0f;
+        save_prompt_text.CrossFadeAlpha(0.0f, 0.0f, false);
         // diaUI.DialogueComplete();
         // diaRun.Stop();
     }
