@@ -18,30 +18,6 @@ public class GlobalVars : MonoBehaviour
 	// bool to check once if list has been instantiated
 	public static bool has_run;
 
-	// list for keeping bools
-	// public static List<bool> recur_array;
-
-	// function to add indices into list, once
-	// aka the start, but not actually, but also is
-	// public static void recur_array_start()
-	// {
-	// 	if(has_run != true){
-	// 		// recur_array = new List<bool>();
-	// 		// recur_array.Add(false);
-	// 		// recur_array.Add(false);
-	// 		// recur_array.Add(false);
-	// 		// recur_array.Add(false);
-	// 		// recur_array.Add(false);
-	// 		// recur_array.Add(false);
-
-	// 		for(int i = 0; i < 6; i++)
-	// 		{
-	// 			recur_array[i] = false;
-	// 		}
-	// 		has_run = true;
-	// 	}
-	// }
-
 	public static string curr_scene;
 	public static int[] recur_array = new int[6];
 	public static float[] position = new float[3];

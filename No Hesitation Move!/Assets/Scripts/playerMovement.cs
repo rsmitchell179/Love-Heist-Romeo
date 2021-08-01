@@ -156,6 +156,13 @@ public class playerMovement : MonoBehaviour
         {
             body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
         }
+
+        if(Input.GetKeyDown(KeyCode.Equals))
+        {
+            PlayerPrefs.DeleteKey("dropdown_index");
+            int print_pref = PlayerPrefs.GetInt("dropdown_index");
+            Debug.Log("dropdown_index is now " + print_pref);
+        }
     }
 
     void FixedUpdate()

@@ -50,8 +50,8 @@ public class mainMenuScript : MonoBehaviour {
 
     void Awake()
     {
-        curr_resolution = PlayerPrefs.GetInt("dropdown_index");
-        // Debug.Log(curr_resolution);
+        curr_resolution = PlayerPrefs.GetInt("dropdown_index", 2);
+        Debug.Log("curr_resolution is now " + curr_resolution);
     }
 
     // Start is called before the first frame update
@@ -75,9 +75,9 @@ public class mainMenuScript : MonoBehaviour {
                 continue;
             }
 
-            if(all_resolutions[i].refreshRate > 61 || all_resolutions[i].refreshRate < 59){
-                continue;
-            }
+            // if(all_resolutions[i].refreshRate > 61 || all_resolutions[i].refreshRate < 59){
+            //     continue;
+            // }
 
             selected_resolutions.Add(all_resolutions[i]);
             reso_options.Add(reso_option);

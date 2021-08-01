@@ -61,7 +61,7 @@ public class PauseMenu : MonoBehaviour
         save_prompt_text.CrossFadeAlpha(0.0f, 0.0f, false);
 
         curr_resolution = PlayerPrefs.GetInt("dropdown_index");
-        // Debug.Log(curr_resolution);
+        Debug.Log("curr_resolution is now " + curr_resolution);
     }
 
     void Start()
@@ -86,9 +86,9 @@ public class PauseMenu : MonoBehaviour
                 continue;
             }
 
-            if(all_resolutions[i].refreshRate > 61 || all_resolutions[i].refreshRate < 59){
-                continue;
-            }
+            // if(all_resolutions[i].refreshRate > 61 || all_resolutions[i].refreshRate < 59){
+            //     continue;
+            // }
 
             selected_resolutions.Add(all_resolutions[i]);
             reso_options.Add(reso_option);
