@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 26807978}
   - component: {fileID: 26807979}
   - component: {fileID: 26807981}
+  - component: {fileID: 26807980}
   m_Layer: 0
   m_Name: ftflower2_2
   m_TagString: Untagged
@@ -537,7 +538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 26807977}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.93, y: -6.47, z: 41.1139}
+  m_LocalPosition: {x: 3.93, y: -6.68, z: 41.1139}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -594,6 +595,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &26807980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26807977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &26807981
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2923,6 +2939,7 @@ GameObject:
   - component: {fileID: 139268301}
   - component: {fileID: 139268302}
   - component: {fileID: 139268304}
+  - component: {fileID: 139268303}
   m_Layer: 0
   m_Name: ftflower2_6
   m_TagString: Untagged
@@ -2938,7 +2955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139268300}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.79, y: -6.51, z: 41.1139}
+  m_LocalPosition: {x: -7.79, y: -6.7200003, z: 41.1139}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -2995,6 +3012,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &139268303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139268300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &139268304
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3363,6 +3395,7 @@ GameObject:
   - component: {fileID: 152018791}
   - component: {fileID: 152018792}
   - component: {fileID: 152018794}
+  - component: {fileID: 152018793}
   m_Layer: 0
   m_Name: ftflower
   m_TagString: Untagged
@@ -3378,7 +3411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152018790}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.25, y: 1.87, z: 20.55695}
+  m_LocalPosition: {x: -1.25, y: 1.66, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -3435,6 +3468,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &152018793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152018790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &152018794
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6200,6 +6248,7 @@ GameObject:
   - component: {fileID: 337667399}
   - component: {fileID: 337667401}
   - component: {fileID: 337667402}
+  - component: {fileID: 337667400}
   m_Layer: 0
   m_Name: ftflower_4
   m_TagString: Untagged
@@ -6215,12 +6264,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337667398}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.5, y: -7.8, z: 20.55695}
+  m_LocalPosition: {x: 4.5, y: -8.01, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &337667400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 337667398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!212 &337667401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6585,6 +6649,7 @@ GameObject:
   - component: {fileID: 354713445}
   - component: {fileID: 354713447}
   - component: {fileID: 354713448}
+  - component: {fileID: 354713446}
   m_Layer: 0
   m_Name: ftflower_5
   m_TagString: Untagged
@@ -6600,12 +6665,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354713444}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.9, y: 1.01, z: 20.55695}
+  m_LocalPosition: {x: 5.9, y: 0.79999995, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &354713446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354713444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!212 &354713447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12507,6 +12587,7 @@ GameObject:
   - component: {fileID: 606166424}
   - component: {fileID: 606166425}
   - component: {fileID: 606166427}
+  - component: {fileID: 606166426}
   m_Layer: 0
   m_Name: ftflower1_4
   m_TagString: Untagged
@@ -12522,7 +12603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 606166423}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.58, y: -13.73, z: 20.55695}
+  m_LocalPosition: {x: -2.58, y: -13.94, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -12579,6 +12660,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &606166426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606166423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &606166427
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12606,6 +12702,7 @@ GameObject:
   - component: {fileID: 622864744}
   - component: {fileID: 622864745}
   - component: {fileID: 622864747}
+  - component: {fileID: 622864746}
   m_Layer: 0
   m_Name: ftflower1
   m_TagString: Untagged
@@ -12621,7 +12718,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622864743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3635178, y: 1.2307653, z: 20.55695}
+  m_LocalPosition: {x: -5.3635178, y: 1.0207653, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -12678,6 +12775,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &622864746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622864743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &622864747
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12857,6 +12969,7 @@ GameObject:
   - component: {fileID: 640307156}
   - component: {fileID: 640307157}
   - component: {fileID: 640307159}
+  - component: {fileID: 640307158}
   m_Layer: 0
   m_Name: ftflower_3
   m_TagString: Untagged
@@ -12872,7 +12985,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640307155}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.37, y: -1.93, z: 20.55695}
+  m_LocalPosition: {x: 0.37, y: -2.1399999, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -12929,6 +13042,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &640307158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 640307155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &640307159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15294,6 +15422,7 @@ GameObject:
   - component: {fileID: 786004761}
   - component: {fileID: 786004762}
   - component: {fileID: 786004764}
+  - component: {fileID: 786004763}
   m_Layer: 0
   m_Name: ftflower2
   m_TagString: Untagged
@@ -15309,7 +15438,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 786004760}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.16, y: -8.44, z: 41.1139}
+  m_LocalPosition: {x: -3.16, y: -8.65, z: 41.1139}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -15366,6 +15495,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &786004763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786004760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &786004764
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -18860,6 +19004,7 @@ GameObject:
   - component: {fileID: 993561726}
   - component: {fileID: 993561727}
   - component: {fileID: 993561729}
+  - component: {fileID: 993561728}
   m_Layer: 0
   m_Name: ftflower1_2
   m_TagString: Untagged
@@ -18875,7 +19020,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993561725}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.28, y: 1.65, z: 20.55695}
+  m_LocalPosition: {x: 5.28, y: 1.4399999, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -18932,6 +19077,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &993561728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993561725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &993561729
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20134,6 +20294,7 @@ GameObject:
   - component: {fileID: 1079049860}
   - component: {fileID: 1079049861}
   - component: {fileID: 1079049863}
+  - component: {fileID: 1079049862}
   m_Layer: 0
   m_Name: ftflower1_5
   m_TagString: Untagged
@@ -20149,7 +20310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079049859}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.08, y: -10.34, z: 20.55695}
+  m_LocalPosition: {x: -5.08, y: -10.55, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -20206,6 +20367,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1079049862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079049859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1079049863
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -23963,6 +24139,7 @@ GameObject:
   - component: {fileID: 1277323019}
   - component: {fileID: 1277323020}
   - component: {fileID: 1277323022}
+  - component: {fileID: 1277323021}
   m_Layer: 0
   m_Name: ftflower2_4
   m_TagString: Untagged
@@ -23978,7 +24155,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277323018}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.16, y: -8.44, z: 41.1139}
+  m_LocalPosition: {x: -3.16, y: -8.65, z: 41.1139}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -24035,6 +24212,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1277323021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277323018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1277323022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26084,6 +26276,7 @@ GameObject:
   - component: {fileID: 1370195825}
   - component: {fileID: 1370195826}
   - component: {fileID: 1370195828}
+  - component: {fileID: 1370195827}
   m_Layer: 0
   m_Name: ftflower_2
   m_TagString: Untagged
@@ -26099,7 +26292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370195824}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.981518, y: 0.25176525, z: 20.55695}
+  m_LocalPosition: {x: -5.981518, y: 0.041765213, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -26156,6 +26349,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1370195827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370195824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1370195828
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26318,6 +26526,7 @@ GameObject:
   - component: {fileID: 1371607261}
   - component: {fileID: 1371607262}
   - component: {fileID: 1371607264}
+  - component: {fileID: 1371607263}
   m_Layer: 0
   m_Name: ftflower1_6
   m_TagString: Untagged
@@ -26333,7 +26542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1371607260}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.14, y: -5.77, z: 20.55695}
+  m_LocalPosition: {x: -8.14, y: -5.98, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -26390,6 +26599,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1371607263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371607260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1371607264
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -28173,6 +28397,7 @@ GameObject:
   - component: {fileID: 1490880525}
   - component: {fileID: 1490880526}
   - component: {fileID: 1490880528}
+  - component: {fileID: 1490880527}
   m_Layer: 0
   m_Name: ftflower2_1
   m_TagString: Untagged
@@ -28188,7 +28413,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490880524}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.338, y: -11.902, z: 41.1139}
+  m_LocalPosition: {x: 3.338, y: -12.112, z: 41.1139}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -28245,6 +28470,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1490880527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490880524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1490880528
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -31223,6 +31463,7 @@ GameObject:
   - component: {fileID: 1624689715}
   - component: {fileID: 1624689716}
   - component: {fileID: 1624689718}
+  - component: {fileID: 1624689717}
   m_Layer: 0
   m_Name: ftflower2_5
   m_TagString: Untagged
@@ -31238,7 +31479,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624689714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.44, y: -2.55, z: 41.1139}
+  m_LocalPosition: {x: -0.44, y: -2.76, z: 41.1139}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -31295,6 +31536,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1624689717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624689714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1624689718
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -32864,6 +33120,7 @@ GameObject:
   - component: {fileID: 1713981920}
   - component: {fileID: 1713981921}
   - component: {fileID: 1713981923}
+  - component: {fileID: 1713981922}
   m_Layer: 0
   m_Name: ftflower1_1
   m_TagString: Untagged
@@ -32879,7 +33136,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713981919}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.097, y: -1.974, z: 20.55695}
+  m_LocalPosition: {x: -1.097, y: -2.184, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -32936,6 +33193,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1713981922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713981919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1713981923
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36809,6 +37081,7 @@ GameObject:
   - component: {fileID: 1902718848}
   - component: {fileID: 1902718849}
   - component: {fileID: 1902718851}
+  - component: {fileID: 1902718850}
   m_Layer: 0
   m_Name: ftflower2_3
   m_TagString: Untagged
@@ -36824,7 +37097,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902718847}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.6, y: 2.04, z: 41.1139}
+  m_LocalPosition: {x: 4.6, y: 1.8299999, z: 41.1139}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -36881,6 +37154,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1902718850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902718847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &1902718851
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39467,6 +39755,7 @@ GameObject:
   - component: {fileID: 2064128839}
   - component: {fileID: 2064128840}
   - component: {fileID: 2064128842}
+  - component: {fileID: 2064128841}
   m_Layer: 0
   m_Name: ftflower1_3
   m_TagString: Untagged
@@ -39482,7 +39771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064128838}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.07, y: -7.69, z: 20.55695}
+  m_LocalPosition: {x: 3.07, y: -7.9, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -39539,6 +39828,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2064128841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064128838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &2064128842
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39566,6 +39870,7 @@ GameObject:
   - component: {fileID: 2064395044}
   - component: {fileID: 2064395045}
   - component: {fileID: 2064395047}
+  - component: {fileID: 2064395046}
   m_Layer: 0
   m_Name: ftflower_1
   m_TagString: Untagged
@@ -39581,7 +39886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2064395043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.71, y: 1.85, z: 20.55695}
+  m_LocalPosition: {x: 1.71, y: 1.64, z: 20.55695}
   m_LocalScale: {x: 0.25065213, y: 0.25065213, z: 0.25065213}
   m_Children: []
   m_Father: {fileID: 1757307150}
@@ -39638,6 +39943,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2064395046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064395043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: NPC_Behind
+  above_layer: NPC_Above
+  player: {fileID: 0}
 --- !u!58 &2064395047
 CircleCollider2D:
   m_ObjectHideFlags: 0
