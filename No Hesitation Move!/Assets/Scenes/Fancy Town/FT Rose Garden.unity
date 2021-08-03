@@ -139,12 +139,10 @@ GameObject:
   m_Component:
   - component: {fileID: 13920585}
   - component: {fileID: 13920586}
-  - component: {fileID: 13920587}
   - component: {fileID: 13920589}
-  - component: {fileID: 13920588}
   - component: {fileID: 13920590}
   m_Layer: 0
-  m_Name: gardenhedge_2
+  m_Name: flower_fountain_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,7 +160,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 734546021}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &13920586
 SpriteRenderer:
@@ -202,7 +200,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fe4913433b40e6f4593d5010420025d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -215,40 +213,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &13920587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13920584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: -1
-  runOnlyOnce: 1
---- !u!114 &13920588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13920584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0.3
-  x_offset: 2
-  transparent: 0.5
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!114 &13920589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,7 +374,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1025404899
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: -6403409044798937774, guid: 284f7c2544be7574e90b0a4c3937edaf,
     type: 3}
@@ -436,7 +400,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &17924840
 MonoBehaviour:
@@ -962,12 +926,13 @@ MonoBehaviour:
   bubble_2: {fileID: 919855803}
   ui_text_1: {fileID: 647775856}
   ui_text_2: {fileID: 304450702}
-  actual_text_1: The tea and gossip there is always splendid.
-  actual_text_2: "Wonder what story we\u2019ll hear next time?"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1601691503}
   db_2: {fileID: 53741665}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!1 &100004067
@@ -1321,7 +1286,7 @@ Transform:
   m_LocalScale: {x: 0.6573083, y: 0.4816255, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140757910 stripped
 GameObject:
@@ -1860,12 +1825,10 @@ GameObject:
   m_Component:
   - component: {fileID: 207551025}
   - component: {fileID: 207551026}
-  - component: {fileID: 207551027}
   - component: {fileID: 207551029}
-  - component: {fileID: 207551028}
   - component: {fileID: 207551030}
   m_Layer: 0
-  m_Name: gardenhedge_4
+  m_Name: flower_fountain_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1883,7 +1846,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 734546021}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &207551026
 SpriteRenderer:
@@ -1923,7 +1886,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fe4913433b40e6f4593d5010420025d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1936,40 +1899,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &207551027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207551024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: -1
-  runOnlyOnce: 1
---- !u!114 &207551028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207551024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0.3
-  x_offset: 2
-  transparent: 0.5
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!114 &207551029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2197,7 +2126,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1653710801
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: -2300924297826145781, guid: 609b996bc617e0f48bcae2e1fca30b64,
     type: 3}
@@ -2224,7 +2153,7 @@ Transform:
   m_Children:
   - {fileID: 756110450}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &267800486
 GameObject:
@@ -3219,12 +3148,10 @@ GameObject:
   m_Component:
   - component: {fileID: 379150590}
   - component: {fileID: 379150591}
-  - component: {fileID: 379150592}
   - component: {fileID: 379150594}
-  - component: {fileID: 379150593}
   - component: {fileID: 379150595}
   m_Layer: 0
-  m_Name: gardenhedge_3
+  m_Name: flower_fountain_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3242,7 +3169,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 734546021}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &379150591
 SpriteRenderer:
@@ -3282,7 +3209,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fe4913433b40e6f4593d5010420025d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3295,40 +3222,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &379150592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379150589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: -1
-  runOnlyOnce: 1
---- !u!114 &379150593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379150589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0.3
-  x_offset: 2
-  transparent: 0.5
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!114 &379150594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4038,7 +3931,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1653710801
-  m_SortingLayer: 7
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 4545271154909214045, guid: f58be977e51a02843b18a7ebd347f1f4,
     type: 3}
@@ -4065,7 +3958,7 @@ Transform:
   m_Children:
   - {fileID: 1329500890}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513859744
 GameObject:
@@ -4494,7 +4387,7 @@ GameObject:
   - component: {fileID: 546806500}
   - component: {fileID: 546806501}
   m_Layer: 0
-  m_Name: RoseGardenBase_1
+  m_Name: base_rose_garden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4508,11 +4401,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 546806499}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.023349762, y: 0.5962498, z: 0}
+  m_LocalPosition: {x: -6.50335, y: 2.5162497, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 877000695}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &546806501
 SpriteRenderer:
@@ -4662,7 +4555,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1025404899
-  m_SortingLayer: 8
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_Sprite: {fileID: 8363343527858019882, guid: e8dad0f26f18e504d9ec951aed103335,
     type: 3}
@@ -5884,12 +5777,13 @@ MonoBehaviour:
   bubble_2: {fileID: 869671417}
   ui_text_1: {fileID: 1990401297}
   ui_text_2: {fileID: 304450702}
-  actual_text_1: They say the flow of water soothes the soul.
-  actual_text_2: Really? Because money does the trick for me!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1473186074}
   db_2: {fileID: 1036945872}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &612068660
@@ -6904,7 +6798,7 @@ Transform:
   - {fileID: 381267939}
   - {fileID: 1551571363}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &733865388
 PrefabInstance:
@@ -6926,7 +6820,7 @@ PrefabInstance:
     - target: {fileID: 2342667100794626274, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 2342667100794626274, guid: 615f7e7cae6f75e48a54864267a9ae9e,
         type: 3}
@@ -7089,13 +6983,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 734546021}
-  - component: {fileID: 734546022}
-  - component: {fileID: 734546023}
-  - component: {fileID: 734546025}
-  - component: {fileID: 734546024}
   - component: {fileID: 734546026}
   m_Layer: 0
-  m_Name: gardenhedge
+  m_Name: flower_fountains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7109,9 +6999,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734546020}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.0099983, y: 4.21, z: 0}
+  m_LocalPosition: {x: 5.99, y: 4.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1090133452}
   - {fileID: 2008115241}
   - {fileID: 13920585}
   - {fileID: 379150590}
@@ -7120,106 +7011,6 @@ Transform:
   m_Father: {fileID: 877000695}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &734546022
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734546020}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fe4913433b40e6f4593d5010420025d1, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 4.8, y: 4.8}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!114 &734546023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734546020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: -1
-  runOnlyOnce: 1
---- !u!114 &734546024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734546020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0.3
-  x_offset: 2
-  transparent: 0.5
-  is_behind: 0
-  decor_script: {fileID: 0}
---- !u!114 &734546025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734546020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  behind_layer: Environment_Behind
-  above_layer: Environment_Above
-  player: {fileID: 0}
 --- !u!68 &734546026
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -7372,7 +7163,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 384280351
-  m_SortingLayer: 12
+  m_SortingLayer: 14
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 89348cadab1f30f4eacbcbef066ef8e3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -7399,6 +7190,88 @@ Transform:
   m_Father: {fileID: 237195585}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &760738759
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760738760}
+  - component: {fileID: 760738761}
+  m_Layer: 0
+  m_Name: hedges
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &760738760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760738759}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 877000695}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &760738761
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760738759}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 704497355
+  m_SortingLayer: 3
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 04765487c4648a243a5fa8d8fa821459, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 34.52456, y: 26.18}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &805924455
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8367,67 +8240,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 877000695}
-  - component: {fileID: 877000694}
   - component: {fileID: 877000696}
   - component: {fileID: 877000697}
   m_Layer: 0
-  m_Name: RoseGarden-MansionHedge
+  m_Name: decor_rose_garden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!212 &877000694
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 877000693}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 704497355
-  m_SortingLayer: 3
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 04765487c4648a243a5fa8d8fa821459, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 34.52456, y: 26.18}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!4 &877000695
 Transform:
   m_ObjectHideFlags: 0
@@ -8439,11 +8260,11 @@ Transform:
   m_LocalPosition: {x: -6.48, y: 1.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 546806500}
+  - {fileID: 760738760}
   - {fileID: 1851215527}
   - {fileID: 734546021}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &877000696
 EdgeCollider2D:
@@ -8788,14 +8609,15 @@ MonoBehaviour:
   ui_text_1: {fileID: 0}
   ui_text_2: {fileID: 0}
   ui_text_3: {fileID: 0}
-  actual_text_1: A fine hedge, a mighty fine hedge indeed!
-  actual_text_2: "I always thought these were called shrubs\u2026"
-  actual_text_3: "Oh, please! Fancy folk don\u2019t have shrubs!"
+  curr_text_1: 
+  curr_text_2: 
+  curr_text_3: 
   db_1: {fileID: 2109441795}
   db_2: {fileID: 2018059893}
   db_3: {fileID: 1619374542}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
@@ -9132,7 +8954,7 @@ Transform:
   m_LocalScale: {x: 0.6573083, y: 0.4816255, z: 0.4}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -0.301, z: 0}
 --- !u!114 &939042331
 MonoBehaviour:
@@ -9762,10 +9584,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986963823}
-  - component: {fileID: 986963822}
   - component: {fileID: 986963821}
   m_Layer: 0
-  m_Name: green
+  m_Name: camera_bounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9784,7 +9605,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.4820967, y: -3.9817991}
+  m_Offset: {x: -2.3197927, y: -3.1342268}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9795,59 +9616,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 29.964193, y: 29.216002}
+  m_Size: {x: 26.249304, y: 27.160185}
   m_EdgeRadius: 0
---- !u!212 &986963822
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 986963820}
-  m_Enabled: 0
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f6f3c1d8f04a50b4cbea5d3a3c3eb772, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 25, y: 25}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!4 &986963823
 Transform:
   m_ObjectHideFlags: 0
@@ -9857,7 +9627,7 @@ Transform:
   m_GameObject: {fileID: 986963820}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.85, y: 5, z: 0}
-  m_LocalScale: {x: 0.9100941, y: 0.9278802, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -10988,6 +10758,154 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
+--- !u!1 &1090133451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1090133452}
+  - component: {fileID: 1090133456}
+  - component: {fileID: 1090133454}
+  - component: {fileID: 1090133453}
+  m_Layer: 0
+  m_Name: flower_fountain_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1090133452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090133451}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 734546021}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1090133453
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090133451}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0.09
+  m_Points:
+  - {x: 1.6492959, y: -0.9139156}
+  - {x: 1.6388961, y: -0.71781814}
+  - {x: 1.6545243, y: -0.48843336}
+  - {x: 1.5536529, y: -0.36384535}
+  - {x: 1.3197968, y: -0.23244083}
+  - {x: 0.7033395, y: -0.20720446}
+  - {x: 0.31347275, y: -0.19015479}
+  - {x: -0.28801444, y: -0.20077145}
+  - {x: -0.58528894, y: -0.22125876}
+  - {x: -0.9917592, y: -0.25914395}
+  - {x: -1.2332582, y: -0.31600356}
+  - {x: -1.4000782, y: -0.40247142}
+  - {x: -1.5017705, y: -0.5196518}
+  - {x: -1.5239394, y: -0.6559839}
+  - {x: -1.5270399, y: -0.89990246}
+  - {x: -1.6182609, y: -0.9616401}
+  - {x: -1.4146023, y: -1.0638983}
+  - {x: -1.2349914, y: -1.1561011}
+  - {x: -1.0119532, y: -1.2551812}
+  - {x: -0.766675, y: -1.3174274}
+  - {x: -0.5120299, y: -1.377668}
+  - {x: -0.24706519, y: -1.3983424}
+  - {x: 0.04088117, y: -1.3985381}
+  - {x: 0.3557242, y: -1.3770852}
+  - {x: 0.65902627, y: -1.3444215}
+  - {x: 0.956848, y: -1.2861054}
+  - {x: 1.2041806, y: -1.202352}
+  - {x: 1.47286, y: -1.0832493}
+  - {x: 1.7192608, y: -0.9680292}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
+--- !u!114 &1090133454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090133451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80c442a41be712d4b9f97872525dc005, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  behind_layer: Environment_Behind
+  above_layer: Environment_Above
+  player: {fileID: 0}
+--- !u!212 &1090133456
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1090133451}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1585438017
+  m_SortingLayer: 7
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: fe4913433b40e6f4593d5010420025d1, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 4.8, y: 4.8}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1096242099
 GameObject:
   m_ObjectHideFlags: 0
@@ -11038,12 +10956,13 @@ MonoBehaviour:
   bubble_2: {fileID: 412081675}
   ui_text_1: {fileID: 647775856}
   ui_text_2: {fileID: 1990401297}
-  actual_text_1: Ring around the rosie, pricey coats are cozy.
-  actual_text_2: "Cashin\u2019 to cashin\u2019, they all get bought!"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 2047392773}
   db_2: {fileID: 906845373}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1096242102
@@ -11404,12 +11323,13 @@ MonoBehaviour:
   bubble_2: {fileID: 437506068}
   ui_text_1: {fileID: 647775856}
   ui_text_2: {fileID: 304450702}
-  actual_text_1: So lush and so green! I can admire this garden all day!
-  actual_text_2: "That\u2019s literally all we do!"
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 963563795}
   db_2: {fileID: 1016557373}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1132934815
@@ -13153,12 +13073,13 @@ MonoBehaviour:
   bubble_2: {fileID: 1643188825}
   ui_text_1: {fileID: 647775856}
   ui_text_2: {fileID: 304450702}
-  actual_text_1: What a well-kept garden!
-  actual_text_2: Are we actually going in this time?
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 861819481}
   db_2: {fileID: 990758724}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1279937516
@@ -13895,6 +13816,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7835999688584816140, guid: 79f662bfd16925c439168db951dde744,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42.399902
+      objectReference: {fileID: 0}
     - target: {fileID: 7835999688933678913, guid: 79f662bfd16925c439168db951dde744,
         type: 3}
       propertyPath: m_Pivot.x
@@ -13908,7 +13834,7 @@ PrefabInstance:
     - target: {fileID: 7835999688933678913, guid: 79f662bfd16925c439168db951dde744,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7835999688933678913, guid: 79f662bfd16925c439168db951dde744,
         type: 3}
@@ -14004,6 +13930,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'Orb Ui '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835999689271201921, guid: 79f662bfd16925c439168db951dde744,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42.399902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835999689699025337, guid: 79f662bfd16925c439168db951dde744,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42.399902
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79f662bfd16925c439168db951dde744, type: 3}
@@ -14989,7 +14925,7 @@ PrefabInstance:
     - target: {fileID: 4545725546041761554, guid: 1192951b297738b41b506e5540fd9ce4,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 4545725546041761554, guid: 1192951b297738b41b506e5540fd9ce4,
         type: 3}
@@ -15303,12 +15239,13 @@ MonoBehaviour:
   bubble_2: {fileID: 866811660}
   ui_text_1: {fileID: 304450702}
   ui_text_2: {fileID: 647775856}
-  actual_text_1: Why that bush could be a mirror image of you!
-  actual_text_2: Are you calling me bushy?
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1414462850}
   db_2: {fileID: 119282311}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!58 &1415488616
@@ -15764,12 +15701,13 @@ MonoBehaviour:
   bubble_2: {fileID: 2007869668}
   ui_text_1: {fileID: 1990401297}
   ui_text_2: {fileID: 304450702}
-  actual_text_1: I wonder what the shape of this bush represents?
-  actual_text_2: Let's write a paper on it, shall we?!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1973894937}
   db_2: {fileID: 1146818045}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!1 &1471046933
@@ -16178,7 +16116,7 @@ PrefabInstance:
     - target: {fileID: 2238729598728178173, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 2238729598728178173, guid: 62c1d4f54e09f284b8ec3262624f9260,
         type: 3}
@@ -16881,7 +16819,7 @@ PrefabInstance:
     - target: {fileID: 8081709650811904222, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8081709650811904222, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}
@@ -17497,12 +17435,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1575376193}
   - component: {fileID: 1575376194}
-  - component: {fileID: 1575376195}
   - component: {fileID: 1575376197}
-  - component: {fileID: 1575376196}
   - component: {fileID: 1575376198}
   m_Layer: 0
-  m_Name: gardenhedge_5
+  m_Name: flower_fountain_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17520,7 +17456,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 734546021}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1575376194
 SpriteRenderer:
@@ -17560,7 +17496,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fe4913433b40e6f4593d5010420025d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -17573,40 +17509,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1575376195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575376192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: -1
-  runOnlyOnce: 1
---- !u!114 &1575376196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575376192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0.3
-  x_offset: 2
-  transparent: 0.5
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!114 &1575376197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18739,7 +18641,7 @@ RectTransform:
   m_Children:
   - {fileID: 723242332}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -19515,12 +19417,13 @@ MonoBehaviour:
   bubble_2: {fileID: 100004069}
   ui_text_1: {fileID: 0}
   ui_text_2: {fileID: 0}
-  actual_text_1: "*chews petals* Please don\u2019t tell anyone."
-  actual_text_2: I can hear you chewing them!
+  curr_text_1: 
+  curr_text_2: 
   db_1: {fileID: 1191977197}
   db_2: {fileID: 369732244}
   current_text: 
   cam: {fileID: 153505154}
+  render_dialogue: 0
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
 --- !u!4 &1820316110 stripped
@@ -19677,7 +19580,7 @@ GameObject:
   - component: {fileID: 1851215528}
   - component: {fileID: 1851215529}
   m_Layer: 0
-  m_Name: gardenfountain
+  m_Name: garden_fountain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19735,7 +19638,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 54c046db94f1978498acfca962d49731, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -20937,12 +20840,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2008115241}
   - component: {fileID: 2008115242}
-  - component: {fileID: 2008115243}
   - component: {fileID: 2008115244}
-  - component: {fileID: 2008115245}
   - component: {fileID: 2008115246}
   m_Layer: 0
-  m_Name: gardenhedge_1
+  m_Name: flower_fountain_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20960,7 +20861,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 734546021}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2008115242
 SpriteRenderer:
@@ -21000,7 +20901,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fe4913433b40e6f4593d5010420025d1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21013,21 +20914,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2008115243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008115240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: -1
-  runOnlyOnce: 1
 --- !u!114 &2008115244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21043,25 +20929,6 @@ MonoBehaviour:
   behind_layer: Environment_Behind
   above_layer: Environment_Above
   player: {fileID: 0}
---- !u!114 &2008115245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2008115240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0.3
-  x_offset: 2
-  transparent: 0.5
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!68 &2008115246
 EdgeCollider2D:
   m_ObjectHideFlags: 0

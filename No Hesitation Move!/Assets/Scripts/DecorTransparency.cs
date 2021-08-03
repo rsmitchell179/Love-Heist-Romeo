@@ -4,82 +4,60 @@ using UnityEngine;
 
 public class DecorTransparency : MonoBehaviour
 {
+    [Header("Player")]
+    public GameObject player;
 
-	[Header("Player")]
-	public GameObject player;
+    [Header("Parent Object")]
+    public SpriteRenderer parent_obj;
 
-	[Header("Object Color")]
-	public Color new_color;
+    [Header("Transparency Levels")]
+    public Color transparent;
+    public Color opaque;
+    public float transparency_level;
+    private float fade_speed = 0.5f;
 
-	// public Vector3 player_pos;
-	[Header("Object Offset")]
-	public float y_offset;
-	public float x_offset;
-
-	[Header("Transparency Levels")]
-	public float transparent;
-	private float opaque = 1.0f;
-	private float fade_speed = 3.0f;
-	public bool is_behind;
-
-	[Header("Object's Layer")]
-	public DecorScript decor_script;
-
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        new_color = this.GetComponent<SpriteRenderer>().color;
         player = GameObject.FindWithTag("Player");
-        decor_script = this.GetComponent<DecorScript>();
+        parent_obj = this.transform.parent.GetComponent<SpriteRenderer>();
+        opaque = parent_obj.color;
+        transparent = new Color(opaque.r, opaque.g, opaque.b, transparency_level);
+
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        // float dist = Vector3.Distance(player.transform.position, this.transform.position);
-        float dist_y = player.transform.position.y;
-        float dist_x = player.transform.position.x;
-        // player_pos = player.transform.position;
-
-        if(
-        	this.GetComponent<SpriteRenderer>().bounds.min.y < dist_y - y_offset &&
-        	this.GetComponent<SpriteRenderer>().bounds.max.y > dist_y + y_offset &&
-        	this.GetComponent<SpriteRenderer>().bounds.min.x < dist_x - x_offset &&
-        	this.GetComponent<SpriteRenderer>().bounds.max.x > dist_x + x_offset &&
-			this.GetComponent<SpriteRenderer>().sortingLayerName == decor_script.above_layer)
-			
+        if(other.tag == "Player")
         {
-        	// new_color.a = Mathf.Lerp(opaque, transparent, Time.time);
-        	// this.GetComponent<SpriteRenderer>().color = new_color;
-        	// if(this.GetComponent<SpriteRenderer>().sortingLayerName == decor_script.above_layer){
-        		is_behind = true;
-        	// }
-        }
-        else
-        {
-        	is_behind = false;
-        	new_color.a = opaque;
-        	this.GetComponent<SpriteRenderer>().color = new_color;
-        	// StartCoroutine(grad_fade2());
-        }
-
-        if(is_behind == true)
-        {
-        	StartCoroutine(grad_fade(opaque, transparent));
+            StopAllCoroutines();
         }
     }
 
-    IEnumerator grad_fade(float first_state, float sec_state)
+    void OnTriggerStay2D(Collider2D other)
     {
+        if(other.tag == "Player")
+        {
+            StartCoroutine(gradual_fade(parent_obj.color, transparent));
+        }
+    }
 
-    	float f_state = first_state;
-    	float s_state = sec_state;
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            StopAllCoroutines();
+            StartCoroutine(gradual_fade(parent_obj.color, opaque));
+        }
+    }
 
-    	for(float t = 0.0f; t < 1.0f; t += Time.deltaTime * fade_speed)
-    	{
-    		new_color.a = Mathf.Lerp(f_state, s_state, t);
-    		this.GetComponent<SpriteRenderer>().color = new_color;
-    		yield return null;
-    	}
+    IEnumerator gradual_fade(Color start_state, Color end_state)
+    {
+        float time = 0;
+        while(time < fade_speed)
+        {
+            time += Time.deltaTime;
+            parent_obj.color = Color.Lerp(start_state, end_state, time/fade_speed);
+            yield return null;
+        }
     }
 }

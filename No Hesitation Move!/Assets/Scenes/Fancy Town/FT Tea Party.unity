@@ -675,7 +675,6 @@ GameObject:
   - component: {fileID: 251927848}
   - component: {fileID: 251927850}
   - component: {fileID: 251927851}
-  - component: {fileID: 251927847}
   m_Layer: 0
   m_Name: mushroomFountain
   m_TagString: Untagged
@@ -683,25 +682,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &251927847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251927846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0.7
-  x_offset: 1.6
-  transparent: 0.4
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!212 &251927848
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -740,7 +720,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9c65670f95469c14bb94e9b51c19333d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -820,7 +800,6 @@ GameObject:
   - component: {fileID: 259594180}
   - component: {fileID: 259594182}
   - component: {fileID: 259594183}
-  - component: {fileID: 259594179}
   m_Layer: 0
   m_Name: treeLights
   m_TagString: Untagged
@@ -828,25 +807,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &259594179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 259594178}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0
-  x_offset: 2.4
-  transparent: 0.4
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!212 &259594180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -885,7 +845,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fba2d92bb83c1d043994ea6059217da6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -960,6 +920,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7835999688584816140, guid: 79f662bfd16925c439168db951dde744,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42.399902
+      objectReference: {fileID: 0}
     - target: {fileID: 7835999688933678913, guid: 79f662bfd16925c439168db951dde744,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1069,6 +1034,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: 'Orb Ui '
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835999689271201921, guid: 79f662bfd16925c439168db951dde744,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42.399902
+      objectReference: {fileID: 0}
+    - target: {fileID: 7835999689699025337, guid: 79f662bfd16925c439168db951dde744,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -42.399902
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79f662bfd16925c439168db951dde744, type: 3}
@@ -1467,7 +1442,6 @@ GameObject:
   - component: {fileID: 441987665}
   - component: {fileID: 441987664}
   - component: {fileID: 441987667}
-  - component: {fileID: 441987663}
   m_Layer: 0
   m_Name: teaTable
   m_TagString: Untagged
@@ -1513,7 +1487,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fe82ead080a962a4c9974f4a4d18c1b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1540,25 +1514,6 @@ Transform:
   m_Father: {fileID: 1147501054}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &441987663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441987660}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0
-  x_offset: 0.2
-  transparent: 0.4
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!61 &441987664
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2966,7 +2921,6 @@ GameObject:
   - component: {fileID: 1331521653}
   - component: {fileID: 1331521655}
   - component: {fileID: 1331521656}
-  - component: {fileID: 1331521652}
   m_Layer: 0
   m_Name: treeLights_1
   m_TagString: Untagged
@@ -2974,25 +2928,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1331521652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1331521651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 443048126d480574abc8697a81a179e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  new_color: {r: 0, g: 0, b: 0, a: 0}
-  y_offset: 0
-  x_offset: 2.4
-  transparent: 0.4
-  is_behind: 0
-  decor_script: {fileID: 0}
 --- !u!212 &1331521653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3031,7 +2966,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1585438017
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fba2d92bb83c1d043994ea6059217da6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
