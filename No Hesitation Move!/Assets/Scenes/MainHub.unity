@@ -521,7 +521,6 @@ GameObject:
   m_Component:
   - component: {fileID: 26807978}
   - component: {fileID: 26807979}
-  - component: {fileID: 26807980}
   - component: {fileID: 26807981}
   m_Layer: 0
   m_Name: ftflower2_2
@@ -584,7 +583,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4ecd4ba084da841958b6f657cf0650, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d600243dd503b2f4f9b07245870525ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -595,21 +594,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &26807980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26807977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &26807981
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1135,7 +1119,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e9d7790f325f2d47a65ae081a1543c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feaca10ee29adf746bc4e02b5b1121b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -2938,7 +2922,6 @@ GameObject:
   m_Component:
   - component: {fileID: 139268301}
   - component: {fileID: 139268302}
-  - component: {fileID: 139268303}
   - component: {fileID: 139268304}
   m_Layer: 0
   m_Name: ftflower2_6
@@ -3001,7 +2984,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4ecd4ba084da841958b6f657cf0650, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d600243dd503b2f4f9b07245870525ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3012,21 +2995,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &139268303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 139268300}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &139268304
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3394,7 +3362,6 @@ GameObject:
   m_Component:
   - component: {fileID: 152018791}
   - component: {fileID: 152018792}
-  - component: {fileID: 152018793}
   - component: {fileID: 152018794}
   m_Layer: 0
   m_Name: ftflower
@@ -3457,7 +3424,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 201b27a1c6a1c754f89da71988d970f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe3b0f4d3dbdaf34e98efabb9db3e5b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3468,21 +3435,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &152018793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 152018790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &152018794
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5068,7 +5020,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -5818,7 +5770,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ac4c3c69c3edd1a46a7b61193289efa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca0d78a733d162d4787e4b9e60317878, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -6247,7 +6199,6 @@ GameObject:
   m_Component:
   - component: {fileID: 337667399}
   - component: {fileID: 337667401}
-  - component: {fileID: 337667400}
   - component: {fileID: 337667402}
   m_Layer: 0
   m_Name: ftflower_4
@@ -6270,21 +6221,6 @@ Transform:
   m_Father: {fileID: 1757307150}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &337667400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 337667398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!212 &337667401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6325,7 +6261,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 201b27a1c6a1c754f89da71988d970f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe3b0f4d3dbdaf34e98efabb9db3e5b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -6648,7 +6584,6 @@ GameObject:
   m_Component:
   - component: {fileID: 354713445}
   - component: {fileID: 354713447}
-  - component: {fileID: 354713446}
   - component: {fileID: 354713448}
   m_Layer: 0
   m_Name: ftflower_5
@@ -6671,21 +6606,6 @@ Transform:
   m_Father: {fileID: 1757307150}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &354713446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354713444}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!212 &354713447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6726,7 +6646,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 201b27a1c6a1c754f89da71988d970f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe3b0f4d3dbdaf34e98efabb9db3e5b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8508,7 +8428,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc76bcbfe402ebd4884f58d2646f94ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e684394c44b2344187076db8c5a8e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11006,7 +10926,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e9d7790f325f2d47a65ae081a1543c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feaca10ee29adf746bc4e02b5b1121b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11677,7 +11597,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e9d7790f325f2d47a65ae081a1543c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feaca10ee29adf746bc4e02b5b1121b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12098,7 +12018,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -12586,7 +12506,6 @@ GameObject:
   m_Component:
   - component: {fileID: 606166424}
   - component: {fileID: 606166425}
-  - component: {fileID: 606166426}
   - component: {fileID: 606166427}
   m_Layer: 0
   m_Name: ftflower1_4
@@ -12649,7 +12568,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1aeee0f0823e7046a7a61797c51c99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e7fe698a7d77843937188a0c7cd5ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12660,21 +12579,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &606166426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 606166423}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &606166427
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12701,7 +12605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 622864744}
   - component: {fileID: 622864745}
-  - component: {fileID: 622864746}
   - component: {fileID: 622864747}
   m_Layer: 0
   m_Name: ftflower1
@@ -12764,7 +12667,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1aeee0f0823e7046a7a61797c51c99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e7fe698a7d77843937188a0c7cd5ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -12775,21 +12678,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &622864746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622864743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &622864747
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -12968,7 +12856,6 @@ GameObject:
   m_Component:
   - component: {fileID: 640307156}
   - component: {fileID: 640307157}
-  - component: {fileID: 640307158}
   - component: {fileID: 640307159}
   m_Layer: 0
   m_Name: ftflower_3
@@ -13031,7 +12918,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 201b27a1c6a1c754f89da71988d970f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe3b0f4d3dbdaf34e98efabb9db3e5b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13042,21 +12929,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &640307158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640307155}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &640307159
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -14145,7 +14017,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -15421,7 +15293,6 @@ GameObject:
   m_Component:
   - component: {fileID: 786004761}
   - component: {fileID: 786004762}
-  - component: {fileID: 786004763}
   - component: {fileID: 786004764}
   m_Layer: 0
   m_Name: ftflower2
@@ -15484,7 +15355,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4ecd4ba084da841958b6f657cf0650, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d600243dd503b2f4f9b07245870525ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -15495,21 +15366,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &786004763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 786004760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &786004764
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16234,7 +16090,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -19003,7 +18859,6 @@ GameObject:
   m_Component:
   - component: {fileID: 993561726}
   - component: {fileID: 993561727}
-  - component: {fileID: 993561728}
   - component: {fileID: 993561729}
   m_Layer: 0
   m_Name: ftflower1_2
@@ -19066,7 +18921,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1aeee0f0823e7046a7a61797c51c99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e7fe698a7d77843937188a0c7cd5ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19077,21 +18932,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &993561728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 993561725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &993561729
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -19195,7 +19035,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19625,7 +19465,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -19850,7 +19690,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc76bcbfe402ebd4884f58d2646f94ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e684394c44b2344187076db8c5a8e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20293,7 +20133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1079049860}
   - component: {fileID: 1079049861}
-  - component: {fileID: 1079049862}
   - component: {fileID: 1079049863}
   m_Layer: 0
   m_Name: ftflower1_5
@@ -20356,7 +20195,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1aeee0f0823e7046a7a61797c51c99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e7fe698a7d77843937188a0c7cd5ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20367,21 +20206,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1079049862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1079049859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1079049863
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -22753,7 +22577,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ac4c3c69c3edd1a46a7b61193289efa9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ca0d78a733d162d4787e4b9e60317878, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -23029,7 +22853,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e9d7790f325f2d47a65ae081a1543c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feaca10ee29adf746bc4e02b5b1121b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -24118,7 +23942,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1277323019}
   - component: {fileID: 1277323020}
-  - component: {fileID: 1277323021}
   - component: {fileID: 1277323022}
   m_Layer: 0
   m_Name: ftflower2_4
@@ -24181,7 +24004,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4ecd4ba084da841958b6f657cf0650, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d600243dd503b2f4f9b07245870525ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -24192,21 +24015,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1277323021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1277323018}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1277323022
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24619,7 +24427,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -25919,6 +25727,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1682418180}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.56
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -26225,7 +26043,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1370195825}
   - component: {fileID: 1370195826}
-  - component: {fileID: 1370195827}
   - component: {fileID: 1370195828}
   m_Layer: 0
   m_Name: ftflower_2
@@ -26288,7 +26105,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 201b27a1c6a1c754f89da71988d970f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe3b0f4d3dbdaf34e98efabb9db3e5b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26299,21 +26116,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1370195827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370195824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1370195828
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26475,7 +26277,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1371607261}
   - component: {fileID: 1371607262}
-  - component: {fileID: 1371607263}
   - component: {fileID: 1371607264}
   m_Layer: 0
   m_Name: ftflower1_6
@@ -26538,7 +26339,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1aeee0f0823e7046a7a61797c51c99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e7fe698a7d77843937188a0c7cd5ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -26549,21 +26350,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1371607263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371607260}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1371607264
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -26959,7 +26745,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e9d7790f325f2d47a65ae081a1543c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feaca10ee29adf746bc4e02b5b1121b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28346,7 +28132,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1490880525}
   - component: {fileID: 1490880526}
-  - component: {fileID: 1490880527}
   - component: {fileID: 1490880528}
   m_Layer: 0
   m_Name: ftflower2_1
@@ -28409,7 +28194,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4ecd4ba084da841958b6f657cf0650, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d600243dd503b2f4f9b07245870525ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -28420,21 +28205,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1490880527
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490880524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1490880528
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -29260,7 +29030,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -29449,7 +29219,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc76bcbfe402ebd4884f58d2646f94ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e684394c44b2344187076db8c5a8e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -31412,7 +31182,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1624689715}
   - component: {fileID: 1624689716}
-  - component: {fileID: 1624689717}
   - component: {fileID: 1624689718}
   m_Layer: 0
   m_Name: ftflower2_5
@@ -31475,7 +31244,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4ecd4ba084da841958b6f657cf0650, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d600243dd503b2f4f9b07245870525ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -31486,21 +31255,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1624689717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624689714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1624689718
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33059,7 +32813,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1713981920}
   - component: {fileID: 1713981921}
-  - component: {fileID: 1713981922}
   - component: {fileID: 1713981923}
   m_Layer: 0
   m_Name: ftflower1_1
@@ -33122,7 +32875,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1aeee0f0823e7046a7a61797c51c99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e7fe698a7d77843937188a0c7cd5ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -33133,21 +32886,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1713981922
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713981919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1713981923
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33564,7 +33302,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e9d7790f325f2d47a65ae081a1543c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feaca10ee29adf746bc4e02b5b1121b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -35505,7 +35243,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 06609fe728fa26045a47faac6c0009cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 36f720507f2def64e8b4348069d432a4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -36990,7 +36728,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1902718848}
   - component: {fileID: 1902718849}
-  - component: {fileID: 1902718850}
   - component: {fileID: 1902718851}
   m_Layer: 0
   m_Name: ftflower2_3
@@ -37053,7 +36790,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ee4ecd4ba084da841958b6f657cf0650, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d600243dd503b2f4f9b07245870525ec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -37064,21 +36801,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1902718850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902718847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &1902718851
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -38918,7 +38640,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc76bcbfe402ebd4884f58d2646f94ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e684394c44b2344187076db8c5a8e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -39330,7 +39052,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc76bcbfe402ebd4884f58d2646f94ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e684394c44b2344187076db8c5a8e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -39643,7 +39365,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9e9d7790f325f2d47a65ae081a1543c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: feaca10ee29adf746bc4e02b5b1121b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -39664,7 +39386,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2064128839}
   - component: {fileID: 2064128840}
-  - component: {fileID: 2064128841}
   - component: {fileID: 2064128842}
   m_Layer: 0
   m_Name: ftflower1_3
@@ -39727,7 +39448,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d1aeee0f0823e7046a7a61797c51c99d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 68e7fe698a7d77843937188a0c7cd5ad, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -39738,21 +39459,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2064128841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064128838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &2064128842
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -39779,7 +39485,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2064395044}
   - component: {fileID: 2064395045}
-  - component: {fileID: 2064395046}
   - component: {fileID: 2064395047}
   m_Layer: 0
   m_Name: ftflower_1
@@ -39842,7 +39547,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 201b27a1c6a1c754f89da71988d970f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe3b0f4d3dbdaf34e98efabb9db3e5b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -39853,21 +39558,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2064395046
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2064395043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!58 &2064395047
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -40655,7 +40345,7 @@ SpriteRenderer:
   m_SortingLayerID: 1025404899
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: fc76bcbfe402ebd4884f58d2646f94ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e684394c44b2344187076db8c5a8e0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
