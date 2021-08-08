@@ -15,7 +15,7 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     public Sprite speaking_sprite;
     Animator romeo_animator;
     SpriteRenderer romeo_sprite;
-    playerMovement p_movement;
+    playerMovement p_move;
 
     void Awake()
     {
@@ -29,7 +29,7 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
         romeo_sprite = romeo.GetComponent<SpriteRenderer>();
         romeo_animator = romeo.GetComponent<Animator>();
 		talktonode = "Start";
-        p_movement = romeo.GetComponent<playerMovement>();
+        p_move = romeo.GetComponent<playerMovement>();
     }
 
     // Update is called once per frame
@@ -42,7 +42,7 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Tab))
         {
             romeo_animator.enabled = true;
-            p_movement.enabled = true;
+            p_move.enabled = true;
         }
     }
 
@@ -52,9 +52,9 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     	{
 			owl.transform.position = new Vector3 (7.25f, 3.6f, 0.0f);
     		romeo.transform.position = new Vector3 (6.0f, 3.45f, 0.0f);
-            p_movement.enabled = false;
-            romeo_animator.enabled = false;
-            romeo_sprite.sprite = speaking_sprite;
+            p_move.anim.SetFloat("Horizontal", 1.0f);
+            p_move.anim.SetFloat("Speed", 0.0f);
+            p_move.enabled = false;
     		diaRun.Add(scriptToLoad);
     		diaRun.StartDialogue(talktonode);
     		GlobalVars.rc_has_spoken = true;
@@ -66,7 +66,6 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
 
     public void enable_animator(string[] parameters)
     {
-        romeo_animator.enabled = true;
-        p_movement.enabled = true;
+        p_move.enabled = true;
     }
 }
