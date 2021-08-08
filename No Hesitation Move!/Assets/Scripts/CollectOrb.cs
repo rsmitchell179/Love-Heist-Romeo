@@ -57,10 +57,10 @@ public class CollectOrb : MonoBehaviour {
     		Destroy(other.gameObject);
     		GlobalVars.hasFTorb = true;
     	}
-    	if(other.gameObject.CompareTag("RCOrb")) {
-    		Destroy(other.gameObject);
-    		GlobalVars.hasRCorb = true;
-    	}
+    	// if(other.gameObject.CompareTag("RCOrb")) {
+    	// 	Destroy(other.gameObject);
+    	// 	GlobalVars.hasRCorb = true;
+    	// }
 
     }
     public void SetImage1() {
