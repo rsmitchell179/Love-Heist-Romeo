@@ -49,10 +49,10 @@ public class CollectOrb : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-    	if(other.gameObject.CompareTag("JSOrb")) {
-    		Destroy(other.gameObject);
-    		GlobalVars.hasJSorb = true;
-    	}
+    	// if(other.gameObject.CompareTag("JSOrb")) {
+    	// 	Destroy(other.gameObject);
+    	// 	GlobalVars.hasJSorb = true;
+    	// }
     	if(other.gameObject.CompareTag("FTOrb")) {
     		Destroy(other.gameObject);
     		GlobalVars.hasFTorb = true;

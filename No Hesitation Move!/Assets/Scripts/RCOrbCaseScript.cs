@@ -18,5 +18,10 @@ public class RCOrbCaseScript : MonoBehaviour
         {
         	this.gameObject.SetActive(false);
         }
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }

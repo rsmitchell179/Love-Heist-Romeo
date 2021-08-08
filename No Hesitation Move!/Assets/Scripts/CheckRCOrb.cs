@@ -8,13 +8,11 @@ public class CheckRCOrb : MonoBehaviour
 
     public Animator rc_orb;
     public playerMovement p_move;
-    public float duration_time;
     public Image img_fade;
 
     void Awake()
     {
         p_move = GameObject.FindWithTag("Player").GetComponent<playerMovement>();
-        duration_time = rc_orb.GetCurrentAnimatorStateInfo(0).length;
         img_fade.CrossFadeAlpha(0, 0.0f, true);
     }
 
@@ -26,10 +24,10 @@ public class CheckRCOrb : MonoBehaviour
         	this.gameObject.SetActive(false);
         }
 
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            StartCoroutine(get_rc_orb());
-        }
+        // if(Input.GetKeyDown(KeyCode.O))
+        // {
+        //     StartCoroutine(get_rc_orb());
+        // }
     }
 
     void OnTriggerEnter2D(Collider2D other)
