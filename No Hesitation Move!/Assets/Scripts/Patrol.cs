@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class Patrol : MonoBehaviour
 {
@@ -15,7 +17,8 @@ public class Patrol : MonoBehaviour
     private float fov;
     private GameObject player;
     AudioSource source;
-    public Animator animatior;
+    public Animator anim;
+    public Image img_fade;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +30,7 @@ public class Patrol : MonoBehaviour
         waitTime = startWaitTime;
         Spot = 0;
         lastMoveDir = new Vector3(Random.Range(-20, 20), Random.Range(-20, 20), 0);
+        img_fade.CrossFadeAlpha(0, 0.0f, true);
     }
 
     void FixedUpdate()
@@ -106,22 +110,25 @@ public class Patrol : MonoBehaviour
     public void AttackingPlayer()
     {
         source.Play();
-        animatior.SetTrigger("FadeOut");
+        // anim.SetTrigger("FadeOut");
         waitTime = 1;
-        player.GetComponent<playerMovement>().enabled = false;
         StartCoroutine(delay_player());
         source.Play();
-        player.transform.position =  new Vector3(-14f, 4.5f, 0f);
-        player.GetComponent<playerMovement>().enabled = true;
     }
 
     IEnumerator delay_player()
     {
-        Debug.Log("delay_player");
+        player.GetComponent<playerMovement>().anim.SetFloat("Speed", 0.0f);
         player.GetComponent<playerMovement>().enabled = false;
-        yield return new WaitForSecondsRealtime(1f);
-        animatior.SetTrigger("FadeIn");
+        img_fade.CrossFadeAlpha(1, 0.5f, false);
+
+        yield return new WaitForSecondsRealtime(1.5f);
+
         player.transform.position = new Vector3(-14f, 4.5f, 0f);
+        img_fade.CrossFadeAlpha(0, 1.0f, false);
+
+        yield return new WaitForSecondsRealtime(1.5f);
+        // anim.SetTrigger("FadeIn");
         player.GetComponent<playerMovement>().enabled = true;
     }
 
