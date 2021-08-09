@@ -95,7 +95,7 @@ public class OwlAttacks : MonoBehaviour
 
         while (timer<1f)
         {
-            _target.transform.position += velocity * Time.deltaTime * 3f;
+            _target.transform.position += velocity * Time.deltaTime * 4f;
             timer += Time.deltaTime;
             Debug.Log(timer);
             yield return null;
@@ -107,7 +107,7 @@ public class OwlAttacks : MonoBehaviour
 
     IEnumerator play_flap_animation()
     {
-        yield return new WaitForSecondsRealtime(0.5f);
+        yield return new WaitForSecondsRealtime(1.0f);
 
         is_flapping = false;
     }
