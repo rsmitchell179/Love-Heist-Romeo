@@ -8,34 +8,30 @@ using System.IO;
 
 public class playerMovement : MonoBehaviour
 {
-    // public static bool hasJSorb;
-    // public static bool hasFTorb;
-    // public static bool hasRCorb;
-
+    [Header("Player Walk Speed")]
     public float moveSpeed;
     public float move_fast = 6.0f;
     public float move_normal = 3.14f;
 
+    [Header("Player Components")]
     // rigidbody for motion and collisions
     public Rigidbody2D body;
-
     // vector of current movement direction + speed
     public Vector2 movement;
-
     // for linking player motion to animations in animation editor
     public Animator anim;
-    public float interactionRadius = 2.0f;
 
+    [Header("Yarnspinner Components")]
+    public float interactionRadius = 2.0f;
     private DialogueRunner diaRun = null;
 
+    [Header("Save Path")]
     public string file_path;
 
-    // public bool letter_open = false;
-
-    // public LetterPopUp letterpp;
-
+    [Header("Physics Toggle")]
     public bool move_vertical;
 
+    // Speakeasy Components
     Scene current_scene;
     string compare_scene_name;
     string speakeasy_scene_name = "RC Speakeasy";
@@ -72,7 +68,6 @@ public class playerMovement : MonoBehaviour
 
     void Start(){
         diaRun = FindObjectOfType<DialogueRunner>();
-
     }
 
     // Update is called once per frame
@@ -95,34 +90,15 @@ public class playerMovement : MonoBehaviour
         movement.x = Input.GetAxis("Horizontal");
         movement.y = Input.GetAxis("Vertical");
 
-        // Set animation vars
-        // make sure we don't set them if the player is standing still, to prevent weird flipping
-        
+        if(movement.x != 0.0f)
+        {
+            anim.SetFloat("Horizontal", movement.x);
+        }
 
-        // if(move_vertical == false)
-        // {
-        //     if (movement.x != 0)
-        //     {
-        //         anim.SetFloat("Horizontal", movement.x);
-        //     }
-
-        //     if (movement.y != 0)
-        //     {
-        //         anim.SetFloat("Vertical", movement.y);
-        //     }
-        // }
-        // else
-        // {
-            if(movement.x != 0.0f)
-            {
-                anim.SetFloat("Horizontal", movement.x);
-            }
-
-            if(movement.y != 0.0f)
-            {
-                anim.SetFloat("Vertical", movement.y);
-            }
-        // }
+        if(movement.y != 0.0f)
+        {
+            anim.SetFloat("Vertical", movement.y);
+        }
 
         anim.SetFloat("Speed", movement.sqrMagnitude); //some sort of wild magic variable that pulls the squared length of the vector
 
@@ -136,17 +112,6 @@ public class playerMovement : MonoBehaviour
         } else {
             moveSpeed = move_normal;
         }
-
-        // charles bless up
-        // if(letter_open == true){
-        //     anim.enabled = false;
-        //     movement.x = 0;
-        //     movement.y = 0;
-        //     if(Input.GetKeyDown(KeyCode.Space)){
-        //         letterpp.letter.enabled = false;
-        //         letter_open = false;
-        //     }
-        // 
         
         if(move_vertical == false)
         {
@@ -157,29 +122,13 @@ public class playerMovement : MonoBehaviour
             body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
         }
 
-        if(Input.GetKeyDown(KeyCode.Equals))
-        {
-            PlayerPrefs.DeleteKey("dropdown_index");
-            int print_pref = PlayerPrefs.GetInt("dropdown_index");
-            Debug.Log("dropdown_index is now " + print_pref);
-        }
-    }
-
-    void FixedUpdate()
-    {
-        // if(move_vertical == false)
+        /* Tester for PlayerPrefs*/
+        // if(Input.GetKeyDown(KeyCode.Equals))
         // {
-        //     body.velocity = new Vector2(movement.x * moveSpeed, body.velocity.y);
+        //     PlayerPrefs.DeleteKey("dropdown_index");
+        //     int print_pref = PlayerPrefs.GetInt("dropdown_index");
+        //     Debug.Log("dropdown_index is now " + print_pref);
         // }
-        // else
-        // {
-        //     body.MovePosition(body.position + (movement * moveSpeed * Time.fixedDeltaTime));
-        // }
-    }
-
-    void LateUpdate()
-    {
-        
     }
 
     public void CheckForNearbyNPC ()
@@ -203,30 +152,4 @@ public class playerMovement : MonoBehaviour
         GlobalVars.position[1] = transform.position.y;
         GlobalVars.position[2] = transform.position.z;
     }
-
-    public void Save_Data()
-    {
-        Debug.Log("SAVING DATA...");
-        save_position();
-        SaveSys.save_data();
-        // GlobalVars.print_array();
-    }
-
-    public void Load_Data()
-    {
-
-        Debug.Log("LOADING DATA...");
-        SaveData new_data = SaveSys.load_data();
-        // GlobalVars.print_array();
-
-        GlobalVars.recur_array[0] = new_data.recur_array[0];
-        GlobalVars.recur_array[1] = new_data.recur_array[1];
-        GlobalVars.recur_array[2] = new_data.recur_array[2];
-        GlobalVars.recur_array[3] = new_data.recur_array[3];
-        GlobalVars.recur_array[4] = new_data.recur_array[4];
-        GlobalVars.recur_array[5] = new_data.recur_array[5];
-
-        SceneManager.LoadScene(new_data.scene);
-    }
-
 }
