@@ -17,5 +17,10 @@ public class FTOrbCaseScript : MonoBehaviour
         {
         	this.gameObject.SetActive(false);
         }
+
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 }

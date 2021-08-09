@@ -53,10 +53,10 @@ public class CollectOrb : MonoBehaviour {
     	// 	Destroy(other.gameObject);
     	// 	GlobalVars.hasJSorb = true;
     	// }
-    	if(other.gameObject.CompareTag("FTOrb")) {
-    		Destroy(other.gameObject);
-    		GlobalVars.hasFTorb = true;
-    	}
+    	// if(other.gameObject.CompareTag("FTOrb")) {
+    	// 	Destroy(other.gameObject);
+    	// 	GlobalVars.hasFTorb = true;
+    	// }
     	// if(other.gameObject.CompareTag("RCOrb")) {
     	// 	Destroy(other.gameObject);
     	// 	GlobalVars.hasRCorb = true;
