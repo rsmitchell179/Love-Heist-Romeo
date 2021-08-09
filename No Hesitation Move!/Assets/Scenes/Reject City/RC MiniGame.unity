@@ -787,6 +787,7 @@ MonoBehaviour:
   _target: {fileID: 1100653021}
   _obstacle: {fileID: 675280549}
   _puzzlePieces: []
+  owl_anim: {fileID: 797241075}
 --- !u!212 &797241072
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1483,7 +1484,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5.5
+  orthographic size: 5.75
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1507,7 +1508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362448830}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.29, z: -10}
+  m_LocalPosition: {x: 0, y: -0.13, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

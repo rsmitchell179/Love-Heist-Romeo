@@ -10,12 +10,27 @@ public class OwlAttacks : MonoBehaviour
     [SerializeField] private Rigidbody2D _target;
     [SerializeField] private GameObject _obstacle;
     [SerializeField] private PicturePuzzlePiece[] _puzzlePieces;
+    [Header("Owl Components")]
+    public Animator owl_anim;
+    bool is_flapping;
     // Start is called before the first frame update
     void Start()
     {
         source = GetComponent<AudioSource>();
         _puzzlePieces = FindObjectsOfType<PicturePuzzlePiece>();
         StartCoroutine(AttacksCoroutine());
+    }
+
+    void Update()
+    {
+        if(is_flapping == true)
+        {
+            owl_anim.SetBool("is_flapping", true);
+        }
+        else
+        {
+            owl_anim.SetBool("is_flapping", false);
+        }
     }
 
     IEnumerator AttacksCoroutine()
@@ -25,58 +40,76 @@ public class OwlAttacks : MonoBehaviour
             yield return new WaitForSeconds(_timeBetweenAttacks);
             if (Random.Range(0f,1f)<.5f)
             {
-                yield return SpawnObstacleCoroutine();
+                is_flapping = true;
+                StartCoroutine(play_flap_animation());
+                yield return BlowBackPlayerCoroutine();
             }
             else
             {
+                is_flapping = true;
+                StartCoroutine(play_flap_animation());
                 yield return BlowBackPlayerCoroutine();
             }
         }
     }
 
     IEnumerator SpawnObstacleCoroutine()
-    {
-        // int count = 7;
-        // GameObject[] go = new GameObject[7];
-        // source.Play();
-        // System.Random rng = new System.Random();
-        // _puzzlePieces = Shuffle(rng, _puzzlePieces);
-        // for (int i = 0; i < count; i++)
-        // {
-        //     go[i] = Instantiate(_obstacle, transform.position, Quaternion.identity);
-        //     Vector3 nextPosition = _puzzlePieces[i].transform.position + (Vector3)Random.insideUnitCircle;
-        //     while (Vector2.Distance(go[i].transform.position, nextPosition) >0)
-        //     {
-        //         go[i].transform.position = Vector2.MoveTowards(go[i].transform.position, nextPosition, Time.deltaTime * 10f);
-        //         yield return null;
-        //     }
-        // }
-        // yield return new WaitForSeconds(_timeUntilDestroyingObstacles);
-        // for (int i = 0; i < count; i++)
-        // {
-        //     Destroy(go[i]);
-        //     yield return new WaitForSeconds(.1f);
-        // }
+    {   
+        int count = 5;
+        GameObject[] go = new GameObject[7];
+        source.Play();
+        System.Random rng = new System.Random();
+        _puzzlePieces = Shuffle(rng, _puzzlePieces);
+        for (int i = 0; i < count; i++)
+        {
+            go[i] = Instantiate(_obstacle, transform.position, Quaternion.identity);
+            Vector3 nextPosition = _puzzlePieces[i].transform.position + (Vector3)Random.insideUnitCircle;
+            while (Vector2.Distance(go[i].transform.position, nextPosition) >0)
+            {
+                go[i].transform.position = Vector2.MoveTowards(go[i].transform.position, nextPosition, Time.deltaTime * 10f);
+                yield return null;
+            }
+        }
+        yield return new WaitForSeconds(_timeUntilDestroyingObstacles);
+        for (int i = 0; i < count; i++)
+        {
+            Destroy(go[i]);
+            yield return new WaitForSeconds(.1f);
+        }
 
-        // for video or testing purposes
-        yield return null;
+        /* for video testing */
+        // yield return null;
     }
     IEnumerator BlowBackPlayerCoroutine()
     {
-        // Vector3 velocity;
-        // source.Play();
-        // velocity = Vector3.down;
-        // print(velocity);
-        // float timer = 0;
 
-        // while (timer<1f)
-        // {
-        //     timer += Time.deltaTime;
-        //     _target.transform.position += velocity * Time.deltaTime * 5f;
-        //     yield return null;
-        // }
+        yield return new WaitForSecondsRealtime(0.3f);
 
-        yield return null;
+        Vector3 velocity;
+        source.Play();
+        velocity = Vector3.down;
+        print(velocity);
+        float timer = 0;
+
+        Debug.Log("is_flapping is " + is_flapping);
+
+        while (timer<1f)
+        {
+            _target.transform.position += velocity * Time.deltaTime * 3f;
+            timer += Time.deltaTime;
+            Debug.Log(timer);
+            yield return null;
+        }
+
+        /* for video testing */
+        // yield return null;
+    }
+
+    IEnumerator play_flap_animation()
+    {
+        yield return new WaitForSecondsRealtime(0.5f);
+
+        is_flapping = false;
     }
 
     public static PicturePuzzlePiece[] Shuffle(System.Random rng, PicturePuzzlePiece[] array)
