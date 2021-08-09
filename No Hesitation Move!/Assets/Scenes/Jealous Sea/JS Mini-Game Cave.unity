@@ -1755,7 +1755,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 363797217}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 949712965}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -3926,6 +3926,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &949712965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7835999689271201920, guid: 79f662bfd16925c439168db951dde744,
+    type: 3}
+  m_PrefabInstance: {fileID: 363797217}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &970548432
 GameObject:
   m_ObjectHideFlags: 0
@@ -4512,13 +4518,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   js_orb: {fileID: 999090523}
   p_move: {fileID: 0}
-  img_fade: {fileID: 82165834}
-  owl: {fileID: 1505375004}
   romeo: {fileID: 0}
+  img_fade: {fileID: 82165834}
+  ui_js_orb: {fileID: 949712965}
+  cam: {fileID: 1687258584}
+  owl: {fileID: 1505375004}
   FOV: {fileID: 354089895}
+  patrol_script: {fileID: 0}
   scriptToLoad: {fileID: 2480198943629176163, guid: 2a431448bbf8b584c8f27fcac49063a5,
     type: 3}
-  patrol_script: {fileID: 0}
 --- !u!95 &999090523
 Animator:
   serializedVersion: 3

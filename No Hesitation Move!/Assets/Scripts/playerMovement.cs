@@ -131,11 +131,11 @@ public class playerMovement : MonoBehaviour
         }
 
         // DEV RUN - GET RID OF WHEN FINAL VERSION IS REALEASED 
-        // if(Input.GetKey(KeyCode.LeftShift)) {
-        //     moveSpeed = move_fast;
-        // } else {
-        //     moveSpeed = move_normal;
-        // }
+        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
+            moveSpeed = move_fast;
+        } else {
+            moveSpeed = move_normal;
+        }
 
         // charles bless up
         // if(letter_open == true){

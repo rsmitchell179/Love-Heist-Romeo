@@ -6,16 +6,29 @@ using Yarn.Unity;
 
 public class CheckJSOrb : MonoBehaviour
 {
+    [Header("Animator")]
     public Animator js_orb;
+
+    [Header("Player Components")]
     public playerMovement p_move;
-    public Image img_fade;
-    public GameObject owl;
     public GameObject romeo;
+
+    [Header("UI Components")]
+    public Image img_fade;
+    public GameObject ui_js_orb;
+    public Camera cam;
+
+    [Header("Owl Components")]
+    public GameObject owl;
     public GameObject FOV;
+    public Patrol patrol_script;
+
+    [Header("Yarnspinner Components")]
     public YarnProgram scriptToLoad;
     private string talktonode;
     private DialogueRunner dia_run;
-    public Patrol patrol_script;
+   
+    
 
     // Start is called before the first frame update
     void Start()
@@ -55,11 +68,32 @@ public class CheckJSOrb : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(3.5f);
 
+        js_orb.enabled = false;
+        Vector3 orb_coords = cam.ScreenToWorldPoint(ui_js_orb.transform.position);
+        orb_coords.z = 1.0f;
+
+        float time = 0f;
+        float duration = 1.5f;
+        Vector3 start_position = this.transform.position;
+
+        while(time < duration)
+        {
+            this.transform.position = Vector3.Lerp(start_position, orb_coords, time / duration);
+            time += Time.deltaTime;
+            Debug.Log(time);
+            yield return null;
+        }
+
+        GlobalVars.hasJSorb = true;
+
+        // this.transform.position = orb_coords;
+
+        yield return new WaitForSecondsRealtime(0.5f);
+
         img_fade.CrossFadeAlpha(1, 0.5f, false);
 
         yield return new WaitForSecondsRealtime(1.0f);
 
-        GlobalVars.hasJSorb = true;
         js_orb.enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
         owl.transform.position = new Vector3(25.5f, 9.2f, 0f);
