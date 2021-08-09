@@ -23,6 +23,7 @@ public class SaveData
     public bool rc_hasCollect;
     public bool rc_has_spoken;
     public bool rc_has_seen_fade;
+    public bool rc_open_door;
     public bool[] has_seen_card;
     public bool boot_resolution;
     public int curr_resolution;
@@ -54,6 +55,7 @@ public class SaveData
         rc_hasCollect = GlobalVars.rc_hasCollect;
         rc_has_spoken = GlobalVars.rc_has_spoken;
         rc_has_seen_fade = GlobalVars.rc_has_seen_fade;
+        rc_open_door = GlobalVars.rc_open_door;
 
         has_seen_card = new bool[4];
         has_seen_card[0] = GlobalVars.has_seen_card[0];

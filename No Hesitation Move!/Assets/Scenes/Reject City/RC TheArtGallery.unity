@@ -446,7 +446,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 290545111}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 462793952}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -993,6 +993,12 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!1 &462793952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7835999688584816131, guid: 79f662bfd16925c439168db951dde744,
+    type: 3}
+  m_PrefabInstance: {fileID: 290545111}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &490275419
 GameObject:
   m_ObjectHideFlags: 0
@@ -4337,8 +4343,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rc_orb: {fileID: 1944138066}
   p_move: {fileID: 0}
-  duration_time: 0
   img_fade: {fileID: 1357440755}
+  ui_rc_orb: {fileID: 462793952}
+  cam: {fileID: 1922999799}
 --- !u!95 &1944138066
 Animator:
   serializedVersion: 3

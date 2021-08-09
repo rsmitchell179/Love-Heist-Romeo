@@ -47,6 +47,7 @@ public class DataManager : MonoBehaviour
     	GlobalVars.chapIISeen = false;
     	GlobalVars.chapVIIISeen = false;
     	GlobalVars.chapVSeen = false;
+        GlobalVars.rc_open_door = false;
 
         for(int i = 0; i < 4; i++)
         {

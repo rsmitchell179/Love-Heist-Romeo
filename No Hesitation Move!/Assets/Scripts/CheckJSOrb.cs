@@ -80,7 +80,7 @@ public class CheckJSOrb : MonoBehaviour
         {
             this.transform.position = Vector3.Lerp(start_position, orb_coords, time / duration);
             time += Time.deltaTime;
-            Debug.Log(time);
+            // Debug.Log(time);
             yield return null;
         }
 

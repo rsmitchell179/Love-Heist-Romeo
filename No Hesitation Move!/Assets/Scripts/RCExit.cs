@@ -19,7 +19,7 @@ public class RCExit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GlobalVars.hasRCorb == true)
+        if(GlobalVars.rc_open_door == true)
         {
             door_collider.enabled = true;
         }
@@ -31,7 +31,7 @@ public class RCExit : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-    	if(other.gameObject.tag == "Player" && GlobalVars.hasRCorb == true)
+    	if(other.gameObject.tag == "Player" && GlobalVars.rc_open_door == true)
     	{
     		door.sprite = door_opened;
     	}
