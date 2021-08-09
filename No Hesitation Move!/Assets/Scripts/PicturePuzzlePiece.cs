@@ -6,10 +6,12 @@ public class PicturePuzzlePiece : MonoBehaviour
 {
     public bool is_not_finished;
     public bool activated;
+    private SpriteRenderer puzzle_piece;
     // Start is called before the first frame update
     void Start()
     {
         is_not_finished = true;
+        puzzle_piece = this.GetComponent<SpriteRenderer>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,6 +20,7 @@ public class PicturePuzzlePiece : MonoBehaviour
         {
             transform.localScale = Vector3.one * 1.2f;
             activated = true;
+            puzzle_piece.sortingOrder = 3;
         }
     }
 
@@ -27,6 +30,7 @@ public class PicturePuzzlePiece : MonoBehaviour
         {
             transform.localScale = Vector3.one;
             activated = false;
+            puzzle_piece.sortingOrder = 2;
         }
     }
 
