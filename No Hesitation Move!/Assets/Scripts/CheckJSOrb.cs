@@ -29,13 +29,13 @@ public class CheckJSOrb : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if(GlobalVars.hasJSorb == true)
-        {
-            this.gameObject.SetActive(false);
-        }
-    }
+    // void Update()
+    // {
+    //     if(GlobalVars.hasJSorb == true)
+    //     {
+    //         this.gameObject.SetActive(false);
+    //     }
+    // }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -53,27 +53,28 @@ public class CheckJSOrb : MonoBehaviour
         p_move.enabled = false;
         js_orb.Play("js_orb_anim", 0, 0f);
 
-        yield return new WaitForSecondsRealtime(2.3f);
+        yield return new WaitForSecondsRealtime(3.5f);
 
         img_fade.CrossFadeAlpha(1, 0.5f, false);
 
         yield return new WaitForSecondsRealtime(1.0f);
 
+        GlobalVars.hasJSorb = true;
         js_orb.enabled = false;
         this.GetComponent<SpriteRenderer>().enabled = false;
         owl.transform.position = new Vector3(25.5f, 9.2f, 0f);
         romeo.transform.position = new Vector3(23.66f, 8.92f, 0f);
-
-        yield return new WaitForSecondsRealtime(0.5f);
-
         p_move.anim.SetFloat("Horizontal", 1.0f);
+
+        yield return new WaitForSecondsRealtime(2.5f);
+
         img_fade.CrossFadeAlpha(0, 0.5f, false);
 
         yield return new WaitForSecondsRealtime(0.5f);
 
         dia_run.Add(scriptToLoad);
         dia_run.StartDialogue(talktonode);
-        GlobalVars.hasJSorb = true;
         p_move.enabled = true;
+        this.gameObject.SetActive(false);
     }
 }
