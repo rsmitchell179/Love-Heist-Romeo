@@ -40,9 +40,9 @@ public class OwlAttacks : MonoBehaviour
             yield return new WaitForSeconds(_timeBetweenAttacks);
             if (Random.Range(0f,1f)<.5f)
             {
-                is_flapping = true;
-                StartCoroutine(play_flap_animation());
-                yield return BlowBackPlayerCoroutine();
+                // is_flapping = true;
+                // StartCoroutine(play_flap_animation());
+                yield return SpawnObstacleCoroutine();
             }
             else
             {
