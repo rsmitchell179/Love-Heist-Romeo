@@ -52,7 +52,7 @@ public class StartSlotsOnTrigger : MonoBehaviour
 
         if(is_colliding == true)
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space) && GlobalVars.ft_hasCollect == false)
             {
                 SlotsButton.SetActive(true);
                 p_movement.enabled = false;

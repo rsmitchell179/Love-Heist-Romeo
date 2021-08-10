@@ -26,8 +26,8 @@ public class RomeoSpacePress : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
+    // void Update()
+    // {
         // if(inside_collider == true)
         // {
         //     bubble.enabled = true;
@@ -51,11 +51,11 @@ public class RomeoSpacePress : MonoBehaviour
         //     bubble.enabled = false;
         //     bubble_child.enabled = false;
         // }
-    }
+    // }
 
      void LateUpdate()
      {
-        if(inside_collider == true)
+        if(inside_collider == true && GlobalVars.ft_hasCollect == false)
         {
             bubble.enabled = true;
             bubble_child.enabled = true;
