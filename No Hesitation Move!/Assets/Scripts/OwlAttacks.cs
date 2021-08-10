@@ -95,7 +95,7 @@ public class OwlAttacks : MonoBehaviour
 
         while (timer<1f)
         {
-            _target.transform.position += velocity * Time.deltaTime * 4f;
+            _target.transform.position += velocity * Time.deltaTime * 4.5f;
             timer += Time.deltaTime;
             Debug.Log(timer);
             yield return null;
