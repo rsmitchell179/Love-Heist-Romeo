@@ -31,6 +31,14 @@ public class CheckFTOrb : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(GlobalVars.hasFTorb == true && GlobalVars.ft_orb_get == true)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
     IEnumerator get_ft_orb()
     {
         p_move.anim.SetFloat("Speed", 0.0f);
@@ -67,6 +75,6 @@ public class CheckFTOrb : MonoBehaviour
         img_fade.CrossFadeAlpha(0, 0.5f, false);
 
         p_move.enabled = true;
-        this.gameObject.SetActive(false);
+        GlobalVars.ft_orb_get = true;
     }
 }

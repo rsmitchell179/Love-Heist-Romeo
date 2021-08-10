@@ -42,13 +42,13 @@ public class CheckJSOrb : MonoBehaviour
     }
 
     // Update is called once per frame
-    // void Update()
-    // {
-    //     if(GlobalVars.hasJSorb == true)
-    //     {
-    //         this.gameObject.SetActive(false);
-    //     }
-    // }
+    void Update()
+    {
+        if(GlobalVars.hasJSorb == true && GlobalVars.js_orb_get == true)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -110,5 +110,6 @@ public class CheckJSOrb : MonoBehaviour
         dia_run.StartDialogue(talktonode);
         p_move.enabled = true;
         this.gameObject.SetActive(false);
+        GlobalVars.js_orb_get = true;
     }
 }

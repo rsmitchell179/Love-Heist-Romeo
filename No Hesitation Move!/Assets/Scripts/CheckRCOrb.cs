@@ -31,6 +31,14 @@ public class CheckRCOrb : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(GlobalVars.hasRCorb == true && GlobalVars.rc_orb_get == true)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
     IEnumerator get_rc_orb()
     {
 
@@ -68,7 +76,7 @@ public class CheckRCOrb : MonoBehaviour
         img_fade.CrossFadeAlpha(0, 0.5f, false);
 
         p_move.enabled = true;
-        this.gameObject.SetActive(false);
+        GlobalVars.rc_orb_get = true;
         GlobalVars.rc_open_door = true;
     }
 }

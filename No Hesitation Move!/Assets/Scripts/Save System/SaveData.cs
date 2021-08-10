@@ -21,6 +21,11 @@ public class SaveData
     public bool js_hasCollect;
     public bool ft_hasCollect;
     public bool rc_hasCollect;
+
+    public bool js_orb_get;
+    public bool ft_orb_get;
+    public bool rc_orb_get;
+
     public bool rc_has_spoken;
     public bool rc_has_seen_fade;
     public bool rc_open_door;
@@ -49,6 +54,10 @@ public class SaveData
         hasJSorb = GlobalVars.hasJSorb;
         hasFTorb = GlobalVars.hasFTorb;
         hasRCorb = GlobalVars.hasRCorb;
+
+        js_orb_get = GlobalVars.js_orb_get;
+        ft_orb_get = GlobalVars.ft_orb_get;
+        rc_orb_get = GlobalVars.rc_orb_get;
 
         js_hasCollect = GlobalVars.js_hasCollect;
         ft_hasCollect = GlobalVars.ft_hasCollect;

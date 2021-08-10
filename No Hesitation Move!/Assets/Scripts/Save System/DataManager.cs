@@ -41,6 +41,11 @@ public class DataManager : MonoBehaviour
         GlobalVars.ft_hasCollect = false;
         GlobalVars.rc_hasCollect = false;
         GlobalVars.rc_has_spoken = false;
+
+        GlobalVars.js_orb_get = false;
+        GlobalVars.ft_orb_get = false;
+        GlobalVars.rc_orb_get = false;
+
         GlobalVars.chapISeen = false;
     	GlobalVars.chapIVSeen = false;
     	GlobalVars.chapIXSeen = false;
