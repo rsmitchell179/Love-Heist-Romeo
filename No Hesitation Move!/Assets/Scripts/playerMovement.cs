@@ -12,6 +12,7 @@ public class playerMovement : MonoBehaviour
     public float moveSpeed;
     public float move_fast = 6.0f;
     public float move_normal = 3.14f;
+    private bool move_speed_bool;
 
     [Header("Player Components")]
     // rigidbody for motion and collisions
@@ -68,13 +69,14 @@ public class playerMovement : MonoBehaviour
 
     void Start(){
         diaRun = FindObjectOfType<DialogueRunner>();
+        moveSpeed = move_normal;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        moveSpeed = move_normal;
+        
 
         if(diaRun.IsDialogueRunning == true)
         {
@@ -82,7 +84,9 @@ public class playerMovement : MonoBehaviour
             movement.x = 0;
             movement.y = 0;
             return;
-        }else{
+        }
+        else
+        {
             anim.enabled = true;
         }
 
@@ -103,14 +107,12 @@ public class playerMovement : MonoBehaviour
         anim.SetFloat("Speed", movement.sqrMagnitude); //some sort of wild magic variable that pulls the squared length of the vector
 
         if (Input.GetKeyDown(KeyCode.Space)) {
-                CheckForNearbyNPC ();
+            CheckForNearbyNPC ();
         }
 
         // DEV RUN - GET RID OF WHEN FINAL VERSION IS REALEASED 
         if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
-            moveSpeed = move_fast;
-        } else {
-            moveSpeed = move_normal;
+            StartCoroutine(dev_run());
         }
         
         if(move_vertical == false)
@@ -151,5 +153,22 @@ public class playerMovement : MonoBehaviour
     	GlobalVars.position[0] = transform.position.x;
         GlobalVars.position[1] = transform.position.y;
         GlobalVars.position[2] = transform.position.z;
+    }
+
+    /* DEV RUN */
+    IEnumerator dev_run()
+    {
+        if(move_speed_bool == false)
+        {
+            moveSpeed = move_fast;
+        }
+        else
+        {
+            moveSpeed = move_normal;
+        }
+
+        yield return new WaitForSecondsRealtime(0.2f);
+
+        move_speed_bool = !move_speed_bool;
     }
 }
