@@ -109,11 +109,6 @@ public class playerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) {
             CheckForNearbyNPC ();
         }
-
-        // DEV RUN - GET RID OF WHEN FINAL VERSION IS REALEASED 
-        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
-            StartCoroutine(dev_run());
-        }
         
         if(move_vertical == false)
         {
@@ -131,6 +126,24 @@ public class playerMovement : MonoBehaviour
         //     int print_pref = PlayerPrefs.GetInt("dropdown_index");
         //     Debug.Log("dropdown_index is now " + print_pref);
         // }
+    }
+
+    void LateUpdate()
+    {
+
+        // DEV RUN - GET RID OF WHEN FINAL VERSION IS REALEASED 
+        if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
+            move_speed_bool = !move_speed_bool;
+        }
+
+        if(move_speed_bool)
+        {
+            moveSpeed = move_fast;
+        }
+        else
+        {
+            moveSpeed = move_normal;
+        }
     }
 
     public void CheckForNearbyNPC ()
@@ -153,22 +166,5 @@ public class playerMovement : MonoBehaviour
     	GlobalVars.position[0] = transform.position.x;
         GlobalVars.position[1] = transform.position.y;
         GlobalVars.position[2] = transform.position.z;
-    }
-
-    /* DEV RUN */
-    IEnumerator dev_run()
-    {
-        if(move_speed_bool == false)
-        {
-            moveSpeed = move_fast;
-        }
-        else
-        {
-            moveSpeed = move_normal;
-        }
-
-        yield return new WaitForSecondsRealtime(0.2f);
-
-        move_speed_bool = !move_speed_bool;
     }
 }
