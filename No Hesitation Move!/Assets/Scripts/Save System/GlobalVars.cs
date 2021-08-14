@@ -65,8 +65,10 @@ public class GlobalVars : MonoBehaviour
     public static bool chapVIIISeen;
     public static bool chapVSeen;
 
+    /* int for checking which door it is */
+    public static int which_door;
+
 	// test print, check if array stuff is being added
-	
 	public static void print_array(){
 		// recur_array.Add(false);
 		// Debug.Log("here in print_array" + recur_array.Count);
