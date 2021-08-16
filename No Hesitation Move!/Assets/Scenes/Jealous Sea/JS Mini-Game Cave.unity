@@ -1292,6 +1292,7 @@ GameObject:
   m_Component:
   - component: {fileID: 230594269}
   - component: {fileID: 230594268}
+  - component: {fileID: 230594270}
   m_Layer: 0
   m_Name: Grid
   m_TagString: Untagged
@@ -1326,6 +1327,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &230594270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230594267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc94791436f2aa4449093ba41bba2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  relativeMove: 0.6
 --- !u!1 &247473198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3389,7 +3404,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 3.8383179, y: 3.3786373}
+  m_Offset: {x: 3.8158169, y: 3.5813236}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3400,7 +3415,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 52.07029, y: 28.258938}
+  m_Size: {x: 61.484013, y: 28.66431}
   m_EdgeRadius: 0
 --- !u!4 &864696969
 Transform:
@@ -8573,7 +8588,7 @@ GameObject:
   - component: {fileID: 1341841286}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

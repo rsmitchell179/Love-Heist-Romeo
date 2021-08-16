@@ -8,8 +8,8 @@ public class BackgroundScroll : MonoBehaviour
     // playerMovement p_move;
     // GameObject bkgr;
     // Vector3 bkgr_pos;
-    public Transform cam;
-    public float relativeMove = 0.6f;
+    Transform cam;
+    float relativeMove = 0.6f;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +18,8 @@ public class BackgroundScroll : MonoBehaviour
         // p_move = player.GetComponent<playerMovement>();
         // bkgr = this.gameObject;
         // bkgr_pos = bkgr.transform.position;
+
+        cam = GameObject.FindWithTag("MainCamera").transform;
     }
 
     // Update is called once per frame
