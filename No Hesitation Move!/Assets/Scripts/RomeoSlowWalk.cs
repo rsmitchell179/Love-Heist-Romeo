@@ -15,6 +15,6 @@ public class RomeoSlowWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        p_move.moveSpeed = 1.0f;
+        p_move.moveSpeed = 2f;
     }
 }

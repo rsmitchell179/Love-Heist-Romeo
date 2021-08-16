@@ -132,18 +132,18 @@ public class playerMovement : MonoBehaviour
     {
 
         // DEV RUN - GET RID OF WHEN FINAL VERSION IS REALEASED 
-        if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
-            move_speed_bool = !move_speed_bool;
-        }
+        // if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift)) {
+        //     move_speed_bool = !move_speed_bool;
+        // }
 
-        if(move_speed_bool)
-        {
-            moveSpeed = move_fast;
-        }
-        else
-        {
-            moveSpeed = move_normal;
-        }
+        // if(move_speed_bool)
+        // {
+        //     moveSpeed = move_fast;
+        // }
+        // else
+        // {
+        //     moveSpeed = move_normal;
+        // }
     }
 
     public void CheckForNearbyNPC ()
