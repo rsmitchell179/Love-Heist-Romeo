@@ -268,7 +268,6 @@ GameObject:
   m_Component:
   - component: {fileID: 21870854}
   - component: {fileID: 21870855}
-  - component: {fileID: 21870856}
   m_Layer: 0
   m_Name: blueweed_17
   m_TagString: Untagged
@@ -341,21 +340,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &21870856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 21870853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1001 &32244020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1830,7 +1814,6 @@ GameObject:
   m_Component:
   - component: {fileID: 133199374}
   - component: {fileID: 133199375}
-  - component: {fileID: 133199376}
   m_Layer: 0
   m_Name: blueweed_5
   m_TagString: Untagged
@@ -1903,21 +1886,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &133199376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 133199373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1001 &156901636
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2986,7 +2954,6 @@ GameObject:
   m_Component:
   - component: {fileID: 279222537}
   - component: {fileID: 279222538}
-  - component: {fileID: 279222539}
   m_Layer: 0
   m_Name: blueweed
   m_TagString: Untagged
@@ -3059,21 +3026,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &279222539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 279222536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1 &288309878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1252938795665880068, guid: 8d847543876ff9d40abb288793dee1e0,
@@ -3706,6 +3658,130 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8d847543876ff9d40abb288793dee1e0, type: 3}
+--- !u!1 &368633059 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1980558645011308734, guid: 9abfacd987794be4fade1c1b89a222aa,
+    type: 3}
+  m_PrefabInstance: {fileID: 1889987007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!60 &368633060
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 368633059}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.25}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.17, y: -0.71}
+      - {x: 1.23, y: -0.65}
+      - {x: 1.23, y: -0.59999996}
+      - {x: 1.1999999, y: -0.53999996}
+      - {x: 1.1999999, y: -0.32999998}
+      - {x: 1.17, y: -0.22}
+      - {x: 1.11, y: -0.16}
+      - {x: 0.91999996, y: -0.12}
+      - {x: 0.64, y: -0.06}
+      - {x: 0.38, y: -0.06}
+      - {x: 0.24, y: 0.02}
+      - {x: 0.07, y: 0.17}
+      - {x: 0.12, y: 0.21}
+      - {x: 0.24, y: 0.28}
+      - {x: 0.47, y: 0.34}
+      - {x: 0.51, y: 0.37}
+      - {x: 0.51, y: 0.56}
+      - {x: 0.45999998, y: 0.61}
+      - {x: 0.29, y: 0.62}
+      - {x: 0.42999998, y: 0.75}
+      - {x: 0.5, y: 0.82}
+      - {x: 0.64, y: 1.01}
+      - {x: 0.71999997, y: 1.15}
+      - {x: 0.76, y: 1.25}
+      - {x: 0.97999996, y: 1.3399999}
+      - {x: 1.13, y: 1.4399999}
+      - {x: 1.18, y: 1.5}
+      - {x: 1.22, y: 1.64}
+      - {x: 1.27, y: 1.6999999}
+      - {x: 1.29, y: 1.89}
+      - {x: 1.29, y: 1.9499999}
+      - {x: 1.26, y: 1.9599999}
+      - {x: 1.22, y: 1.93}
+      - {x: 1.13, y: 1.8399999}
+      - {x: 0.96999997, y: 1.74}
+      - {x: 0.88, y: 1.65}
+      - {x: 0.76, y: 1.61}
+      - {x: 0.55, y: 1.39}
+      - {x: 0.48, y: 1.26}
+      - {x: 0.19, y: 1.22}
+      - {x: 0.21, y: 1.25}
+      - {x: 0.22, y: 1.31}
+      - {x: 0.14999999, y: 1.41}
+      - {x: 0.07, y: 1.55}
+      - {x: 0.07, y: 1.5999999}
+      - {x: 0, y: 1.64}
+      - {x: -0.14999999, y: 1.79}
+      - {x: -0.29999998, y: 1.8399999}
+      - {x: -0.32999998, y: 1.92}
+      - {x: -0.42999998, y: 2.02}
+      - {x: -0.5, y: 2.07}
+      - {x: -0.53999996, y: 2.08}
+      - {x: -0.59999996, y: 2.08}
+      - {x: -0.82, y: 2.05}
+      - {x: -0.88, y: 1.9799999}
+      - {x: -0.89, y: 1.89}
+      - {x: -0.96, y: 1.77}
+      - {x: -0.98999995, y: 1.64}
+      - {x: -0.98999995, y: 1.35}
+      - {x: -0.96, y: 1.26}
+      - {x: -0.93, y: 1.1899999}
+      - {x: -0.87, y: 1.04}
+      - {x: -0.83, y: 0.97999996}
+      - {x: -0.64, y: 0.78999996}
+      - {x: -0.5, y: 0.7}
+      - {x: -0.37, y: 0.64}
+      - {x: -0.5, y: 0.59}
+      - {x: -0.53999996, y: 0.53999996}
+      - {x: -0.55, y: 0.39}
+      - {x: -0.35, y: 0.26999998}
+      - {x: -0.16, y: 0.26999998}
+      - {x: -0.16, y: 0.22}
+      - {x: -0.11, y: 0.16}
+      - {x: -0.26999998, y: 0.01}
+      - {x: -0.29, y: -0.07}
+      - {x: -0.58, y: -0.08}
+      - {x: -0.83, y: -0.12}
+      - {x: -1.03, y: -0.16}
+      - {x: -1.15, y: -0.19999999}
+      - {x: -1.22, y: -0.24}
+      - {x: -1.22, y: -0.39}
+      - {x: -1.1899999, y: -0.55}
+      - {x: -1.22, y: -0.61}
+      - {x: -1.22, y: -0.65}
+      - {x: -1.14, y: -0.72999996}
+      - {x: -0.84, y: -0.81}
+      - {x: -0.62, y: -0.87}
+      - {x: -0.48, y: -0.89}
+      - {x: -0.25, y: -0.90999997}
+      - {x: -0.04, y: -0.90999997}
+      - {x: 0.16, y: -0.9}
+      - {x: 0.55, y: -0.84999996}
+      - {x: 0.96999997, y: -0.78}
 --- !u!1 &379737045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -4187,7 +4263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 441257663}
   - component: {fileID: 441257664}
-  - component: {fileID: 441257665}
   m_Layer: 0
   m_Name: blueweed_14
   m_TagString: Untagged
@@ -4260,21 +4335,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &441257665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441257662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1 &454231287 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -5873,7 +5933,6 @@ GameObject:
   m_Component:
   - component: {fileID: 624637984}
   - component: {fileID: 624637985}
-  - component: {fileID: 624637986}
   m_Layer: 0
   m_Name: blueweed_15
   m_TagString: Untagged
@@ -5946,21 +6005,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &624637986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624637983}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!4 &638620049 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -6548,7 +6592,6 @@ GameObject:
   m_Component:
   - component: {fileID: 713107518}
   - component: {fileID: 713107519}
-  - component: {fileID: 713107520}
   m_Layer: 0
   m_Name: leafy_3
   m_TagString: Untagged
@@ -6621,21 +6664,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &713107520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713107517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 1
-  runOnlyOnce: 1
 --- !u!1 &715574821 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2238729598087878154, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -6652,7 +6680,6 @@ GameObject:
   m_Component:
   - component: {fileID: 722204786}
   - component: {fileID: 722204787}
-  - component: {fileID: 722204788}
   m_Layer: 0
   m_Name: blueweed_7
   m_TagString: Untagged
@@ -6725,21 +6752,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &722204788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722204785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1 &728559084
 GameObject:
   m_ObjectHideFlags: 0
@@ -6750,7 +6762,6 @@ GameObject:
   m_Component:
   - component: {fileID: 728559085}
   - component: {fileID: 728559086}
-  - component: {fileID: 728559087}
   m_Layer: 0
   m_Name: blueweed_12
   m_TagString: Untagged
@@ -6823,21 +6834,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &728559087
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728559084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1 &743743301
 GameObject:
   m_ObjectHideFlags: 0
@@ -7369,7 +7365,6 @@ GameObject:
   m_Component:
   - component: {fileID: 803043004}
   - component: {fileID: 803043005}
-  - component: {fileID: 803043006}
   m_Layer: 0
   m_Name: leafy_2
   m_TagString: Untagged
@@ -7442,21 +7437,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &803043006
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803043003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 1
-  runOnlyOnce: 1
 --- !u!114 &811772819 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3638626972906848523, guid: 62c1d4f54e09f284b8ec3262624f9260,
@@ -7614,7 +7594,6 @@ GameObject:
   m_Component:
   - component: {fileID: 814859897}
   - component: {fileID: 814859898}
-  - component: {fileID: 814859899}
   m_Layer: 0
   m_Name: leafy_1
   m_TagString: Untagged
@@ -7687,21 +7666,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &814859899
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814859896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 1
-  runOnlyOnce: 1
 --- !u!1 &816318709
 GameObject:
   m_ObjectHideFlags: 0
@@ -10060,7 +10024,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1055784042}
   - component: {fileID: 1055784043}
-  - component: {fileID: 1055784044}
   m_Layer: 0
   m_Name: blueweed_13
   m_TagString: Untagged
@@ -10133,21 +10096,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1055784044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055784041}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1 &1058364238
 GameObject:
   m_ObjectHideFlags: 0
@@ -10368,7 +10316,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1099797330}
   - component: {fileID: 1099797331}
-  - component: {fileID: 1099797332}
   m_Layer: 0
   m_Name: leafy
   m_TagString: Untagged
@@ -10441,21 +10388,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1099797332
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099797329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 1
-  runOnlyOnce: 1
 --- !u!1 &1100762661
 GameObject:
   m_ObjectHideFlags: 0
@@ -10915,7 +10847,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1114165151}
   - component: {fileID: 1114165152}
-  - component: {fileID: 1114165153}
   m_Layer: 0
   m_Name: blueweed_2
   m_TagString: Untagged
@@ -10988,21 +10919,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1114165153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114165150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1001 &1116253946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11928,7 +11844,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1198617812}
   - component: {fileID: 1198617813}
-  - component: {fileID: 1198617814}
   m_Layer: 0
   m_Name: blueweed_16
   m_TagString: Untagged
@@ -12001,21 +11916,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1198617814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1198617811}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1001 &1198866006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12733,7 +12633,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1253512782}
   - component: {fileID: 1253512783}
-  - component: {fileID: 1253512784}
   m_Layer: 0
   m_Name: blueweed_10
   m_TagString: Untagged
@@ -12806,21 +12705,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1253512784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1253512781}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1 &1272841749
 GameObject:
   m_ObjectHideFlags: 0
@@ -14725,7 +14609,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1445448643}
   - component: {fileID: 1445448644}
-  - component: {fileID: 1445448645}
   m_Layer: 0
   m_Name: blueweed_8
   m_TagString: Untagged
@@ -14798,21 +14681,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1445448645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1445448642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1 &1450944782 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
@@ -19236,7 +19104,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1648939478}
   - component: {fileID: 1648939479}
-  - component: {fileID: 1648939480}
   m_Layer: 0
   m_Name: blueweed_6
   m_TagString: Untagged
@@ -19309,21 +19176,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1648939480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1648939477}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!4 &1649782778 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -19340,7 +19192,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1654576862}
   - component: {fileID: 1654576863}
-  - component: {fileID: 1654576864}
   m_Layer: 0
   m_Name: blueweed_4
   m_TagString: Untagged
@@ -19413,21 +19264,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1654576864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1654576861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1001 &1668042903
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19560,7 +19396,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1686965875}
   - component: {fileID: 1686965876}
-  - component: {fileID: 1686965877}
   m_Layer: 0
   m_Name: blueweed_1
   m_TagString: Untagged
@@ -19633,21 +19468,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1686965877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1686965874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!4 &1709705567 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
@@ -19848,7 +19668,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1722619854}
   - component: {fileID: 1722619855}
-  - component: {fileID: 1722619856}
   m_Layer: 0
   m_Name: blueweed_9
   m_TagString: Untagged
@@ -19921,21 +19740,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1722619856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722619853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1001 &1746118257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20711,7 +20515,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1857214286}
   - component: {fileID: 1857214287}
-  - component: {fileID: 1857214288}
   m_Layer: 0
   m_Name: blueweed_11
   m_TagString: Untagged
@@ -20784,21 +20587,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1857214288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857214285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!4 &1884918209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
@@ -20820,12 +20608,12 @@ PrefabInstance:
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.017
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.969
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
@@ -20835,22 +20623,22 @@ PrefabInstance:
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9489031
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.3155677
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
@@ -20865,7 +20653,7 @@ PrefabInstance:
     - target: {fileID: 1980558645011308731, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 36.79
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1980558645011308733, guid: 9abfacd987794be4fade1c1b89a222aa,
         type: 3}
@@ -20892,7 +20680,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: decor_transparency_obj
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1980558645011308733, guid: 9abfacd987794be4fade1c1b89a222aa, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9abfacd987794be4fade1c1b89a222aa, type: 3}
 --- !u!1001 &1893719250
 PrefabInstance:
@@ -21420,7 +21209,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1937812985}
   - component: {fileID: 1937812986}
-  - component: {fileID: 1937812987}
   m_Layer: 0
   m_Name: blueweed_3
   m_TagString: Untagged
@@ -21493,21 +21281,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1937812987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937812984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!1001 &1938727478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21654,7 +21427,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1946779934}
   - component: {fileID: 1946779935}
-  - component: {fileID: 1946779936}
   m_Layer: 0
   m_Name: blueweed_18
   m_TagString: Untagged
@@ -21727,21 +21499,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1946779936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1946779933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: 0
-  runOnlyOnce: 1
 --- !u!4 &1950451355 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7360140750273730938, guid: 8d847543876ff9d40abb288793dee1e0,
@@ -21806,7 +21563,6 @@ GameObject:
   - component: {fileID: 1963946202}
   - component: {fileID: 1963946201}
   - component: {fileID: 1963946200}
-  - component: {fileID: 1963946199}
   - component: {fileID: 1963946205}
   - component: {fileID: 1963946204}
   - component: {fileID: 1963946203}
@@ -21817,21 +21573,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1963946199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963946198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b87bcb60de5c7a947a09ebce102f4f4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sortingOrderBase: 5000
-  offset: -1
-  runOnlyOnce: 1
 --- !u!95 &1963946200
 Animator:
   serializedVersion: 3
