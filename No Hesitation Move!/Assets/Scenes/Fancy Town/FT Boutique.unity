@@ -11179,6 +11179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723012557}
   - component: {fileID: 1723012556}
+  - component: {fileID: 1723012558}
   m_Layer: 11
   m_Name: Grid
   m_TagString: Untagged
@@ -11213,6 +11214,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1723012558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1723012555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc94791436f2aa4449093ba41bba2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1753257117 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4545725546948066582, guid: 1192951b297738b41b506e5540fd9ce4,
