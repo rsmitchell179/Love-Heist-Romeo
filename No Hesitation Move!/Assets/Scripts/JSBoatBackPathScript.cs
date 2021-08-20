@@ -7,6 +7,7 @@ public class JSBoatBackPathScript : MonoBehaviour
 
     public bool is_active;
     public GameObject poker_roof;
+    public Collider2D boat_wheel;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class JSBoatBackPathScript : MonoBehaviour
         if(other.tag == "Player")
         {
             poker_roof.SetActive(false);
+            boat_wheel.enabled = false;
         }
     }
 
@@ -27,6 +29,7 @@ public class JSBoatBackPathScript : MonoBehaviour
         if(other.tag == "Player")
         {
             poker_roof.SetActive(true);
+            boat_wheel.enabled = true;
         }
     }
 }
