@@ -9,6 +9,7 @@ public class JSBoatLadderScript : MonoBehaviour
     public Collider2D invis_wall;
     public GameObject back_bath;
     public GameObject roof_edge;
+    public Collider2D boat_colliders;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class JSBoatLadderScript : MonoBehaviour
             invis_wall.enabled = false;
             back_bath.SetActive(false);
             roof_edge.SetActive(true);
+            boat_colliders.enabled = false;
             // Debug.Log("after check is " + decor_transparency.activeInHierarchy);
         }
     }
@@ -38,6 +40,7 @@ public class JSBoatLadderScript : MonoBehaviour
             invis_wall.enabled = true;
             back_bath.SetActive(true);
             roof_edge.SetActive(false);
+            boat_colliders.enabled = true;
         }
     }
 }
