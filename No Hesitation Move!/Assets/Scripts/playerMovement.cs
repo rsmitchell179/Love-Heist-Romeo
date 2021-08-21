@@ -11,7 +11,7 @@ public class playerMovement : MonoBehaviour
     [Header("Player Walk Speed")]
     public float moveSpeed;
     public float move_fast = 6.0f;
-    public float move_normal = 3.14f;
+    public float move_normal = 3.0f;
     private bool move_speed_bool;
 
     [Header("Player Components")]

@@ -55,6 +55,13 @@ public class GlobalVars : MonoBehaviour
     public static bool rc_open_door;
 
     /* bool array for seeing the neighborhood cards */
+
+    /* 
+    [0] overworld
+    [1] fancy town
+    [2] jealous sea
+    [3] reject city
+    */
     public static bool[] has_seen_card = new bool[4];
 
     /* bools for the chapters, idk */

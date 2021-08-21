@@ -37,7 +37,7 @@ public class TitlecardScript : MonoBehaviour
         	this_image.CrossFadeAlpha(1, first_fade, false);
 
             p_move.gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            p_move.move_normal = 0.0f;
+            p_move.moveSpeed = 0.0f;
             p_move.anim.SetFloat("Speed", 0.0f);
             p_move.movement.x = 0;
             p_move.movement.y = 0;
@@ -51,7 +51,7 @@ public class TitlecardScript : MonoBehaviour
             GlobalVars.has_seen_card[card_index] = true;
         	StartCoroutine(start_walk());
 
-            p_move.move_normal = 3.14f;
+            p_move.moveSpeed = p_move.move_normal;
         }
 
         if(Input.GetKeyDown(KeyCode.Space))
