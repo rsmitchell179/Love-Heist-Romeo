@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RomeoSlowWalk : MonoBehaviour
+public class RomeoWalkSpeedOverride : MonoBehaviour
 {
+    [Header("Scene's Current Speed")]
+    public float override_speed;
+
     playerMovement p_move;
 
     // Start is called before the first frame update
@@ -15,6 +18,6 @@ public class RomeoSlowWalk : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        p_move.moveSpeed = 2f;
+        p_move.moveSpeed = override_speed;
     }
 }
