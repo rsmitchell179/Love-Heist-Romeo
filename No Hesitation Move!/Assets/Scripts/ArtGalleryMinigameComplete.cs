@@ -5,17 +5,22 @@ using Yarn.Unity;
 
 public class ArtGalleryMinigameComplete : MonoBehaviour
 {
-
+    [Header("Character Components")]
 	public GameObject owl;
 	public GameObject romeo;
+    Animator romeo_animator;
+    SpriteRenderer romeo_sprite;
+    playerMovement p_move;
 
+    [Header("Yarnspinner Components")]
 	public DialogueRunner diaRun;
 	public YarnProgram scriptToLoad;
 	public string talktonode;
     public Sprite speaking_sprite;
-    Animator romeo_animator;
-    SpriteRenderer romeo_sprite;
-    playerMovement p_move;
+    
+    [Header("Spawn Components")]
+    public GameObject romeo_spawn;
+    public GameObject owl_spawn;
 
     void Awake()
     {
@@ -50,8 +55,8 @@ public class ArtGalleryMinigameComplete : MonoBehaviour
     	// yield return new WaitForSecondsRealtime(1.0f);
     	if(GlobalVars.rc_hasCollect == true)
     	{
-			owl.transform.position = new Vector3 (7.25f, 3.6f, 0.0f);
-    		romeo.transform.position = new Vector3 (6.0f, 3.45f, 0.0f);
+    		romeo.transform.position = romeo_spawn.transform.position;
+            owl.transform.position = owl_spawn.transform.position;
             p_move.anim.SetFloat("Horizontal", 1.0f);
             p_move.anim.SetFloat("Speed", 0.0f);
             p_move.enabled = false;
