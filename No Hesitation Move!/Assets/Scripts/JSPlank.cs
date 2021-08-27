@@ -44,7 +44,7 @@ public class JSPlank : MonoBehaviour
 
         while(time < duration)
         {   
-            main_camera.orthographicSize += (1f/190f);
+            main_camera.orthographicSize += (1f/380f);
             temp_camera_location.gameObject.transform.position = Vector3.Lerp(first_camera_location, final_camera_location.transform.position, time / duration);
             time += Time.deltaTime;
             // Debug.Log(time);
@@ -70,6 +70,7 @@ public class JSPlank : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(0.5f);
 
+        p_move.anim.Play("playerFall", 0, 0.0f);
         parent_player_anim.Play("js_jump_animation", 0, 0f);
     }
 }
