@@ -11,6 +11,7 @@ public class JSPlank : MonoBehaviour
     public Camera main_camera;
     public GameObject temp_camera_location;
     public GameObject final_camera_location;
+    public float divisor;
 
     void Awake()
     {
@@ -44,7 +45,7 @@ public class JSPlank : MonoBehaviour
 
         while(time < duration)
         {   
-            main_camera.orthographicSize += (1f/380f);
+            main_camera.orthographicSize += (1f/divisor);
             temp_camera_location.gameObject.transform.position = Vector3.Lerp(first_camera_location, final_camera_location.transform.position, time / duration);
             time += Time.deltaTime;
             // Debug.Log(time);
