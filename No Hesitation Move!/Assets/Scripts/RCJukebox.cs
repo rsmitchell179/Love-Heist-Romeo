@@ -26,6 +26,7 @@ public class RCJukebox : MonoBehaviour
     public float pointer_y;
     public bool allow_movement;
     public bool currently_lerping;
+    public float end_of_lerp_pointer;
 
     void Awake()
     {
@@ -168,7 +169,7 @@ public class RCJukebox : MonoBehaviour
             yield return null;
         }
 
-        yield return new WaitForSecondsRealtime(0.2f);
+        yield return new WaitForSecondsRealtime(end_of_lerp_pointer);
 
         currently_lerping = false;
     }

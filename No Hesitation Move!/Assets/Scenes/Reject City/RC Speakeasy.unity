@@ -4613,7 +4613,7 @@ GameObject:
   - component: {fileID: 1770557383}
   - component: {fileID: 1770557384}
   m_Layer: 0
-  m_Name: slots
+  m_Name: jukebox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4701,6 +4701,16 @@ MonoBehaviour:
   p_move: {fileID: 0}
   standing_on_jukebox: 0
   jukebox_bool: 0
+  let_move_left: 0
+  let_move_right: 0
+  pointer: {fileID: 811269870}
+  jukebox_steps: 
+  current_step: 0
+  pointer_x: 0
+  pointer_y: 0
+  allow_movement: 0
+  currently_lerping: 0
+  end_of_lerp_pointer: 0.05
 --- !u!61 &1770557384
 BoxCollider2D:
   m_ObjectHideFlags: 0

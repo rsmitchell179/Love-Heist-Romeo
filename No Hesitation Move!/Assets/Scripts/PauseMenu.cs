@@ -61,7 +61,7 @@ public class PauseMenu : MonoBehaviour
         save_prompt_text.CrossFadeAlpha(0.0f, 0.0f, false);
 
         curr_resolution = PlayerPrefs.GetInt("dropdown_index");
-        Debug.Log("curr_resolution is now " + curr_resolution);
+        // Debug.Log("curr_resolution is now " + curr_resolution);
     }
 
     void Start()
