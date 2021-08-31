@@ -75,9 +75,6 @@ public class playerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        
-
         if(diaRun.IsDialogueRunning == true)
         {
             anim.SetFloat("Speed", 0.0f);
