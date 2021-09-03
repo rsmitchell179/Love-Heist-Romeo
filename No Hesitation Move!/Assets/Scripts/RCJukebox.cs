@@ -20,13 +20,16 @@ public class RCJukebox : MonoBehaviour
 
     [Header("Jukebox Components")]
     public Image pointer;
+    public Image jukebox_knob;
     public int[] jukebox_steps;
     public int current_step;
     public float pointer_x;
     public float pointer_y;
+    public float end_of_lerp_pointer;
+    public float step_length;
+    public float knob_rotation;
     public bool allow_movement;
     public bool currently_lerping;
-    public float end_of_lerp_pointer;
 
     void Awake()
     {
@@ -136,7 +139,7 @@ public class RCJukebox : MonoBehaviour
                 current_step--;
                 pointer_x = pointer.GetComponent<RectTransform>().anchoredPosition.x;
                 Vector2 pointer_pos = pointer.GetComponent<RectTransform>().anchoredPosition;
-                StartCoroutine(lerp_pointer(-63.7f, pointer_pos));
+                StartCoroutine(lerp_pointer(-step_length, pointer_pos, knob_rotation));
             }
         }
 
@@ -147,12 +150,12 @@ public class RCJukebox : MonoBehaviour
                 current_step++;
                 pointer_x = pointer.GetComponent<RectTransform>().anchoredPosition.x;
                 Vector2 pointer_pos = pointer.GetComponent<RectTransform>().anchoredPosition;
-                StartCoroutine(lerp_pointer(63.7f, pointer_pos));
+                StartCoroutine(lerp_pointer(step_length, pointer_pos, -knob_rotation));
             }
         }
     }
 
-    IEnumerator lerp_pointer(float end_position_x, Vector2 pointer_pos)
+    IEnumerator lerp_pointer(float end_position_x, Vector2 pointer_pos, float knob_rotation)
     {
 
         currently_lerping = true;
@@ -164,6 +167,7 @@ public class RCJukebox : MonoBehaviour
 
         while(time < duration)
         {
+            jukebox_knob.GetComponent<RectTransform>().Rotate(0.0f, 0.0f, knob_rotation, Space.Self);
             pointer.GetComponent<RectTransform>().anchoredPosition = Vector2.Lerp(pointer_pos, end_position, time / duration);
             time += Time.deltaTime;
             yield return null;

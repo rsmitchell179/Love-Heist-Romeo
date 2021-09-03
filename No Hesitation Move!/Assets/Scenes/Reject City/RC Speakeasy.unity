@@ -951,7 +951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &260342527
 RectTransform:
   m_ObjectHideFlags: 0
@@ -961,14 +961,14 @@ RectTransform:
   m_GameObject: {fileID: 260342526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.95, y: 0.95, z: 1}
   m_Children: []
   m_Father: {fileID: 1940673139}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -349.9, y: -383.7}
+  m_AnchoredPosition: {x: -350.6, y: -385.7}
   m_SizeDelta: {x: 95, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &260342528
@@ -2359,7 +2359,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -348, y: -211.2}
+  m_AnchoredPosition: {x: -350, y: -211.2}
   m_SizeDelta: {x: 86, y: 281}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &811269870
@@ -3175,7 +3175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2b9a4c9282ad0cd4abff5b2f927093fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98664858c442511418177a4ec06b15ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5122,13 +5122,16 @@ MonoBehaviour:
   let_move_left: 0
   let_move_right: 0
   pointer: {fileID: 811269870}
+  jukebox_knob: {fileID: 260342528}
   jukebox_steps: 
   current_step: 0
   pointer_x: 0
   pointer_y: 0
+  end_of_lerp_pointer: 0.05
+  step_length: 63.9
+  knob_rotation: 0.75
   allow_movement: 0
   currently_lerping: 0
-  end_of_lerp_pointer: 0.05
 --- !u!61 &1770557384
 BoxCollider2D:
   m_ObjectHideFlags: 0
