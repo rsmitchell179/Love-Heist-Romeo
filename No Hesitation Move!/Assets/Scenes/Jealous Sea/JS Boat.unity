@@ -3070,6 +3070,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8081709650803054248, guid: 10ec8137d4110834b89e27012f3ac649,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -656.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081709650803054248, guid: 10ec8137d4110834b89e27012f3ac649,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8081709650803054254, guid: 10ec8137d4110834b89e27012f3ac649,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d9bc099035d4da4c8c5a3478259e888,
+        type: 3}
     - target: {fileID: 8081709650811904195, guid: 10ec8137d4110834b89e27012f3ac649,
         type: 3}
       propertyPath: m_Name
@@ -11341,6 +11357,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2480198943629176163, guid: 1bac7f248138acb4483390fe9d02c527,
         type: 3}
+    - target: {fileID: 7251836596353279238, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279238, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279238, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7251836596353279238, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 7251836596353279239, guid: b78e66ecd5a67a544ac4dae3b7619b2d,
         type: 3}
       propertyPath: romeo
