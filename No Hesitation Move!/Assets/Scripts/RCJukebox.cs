@@ -31,6 +31,10 @@ public class RCJukebox : MonoBehaviour
     public bool allow_movement;
     public bool currently_lerping;
 
+    public AudioSource scene_music;
+    public bool has_opened_jukebox;
+    public bool start_playing_bool;
+
     void Awake()
     {
         jukebox_bool = false;
@@ -41,6 +45,8 @@ public class RCJukebox : MonoBehaviour
             jukebox_steps[i] = i;
         }
         current_step = jukebox_steps[0];
+
+        start_playing_bool = true;
     }
 
     // Update is called once per frame
@@ -58,6 +64,7 @@ public class RCJukebox : MonoBehaviour
                 else
                 {
                     jukebox_bool = true;
+                    scene_music.Stop();
                 }
             }
         }
@@ -84,6 +91,11 @@ public class RCJukebox : MonoBehaviour
         else
         {
             allow_movement = true;
+        }
+
+        if(has_opened_jukebox == false && jukebox_bool == true)
+        {
+            StartCoroutine(start_playing());
         }
     }
 
@@ -136,10 +148,10 @@ public class RCJukebox : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.A))
             {
-                current_step--;
+                // current_step--;
                 pointer_x = pointer.GetComponent<RectTransform>().anchoredPosition.x;
                 Vector2 pointer_pos = pointer.GetComponent<RectTransform>().anchoredPosition;
-                StartCoroutine(lerp_pointer(-step_length, pointer_pos, knob_rotation));
+                StartCoroutine(lerp_pointer(-step_length, pointer_pos, knob_rotation, false));
             }
         }
 
@@ -147,15 +159,15 @@ public class RCJukebox : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.D))
             {
-                current_step++;
+                // current_step++;
                 pointer_x = pointer.GetComponent<RectTransform>().anchoredPosition.x;
                 Vector2 pointer_pos = pointer.GetComponent<RectTransform>().anchoredPosition;
-                StartCoroutine(lerp_pointer(step_length, pointer_pos, -knob_rotation));
+                StartCoroutine(lerp_pointer(step_length, pointer_pos, -knob_rotation, true));
             }
         }
     }
 
-    IEnumerator lerp_pointer(float end_position_x, Vector2 pointer_pos, float knob_rotation)
+    IEnumerator lerp_pointer(float end_position_x, Vector2 pointer_pos, float knob_rotation, bool change_step)
     {
 
         currently_lerping = true;
@@ -175,6 +187,28 @@ public class RCJukebox : MonoBehaviour
 
         yield return new WaitForSecondsRealtime(end_of_lerp_pointer);
 
+        if(change_step)
+        {
+            current_step++;
+        }
+        else
+        {
+            current_step--;
+        }
+
         currently_lerping = false;
+    }
+
+    IEnumerator start_playing()
+    {
+        has_opened_jukebox = true;
+
+        yield return new WaitForSecondsRealtime(0.0f);
+
+        start_playing_bool = false;
+
+        yield return new WaitForSecondsRealtime(0.0f);
+
+        start_playing_bool = true;
     }
 }
