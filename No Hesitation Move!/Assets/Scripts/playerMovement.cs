@@ -151,7 +151,8 @@ public class playerMovement : MonoBehaviour
             (p.transform.position - this.transform.position)// is in range?
             .magnitude <= interactionRadius;
         });
-        Debug.Log(target);
+        // Disabled debug log that searches for target
+        // Debug.Log(target);
         if (target != null) {
             // Kick off the dialogue at this node.
             FindObjectOfType<DialogueRunner>().StartDialogue (target.talkToNode);
