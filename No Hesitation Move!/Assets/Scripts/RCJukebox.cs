@@ -28,9 +28,9 @@ public class RCJukebox : MonoBehaviour
     public float end_of_lerp_pointer;
     public float step_length;
     public float knob_rotation;
+    public float duration;
     public bool allow_movement;
     public bool currently_lerping;
-
     public AudioSource scene_music;
     public bool has_opened_jukebox;
     public bool start_playing_bool;
@@ -174,7 +174,6 @@ public class RCJukebox : MonoBehaviour
 
         float end_x = pointer_x + end_position_x;
         float time = 0f;
-        float duration = 1.0f;
         Vector2 end_position = new Vector2(end_x, pointer_pos.y);
 
         while(time < duration)

@@ -6,8 +6,12 @@ public class RCJukeboxPlay : MonoBehaviour
 {
 
     public AudioSource[] jukebox_tracks;
+    public AudioSource[] transition_sfx;
     public int current_track;
+    public int random_sfx;
     public RCJukebox rc_jukebox;
+    public bool check_transition;
+    public bool check_random;
 
     // Start is called before the first frame update
     void Start()
@@ -34,5 +38,36 @@ public class RCJukeboxPlay : MonoBehaviour
         {
             jukebox_tracks[current_track].Play();
         }
+
+        if(rc_jukebox.currently_lerping == true)
+        {
+            check_transition = true;
+        }
+        else
+        {
+            check_transition = false;
+        }
+
+        if(check_transition == true)
+        {
+            jukebox_tracks[current_track].Stop();
+
+            if(check_random == false)
+            {
+                set_random();
+            }
+        }
+        else
+        {
+            transition_sfx[random_sfx].Stop();
+            check_random = false;
+        }
+    }
+
+    void set_random()
+    {
+        random_sfx = Random.Range(0, 9);
+        transition_sfx[random_sfx].Play();
+        check_random = true;
     }
 }
