@@ -71,6 +71,8 @@ public class RCJukebox : MonoBehaviour
 
         if(jukebox_bool == true)
         {
+            p_move.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
+            p_move.gameObject.GetComponent<Rigidbody2D>().angularVelocity = 0f;
             jukebox_menu.SetActive(true);
             pause_menu.SetActive(false);
             p_move.enabled = false;
