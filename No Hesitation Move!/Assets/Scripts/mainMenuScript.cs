@@ -59,7 +59,7 @@ public class mainMenuScript : MonoBehaviour {
 
         /* get the aspect ratios for filtering */
         float reso_1 = 16f / 9f;
-        float reso_2 = 16f / 10f;
+        // float reso_2 = 16f / 10f;
 
         all_resolutions = Screen.resolutions;
         List<Resolution> selected_resolutions = new List<Resolution>();
@@ -76,11 +76,11 @@ public class mainMenuScript : MonoBehaviour {
                 selected_resolutions.Add(all_resolutions[i]);
                 reso_options.Add(reso_option);
             }
-            else if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) == reso_2))
-            {
-                selected_resolutions.Add(all_resolutions[i]);
-                reso_options.Add(reso_option);
-            }
+            // else if(((float)((float)all_resolutions[i].width / (float)all_resolutions[i].height) == reso_2))
+            // {
+            //     selected_resolutions.Add(all_resolutions[i]);
+            //     reso_options.Add(reso_option);
+            // }
             else
             {
                 continue;
