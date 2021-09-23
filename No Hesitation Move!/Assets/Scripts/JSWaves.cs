@@ -27,6 +27,14 @@ public class JSWaves : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(wave_pitch == 2 || wave_pitch == 3)
+        {
+            hi_vol = 1.0f;
+        }
+        else
+        {
+            hi_vol = 0.8f;
+        }
 
         if(!is_playing)
         {
