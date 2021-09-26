@@ -8,12 +8,15 @@ public class JSWaves : MonoBehaviour
     public AudioSource wave_sound;
     public AudioClip wave_sfx;
     public bool is_playing;
+    public bool past_startup;
     public float time;
     public float low_vol;
     public float hi_vol;
     public float first_duration;
     public float second_duration;
     public float wave_pitch;
+    public float wait_time;
+    public float startup_time;
 
     void Awake()
     {
@@ -22,6 +25,13 @@ public class JSWaves : MonoBehaviour
         wave_pitch = Random.Range(1, 4);
         first_duration = ((wave_sfx.length / wave_pitch)/4)*3;
         second_duration = ((wave_sfx.length / wave_pitch)/4);
+        startup_time = Random.Range(1.0f, 5.0f);
+        past_startup = true;
+    }
+
+    void Start()
+    {
+        StartCoroutine(delay_wave(startup_time));
     }
 
     // Update is called once per frame
@@ -29,14 +39,14 @@ public class JSWaves : MonoBehaviour
     {
         if(wave_pitch == 2 || wave_pitch == 3)
         {
-            hi_vol = 1.0f;
+            hi_vol = 0.6f;
         }
         else
         {
-            hi_vol = 0.8f;
+            hi_vol = 0.5f;
         }
 
-        if(!is_playing)
+        if(!is_playing && !past_startup)
         {
             wave_sound.volume = 0.0f;
             StartCoroutine(play_wave(low_vol, hi_vol));
@@ -70,8 +80,22 @@ public class JSWaves : MonoBehaviour
 
         wave_sound.Stop();
 
-        yield return new WaitForSecondsRealtime(2.0f);
+        yield return new WaitForSecondsRealtime(wait_time);
         is_playing = false;
         wave_pitch = Random.Range(1, 4);
+    }
+
+    IEnumerator delay_wave(float startup_duration)
+    {
+        float local_time = 0f;
+        while(local_time < startup_duration)
+        {
+            local_time += Time.deltaTime;
+            yield return null;
+        }
+
+        yield return new WaitForSecondsRealtime(0.5f);
+
+        past_startup = false;
     }
 }
