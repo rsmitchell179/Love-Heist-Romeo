@@ -35,13 +35,13 @@ public class RCJukeboxText : MonoBehaviour
 
         text.text = track_titles[track_title_index];
 
-        if(track_title_index == 1)
-        {
-            text.fontSize = 25;
-        }
-        else
-        {
-            text.fontSize = 36;
-        }
+        // if(track_title_index == 1)
+        // {
+        //     text.fontSize = 25;
+        // }
+        // else
+        // {
+        //     text.fontSize = 36;
+        // }
     }
 }
