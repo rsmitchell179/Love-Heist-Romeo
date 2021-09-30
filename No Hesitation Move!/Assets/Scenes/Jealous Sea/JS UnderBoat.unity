@@ -1198,12 +1198,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -6537479257181401077, guid: 9fb9281b663a55042b7c170a1216e5a6,
+      objectReference: {fileID: -4178284372444367135, guid: a45eae8d35b294c47b3d32b4dc632a03,
         type: 3}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1218,12 +1218,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.579
+      value: 0.738
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.68
+      value: -0.969
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1289,7 +1289,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 6882c10e038029b4496d834bbb45f0e9, type: 2}
+      objectReference: {fileID: 9100000, guid: 6b3e567b3529b7a4eba7c5b01448f212, type: 2}
     - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: offset
@@ -1299,6 +1299,16 @@ PrefabInstance:
         type: 3}
       propertyPath: doughboy_text
       value: I know it was luck that brought two lovers together.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807253301810781565, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: above_layer
+      value: NPC_Above_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807253301810781565, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: behind_layer
+      value: NPC_Behind_1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -1591,6 +1601,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: secondary_canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6342995712281244060, guid: aed96efbcc937254aa45a84a6d3ab1cd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8361148282108164368, guid: aed96efbcc937254aa45a84a6d3ab1cd,
         type: 3}
       propertyPath: m_IsActive
@@ -1704,12 +1719,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6802501248302723333, guid: c2b7977fce47b414d8e16134e73bacd3,
+      objectReference: {fileID: 480233822608958293, guid: 3ae3bcd32759b074ca889c5ab726e8c2,
         type: 3}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1724,12 +1739,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.259
+      value: -2.18
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.932
+      value: -1.814
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -1795,7 +1810,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 414214ba60df56445ab4da70883ef37e, type: 2}
+      objectReference: {fileID: 9100000, guid: 9d3645e7f9b79c1448a867fddc6becf1, type: 2}
     - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: offset
@@ -3478,12 +3493,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -988459141874504972, guid: d820135ef8e43ab4e86e3f5bd060d2ab,
+      objectReference: {fileID: 8453801656453083227, guid: 1434ede62d23eda4fae8b5c928aa9026,
         type: 3}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -3498,12 +3513,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.134
+      value: -1.088
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.731
+      value: -0.936
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -3569,7 +3584,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 892fa794a754dd0428c8995d7a6c6740, type: 2}
+      objectReference: {fileID: 9100000, guid: 2f60e4978e088854b8f6d219b39c67d8, type: 2}
     - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: offset
@@ -3579,6 +3594,16 @@ PrefabInstance:
         type: 3}
       propertyPath: doughboy_text
       value: Luck? What do you guys know about luck?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807253301810781565, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: above_layer
+      value: NPC_Above_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807253301810781565, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: behind_layer
+      value: NPC_Behind_1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5644678720241794635, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
@@ -4638,6 +4663,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2036855018}
     m_Modifications:
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 2897767659185981635, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.56
+      objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794630, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_Name
@@ -4652,12 +4687,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 6802501248302723333, guid: c2b7977fce47b414d8e16134e73bacd3,
+      objectReference: {fileID: 480233822608958293, guid: 3ae3bcd32759b074ca889c5ab726e8c2,
         type: 3}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -4672,12 +4707,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.083
+      value: 1.945
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.864
+      value: -1.755
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -4743,7 +4778,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 414214ba60df56445ab4da70883ef37e, type: 2}
+      objectReference: {fileID: 9100000, guid: a58e71321dc5d6d4f9409809afc062f6, type: 2}
     - target: {fileID: 6397317555227376008, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: offset
