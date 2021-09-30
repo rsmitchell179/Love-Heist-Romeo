@@ -66,13 +66,13 @@ public class CheckFTOrb : MonoBehaviour
         this.GetComponent<SpriteRenderer>().enabled = false;
         GlobalVars.hasFTorb = true;
 
-        yield return new WaitForSecondsRealtime(0.5f);
+        // yield return new WaitForSecondsRealtime(0.5f);
 
-        img_fade.CrossFadeAlpha(1, 0.5f, false);
+        // img_fade.CrossFadeAlpha(1, 0.5f, false);
 
-        yield return new WaitForSecondsRealtime(3.5f);
+        // yield return new WaitForSecondsRealtime(3.5f);
 
-        img_fade.CrossFadeAlpha(0, 0.5f, false);
+        // img_fade.CrossFadeAlpha(0, 0.5f, false);
 
         p_move.enabled = true;
         GlobalVars.ft_orb_get = true;

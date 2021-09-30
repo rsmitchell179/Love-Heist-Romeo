@@ -67,13 +67,13 @@ public class CheckRCOrb : MonoBehaviour
         this.GetComponent<SpriteRenderer>().enabled = false;
         GlobalVars.hasRCorb = true;
 
-        yield return new WaitForSecondsRealtime(0.5f);
+        // yield return new WaitForSecondsRealtime(0.5f);
 
-        img_fade.CrossFadeAlpha(1, 0.5f, false);
+        // img_fade.CrossFadeAlpha(1, 0.5f, false);
 
-        yield return new WaitForSecondsRealtime(3.5f);
+        // yield return new WaitForSecondsRealtime(3.5f);
 
-        img_fade.CrossFadeAlpha(0, 0.5f, false);
+        // img_fade.CrossFadeAlpha(0, 0.5f, false);
 
         p_move.enabled = true;
         GlobalVars.rc_orb_get = true;
