@@ -1339,8 +1339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc94791436f2aa4449093ba41bba2624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  relativeMove: 0.6
 --- !u!1 &247473198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,10 +4520,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 0
-  MinDistance: 1
+  MinDistance: 3
   MaxDistance: 5
   Pan2D: 0
-  rolloffMode: 2
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0

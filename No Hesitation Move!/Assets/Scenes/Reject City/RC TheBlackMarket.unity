@@ -5755,7 +5755,7 @@ GameObject:
   - component: {fileID: 375008895}
   - component: {fileID: 375008894}
   m_Layer: 5
-  m_Name: Chapter V
+  m_Name: Chapter VIII
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5790,7 +5790,7 @@ Animator:
   m_GameObject: {fileID: 375008892}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dd8e81e7975730a458d15d0dadd08f5f, type: 2}
+  m_Controller: {fileID: 9100000, guid: 22ef08fb099c3b14ba80137fc042ab1b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5806,7 +5806,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 375008892}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -5819,7 +5819,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6ddb1f69062bfe445a4e3e476be84797, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e6eaa57de3baff94c8ba47f72592734f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -33630,7 +33630,7 @@ GameObject:
   - component: {fileID: 1948467480}
   - component: {fileID: 1948467483}
   m_Layer: 0
-  m_Name: Chapter V
+  m_Name: Chapter VIII
   m_TagString: Chapter V
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33658,7 +33658,7 @@ MonoBehaviour:
   p_move: {fileID: 2123455793}
   animation_bool: 0
   anim: {fileID: 375008894}
-  letter_zoom: {fileID: 7400000, guid: cfe69ba6e47710e4a8c8f3314b7cf904, type: 2}
+  letter_zoom: {fileID: 7400000, guid: dd9a85b91a4c7514aaf34ac5834e1da6, type: 2}
 --- !u!58 &1948467480
 CircleCollider2D:
   m_ObjectHideFlags: 0
