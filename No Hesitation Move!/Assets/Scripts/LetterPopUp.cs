@@ -23,7 +23,7 @@ public class LetterPopUp : MonoBehaviour
 
     [Header("canvas")]
     public GameObject db_canvas;
-    public GameObject tutorial_canvas;
+    // public GameObject tutorial_canvas;
 
     Vector3 set_position;
     bool stop_player_movement;
