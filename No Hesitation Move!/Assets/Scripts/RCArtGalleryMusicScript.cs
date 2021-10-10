@@ -5,10 +5,18 @@ using UnityEngine.SceneManagement;
 
 public class RCArtGalleryMusicScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    static RCArtGalleryMusicScript instance;
+
+    void Awake()
     {
-        
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else if(instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Update is called once per frame
@@ -20,6 +28,7 @@ public class RCArtGalleryMusicScript : MonoBehaviour
         }
         else
         {
+            instance = null;
             Destroy(this.gameObject);
         }
     }
