@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class JsOrb : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    AudioSource orb_source;
+
+    void Awake()
     {
-        
+        orb_source = this.GetComponent<AudioSource>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if(SoundVars.JSorbplayed == 1)
+        {
+            orb_source.Stop();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
