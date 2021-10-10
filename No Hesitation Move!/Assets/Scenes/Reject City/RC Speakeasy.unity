@@ -1807,6 +1807,12 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &298484634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2342667099933696741, guid: 615f7e7cae6f75e48a54864267a9ae9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1344970010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &313033087
 GameObject:
   m_ObjectHideFlags: 0
@@ -8354,7 +8360,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jukebox_menu: {fileID: 1940673135}
-  pause_menu: {fileID: 1917824098}
+  pause_stuff: {fileID: 1917824098}
+  pause_menu: {fileID: 298484634}
   p_move: {fileID: 0}
   standing_on_jukebox: 0
   jukebox_bool: 0
@@ -8375,6 +8382,7 @@ MonoBehaviour:
   scene_music: {fileID: 1584451953}
   has_opened_jukebox: 0
   start_playing_bool: 0
+  check_pause_menu: 0
 --- !u!61 &1770557384
 BoxCollider2D:
   m_ObjectHideFlags: 0

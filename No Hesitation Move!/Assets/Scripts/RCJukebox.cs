@@ -7,6 +7,7 @@ public class RCJukebox : MonoBehaviour
 {
     [Header("UI Components")]
     public GameObject jukebox_menu;
+    public GameObject pause_stuff;
     public GameObject pause_menu;
 
     [Header("Player Components")]
@@ -34,6 +35,7 @@ public class RCJukebox : MonoBehaviour
     public AudioSource scene_music;
     public bool has_opened_jukebox;
     public bool start_playing_bool;
+    public bool check_pause_menu;
 
     void Awake()
     {
@@ -53,7 +55,7 @@ public class RCJukebox : MonoBehaviour
     void Update()
     {
 
-        if(standing_on_jukebox)
+        if(standing_on_jukebox && !check_pause_menu)
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
@@ -74,7 +76,7 @@ public class RCJukebox : MonoBehaviour
             p_move.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0f, 0f);
             p_move.gameObject.GetComponent<Rigidbody2D>().angularVelocity = 0f;
             jukebox_menu.SetActive(true);
-            pause_menu.SetActive(false);
+            pause_stuff.SetActive(false);
             p_move.enabled = false;
             check_movement();
             move_pointer();
@@ -82,7 +84,7 @@ public class RCJukebox : MonoBehaviour
         else
         {
             jukebox_menu.SetActive(false);
-            pause_menu.SetActive(true);
+            pause_stuff.SetActive(true);
             p_move.enabled = true;
         }
 
@@ -98,6 +100,15 @@ public class RCJukebox : MonoBehaviour
         if(has_opened_jukebox == false && jukebox_bool == true)
         {
             StartCoroutine(start_playing());
+        }
+
+        if(pause_menu.activeInHierarchy == true)
+        {
+            check_pause_menu = true;
+        }
+        else
+        {
+            check_pause_menu = false;
         }
     }
 
