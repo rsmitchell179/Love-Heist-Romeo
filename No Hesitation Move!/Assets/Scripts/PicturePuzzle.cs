@@ -12,11 +12,12 @@ public class PicturePuzzle : MonoBehaviour
     [SerializeField]
     int[] zRoatations;
     private bool _active = false;
-    public OwlAttacks owl_attacks;
+    public bool puzzle_not_complete;
 
     void Awake()
     {
         img_fade.CrossFadeAlpha(0, 0.0f, true);
+        puzzle_not_complete = true;
 
     }
 
@@ -98,7 +99,6 @@ public class PicturePuzzle : MonoBehaviour
         Debug.Log(i);
         if (i == puzzlepieces.Length)
         {
-            owl_attacks.enabled = false;
             Debug.Log("PuzzleComplete");
             GlobalVars.rc_hasCollect = true;
 
@@ -109,6 +109,8 @@ public class PicturePuzzle : MonoBehaviour
                 Debug.Log("in here");
                 // puzzle.enabled = false;
             }
+
+            puzzle_not_complete = false;
             StartCoroutine(next_scene());
 
             // SceneManager.LoadScene("RC TheArtGallery");

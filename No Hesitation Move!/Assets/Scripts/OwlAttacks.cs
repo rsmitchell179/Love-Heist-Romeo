@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OwlAttacks : MonoBehaviour
 {
-    AudioSource source;
+    public AudioSource tornado_sound;
+    public AudioSource pushback_sound;
     [SerializeField] private float _timeBetweenAttacks = 2.5f;
     [SerializeField] private float _timeUntilDestroyingObstacles = 2f;
     [SerializeField] private Rigidbody2D _target;
@@ -12,12 +13,14 @@ public class OwlAttacks : MonoBehaviour
     [SerializeField] private PicturePuzzlePiece[] _puzzlePieces;
     [Header("Owl Components")]
     public Animator owl_anim;
-    bool is_flapping;
+    [SerializeField] bool is_flapping;
+    [SerializeField] bool continue_attacking;
+    public PicturePuzzle picture_puzzle_script;
     // Start is called before the first frame update
     void Start()
     {
-        source = GetComponent<AudioSource>();
         _puzzlePieces = FindObjectsOfType<PicturePuzzlePiece>();
+        continue_attacking = picture_puzzle_script.puzzle_not_complete;
         StartCoroutine(AttacksCoroutine());
     }
 
@@ -31,11 +34,13 @@ public class OwlAttacks : MonoBehaviour
         {
             owl_anim.SetBool("is_flapping", false);
         }
+
+        continue_attacking = picture_puzzle_script.puzzle_not_complete;
     }
 
     IEnumerator AttacksCoroutine()
     {
-        while (true)
+        while (continue_attacking)
         {
             yield return new WaitForSeconds(_timeBetweenAttacks);
             if (Random.Range(0f,1f)<.5f)
@@ -57,7 +62,7 @@ public class OwlAttacks : MonoBehaviour
     {   
         int count = 5;
         GameObject[] go = new GameObject[7];
-        source.Play();
+        tornado_sound.Play();
         System.Random rng = new System.Random();
         _puzzlePieces = Shuffle(rng, _puzzlePieces);
         for (int i = 0; i < count; i++)
@@ -86,7 +91,7 @@ public class OwlAttacks : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.3f);
 
         Vector3 velocity;
-        source.Play();
+        pushback_sound.Play();
         velocity = Vector3.down;
         print(velocity);
         float timer = 0;
