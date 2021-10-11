@@ -415,27 +415,27 @@ PrefabInstance:
     - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
-        type: 3}
-      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
-      propertyPath: m_AnchorMin.y
+      propertyPath: m_AnchorMin.x
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
+        type: 3}
       propertyPath: m_SizeDelta.x
-      value: -830.1393
+      value: 1089.8607
       objectReference: {fileID: 0}
     - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
@@ -455,7 +455,7 @@ PrefabInstance:
     - target: {fileID: 8676006708725610227, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000014307
+      value: 540
       objectReference: {fileID: 0}
     - target: {fileID: 8676006708725610228, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
@@ -1244,6 +1244,11 @@ PrefabInstance:
     - target: {fileID: 8676006709226921329, guid: 47e61ec5b1978374cad9a3c98266589a,
         type: 3}
       propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8676006709226921329, guid: 47e61ec5b1978374cad9a3c98266589a,
+        type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8676006709226921340, guid: 47e61ec5b1978374cad9a3c98266589a,
