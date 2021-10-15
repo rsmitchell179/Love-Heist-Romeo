@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: I want what they have...
 --- !u!1 &50116985
 GameObject:
@@ -823,7 +823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: This house is pretty. I want a pretty house someday.
 --- !u!1001 &69915778
 PrefabInstance:
@@ -1306,7 +1306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: No one ever invites me to hang out.
 --- !u!1 &116140193
 GameObject:
@@ -2243,7 +2243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
+  offset: 0.4
   doughboy_text: "The fountain sure is nice\u2026 wish my house was closer to it."
 --- !u!4 &202701821 stripped
 Transform:
@@ -2505,7 +2505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: This is where we had our first date...
 --- !u!1 &231580685
 GameObject:
@@ -2708,7 +2708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: You like standing? Me too!!!!!
 --- !u!1001 &271321306
 PrefabInstance:
@@ -3078,6 +3078,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -6537479257181401077, guid: 9fb9281b663a55042b7c170a1216e5a6,
@@ -3085,7 +3090,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -3100,12 +3105,12 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.45
+      value: 14.5
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.87
+      value: -5.36
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -3506,7 +3511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: "*mouth full of seaweed* Please don\u2019t tell my parents."
 --- !u!114 &388529441 stripped
 MonoBehaviour:
@@ -3870,7 +3875,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: "It\u2019s also where we had our first breakup\u2026 It's a small
     town."
 --- !u!1 &463232269
@@ -4252,8 +4257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
-  doughboy_text: Shells! Big! Huge! Shells!
+  offset: 0.4
+  doughboy_text: SHELLS! BIG! HUGE! SHELLS!
 --- !u!1 &505121902
 GameObject:
   m_ObjectHideFlags: 0
@@ -4661,7 +4666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: "But they aren\u2019t fun!"
 --- !u!1 &567232005
 GameObject:
@@ -5839,7 +5844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
+  offset: 0.4
   doughboy_text: The fountain looks so nice.
 --- !u!1 &700730613
 GameObject:
@@ -8278,7 +8283,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: Neither are we.
 --- !u!1 &995918977
 GameObject:
@@ -8967,7 +8972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: "This isn\u2019t my house\u2026 yet."
 --- !u!4 &1053553237 stripped
 Transform:
@@ -9795,7 +9800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
+  offset: 0.4
   doughboy_text: "I want to go hang out at the fountain, but that couple won\u2019t
     leave!"
 --- !u!1 &1114165150
@@ -10155,7 +10160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: You wanna go over to your house?
 --- !u!1 &1138640105
 GameObject:
@@ -10225,8 +10230,8 @@ MonoBehaviour:
   ui_text_2: {fileID: 2040312348}
   curr_text_1: 
   curr_text_2: 
-  db_1: {fileID: 1175484046}
-  db_2: {fileID: 1336679183}
+  db_1: {fileID: 1336679183}
+  db_2: {fileID: 1175484046}
   current_text: 
   cam: {fileID: 1011765416}
   render_dialogue: 0
@@ -10470,7 +10475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
+  offset: 0.4
   doughboy_text: You know my doctor told me to stop!
 --- !u!114 &1180582634
 MonoBehaviour:
@@ -10974,7 +10979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: "I bet you can\u2019t splash like me!"
 --- !u!1 &1225530583 stripped
 GameObject:
@@ -12371,7 +12376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: I bet I can eat more sand!
 --- !u!4 &1355700574 stripped
 Transform:
@@ -13285,7 +13290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
+  offset: 0.4
   doughboy_text: "I didn\u2019t know we had a key."
 --- !u!4 &1469904233 stripped
 Transform:
@@ -15798,7 +15803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
+  offset: 0.4
   doughboy_text: We should invite others to hang out.
 --- !u!1 &1498034605 stripped
 GameObject:
@@ -16533,7 +16538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: "There\u2019s a cave on the other side of town! Don\u2019t go in
     there! Orb do!"
 --- !u!4 &1581869954 stripped
@@ -16952,7 +16957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: "Don\u2019t you want to jump in?"
 --- !u!1 &1645884287
 GameObject:
@@ -17054,6 +17059,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6802501248302723333, guid: c2b7977fce47b414d8e16134e73bacd3,
@@ -17061,7 +17071,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 11
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794631, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -17076,7 +17086,7 @@ PrefabInstance:
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.65
+      value: -0.067
       objectReference: {fileID: 0}
     - target: {fileID: 5644678720241794632, guid: 383c68b74ba177443bacd66336ea0308,
         type: 3}
@@ -17749,7 +17759,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: "I hate my neighbor! He won\u2019t stop yelling about shells!"
 --- !u!1 &1722619853
 GameObject:
@@ -18728,7 +18738,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.55
+  offset: 0.4
   doughboy_text: Did you lose the key again?
 --- !u!114 &1907502280
 MonoBehaviour:
@@ -20038,7 +20048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.6
+  offset: 0.45
   doughboy_text: "Oh, this? This is a cave. What\u2019s inside? Beats me. I just
     stand out here."
 --- !u!1 &2095111401 stripped
@@ -20168,7 +20178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56259c066b0cc354280569a9763c3c17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: 0.35
+  offset: 0.2
   doughboy_text: "No, let\u2019s go over to your house!"
 --- !u!1 &2097135647
 GameObject:
