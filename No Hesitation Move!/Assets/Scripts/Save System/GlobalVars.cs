@@ -65,12 +65,12 @@ public class GlobalVars : MonoBehaviour
     public static bool[] has_seen_card = new bool[4];
 
     /* bools for the chapters, idk */
-    public static bool chapISeen;
-    public static bool chapIVSeen;
-    public static bool chapIXSeen;
-    public static bool chapIISeen;
-    public static bool chapVIIISeen;
-    public static bool chapVSeen;
+    // public static bool chapISeen;
+    // public static bool chapIVSeen;
+    // public static bool chapIXSeen;
+    // public static bool chapIISeen;
+    // public static bool chapVIIISeen;
+    // public static bool chapVSeen;
 
     /*
     [0]
@@ -85,6 +85,8 @@ public class GlobalVars : MonoBehaviour
     [9] chapter 9
     */
     public static bool[] chap_array = new bool[10];
+
+    public static bool has_loaded_game;
 
     /* int for checking which door it is */
     public static int which_door;

@@ -52,10 +52,12 @@ public class playerMovement : MonoBehaviour
         GlobalVars.curr_scene = SceneManager.GetActiveScene().name;
 
         file_path = Application.persistentDataPath + "/player.lhr";
-        if(File.Exists(file_path)){
+        if(File.Exists(file_path) && GlobalVars.has_loaded_game == true){
+            Debug.Log("has loaded is true");
         	SaveData load_pos_data = SaveSys.load_data();
         	Vector3 load_position = new Vector3(load_pos_data.position[0], load_pos_data.position[1], load_pos_data.position[2]);
         	transform.position = load_position;
+            GlobalVars.has_loaded_game = false;
         }
 
         current_scene = SceneManager.GetActiveScene();

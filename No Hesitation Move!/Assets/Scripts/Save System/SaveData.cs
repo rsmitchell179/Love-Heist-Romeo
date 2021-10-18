@@ -33,6 +33,8 @@ public class SaveData
     public bool boot_resolution;
     public int curr_resolution;
 
+    public bool[] chap_array;
+
     public SaveData()
     {
     	recur_array = new int[6];
@@ -71,6 +73,18 @@ public class SaveData
         has_seen_card[1] = GlobalVars.has_seen_card[1];
         has_seen_card[2] = GlobalVars.has_seen_card[2];
         has_seen_card[3] = GlobalVars.has_seen_card[3];
+
+        chap_array = new bool[10];
+        chap_array[0] = GlobalVars.chap_array[0];
+        chap_array[1] = GlobalVars.chap_array[1];
+        chap_array[2] = GlobalVars.chap_array[2];
+        chap_array[3] = GlobalVars.chap_array[3];
+        chap_array[4] = GlobalVars.chap_array[4];
+        chap_array[5] = GlobalVars.chap_array[5];
+        chap_array[6] = GlobalVars.chap_array[6];
+        chap_array[7] = GlobalVars.chap_array[7];
+        chap_array[8] = GlobalVars.chap_array[8];
+        chap_array[9] = GlobalVars.chap_array[9];
 
   //   	for(int i = 0; i < 6; i++)
 		// {

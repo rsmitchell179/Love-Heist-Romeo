@@ -46,17 +46,22 @@ public class DataManager : MonoBehaviour
         GlobalVars.ft_orb_get = false;
         GlobalVars.rc_orb_get = false;
 
-        GlobalVars.chapISeen = false;
-    	GlobalVars.chapIVSeen = false;
-    	GlobalVars.chapIXSeen = false;
-    	GlobalVars.chapIISeen = false;
-    	GlobalVars.chapVIIISeen = false;
-    	GlobalVars.chapVSeen = false;
-        GlobalVars.rc_open_door = false;
+     //    GlobalVars.chapISeen = false;
+    	// GlobalVars.chapIVSeen = false;
+    	// GlobalVars.chapIXSeen = false;
+    	// GlobalVars.chapIISeen = false;
+    	// GlobalVars.chapVIIISeen = false;
+    	// GlobalVars.chapVSeen = false;
+     //    GlobalVars.rc_open_door = false;
 
         for(int i = 0; i < 4; i++)
         {
         	GlobalVars.has_seen_card[i] = false;
+        }
+
+        for(int i = 0; i < 10; i++)
+        {
+            GlobalVars.chap_array[i] = false;
         }
 
         // PlayerPrefs.DeleteAll();
@@ -80,13 +85,21 @@ public class DataManager : MonoBehaviour
             GlobalVars.hasJSorb = new_data.hasJSorb;
             GlobalVars.hasFTorb = new_data.hasFTorb;
             GlobalVars.hasRCorb = new_data.hasRCorb;
+
       		// GlobalVars.chapISeen = new_data.chapISeen;
 	    	// GlobalVars.chapIVSeen = new_data.chapIVSeen;
 	    	// GlobalVars.chapIXSeen = new_data.chapIXSeen;
 	    	// GlobalVars.chapIISeen = new_data.chapIISeen;
 	    	// GlobalVars.chapVIIISeen = new_data.chapVIIISeen;
 	    	// GlobalVars.chapVSeen = new_data.chapVSeen;
-            
+
+            for(int i = 0; i < 10; i++)
+            {
+                GlobalVars.chap_array[i] = new_data.chap_array[i];
+            }
+
+            GlobalVars.has_loaded_game = true;
+            Debug.Log(GlobalVars.has_loaded_game);
 	        SceneManager.LoadScene(new_data.scene);
 	    }
 	    else
