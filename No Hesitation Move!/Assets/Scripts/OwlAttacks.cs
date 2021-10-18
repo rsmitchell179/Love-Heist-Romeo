@@ -60,7 +60,7 @@ public class OwlAttacks : MonoBehaviour
 
     IEnumerator SpawnObstacleCoroutine()
     {   
-        int count = 5;
+        int count = 7;
         GameObject[] go = new GameObject[7];
         tornado_sound.Play();
         System.Random rng = new System.Random();
