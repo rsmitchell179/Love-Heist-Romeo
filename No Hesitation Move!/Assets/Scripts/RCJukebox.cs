@@ -159,7 +159,7 @@ public class RCJukebox : MonoBehaviour
     {
         if(let_move_left)
         {
-            if(Input.GetKeyDown(KeyCode.A))
+            if(Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
             {
                 // current_step--;
                 pointer_x = pointer.GetComponent<RectTransform>().anchoredPosition.x;
@@ -170,7 +170,7 @@ public class RCJukebox : MonoBehaviour
 
         if(let_move_right)
         {
-            if(Input.GetKeyDown(KeyCode.D))
+            if(Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
             {
                 // current_step++;
                 pointer_x = pointer.GetComponent<RectTransform>().anchoredPosition.x;
