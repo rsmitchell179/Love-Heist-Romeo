@@ -1564,14 +1564,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17de2b73321c684bb255dd013151fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop_player_movement: 0
   letterRender: {fileID: 352363597}
   letter_opened: {fileID: 7217375663146381631, guid: 284f7c2544be7574e90b0a4c3937edaf,
     type: 3}
   letter_closed: {fileID: -6403409044798937774, guid: 284f7c2544be7574e90b0a4c3937edaf,
     type: 3}
+  chap_arr_index: 2
   letter: {fileID: 1158023260}
   letter_open: 0
   p_move: {fileID: 822697361}
+  is_standing: 0
   animation_bool: 0
   anim: {fileID: 1158023259}
   letter_zoom: {fileID: 7400000, guid: 590680b3bb8c6d44eb51708627cdd27e, type: 2}

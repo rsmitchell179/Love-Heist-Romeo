@@ -72,6 +72,20 @@ public class GlobalVars : MonoBehaviour
     public static bool chapVIIISeen;
     public static bool chapVSeen;
 
+    /*
+    [0]
+    [1] chapter 1
+    [2] chapter 2
+    [3]
+    [4] chapter 4
+    [5] chapter 5
+    [6]
+    [7]
+    [8] chapter 8
+    [9] chapter 9
+    */
+    public static bool[] chap_array = new bool[10];
+
     /* int for checking which door it is */
     public static int which_door;
 

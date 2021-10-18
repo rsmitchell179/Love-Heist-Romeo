@@ -13518,14 +13518,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17de2b73321c684bb255dd013151fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop_player_movement: 0
   letterRender: {fileID: 1581120752}
   letter_opened: {fileID: -3094557096603773800, guid: 23a1c4d4a04368d4f98fca62506821c2,
     type: 3}
   letter_closed: {fileID: -5910226647887011691, guid: 23a1c4d4a04368d4f98fca62506821c2,
     type: 3}
+  chap_arr_index: 5
   letter: {fileID: 1367120790}
   letter_open: 0
   p_move: {fileID: 983218211}
+  is_standing: 0
   animation_bool: 0
   anim: {fileID: 1367120789}
   letter_zoom: {fileID: 7400000, guid: cfe69ba6e47710e4a8c8f3314b7cf904, type: 2}

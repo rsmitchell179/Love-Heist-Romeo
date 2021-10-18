@@ -310,14 +310,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17de2b73321c684bb255dd013151fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop_player_movement: 0
   letterRender: {fileID: 17924838}
   letter_opened: {fileID: 7217375663146381631, guid: 284f7c2544be7574e90b0a4c3937edaf,
     type: 3}
   letter_closed: {fileID: -6403409044798937774, guid: 284f7c2544be7574e90b0a4c3937edaf,
     type: 3}
+  chap_arr_index: 9
   letter: {fileID: 723242334}
   letter_open: 0
   p_move: {fileID: 606628882}
+  is_standing: 0
   animation_bool: 0
   anim: {fileID: 723242333}
   letter_zoom: {fileID: 7400000, guid: 478d2b0741b916c48bb6cdfd297cd088, type: 2}

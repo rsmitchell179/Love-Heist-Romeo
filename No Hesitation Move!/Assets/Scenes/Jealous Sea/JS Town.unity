@@ -978,14 +978,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17de2b73321c684bb255dd013151fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop_player_movement: 0
   letterRender: {fileID: 90466172}
   letter_opened: {fileID: 8250379650287324805, guid: c135063bba0b661448519a6b9dc3c4a2,
     type: 3}
   letter_closed: {fileID: 8871099144867154836, guid: c135063bba0b661448519a6b9dc3c4a2,
     type: 3}
+  chap_arr_index: 4
   letter: {fileID: 550631808}
   letter_open: 0
   p_move: {fileID: 302988212}
+  is_standing: 0
   animation_bool: 0
   anim: {fileID: 550631807}
   letter_zoom: {fileID: 7400000, guid: 890ba13c87b8ade428fd65841a5e236f, type: 2}
@@ -7305,14 +7308,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d17de2b73321c684bb255dd013151fdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stop_player_movement: 0
   letterRender: {fileID: 872639450}
   letter_opened: {fileID: 8250379650287324805, guid: c135063bba0b661448519a6b9dc3c4a2,
     type: 3}
   letter_closed: {fileID: 8871099144867154836, guid: c135063bba0b661448519a6b9dc3c4a2,
     type: 3}
+  chap_arr_index: 1
   letter: {fileID: 1602281136}
   letter_open: 0
   p_move: {fileID: 302988212}
+  is_standing: 0
   animation_bool: 0
   anim: {fileID: 1602281135}
   letter_zoom: {fileID: 7400000, guid: 478d2b0741b916c48bb6cdfd297cd088, type: 2}
