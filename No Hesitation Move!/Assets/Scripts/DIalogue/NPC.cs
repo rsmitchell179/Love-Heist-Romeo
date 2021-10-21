@@ -17,6 +17,7 @@ public class NPC : MonoBehaviour
     public string third_node;
 
     public int bool_index;
+    public int chap_arr_index;
 
     [Header("Optional")]
     public YarnProgram scriptToLoad;
@@ -77,6 +78,11 @@ public class NPC : MonoBehaviour
         else
         {
             GlobalVars.recur_array[bool_index] = Int32.Parse(parameters[0]);
+        }
+
+        if(GlobalVars.chap_array[chap_arr_index] == false)
+        {
+            GlobalVars.chap_array[chap_arr_index] = true;
         }
     }
 }
