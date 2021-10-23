@@ -11,19 +11,22 @@ public class StartSlotsOnTrigger : MonoBehaviour
     [SerializeField]
     string levelToLoad;
 
-    playerMovement p_movement;
+    public playerMovement p_movement;
 
     bool is_colliding;
     [SerializeField]bool is_Spining;
 
     void Awake()
     {
-        p_movement = FindObjectOfType<playerMovement>();
+        p_movement = GameObject.FindWithTag("Player").GetComponent<playerMovement>();
     }
 
     void Update()
     {
-
+        if(SlotsButton.activeInHierarchy == true)
+        {
+            p_movement.enabled = false;
+        }
     }
 
     public void isSpin(){

@@ -79,6 +79,9 @@ public class owlSlotPopUp : MonoBehaviour
 
     IEnumerator start_owl_scene()
     {
+
+    	p_movement.enabled = false;
+
     	yield return new WaitForSecondsRealtime(1.5f);
 
     	img_fade.CrossFadeAlpha(1, 0.5f, false);
