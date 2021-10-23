@@ -16,7 +16,11 @@ public class FtOrb : MonoBehaviour
     {
         if(SoundVars.FTorbplayed == 1)
         {
-            orb_source.Stop();
+            orb_source.volume = 0;
+        }
+        else
+        {
+            orb_source.volume = 1;
         }
     }
 

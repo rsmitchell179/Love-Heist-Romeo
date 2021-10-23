@@ -16,10 +16,13 @@ public class RcOrb : MonoBehaviour
     {
         if(SoundVars.RCorbplayed == 1)
         {
-            orb_source.Stop();
+            orb_source.volume = 0;
+        }
+        else
+        {
+            orb_source.volume = 1;
         }
     }
-
 
     void OnTriggerEnter2D(Collider2D other)
     {

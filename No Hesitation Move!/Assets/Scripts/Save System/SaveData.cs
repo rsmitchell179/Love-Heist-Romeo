@@ -35,6 +35,14 @@ public class SaveData
 
     public bool[] chap_array;
 
+    // soundvars
+    public int JSorb;
+    public int FTorb;
+    public int RCorb;
+    public int JSorbplayed;
+    public int FTorbplayed;
+    public int RCorbplayed;
+
     public SaveData()
     {
     	recur_array = new int[6];
@@ -85,6 +93,13 @@ public class SaveData
         chap_array[7] = GlobalVars.chap_array[7];
         chap_array[8] = GlobalVars.chap_array[8];
         chap_array[9] = GlobalVars.chap_array[9];
+
+        JSorb = SoundVars.JSorb;
+        FTorb = SoundVars.FTorb;
+        RCorb = SoundVars.RCorb;
+        JSorbplayed = SoundVars.JSorbplayed;
+        FTorbplayed = SoundVars.FTorbplayed;
+        RCorbplayed = SoundVars.RCorbplayed;
 
   //   	for(int i = 0; i < 6; i++)
 		// {

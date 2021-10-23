@@ -46,13 +46,13 @@ public class DataManager : MonoBehaviour
         GlobalVars.ft_orb_get = false;
         GlobalVars.rc_orb_get = false;
 
-     //    GlobalVars.chapISeen = false;
+        // GlobalVars.chapISeen = false;
     	// GlobalVars.chapIVSeen = false;
     	// GlobalVars.chapIXSeen = false;
     	// GlobalVars.chapIISeen = false;
     	// GlobalVars.chapVIIISeen = false;
     	// GlobalVars.chapVSeen = false;
-     //    GlobalVars.rc_open_door = false;
+        // GlobalVars.rc_open_door = false;
 
         for(int i = 0; i < 4; i++)
         {
@@ -63,6 +63,13 @@ public class DataManager : MonoBehaviour
         {
             GlobalVars.chap_array[i] = false;
         }
+
+        SoundVars.JSorb = 0;
+        SoundVars.FTorb = 0;
+        SoundVars.RCorb = 0;
+        SoundVars.JSorbplayed = 0;
+        SoundVars.FTorbplayed = 0;
+        SoundVars.RCorbplayed = 0;
 
         // PlayerPrefs.DeleteAll();
     }
@@ -86,6 +93,10 @@ public class DataManager : MonoBehaviour
             GlobalVars.hasFTorb = new_data.hasFTorb;
             GlobalVars.hasRCorb = new_data.hasRCorb;
 
+            GlobalVars.js_orb_get = new_data.js_orb_get;
+            GlobalVars.js_orb_get = new_data.ft_orb_get;
+            GlobalVars.js_orb_get = new_data.rc_orb_get;
+
       		// GlobalVars.chapISeen = new_data.chapISeen;
 	    	// GlobalVars.chapIVSeen = new_data.chapIVSeen;
 	    	// GlobalVars.chapIXSeen = new_data.chapIXSeen;
@@ -97,6 +108,13 @@ public class DataManager : MonoBehaviour
             {
                 GlobalVars.chap_array[i] = new_data.chap_array[i];
             }
+
+            SoundVars.JSorb = new_data.JSorb;
+            SoundVars.FTorb = new_data.FTorb;
+            SoundVars.RCorb = new_data.RCorb;
+            SoundVars.JSorbplayed = new_data.JSorbplayed;
+            SoundVars.FTorbplayed = new_data.FTorbplayed;
+            SoundVars.RCorbplayed = new_data.RCorbplayed;
 
             GlobalVars.has_loaded_game = true;
             Debug.Log(GlobalVars.has_loaded_game);
