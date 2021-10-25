@@ -1798,7 +1798,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153505151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 3.24, y: -8.78, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8926,9 +8926,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 11.2757435, y: -9.853061}
-  - {x: 3.3245924, y: -9.796159}
-  - {x: 3.0836198, y: -9.4194975}
+  - {x: 11.764938, y: -9.605113}
+  - {x: 3.083346, y: -9.5817175}
   - {x: 3.0868616, y: -7.9616137}
   - {x: 3.2512226, y: -7.6804113}
   - {x: 3.5497122, y: -7.448478}
@@ -9000,10 +8999,8 @@ EdgeCollider2D:
   - {x: -9.189783, y: -7.323682}
   - {x: -7.4576488, y: -7.351816}
   - {x: -3.017757, y: -7.431697}
-  - {x: -2.9530454, y: -9.855224}
-  - {x: -6.308865, y: -9.838089}
-  - {x: -9.901932, y: -9.8140745}
-  - {x: -10.908577, y: -9.780687}
+  - {x: -2.9128375, y: -9.587172}
+  - {x: -11.301333, y: -9.616945}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -10235,7 +10232,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 26.249304, y: 27.160185}
+  m_Size: {x: 30, y: 30}
   m_EdgeRadius: 0
 --- !u!4 &986963823
 Transform:

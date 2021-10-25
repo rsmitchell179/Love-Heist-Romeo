@@ -20,6 +20,15 @@ public class cameraFollow : MonoBehaviour
     private float camHeight, camWidth;
     private Camera cam; //hey thats me!
 
+    void Awake()
+    {
+        // get our camera so we can fiddle with it
+        cam = GetComponent<Camera>();
+
+        Vector3 player_location = new Vector3(cameraFollows.gameObject.transform.position.x, cameraFollows.gameObject.transform.position.y, -10f);
+        cam.transform.position = player_location;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +37,6 @@ public class cameraFollow : MonoBehaviour
         xMax = mapBounds.bounds.max.x;
         yMin = mapBounds.bounds.min.y;
         yMax = mapBounds.bounds.max.y;
-
-        // get our camera so we can fiddle with it
-        cam = GetComponent<Camera>();
 
         // half of vertical size of camera
         camHeight = cam.orthographicSize;
