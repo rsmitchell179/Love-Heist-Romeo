@@ -72,6 +72,8 @@ public class DataManager : MonoBehaviour
         SoundVars.FTorbplayed = 0;
         SoundVars.RCorbplayed = 0;
 
+        GlobalVars.which_door = 0;
+
         // PlayerPrefs.DeleteAll();
     }
 
@@ -118,7 +120,7 @@ public class DataManager : MonoBehaviour
             SoundVars.RCorbplayed = new_data.RCorbplayed;
 
             GlobalVars.has_loaded_game = true;
-            Debug.Log(GlobalVars.has_loaded_game);
+            Debug.Log("GlobalVars.has_loaded_game is " + GlobalVars.has_loaded_game);
 	        SceneManager.LoadScene(new_data.scene);
 	    }
 	    else
