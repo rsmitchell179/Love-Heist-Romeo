@@ -27768,6 +27768,7 @@ GameObject:
   - component: {fileID: 1354772541}
   - component: {fileID: 1354772540}
   - component: {fileID: 1354772542}
+  - component: {fileID: 1354772543}
   m_Layer: 0
   m_Name: chapter_3
   m_TagString: Untagged
@@ -27882,6 +27883,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.75
+--- !u!95 &1354772543
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1354772538}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 608a7e41ed035324e96ea170f960d8b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1355512806
 PrefabInstance:
   m_ObjectHideFlags: 0
