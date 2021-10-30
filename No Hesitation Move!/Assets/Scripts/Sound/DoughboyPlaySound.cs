@@ -15,7 +15,7 @@ public class DoughboyPlaySound : MonoBehaviour
     {
     	if(other.gameObject.tag == "Player")
     	{
-            Debug.Log("Playing");
+            // Debug.Log("Playing");
             source.Play();
     	}
     }

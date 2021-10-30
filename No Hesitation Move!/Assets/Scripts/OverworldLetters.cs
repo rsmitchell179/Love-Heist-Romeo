@@ -38,6 +38,11 @@ public class OverworldLetters : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+
+        // if(GlobalVars.chap_array[chap_arr_index] == false)
+        // {
+        //     this.gameObject.SetActive(false);
+        // }
     }
 
     // Start is called before the first frame update
@@ -77,6 +82,15 @@ public class OverworldLetters : MonoBehaviour
                 animation_bool = true;
                 image_pop_up();
 
+            }
+        }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            for(int i = 1; i < GlobalVars.chap_array.Length; i++)
+            {
+                Debug.Log("here");
+                GlobalVars.chap_array[i] = true;
             }
         }
     }

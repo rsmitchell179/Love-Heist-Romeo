@@ -55,7 +55,7 @@ public class LetterSpaceToInteract : MonoBehaviour {
 
     public void play_space()
     {
-    	Debug.Log("play_space");
+    	// Debug.Log("play_space");
     	bubble.enabled = true;
     	space_bar.enabled = true;
     	set_pos(bubble);
