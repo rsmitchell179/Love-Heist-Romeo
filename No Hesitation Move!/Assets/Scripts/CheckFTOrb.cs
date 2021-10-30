@@ -11,6 +11,7 @@ public class CheckFTOrb : MonoBehaviour
 
     [Header("Player Components")]
     public playerMovement p_move;
+    private bool stop_player;
 
     [Header("UI Components")]
     public Image img_fade;
@@ -37,12 +38,25 @@ public class CheckFTOrb : MonoBehaviour
         {
             this.gameObject.SetActive(false);
         }
+
+        if(stop_player == true)
+        {
+            p_move.enabled = false;
+            p_move.anim.SetFloat("Speed", 0.0f);
+        }
+        else
+        {
+            p_move.enabled = true;
+        }
+
     }
 
     IEnumerator get_ft_orb()
     {
-        p_move.anim.SetFloat("Speed", 0.0f);
-        p_move.enabled = false;
+
+        // p_move.anim.SetFloat("Speed", 0.0f);
+        // p_move.enabled = false;
+        stop_player = true;
         ft_orb.Play("ft_orb_anim", 0, 0f);
 
         yield return new WaitForSecondsRealtime(3.5f);
@@ -74,7 +88,8 @@ public class CheckFTOrb : MonoBehaviour
 
         // img_fade.CrossFadeAlpha(0, 0.5f, false);
 
-        p_move.enabled = true;
+        // p_move.enabled = true;
+        stop_player = false;
         GlobalVars.ft_orb_get = true;
     }
 }
