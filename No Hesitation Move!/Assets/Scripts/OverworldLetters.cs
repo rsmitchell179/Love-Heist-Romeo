@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -33,6 +33,7 @@ public class OverworldLetters : MonoBehaviour
         if(GlobalVars.chap_array[chap_arr_index] == true)
         {
             this.gameObject.SetActive(true);
+            
         }
         else
         {
@@ -82,15 +83,6 @@ public class OverworldLetters : MonoBehaviour
                 animation_bool = true;
                 image_pop_up();
 
-            }
-        }
-
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            for(int i = 1; i < GlobalVars.chap_array.Length; i++)
-            {
-                Debug.Log("here");
-                GlobalVars.chap_array[i] = true;
             }
         }
     }

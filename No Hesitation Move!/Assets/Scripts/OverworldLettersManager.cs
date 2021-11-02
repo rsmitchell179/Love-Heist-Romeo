@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,7 +20,7 @@ public class OverworldLettersManager : MonoBehaviour
             if(GlobalVars.chap_array[i] == true)
             {
                 StartCoroutine(delay_object(i));
-                wait_time += 0.5f;
+                wait_time += 0.35f;
             }
             else
             {
