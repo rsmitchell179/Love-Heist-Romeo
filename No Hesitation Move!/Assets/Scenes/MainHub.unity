@@ -39572,6 +39572,16 @@ PrefabInstance:
       propertyPath: doughboy_text
       value: "Everyone\u2019s so aggressive down there."
       objectReference: {fileID: 0}
+    - target: {fileID: 6807253301810781565, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: above_layer
+      value: NPC_Above_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807253301810781565, guid: 383c68b74ba177443bacd66336ea0308,
+        type: 3}
+      propertyPath: behind_layer
+      value: NPC_Behind_1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 383c68b74ba177443bacd66336ea0308, type: 3}
 --- !u!1 &1928053332 stripped
