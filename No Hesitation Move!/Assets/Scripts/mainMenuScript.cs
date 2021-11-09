@@ -8,6 +8,7 @@ using UnityEngine.Audio;
 
 public class mainMenuScript : MonoBehaviour {
 	
+    [Header("Main Menu Components")]
     public string newGameScene;
     private GameObject last_button;
     public GameObject titleCloud;
@@ -39,6 +40,7 @@ public class mainMenuScript : MonoBehaviour {
     [Header("Sliders")]
     public Slider m_slider;
     public Slider s_slider;
+    public float default_volume;
 
     [Header("Dropdown")]
     public TMPro.TMP_Dropdown reso_dropdown;
@@ -108,10 +110,27 @@ public class mainMenuScript : MonoBehaviour {
         reso_dropdown.value = curr_resolution;
         reso_dropdown.RefreshShownValue();
         
-        float set_m_volume = PlayerPrefs.GetFloat("music_volume");
-        m_slider.value = set_m_volume;
-        float set_s_volume = PlayerPrefs.GetFloat("sfx_volume");
-        s_slider.value = set_s_volume;
+        if(PlayerPrefs.HasKey("music_volume"))
+        {
+            float set_m_volume = PlayerPrefs.GetFloat("music_volume");
+            m_slider.value = set_m_volume;
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("music_volume", default_volume);
+            PlayerPrefs.Save();
+        }
+
+        if(PlayerPrefs.HasKey("sfx_volume"))
+        {
+            float set_s_volume = PlayerPrefs.GetFloat("sfx_volume");
+            s_slider.value = set_s_volume;
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("sfx_volume", default_volume);
+            PlayerPrefs.Save();
+        }
     }
 
     // Update is called once per frame
@@ -205,14 +224,16 @@ public class mainMenuScript : MonoBehaviour {
     }
     public void set_music_volume(float volume)
     {
-    	music_mix.SetFloat("music", volume);
+        float logVolume = Mathf.Log10(volume) * 20;
+    	music_mix.SetFloat("music", logVolume);
         PlayerPrefs.SetFloat("music_volume", volume);
         PlayerPrefs.Save(); 
     }
 
     public void set_sfx_volume(float volume)
     {
-    	sfx_mix.SetFloat("sfx", volume);
+        float logVolume = Mathf.Log10(volume) * 20;
+    	sfx_mix.SetFloat("sfx", logVolume);
         PlayerPrefs.SetFloat("sfx_volume", volume);
         PlayerPrefs.Save();
     }

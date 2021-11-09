@@ -462,10 +462,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 8863946253103685234}
   m_HandleRect: {fileID: 6204819743128107248}
   m_Direction: 0
-  m_MinValue: -70
-  m_MaxValue: 0
-  m_WholeNumbers: 1
-  m_Value: 0
+  m_MinValue: 0.0001
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -1780,6 +1780,7 @@ MonoBehaviour:
   background: {fileID: 683523813568516814}
   music_mix: {fileID: 24100000, guid: 635e37ab9e1901a459c3e1db56bf1c0a, type: 2}
   sfx_mix: {fileID: 24100000, guid: 503b1860cffc52947bac4df31f475a07, type: 2}
+  default_volume: 0
   cursor_visible: 0
   save_prompt_text: {fileID: 5463430178150332903}
   m_slider: {fileID: 4624236037268484992}
@@ -2134,10 +2135,10 @@ MonoBehaviour:
   m_FillRect: {fileID: 6661334987079617608}
   m_HandleRect: {fileID: 7084178356000117297}
   m_Direction: 0
-  m_MinValue: -70
-  m_MaxValue: 0
-  m_WholeNumbers: 1
-  m_Value: 0
+  m_MinValue: 0.0001
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:

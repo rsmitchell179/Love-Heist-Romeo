@@ -2130,9 +2130,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 1515919978}
   m_HandleRect: {fileID: 715361767}
   m_Direction: 0
-  m_MinValue: -70
-  m_MaxValue: 0
-  m_WholeNumbers: 1
+  m_MinValue: 0.0001
+  m_MaxValue: 1
+  m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2232,9 +2232,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 163395998}
   m_HandleRect: {fileID: 1232977193}
   m_Direction: 0
-  m_MinValue: -70
-  m_MaxValue: 0
-  m_WholeNumbers: 1
+  m_MinValue: 0.0001
+  m_MaxValue: 1
+  m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2661,6 +2661,7 @@ MonoBehaviour:
   sfx_mix: {fileID: 24100000, guid: 503b1860cffc52947bac4df31f475a07, type: 2}
   m_slider: {fileID: 752861298}
   s_slider: {fileID: 719366593}
+  default_volume: 0.7
   reso_dropdown: {fileID: 363475168}
 --- !u!212 &840832889
 SpriteRenderer:

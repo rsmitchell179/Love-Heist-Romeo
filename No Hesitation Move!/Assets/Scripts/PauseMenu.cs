@@ -29,11 +29,12 @@ public class PauseMenu : MonoBehaviour
     [Header("Audio Mixers")]
     public AudioMixer music_mix;
     public AudioMixer sfx_mix;
+    public float default_volume;
 
     [Header("Is The Cursor Visible")]
     public bool cursor_visible = false;
 
-
+    [Header("Resolution Components")]
     Resolution[] all_resolutions;
     List<string> reso_options;
     List<Resolution> selected_resolutions;
@@ -46,6 +47,7 @@ public class PauseMenu : MonoBehaviour
     DialogueUI diaUI;
     public TMP_Text save_prompt_text;
 
+    [Header("Sliders")]
     public Slider m_slider;
     public Slider s_slider;
 
@@ -115,11 +117,28 @@ public class PauseMenu : MonoBehaviour
         reso_dropdown.AddOptions(reso_options);
         reso_dropdown.value = curr_resolution;
         reso_dropdown.RefreshShownValue();
-        
-        float set_m_volume = PlayerPrefs.GetFloat("music_volume");
-        m_slider.value = set_m_volume;
-        float set_s_volume = PlayerPrefs.GetFloat("sfx_volume");
-        s_slider.value = set_s_volume;
+
+        if(PlayerPrefs.HasKey("music_volume"))
+        {
+            float set_m_volume = PlayerPrefs.GetFloat("music_volume");
+            m_slider.value = set_m_volume;
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("music_volume", default_volume);
+            PlayerPrefs.Save();
+        }
+
+        if(PlayerPrefs.HasKey("sfx_volume"))
+        {
+            float set_s_volume = PlayerPrefs.GetFloat("sfx_volume");
+            s_slider.value = set_s_volume;
+        }
+        else
+        {
+            PlayerPrefs.SetFloat("sfx_volume", default_volume);
+            PlayerPrefs.Save();
+        }
     }
     
 
@@ -251,14 +270,16 @@ public class PauseMenu : MonoBehaviour
 
     public void set_music_volume(float volume)
     {
-    	music_mix.SetFloat("music", volume);
+        float logVolume = Mathf.Log10(volume) * 20;
+    	music_mix.SetFloat("music", logVolume);
         PlayerPrefs.SetFloat("music_volume", volume);
         PlayerPrefs.Save(); 
     }
 
     public void set_sfx_volume(float volume)
     {
-    	sfx_mix.SetFloat("sfx", volume);
+        float logVolume = Mathf.Log10(volume) * 20;
+    	sfx_mix.SetFloat("sfx", logVolume);
         PlayerPrefs.SetFloat("sfx_volume", volume);
         PlayerPrefs.Save();
     }
