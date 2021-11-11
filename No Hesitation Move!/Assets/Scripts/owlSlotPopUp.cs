@@ -102,6 +102,8 @@ public class owlSlotPopUp : MonoBehaviour
 
     	diaRun.Add(scriptToLoad);
     	diaRun.StartDialogue(talktonode);
+
+    	p_movement.enabled = true;
     }
 
     void set_pos(Image bub)
