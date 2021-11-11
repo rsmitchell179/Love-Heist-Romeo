@@ -817,8 +817,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 42219390}
-  - component: {fileID: 42219392}
   - component: {fileID: 42219391}
+  - component: {fileID: 42219392}
   m_Layer: 0
   m_Name: db_5
   m_TagString: Untagged
@@ -873,8 +873,8 @@ MonoBehaviour:
   db_class_1: {fileID: 0}
   db_class_2: {fileID: 0}
   db_class_3: {fileID: 0}
---- !u!58 &42219392
-CircleCollider2D:
+--- !u!61 &42219392
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -886,9 +886,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.17329907, y: 0.2690699}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 2.2150593
+  m_Size: {x: 4.1193824, y: 2.1218839}
+  m_EdgeRadius: 0
 --- !u!1001 &70782742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2883,8 +2893,8 @@ Transform:
   m_Father: {fileID: 874419124}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &268067780
-CircleCollider2D:
+--- !u!61 &268067780
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2896,9 +2906,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.2508278, y: 0.2508278}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.7501276
+  m_Size: {x: 3.2893715, y: 1.5016556}
+  m_EdgeRadius: 0
 --- !u!114 &268067781
 MonoBehaviour:
   m_ObjectHideFlags: 0
