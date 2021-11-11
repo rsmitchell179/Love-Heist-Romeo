@@ -1254,8 +1254,8 @@ Transform:
   m_Father: {fileID: 171208126}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &205289803
-CircleCollider2D:
+--- !u!61 &205289803
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1267,9 +1267,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.03296423, y: 0.016531706}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.5777612
+  m_Size: {x: 1.2669992, y: 3.0766616}
+  m_EdgeRadius: 0
 --- !u!114 &205289804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4860,8 +4870,8 @@ Transform:
   m_Father: {fileID: 171208126}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &772772145
-CircleCollider2D:
+--- !u!61 &772772145
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4873,9 +4883,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11313796, y: 0}
+  m_Offset: {x: -0.24625087, y: -0.0037372112}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.5593932
+  m_Size: {x: 2.6271482, y: 1.2472157}
+  m_EdgeRadius: 0
 --- !u!114 &772772146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10534,7 +10554,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.041305125, y: 0.503186}
+  m_Offset: {x: 0.041305065, y: 0.4629719}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -10545,7 +10565,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.9365044, y: 2.006372}
+  m_Size: {x: 3.9365044, y: 2.0868}
   m_EdgeRadius: 0
 --- !u!114 &1600086199
 MonoBehaviour:
@@ -10611,8 +10631,8 @@ Transform:
   m_Father: {fileID: 171208126}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1606616973
-CircleCollider2D:
+--- !u!61 &1606616973
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10624,9 +10644,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5839283, y: 0}
+  m_Offset: {x: 1.2907361, y: -0.2097739}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 2.0592253
+  m_Size: {x: 3.2338474, y: 1.3356378}
+  m_EdgeRadius: 0
 --- !u!114 &1606616974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10686,8 +10716,8 @@ Transform:
   m_Father: {fileID: 171208126}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1624632723
-CircleCollider2D:
+--- !u!61 &1624632723
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -10699,9 +10729,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0018037558, y: -0.008990288}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.7004313
+  m_Size: {x: 2.689658, y: 1.2217607}
+  m_EdgeRadius: 0
 --- !u!114 &1624632724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10774,9 +10814,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.4879874, y: -0.40585136}
+  m_Offset: {x: -0.24524927, y: -0.8164084}
   serializedVersion: 2
-  m_Radius: 1.2199024
+  m_Radius: 1.0460899
 --- !u!114 &1629425007
 MonoBehaviour:
   m_ObjectHideFlags: 0
