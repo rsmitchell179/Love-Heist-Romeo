@@ -77,10 +77,10 @@ public class CutsceneScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Tab))
-        {
-        	SceneManager.LoadScene(next_scene);
-        }
+        // if(Input.GetKeyDown(KeyCode.Tab))
+        // {
+        // 	SceneManager.LoadScene(next_scene);
+        // }
 
         if(is_fading == true)
         {

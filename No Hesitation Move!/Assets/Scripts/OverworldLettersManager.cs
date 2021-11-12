@@ -31,17 +31,17 @@ public class OverworldLettersManager : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        // FOR DEV PURPOSES
-        if(Input.GetKeyDown(KeyCode.O))
-        {
-            for(int i = 1; i < GlobalVars.chap_array.Length; i++)
-            {
-                GlobalVars.chap_array[i] = true;
-            }
-        }
-    }
+    // void Update()
+    // {
+    //     // FOR DEV PURPOSES
+    //     if(Input.GetKeyDown(KeyCode.O))
+    //     {
+    //         for(int i = 1; i < GlobalVars.chap_array.Length; i++)
+    //         {
+    //             GlobalVars.chap_array[i] = true;
+    //         }
+    //     }
+    // }
 
     // void delay_object(int curr_letter)
     // {

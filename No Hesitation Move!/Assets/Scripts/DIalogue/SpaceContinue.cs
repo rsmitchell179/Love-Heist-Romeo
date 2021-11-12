@@ -38,13 +38,13 @@ public class SpaceContinue : MonoBehaviour
             dialogueUI.MarkLineComplete();
         }
 
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            dialogueUI.DialogueComplete();
-            diaRun.Stop();
+        // if (Input.GetKeyDown(KeyCode.Tab))
+        // {
+        //     dialogueUI.DialogueComplete();
+        //     diaRun.Stop();
 
 
-        }
+        // }
     }
 
     private void dialoguePick()
