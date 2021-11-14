@@ -118,6 +118,7 @@ public class mainMenuScript : MonoBehaviour {
         else
         {
             PlayerPrefs.SetFloat("music_volume", default_volume);
+            m_slider.value = default_volume;
             PlayerPrefs.Save();
         }
 
@@ -129,6 +130,7 @@ public class mainMenuScript : MonoBehaviour {
         else
         {
             PlayerPrefs.SetFloat("sfx_volume", default_volume);
+            s_slider.value = default_volume;
             PlayerPrefs.Save();
         }
     }

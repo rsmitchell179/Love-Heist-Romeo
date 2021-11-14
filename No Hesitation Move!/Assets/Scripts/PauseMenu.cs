@@ -126,6 +126,7 @@ public class PauseMenu : MonoBehaviour
         else
         {
             PlayerPrefs.SetFloat("music_volume", default_volume);
+            m_slider.value = default_volume;
             PlayerPrefs.Save();
         }
 
@@ -137,6 +138,7 @@ public class PauseMenu : MonoBehaviour
         else
         {
             PlayerPrefs.SetFloat("sfx_volume", default_volume);
+            s_slider.value = default_volume;
             PlayerPrefs.Save();
         }
     }
@@ -177,6 +179,12 @@ public class PauseMenu : MonoBehaviour
         {
         	last_button = EventSystem.current.currentSelectedGameObject;
         }
+
+        // if(Input.GetKeyDown(KeyCode.Backslash))
+        // {
+        //     PlayerPrefs.DeleteKey("music_volume");
+        //     PlayerPrefs.DeleteKey("sfx_volume");
+        // }
     }
 
     IEnumerator SavePrompt() {
